@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 
-    <h1>Create New Post</h1>
+    @can('isAdmin')<h1>Create New Post</h1>
 
     @if ($errors->any())
         <ul class="uk-alert-danger">
@@ -65,6 +65,7 @@
 
 
 </div>
+    @endcan
 @endsection
 
 <script src="{{url('/js/jquery.js')}}"></script>
