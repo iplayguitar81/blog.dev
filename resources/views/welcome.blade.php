@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Your Application's Landing Page.
+                   Welcome to Bowtiesoft.  This page is under development but should be up and running soon!  Check back soon for updates!
                 </div>
             </div>
         </div>
