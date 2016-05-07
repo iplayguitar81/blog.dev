@@ -62,6 +62,7 @@
     </div>
     {!! Form::close() !!}
 
+    @else <?php header("Location: /"); die(); ?>
 
     @endcan
 </div>
