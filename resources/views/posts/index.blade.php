@@ -8,7 +8,7 @@
         <table class="uk-table uk-table-hover uk-table-striped">
             <thead>
                 <tr>
-                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th><th>Actions</th>
+                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
                 </tr>
             </thead>
             <tbody>
@@ -18,6 +18,7 @@
                 <tr>
                     {{--<td>{{ $x }}</td>--}}
                     <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->body }}</td><td><img class="uk-thumbnail uk-thumbnail-expand" src="../images/{{ $item->imgPath}}"></td>
+                    @can('isAdmin')
                     <td>
                         <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
                         {!! Form::open([
@@ -28,6 +29,7 @@
                             {!! Form::submit('Delete', ['class' => 'uk-button uk-button-danger']) !!}
                         {!! Form::close() !!}
                     </td>
+                    @endcan
                 </tr>
 
             @endforeach
