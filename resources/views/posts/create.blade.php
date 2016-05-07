@@ -63,9 +63,9 @@
     {!! Form::close() !!}
 
 
-
-</div>
     @endcan
+</div>
+
 @endsection
 
 <script src="{{url('/js/jquery.js')}}"></script>
