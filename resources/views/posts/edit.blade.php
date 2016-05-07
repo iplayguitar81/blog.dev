@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
 
+    @can('isAdmin')
     <h1>Edit Post</h1>
 
     @if ($errors->any())
@@ -64,6 +65,7 @@
 
         <button type="submit" class="uk-button uk-width-1-1 uk-margin-small-bottom">Back to All Posts</button>
     </a>
-
+    @endcan
 </div>
+
 @endsection
