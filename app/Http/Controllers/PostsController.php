@@ -52,6 +52,7 @@ class PostsController extends Controller
 
 
         return view('posts.create');
+        $this->authorize('isAdmin');
     }
 
     /**
@@ -108,6 +109,7 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
 
         return view('posts.edit', compact('post'));
+        $this->authorize('isAdmin');
     }
 
     /**
