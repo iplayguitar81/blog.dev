@@ -38,6 +38,8 @@ class PostsController extends Controller
         $posts = Post::paginate(15);
 
         return view('posts.index', compact('posts', 'route'));
+
+        $this->authorize('isAdmin');
     }
 
     /**
