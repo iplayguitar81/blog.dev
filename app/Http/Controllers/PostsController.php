@@ -121,6 +121,11 @@ class PostsController extends Controller
      */
     public function update($id, Request $request)
     {
+
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required',
+        ]);
         
         $post = Post::findOrFail($id);
         $post->update($request->all());
