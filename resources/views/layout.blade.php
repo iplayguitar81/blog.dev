@@ -24,6 +24,10 @@
 
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
+    <header id="top" role="banner">
+        <img alt="bowtie software &amp; web development" src="{{url('/images/bowtiebranded.png')}}">
+    </header>
+
     <nav class="uk-navbar uk-margin-large-bottom">
         <a class="uk-navbar-brand uk-hidden-small" href="{{url('/')}}"><img src="{{url('/images/bowtiebranded.png')}}" alt="bowtiesoftware &amp; web development"/></a>
         <ul class="uk-navbar-nav uk-hidden-small">
