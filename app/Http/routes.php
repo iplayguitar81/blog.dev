@@ -10,10 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use App\Post;
+
 
 Route::get('/', function () {
-    $richardson=['nutsack1','nutsack2','nutsack3'];
-    return view('welcome', compact('richardson'));
+    $posts = Post::paginate(15);
+    return view('welcome', compact('posts'));
 });
 
 Route::group(['middleware' => ['web']], function () {
