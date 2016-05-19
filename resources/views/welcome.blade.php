@@ -29,26 +29,26 @@
     <hr>
 
 
-{{--@foreach($posts as $item)--}}
+@foreach($posts as $item)
 
-    {{--<article class="uk-article">--}}
+    <article class="uk-article">
 
-        {{--<h1 class="uk-article-title"><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></h1>--}}
-        {{--<p class="uk-article-lead">HERE IS SUBTITLE</p>--}}
-        {{--<p class="uk-article-meta">{{ $item->created_at }}</p>--}}
+        <h1 class="uk-article-title"><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></h1>
+        <p class="uk-article-lead">HERE IS SUBTITLE</p>
+        <p class="uk-article-meta">{{ $item->created_at }}</p>
 
-        {{--<div class="uk-grid">--}}
-            {{--<div class="uk-width-medium-1-2 uk-push-1-2"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></div>--}}
-            {{--<div class="uk-width-medium-1-2 uk-pull-1-2">{{$item->body}}</div>--}}
-        {{--</div>--}}
-
-
+        <div class="uk-grid">
+            <div class="uk-width-medium-1-2 uk-push-1-2"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></div>
+            <div class="uk-width-medium-1-2 uk-pull-1-2">{{$item->body}}</div>
+        </div>
 
 
 
-    {{--</article>--}}
-    {{--<hr class="uk-article-divider">--}}
-{{--@endforeach--}}
+
+
+    </article>
+    <hr class="uk-article-divider">
+@endforeach
 
 
 
