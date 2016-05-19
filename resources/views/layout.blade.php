@@ -100,9 +100,7 @@
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/uikit.min.js')}}"></script>
 
-@section('footer')
 
-@endsection
 </body>
 </html>
 
