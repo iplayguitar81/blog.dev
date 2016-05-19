@@ -25,7 +25,7 @@
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
     <nav class="uk-navbar uk-margin-large-bottom">
-        <a class="uk-navbar-brand uk-hidden-small" href="{{url('/')}}"><img src="images/bowtiebranded.png" alt="bowtiesoftware &amp; web development"/></a>
+        <a class="uk-navbar-brand uk-hidden-small" href="{{url('/')}}"><img src="{{url('/images/bowtiebranded.png')}}" alt="bowtiesoftware &amp; web development"/></a>
         <ul class="uk-navbar-nav uk-hidden-small">
             <li class="uk-active">
                 <a href="{{url('/')}}" >Home</a>
