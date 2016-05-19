@@ -29,6 +29,6 @@ class HomeController extends Controller
 
         $posts = Post::paginate(15);
 
-        return view('welcome', compact('posts'));
+        return view('home', compact('posts'));
     }
 }
