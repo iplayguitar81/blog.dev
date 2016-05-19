@@ -61,7 +61,7 @@
             @endif
         </ul>
         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-        <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><!-- This is where you put branding text -->Bowtiesoftware &amp; Web Development</div>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><!-- This is where you put branding text -->Bowtie<br/> Software &amp; Web Development</div>
     </nav>
 
     <div class="uk-grid" data-uk-grid-margin>
