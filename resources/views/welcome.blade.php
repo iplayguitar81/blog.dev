@@ -28,3 +28,5 @@
     </div>
 
 @endsection
+
+@extends('footer')
