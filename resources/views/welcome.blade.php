@@ -18,7 +18,7 @@
 
 </div>
 
-
+<div class="uk-article">
 
     <div class="uk-width-medium-1-3 uk-row-first">
         <div class="uk-panel"><img src="images/placeholder_400x250.svg" alt="Placeholder"></div>
@@ -26,7 +26,6 @@
     <div class="uk-width-medium-2-3 uk-flex-middle">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-
+</div>
 @endsection
 
-@extends('footer')
