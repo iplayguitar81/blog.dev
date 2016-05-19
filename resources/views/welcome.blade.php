@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome to Bowtiesoft</div>
 
                 <div class="panel-body">
-                   Welcome to Bowtiesoft.  This page is under development but should be up and running soon!  Check back soon for updates!
+                   Welcome to Bowtiesofty.  This page is under development but should be up and running soon!  Check back soon for updates!
                 </div>
             </div>
         </div>
