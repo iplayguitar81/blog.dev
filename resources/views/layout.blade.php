@@ -61,7 +61,7 @@
             @endif
         </ul>
         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-        <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><a class="uk-navbar-brand uk-hidden-small" href="{{url('/')}}"><img src="/images/bowtiebranded.png" alt="bowtiesoftware &amp; web development"/></a></div>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><!-- This is where you put branding text -->Bowtiesoftware &amp; Web Development/div>
     </nav>
 
     <div class="uk-grid" data-uk-grid-margin>
