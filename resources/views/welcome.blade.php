@@ -13,5 +13,15 @@
             </div>
         </div>
     </div>
+
+    <div class="uk-grid uk-flex-middle" data-uk-grid-margin="">
+        <div class="uk-width-medium-1-3 uk-row-first">
+            <div class="uk-panel"><img src="images/placeholder_400x250.svg" alt="Placeholder"></div>
+        </div>
+        <div class="uk-width-medium-2-3 uk-flex-middle">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
 </div>
 @endsection
