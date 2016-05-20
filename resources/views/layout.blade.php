@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bowtiesoft - UIkit</title>
-    <link rel="shortcut icon" href="{{url('/images/favicon.ico')}}" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="/css/uikit.docs.min.css">
 </head>
