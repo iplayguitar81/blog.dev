@@ -55,7 +55,7 @@
 
 <div class="uk-width-medium-3-4 uk-row-first">
 
-    @foreach($posts as $item)--}}
+    @foreach($posts as $item)
     <article class="uk-article">
 
         <h1 class="uk-article-title">
