@@ -80,7 +80,7 @@
         </p>
 
     </article>
-    {{--@endforeach--}}
+    @endforeach
 
     <article class="uk-article">
 
