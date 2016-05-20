@@ -1,14 +1,12 @@
 @extends('layout')
-
 @section('content')
 <div class="container">
-
     <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan</h1>
     <div class="table">
         <table class="uk-table uk-table-hover uk-table-striped">
             <thead>
                 <tr>
-                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
+                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subHead') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
                 </tr>
             </thead>
             <tbody>
@@ -17,7 +15,7 @@
                 {{-- */$x++;/* --}}
                 <tr>
                     {{--<td>{{ $x }}</td>--}}
-                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->body }}</td><td><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></td>
+                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->body }}</td><td><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></td>
                     @can('isAdmin')
                     <td>
                         <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
