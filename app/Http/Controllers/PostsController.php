@@ -36,10 +36,12 @@ class PostsController extends Controller
        
 
 
-       # $posts = Post::where('user_id','=', Auth::id())->get();
-        $posts = Post::paginate(15);
 
-        $posts=dd(\App\User::paginate(5));
+       # $posts = Post::paginate(15);
+
+       # $posts=dd(\App\User::paginate(5));
+
+        $posts = Post::with('users')->get();
 
         return view('posts.index', compact('posts'));
 
