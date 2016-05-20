@@ -57,8 +57,34 @@
                 {{--</div>--}}
             {{--</div>--}}
 <br/>
+    <label>Current Image:</label>
     <img class="uk-thumbnail-small" src="../../images/{{ $post->imgPath}}">
-<br/>
+
+        <br/>
+    <label>Update Image</label>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-3">
+                <input type="file" name="file" id="file" onchange="readURL(this);"/>
+            </div>
+        </div>
+        <br/>
+        {{csrf_field()}}
+
+        <div id="blah2">
+            <img id="blah" class="uk-thumbnail" src="#" alt="uploaded image">
+        </div>
+
+
+        <div class="form-group {{ $errors->has('imgPath') ? 'has-error' : ''}}">
+            {{--{!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}--}}
+            <div class="col-sm-6">
+                {!! Form::text('imgPath', null, ['class' => 'form-control filename']) !!}
+                {!! $errors->first('imgPath', '<p class="help-block">:message</p>') !!}
+            </div>
+        </div>
+        <br/>
+
+        <br/>
 <br/>
 
 
