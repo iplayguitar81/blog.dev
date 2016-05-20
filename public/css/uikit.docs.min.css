@@ -6977,7 +6977,7 @@ a.uk-thumbnail:focus, a.uk-thumbnail:hover {
 }
 
 .uk-modal-footer > :last-child, .uk-modal-header > :last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
     text-align: center;
 }
 
