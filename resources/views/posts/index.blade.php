@@ -15,13 +15,13 @@
                 {{-- */$x++;/* --}}
                 <tr>
                     {{--<td>{{ $x }}</td>--}}
-                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->body }}</td><td><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></td>
+                    <td><a href="{{ url('posts', $item->user_id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->body }}</td><td><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></td>
                     @can('isAdmin')
                     <td>
-                        <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
+                        <a href="{{ url('/posts/' . $item->user_id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
                         {!! Form::open([
                             'method'=>'DELETE',
-                            'url' => ['/posts', $item->id],
+                            'url' => ['/posts', $item->user_id],
                             'style' => 'display:inline'
                         ]) !!}
                             {!! Form::submit('Delete', ['class' => 'uk-button uk-button-danger']) !!}
@@ -40,7 +40,7 @@
 
         <article class="uk-article">
 
-            <h1 class="uk-article-title"><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></h1>
+            <h1 class="uk-article-title"><a href="{{ url('posts', $item->user_id) }}">{{ $item->title }}</a></h1>
             <p class="uk-article-lead">HERE IS SUBTITLE</p>
             <p class="uk-article-meta">{{ $item->created_at }}</p>
 
