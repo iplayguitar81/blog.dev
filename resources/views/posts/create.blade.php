@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-
+    <p> User ID:  {{$user}} </p>
     @can('isAdmin')<h1>Create New Post</h1>
 
     @if ($errors->any())
