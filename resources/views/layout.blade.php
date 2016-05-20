@@ -70,9 +70,9 @@
 
     <div class="uk-grid" data-uk-grid-margin>
         @yield('content')
-        @include('sidebar')
-    </div>
 
+    </div>
+    @include('sidebar')
 </div>
 
 <div id="offcanvas" class="uk-offcanvas">
