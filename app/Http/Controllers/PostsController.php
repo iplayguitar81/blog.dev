@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Facade;
 
 use App\Post;
-use App\User;
+
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -41,7 +41,7 @@ class PostsController extends Controller
         #$posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
 
-        $posts=User::with(['posts'])->all();
+        #$posts=User::with(['posts'])->all();
 
 
        #$posts=dd(\App\User::paginate(5));
