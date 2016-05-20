@@ -4,7 +4,7 @@
 <div class="container">
 
     @can('isAdmin')<h1>Create New Post</h1>
-
+    <p> User ID:  {{$user}} </p>
     @if ($errors->any())
         <ul class="uk-alert-danger">
             @foreach ($errors->all() as $error)
