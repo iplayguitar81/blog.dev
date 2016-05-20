@@ -87,14 +87,12 @@
         <br/>
 <br/>
 
-
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-3">
             {!! Form::submit('Update', ['class' => 'uk-button uk-width-1-1 uk-margin-small-bottom']) !!}
         </div>
     </div>
     {!! Form::close() !!}
-
 
 <br/>
 <br/>
