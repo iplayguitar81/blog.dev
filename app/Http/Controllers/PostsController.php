@@ -36,7 +36,7 @@ class PostsController extends Controller
     public function index( )
     {
 
-        $user =Auth::user()->id;
+
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
@@ -58,9 +58,9 @@ class PostsController extends Controller
      */
     public function create()
     {
+        $user =Auth::user()->id;
 
-
-        return view('posts.create');
+        return view('posts.create', compact('user'));
         $this->authorize('isAdmin');
     }
 
@@ -71,6 +71,8 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
+
+
         $this->validate($request, [
         'title' => 'required',
         'body' => 'required',
@@ -86,6 +88,7 @@ class PostsController extends Controller
         }
 
         Post::create($request->all());
+
 
         Session::flash('flash_message', 'Post added!');
 
