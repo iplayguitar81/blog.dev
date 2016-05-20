@@ -25,6 +25,15 @@
                 </div>
             </div>
     <br/>
+
+    <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
+        {!! Form::label('subHead', trans('posts.subHead'), ['class' => 'col-sm-3 control-label']) !!}
+        <div class="col-sm-6">
+            {!! Form::text('subHead', null, ['class' => 'form-control']) !!}
+            {!! $errors->first('subHead', '<p class="uk-alert-danger">:message</p>') !!}
+        </div>
+    </div>
+<br/>
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
