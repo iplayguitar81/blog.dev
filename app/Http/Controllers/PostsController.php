@@ -36,7 +36,7 @@ class PostsController extends Controller
     public function index( )
     {
 
-
+        $user =Auth::user()->id;
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
@@ -46,7 +46,7 @@ class PostsController extends Controller
 
        #$posts=dd(\App\User::paginate(5));
 
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('posts', 'user'));
 
         $this->authorize('isAdmin');
     }
