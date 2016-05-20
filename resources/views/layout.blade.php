@@ -122,6 +122,8 @@
 <script src="{{url('/js/uikit.min.js')}}"></script>
 
 
+
+@include('includes.header')
 </body>
 </html>
 
