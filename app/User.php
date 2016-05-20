@@ -13,7 +13,7 @@ class User extends Authenticatable
      */
 
     public function posts(){
-        return $this ->belongsTo('User');
+        return $this ->belongsTo('App\User');
 
     }
 
