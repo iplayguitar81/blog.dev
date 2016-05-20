@@ -39,7 +39,8 @@ class PostsController extends Controller
         #$posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
 
-  
+        $posts=User::with(['posts'])->all();
+
 
        #$posts=dd(\App\User::paginate(5));
 
