@@ -1,5 +1,4 @@
 <div class="uk-modal-footer">
-    Test this footer out
-    Bowtie Software &amp; Web Development Copyright 2016
+    <span class="uk-align-center">Bowtie Software &amp; Web Development Copyright 2016</span>
 
 </div>
