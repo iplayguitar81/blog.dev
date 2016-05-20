@@ -70,6 +70,7 @@
 
     <div class="uk-grid" data-uk-grid-margin>
         @yield('content')
+        @include('sidebar')
     </div>
 
 </div>
@@ -115,6 +116,7 @@
         </ul>
     </div>
 </div>
+
 
 
 
