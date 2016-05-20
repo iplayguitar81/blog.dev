@@ -11,8 +11,8 @@ class Post extends Model
      *
      * @var string
      */
-    public function users(){
-        return $this->hasMany('App\Post');
+    public function posts(){
+        return $this->belongsTo('App\User', 'user_id');
     }
 
     protected $table = 'posts';
