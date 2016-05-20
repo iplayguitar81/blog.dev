@@ -6973,6 +6973,7 @@ a.uk-thumbnail:focus, a.uk-thumbnail:hover {
     border-top: 1px solid #e5e5e5;
     border-radius: 0 0 4px 4px;
     background: #fafafa
+    text-align:center;
 }
 
 .uk-modal-footer > :last-child, .uk-modal-header > :last-child {
