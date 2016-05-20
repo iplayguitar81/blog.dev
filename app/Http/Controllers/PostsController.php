@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Facade;
 
 use App\Post;
+use App\User;
+
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Session;
