@@ -11,6 +11,12 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    public function posts(){
+        return $this ->belongsTo('User');
+
+    }
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
