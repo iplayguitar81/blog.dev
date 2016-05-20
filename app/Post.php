@@ -12,7 +12,7 @@ class Post extends Model
      * @var string
      */
     public function users(){
-        return $this->hasMany('Posts');
+        return $this->hasMany('App\Post');
     }
 
     protected $table = 'posts';
