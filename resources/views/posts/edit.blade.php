@@ -110,3 +110,7 @@
 </div>
 
 @endsection
+
+
+<script src="{{url('/js/jquery.js')}}"></script>
+<script src="{{url('/js/image_upload.js')}}"></script>
