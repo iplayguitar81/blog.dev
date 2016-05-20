@@ -123,7 +123,7 @@
 
 
 
-@include('includes.header')
+@include('footer')
 </body>
 </html>
 
