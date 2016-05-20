@@ -13,7 +13,7 @@ class User extends Authenticatable
      */
 
     public function posts(){
-        return $this ->belongsTo('App\User');
+        return $this ->hasMany('App\Post');
 
     }
 
