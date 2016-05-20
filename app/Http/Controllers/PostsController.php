@@ -36,7 +36,7 @@ class PostsController extends Controller
        
         $route->getActionName();
 
-        $posts = Post::where('id','=', Auth::id())->get();
+        $posts = Post::where('user_id','=', Auth::id())->get();
        # $posts = Post::paginate(15);
 
         return view('posts.index', compact('posts', 'route'));
