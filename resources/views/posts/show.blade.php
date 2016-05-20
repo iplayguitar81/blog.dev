@@ -27,7 +27,7 @@
         <button type="submit" class="">Back to All Posts</button>
     </a>
    &nbsp;
-    <a href="{{url('welcome')}}">
+    <a href="{{url('/')}}">
 
         <button type="submit" class="">Back Home</button>
     </a>
