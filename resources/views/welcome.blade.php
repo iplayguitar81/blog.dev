@@ -63,7 +63,7 @@
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
 
-        <p class="uk-article-meta">Written by Author on 12 April 2013. Posted in <a href="#">Blog</a></p>
+        <p class="uk-article-meta">Written by Author on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
         <p>
