@@ -15,6 +15,7 @@ use Session;
 use Validator;
 use Flash;
 use Illuminate\Routing\Route;
+use App\Http\Controllers\Auth;
 
 
 use Illuminate\Support\Facades\Input;
