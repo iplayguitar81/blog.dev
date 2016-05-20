@@ -2,6 +2,10 @@
 @section('content')
 <div class="container">
     <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan</h1>
+    @foreach($user as $item)
+    <p> User ID:  {{$item->id}} </p>
+
+    @endforeach
     <div class="table">
         <table class="uk-table uk-table-hover uk-table-striped">
             <thead>
