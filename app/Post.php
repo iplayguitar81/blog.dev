@@ -11,6 +11,10 @@ class Post extends Model
      *
      * @var string
      */
+    public function users(){
+        return $this->hasMany('Posts');
+    }
+
     protected $table = 'posts';
 
     /**
