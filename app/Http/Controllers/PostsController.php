@@ -90,12 +90,12 @@ class PostsController extends Controller
 
         }
 
-        Post::create($request->all());
+       // Post::create($request->all());
 
 
         $post = new Post($request->all());
         \Auth::user()->posts()->save($post);
-        
+
         Session::flash('flash_message', 'Post added!');
 
         return redirect('posts');
