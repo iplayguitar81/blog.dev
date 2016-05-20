@@ -34,10 +34,12 @@ class PostsController extends Controller
     public function index( )
     {
        
-        
+
 
        # $posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
+
+        $posts=dd(\App\User::paginate(5));
 
         return view('posts.index', compact('posts'));
 
