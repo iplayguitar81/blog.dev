@@ -31,13 +31,15 @@ class PostsController extends Controller
      *
      * @return void
      */
-    public function index( )
+    public function index( Auth $user, Post $post)
     {
        
 
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
+
+        $posts = $post->where("user_id", "=", $user->id)->get();
 
        #$posts=dd(\App\User::paginate(5));
 
