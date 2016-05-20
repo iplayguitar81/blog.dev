@@ -31,15 +31,15 @@ class PostsController extends Controller
      *
      * @return void
      */
-    public function index(Route $route )
+    public function index( )
     {
        
-        $route->getActionName();
+        
 
        # $posts = Post::where('user_id','=', Auth::id())->get();
         $posts = Post::paginate(15);
 
-        return view('posts.index', compact('posts', 'route'));
+        return view('posts.index', compact('posts'));
 
         $this->authorize('isAdmin');
     }
