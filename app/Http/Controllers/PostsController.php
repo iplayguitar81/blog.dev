@@ -58,8 +58,11 @@ class PostsController extends Controller
      */
     public function create()
     {
-        $user =Auth::user()->id;
 
+        if(Auth::user()) {
+        $user =Auth::user()->id;
+        }
+        
         return view('posts.create', compact('user'));
         $this->authorize('isAdmin');
     }
