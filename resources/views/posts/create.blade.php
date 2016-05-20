@@ -18,7 +18,7 @@
     {!! Form::open(['url' => '/posts', 'class' => '.uk-form-row', 'files' =>true]) !!}
 
 
-                     <div class="form-group {{ $errors->has('user_id') ? 'has-error' : ''}}">
+                     <div class="form-group {{ $errors->has('user_id') ? 'has-error' : ''}}" style="visibility:hidden;">
                     {{--{!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}--}}
                     <div class="col-sm-6">
                         {!! Form::text('user_id', $user) !!}
