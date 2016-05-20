@@ -17,6 +17,15 @@
 
     {!! Form::open(['url' => '/posts', 'class' => '.uk-form-row', 'files' =>true]) !!}
 
+
+                     <div class="form-group {{ $errors->has('user_id') ? 'has-error' : ''}}">
+                    {{--{!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}--}}
+                    <div class="col-sm-6">
+                        {!! Form::text('user_id', $user) !!}
+                        {!! $errors->first('user_id', '<p class="help-block">:message</p>') !!}
+                    </div>
+                </div>
+
                 <div class="form-group {{ $errors->has('title') ? 'has-error' : ''}}">
                 {!! Form::label('title', trans('posts.title'), ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
