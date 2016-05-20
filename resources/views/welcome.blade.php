@@ -64,7 +64,7 @@
         </h1>
 
         <p class="uk-article-meta">Written by Author on 12 April 2013. Posted in <a href="#">Blog</a></p>
-        <h2>Subheading</h2>
+        <h2>{{ $item->subHead}}</h2>
 
         <p>
             <a href="{{ url('posts', $item->id) }}"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></a>
