@@ -118,6 +118,10 @@
 
 </div>
 
+<div class="uk-width-medium-1-4">
+    @include('sidebar')
+</div>
+
 
 @endsection
 
