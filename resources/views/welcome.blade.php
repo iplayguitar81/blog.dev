@@ -69,6 +69,7 @@
             on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
+
         <p>
             <a href="{{ url('posts', $item->id) }}"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></a>
         </p>
