@@ -42,6 +42,7 @@
 
         </p>
         <p class="uk-article-lead"><img class="img-responsive" src="../images/{{ $post->imgPath}}"></p>
+        <br/>
         {{ $post->body }}
 
     </article>
