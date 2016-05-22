@@ -85,6 +85,8 @@
         <p>
             <a class="uk-button uk-button-primary" href="{{ url('posts', $item->id) }}">Continue Reading</a>
             <br/>
+            <br/>
+
             <a class="uk-button" href="#">Comments</a>
         </p>
 
