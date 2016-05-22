@@ -42,7 +42,7 @@ class PostsController extends Controller
         $posts = Post::paginate(15);
 
         #$posts=User::with(['posts'])->all();
-        $posts = Post::where('user_id','=', Auth::id())->get();
+      #  $posts = Post::where('user_id','=', Auth::id())->get();
 
        #$posts=dd(\App\User::paginate(5));
 
@@ -172,8 +172,6 @@ class PostsController extends Controller
     public function user_posts() {
 
         $posts = Post::where('user_id','=', Auth::id())->get();
-
-
 
        # return view('user_posts', compact('posts'));
         return \View::make('posts.user_posts', compact('posts'));
