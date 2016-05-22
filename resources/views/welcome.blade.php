@@ -70,6 +70,7 @@
 
             {{$users::find($item->user_id)->name}}
 
+
             on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
