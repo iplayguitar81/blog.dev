@@ -28,7 +28,22 @@
 
     <article class="uk-article">
         <h1 class="uk-article-title">{{ $post->title }}</h1>
-        <p class="uk-article-meta">...</p>
+        <p class="uk-article-meta">
+            Written by: <?
+            //below is one way to get the name of the author.....
+            ?>
+            <? $author = App\User::find($item->user_id)->name; ?>
+
+            {{$author}}
+
+            {{--@foreach($records as $record)--}}
+
+            {{--{{$record->name}}--}}
+            {{--@endforeach--}}
+
+            on {{ $item->created_at->format('M dS Y') }}
+
+        </p>
         <p class="uk-article-lead"><img class="uk-thumbnail uk-align-center" src="../images/{{ $post->imgPath}}"></p>
         {{ $post->body }}
         <hr class="uk-article-divider">
