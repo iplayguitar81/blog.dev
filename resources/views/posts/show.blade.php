@@ -19,7 +19,24 @@
         </table>
     </div>
 
+
+
+
     <br/>
+
+    <hr>
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">{{ $post->title }}</h1>
+        <p class="uk-article-meta">...</p>
+        <p class="uk-article-lead"><img class="uk-thumbnail uk-align-center" src="../images/{{ $post->imgPath}}"></p>
+        {{ $post->body }}
+        <hr class="uk-article-divider">
+        ...
+    </article>
+
+    <br/>
+
     <hr>
 
     <a href="{{url('posts')}}">
