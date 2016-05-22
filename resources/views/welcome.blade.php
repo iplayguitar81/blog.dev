@@ -71,7 +71,7 @@
 
 
             {{--{{$users::find($item->user_id)->name}}--}}
-            {{$book = App\User::find($item->user_id)}}
+            <?$book = App\User::find($item->user_id)?>
 
             {{$records[]=$book}}
 
