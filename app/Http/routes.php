@@ -16,7 +16,7 @@ use App\User;
 
 
 Route::get('/', function () {
-    $posts = Post::paginate(5);
+    $posts = Post::paginate(3);
     $users = User::all();
 
     return view('welcome', compact('posts', 'users'));
