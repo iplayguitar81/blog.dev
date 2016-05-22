@@ -175,7 +175,7 @@ class PostsController extends Controller
 
 
 
-        return view('posts.user_posts', compact('posts'));
+        return view('user_posts', compact('posts'));
     }
 
 
