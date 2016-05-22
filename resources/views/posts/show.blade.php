@@ -40,8 +40,7 @@
         </p>
         <p class="uk-article-lead"><img class="uk-thumbnail uk-align-center" src="../images/{{ $post->imgPath}}"></p>
         {{ $post->body }}
-        <hr class="uk-article-divider">
-        ...
+
     </article>
 
     <br/>
