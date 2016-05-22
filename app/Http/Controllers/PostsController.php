@@ -175,7 +175,8 @@ class PostsController extends Controller
 
 
 
-        return view('user_posts', compact('posts'));
+       # return view('user_posts', compact('posts'));
+        return \View::make('posts.user_posts', compact('posts'));
     }
 
 
