@@ -74,7 +74,7 @@
                 {{--{{$record->name}}--}}
                 {{--@endforeach--}}
 
-            on {{ $item->created_at}} {{ $item->created_at->format('M-d-Y') }}.</p>
+            on {{ $item->created_at}} {{ $item->created_at->format('M dS Y') }}.</p>
 
         <p>
             <a href="{{ url('posts', $item->id) }}"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></a>
