@@ -101,7 +101,7 @@
     </article>
     @endforeach
 
-        <div class="uk-pagination"> {!! $posts->render() !!} </div>
+        <div class="pagination"> {!! $posts->render() !!} </div>
 
     <ul class="uk-pagination">
         <li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>
