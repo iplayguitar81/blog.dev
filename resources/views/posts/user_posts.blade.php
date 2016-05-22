@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <span>Welcome {{$user_name}}! <br/> Below are all the posts you have made!</span><br/>
+   <p> <span>Welcome {{$user_name}}! <br/> Below are all the posts you have made!</span></p><br/>
     <br/>
         <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan</h1>
 
