@@ -67,6 +67,15 @@
 
                     </ul>
 
+                <div data-uk-dropdown="{mode:'click'}">
+
+                    <!-- This is the element toggling the dropdown -->
+                    <div>...</div>
+
+                    <!-- This is the dropdown -->
+                    <div class="uk-dropdown">...</div>
+
+                </div>
 
 
             @endif
