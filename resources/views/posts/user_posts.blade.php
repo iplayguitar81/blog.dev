@@ -8,7 +8,10 @@
             <table class="uk-table uk-table-hover uk-table-striped">
                 <thead>
                 <tr>
-                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subHead') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
+                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subHead') }}</th><th>{{ trans('posts.body') }}</th>
+                    {{--<th>Image</th>--}}
+
+                    @can('isAdmin')<th>Actions</th>@endcan
                 </tr>
                 </thead>
                 <tbody>
@@ -17,7 +20,10 @@
                     {{-- */$x++;/* --}}
                     <tr>
                         {{--<td>{{ $x }}</td>--}}
-                        <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{str_limit($item->body, 15)}}</td><td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
+                        <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{str_limit($item->body, 15)}}</td>
+
+                        {{--<td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>--}}
+
                         @can('isAdmin')
                             <td>
                                 <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
