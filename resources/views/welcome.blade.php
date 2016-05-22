@@ -62,7 +62,7 @@
         <h1 class="uk-article-title">
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
-
+        <h2>{{ $item->subHead}}</h2>
         {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
@@ -84,7 +84,7 @@
 
 
             on {{ $item->created_at}}.</p>
-        <h2>{{ $item->subHead}}</h2>
+
 
 
         <p>
