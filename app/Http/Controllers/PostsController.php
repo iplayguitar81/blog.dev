@@ -168,4 +168,15 @@ class PostsController extends Controller
 
         return redirect('posts');
     }
+
+    public function user_posts() {
+
+        $posts = Post::where('user_id','=', Auth::id())->get();
+
+
+
+        return view('posts.user_posts', compact('posts', 'user'));
+    }
+
+
 }
