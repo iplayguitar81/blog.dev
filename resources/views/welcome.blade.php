@@ -65,7 +65,7 @@
 
         {{$test_variable = $item->user_id}}
         <p class="uk-article-meta">Written by {{$item->user_id}}
-            {{ $item->id->user()->name }}
+            {{ $item->id->user->name }}
             on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
