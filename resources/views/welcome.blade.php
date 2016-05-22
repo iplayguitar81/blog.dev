@@ -71,13 +71,9 @@
             {{--{{$users::find($item->user_id)->name}}--}}
             {{$book = App\User::find($item->user_id)}}
 
-            {{$book}}
+            {{$book->item->name}}
 
-            @foreach($book as $author)
 
-                {{$author}}
-
-                @endforeach
 
 
 
