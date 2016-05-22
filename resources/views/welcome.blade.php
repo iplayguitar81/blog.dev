@@ -75,7 +75,7 @@
 
             @foreach($book as $author)
 
-                {{$author->name}}
+                {{$author}}
 
                 @endforeach
 
