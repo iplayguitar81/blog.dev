@@ -2840,7 +2840,7 @@ select.uk-form-width-mini {
     vertical-align: middle;
     line-height: 28px;
     min-height: 30px;
-    font-size: 1rem;
+    font-size: 1em;
     text-decoration: none;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, .2);
