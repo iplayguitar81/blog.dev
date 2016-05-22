@@ -70,9 +70,11 @@
             <?
             //below is one way to get the name of the author.....
             ?>
-            <? $book = App\User::find($item->user_id); ?>
+            <? $book = App\User::find($item->user_id)->name; ?>
 
-            @foreach($book as $record)
+            {{$book . "test this out here... meow"}}
+
+            @foreach($records as $record)
 
                 {{$record->name}}
                 @endforeach
