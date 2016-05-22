@@ -20,7 +20,7 @@
     {{--</div>--}}
 
 
-    <div class="uk-width-medium-4-4">
+    <div class=".uk-width-2-3">
 
 
     <article class="uk-article">
