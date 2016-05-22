@@ -49,7 +49,7 @@
                 {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
             @else
 
-
+                <div class="uk-dropdown">
 
                     <ul href="#" class="uk-nav uk-nav-dropdow" role="button" aria-expanded="false">
 
@@ -67,7 +67,7 @@
 
                     </ul>
 
-
+                </div>
 
             @endif
         </ul>
