@@ -23,7 +23,7 @@
     <article class="uk-article">
         <h1 class="uk-article-title">{{ $post->title }}</h1>
         <p class="uk-article-meta">
-            Written by: <?
+            Written by <?
             //below is one way to get the name of the author.....
             ?>
             <? $author = App\User::find($post->user_id)->name; ?>
@@ -45,7 +45,7 @@
 
     <br/>
 
-    <hr>
+
 
     <a href="{{url('posts')}}">
 
