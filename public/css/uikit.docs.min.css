@@ -2835,7 +2835,6 @@ ul.pagination li {display: inline;}
 
 ul.pagination li a {
     color: black;
-    float: left;
     padding: 8px 16px;
     text-decoration: none;
 }
