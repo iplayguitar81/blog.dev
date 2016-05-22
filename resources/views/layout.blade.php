@@ -48,21 +48,26 @@
                 <li><a href="{{ url('/login') }}">Login</a></li>
                 {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
             @else
-                <li class="dropdown">
 
 
-                    <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">
+
+                    <ul href="#" class="uk-nav uk-nav-dropdow" role="button" aria-expanded="false">
 
                         {{Auth::user()->name}} <span class="caret"></span>
-                        </a>
+                        </ul>
 
-                    <ul class="uk-nav uk-nav-dropdown" role="menu">
-                        <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>
+
+                <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+
+
+                    <ul class="n" role="menu">
+
 
 
                     </ul>
 
-                </li>
+
 
             @endif
         </ul>
