@@ -82,13 +82,10 @@
 
       <p>  {{$item->body}}</p>
         <br/>
-        <p>
             <a class="uk-button uk-button-primary" href="{{ url('posts', $item->id) }}">Continue Reading</a>
 
-
-
             <a style="margin-top:.2em;" class="uk-button" href="#">Comments</a>
-        </p>
+
 
     </article>
     @endforeach
