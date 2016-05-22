@@ -29,7 +29,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/posts/user_posts', 'PostsController@user_posts');
+#Route::get('/posts/user_posts', 'PostsController@user_posts');
 
 //Route::get('social/login/redirect/{provider}', ['uses' => 'Auth\AuthController@redirectToProvider', 'as' => 'social.login']);
 //Route::get('social/login/{provider}', 'Auth\AuthController@handleProviderCallback');
