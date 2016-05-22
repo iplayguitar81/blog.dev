@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="{{ 'favicon.ico' }}">
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="/css/uikit.docs.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 
 <body>
