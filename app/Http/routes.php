@@ -17,7 +17,7 @@ Route::get('/', function () {
     $posts = Post::paginate(15);
     return view('welcome', compact('posts'));
 });
-
+Route::get('/posts/user_posts','PostsController@user_posts');
 Route::group(['middleware' => ['web']], function () {
 	Route::resource('posts', 'PostsController');
 
@@ -28,6 +28,9 @@ Route::group(['middleware' => ['web']], function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+#Route::resource('users','UsersController');
 
 #Route::get('/posts/user_posts', 'PostsController@user_posts');
 
