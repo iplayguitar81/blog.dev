@@ -44,7 +44,7 @@
         <p class="uk-article-lead"><img class="img-responsive" src="../images/{{ $post->imgPath}}"></p>
         <br/>
         {{ $post->body }}
-        {{ str_limit($post->body, $limit = 30, $end = '...') }}
+
 
     </article>
 
