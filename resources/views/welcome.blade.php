@@ -65,7 +65,7 @@
 
         {{$test_variable =User::find($item->user_id) }}
         <p class="uk-article-meta">Written by {{$item->user_id}}
-       {{$test_variable->name}}
+
             on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
