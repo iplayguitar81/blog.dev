@@ -2,9 +2,7 @@
 @section('content')
     <div class="container">
         <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan</h1>
-
-
-
+<span>Welcome {{$user_name}}!  Add another post here or view/update previous posts!</span>
 
         <div class="table">
             <table class="uk-table uk-table-hover uk-table-striped">
