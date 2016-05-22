@@ -45,26 +45,26 @@
         {{--<div class="pagination"> {!! $posts->render() !!} </div>--}}
     </div>
 
-@foreach($posts as $item)
+{{--@foreach($posts as $item)--}}
 
-        <article class="uk-article">
+        {{--<article class="uk-article">--}}
 
-            <h1 class="uk-article-title"><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></h1>
-            <p class="uk-article-lead">{{$item->subHead}}</p>
-            <p class="uk-article-meta">{{ $item->created_at }}</p>
+            {{--<h1 class="uk-article-title"><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></h1>--}}
+            {{--<p class="uk-article-lead">{{$item->subHead}}</p>--}}
+            {{--<p class="uk-article-meta">{{ $item->created_at }}</p>--}}
 
-            <div class="uk-grid">
-                <div class="uk-width-medium-1-2 uk-push-1-2"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></div>
-                <div class="uk-width-medium-1-2 uk-pull-1-2">{{$item->body}}</div>
-            </div>
-
-
+            {{--<div class="uk-grid">--}}
+                {{--<div class="uk-width-medium-1-2 uk-push-1-2"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></div>--}}
+                {{--<div class="uk-width-medium-1-2 uk-pull-1-2">{{$item->body}}</div>--}}
+            {{--</div>--}}
 
 
 
-        </article>
-        <hr class="uk-article-divider">
-    @endforeach
+
+
+        {{--</article>--}}
+        {{--<hr class="uk-article-divider">--}}
+    {{--@endforeach--}}
    {{--<p>{{ print_r($route) }}</p> heres where i need to figure out how to
    display the route name better.....
    --}}
