@@ -93,6 +93,9 @@
     </article>
     @endforeach
 
+    <hr>
+<br/>
+        <br/>
         <div class="pagination"> {!! $posts->render() !!} </div>
 
 
