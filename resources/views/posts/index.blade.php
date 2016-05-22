@@ -43,7 +43,7 @@
         <article class="uk-article">
 
             <h1 class="uk-article-title"><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></h1>
-            <p class="uk-article-lead">HERE IS SUBTITLE</p>
+            <p class="uk-article-lead">{{$item->subHead}}</p>
             <p class="uk-article-meta">{{ $item->created_at }}</p>
 
             <div class="uk-grid">
