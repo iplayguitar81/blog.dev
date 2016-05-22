@@ -50,6 +50,7 @@
             @else
                 <li class="dropdown">
 
+
                     <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">
 
                         {{Auth::user()->name}} <span class="caret"></span>
