@@ -24,7 +24,7 @@
 
 
 
-                    </td><td><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></td>
+                    </td><td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
                     @can('isAdmin')
                     <td>
                         <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
