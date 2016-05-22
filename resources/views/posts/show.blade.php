@@ -32,7 +32,7 @@
             Written by: <?
             //below is one way to get the name of the author.....
             ?>
-            <? $author = App\User::find($item->user_id)->name; ?>
+            <? $author = App\User::find($post->user_id)->name; ?>
 
             {{$author}}
 
