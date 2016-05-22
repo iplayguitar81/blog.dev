@@ -67,7 +67,7 @@
 
                     {{--</ul>--}}
 
-                <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
+                <div class="uk-button-dropdown uk-align-right" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
                     <button class="uk-button">{{Auth::user()->name}}<i class="uk-icon-caret-down"></i></button>
                     <div class="uk-dropdown uk-dropdown-bottom" style="top: 30px; left: 0px;">
                         <ul class="uk-nav uk-nav-dropdown">
