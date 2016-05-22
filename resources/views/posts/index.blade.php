@@ -1,7 +1,8 @@
 @extends('layout')
 @section('content')
 <div class="container">
-    <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan</h1>
+    <h1>Posts </h1>
+    @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan
 
 
     <div class="table">
