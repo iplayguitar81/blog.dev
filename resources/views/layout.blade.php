@@ -67,14 +67,19 @@
 
                     </ul>
 
-                <div data-uk-dropdown="{mode:'click'}">
-
-                    <!-- This is the element toggling the dropdown -->
-                    <div>This doesn't work wtf</div>
-
-                    <!-- This is the dropdown -->
-                    <div class="uk-dropdown">...</div>
-
+                <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
+                    <button class="uk-button">Click me <i class="uk-icon-caret-down"></i></button>
+                    <div class="uk-dropdown uk-dropdown-bottom" style="top: 30px; left: 0px;">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Another item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Another item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Separated item</a></li>
+                        </ul>
+                    </div>
                 </div>
 
 
