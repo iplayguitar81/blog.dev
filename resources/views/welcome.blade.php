@@ -80,7 +80,7 @@
             <a href="{{ url('posts', $item->id) }}"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></a>
         </p>
 
-      <p>  {{$item->body->truncate()}}</p>
+      <p>  {{$item->body}}</p>
         <br/>
             <a class="uk-button uk-button-primary" href="{{ url('posts', $item->id) }}">Continue Reading</a>
 
