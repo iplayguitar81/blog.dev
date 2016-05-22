@@ -69,6 +69,10 @@
         <p class="uk-article-meta">Written by {{$item->user_id}}
 
             {{$users::find($item->user_id)->name}}
+            {{$book = App\User::find($item->user_id)}}
+
+            {{$book}}
+
 
 
             on {{ $item->created_at}}.</p>
