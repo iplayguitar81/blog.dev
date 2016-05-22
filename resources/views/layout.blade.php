@@ -51,21 +51,21 @@
 
 
 
-                    <ul href="#" class="uk-nav uk-nav-dropdow" role="button" aria-expanded="false">
+                    {{--<ul href="#" class="uk-nav uk-nav-dropdow" role="button" aria-expanded="false">--}}
 
-                        {{Auth::user()->name}} <span class="caret"></span>
-                        </ul>
+                        {{--{{Auth::user()->name}} <span class="caret"></span>--}}
+                        {{--</ul>--}}
 
-                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>
+                {{--<li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>--}}
 
-                <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-
-
-                    <ul class="n" role="menu">
+                {{--<li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>--}}
 
 
+                    {{--<ul class="n" role="menu">--}}
 
-                    </ul>
+
+
+                    {{--</ul>--}}
 
                 <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
                     <button class="uk-button">{{Auth::user()->name}}<i class="uk-icon-caret-down"></i></button>
