@@ -68,16 +68,13 @@
                     </ul>
 
                 <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
-                    <button class="uk-button">Click me <i class="uk-icon-caret-down"></i></button>
+                    <button class="uk-button">{{Auth::user()->name}}<i class="uk-icon-caret-down"></i></button>
                     <div class="uk-dropdown uk-dropdown-bottom" style="top: 30px; left: 0px;">
                         <ul class="uk-nav uk-nav-dropdown">
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Another item</a></li>
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Another item</a></li>
+                            <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>
                             <li class="uk-nav-divider"></li>
-                            <li><a href="#">Separated item</a></li>
+                            <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+
                         </ul>
                     </div>
                 </div>
