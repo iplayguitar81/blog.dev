@@ -36,6 +36,8 @@
         </div>
     </div>
 <br/>
+<br/>
+
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => 'col-sm-3 control-label']) !!}
                 <div class="col-sm-6">
@@ -44,6 +46,8 @@
                 </div>
             </div>
 <br/>
+<br/>
+
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-3">
             <input type="file" name="file" id="file" onchange="readURL(this);"/>
