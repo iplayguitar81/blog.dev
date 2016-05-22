@@ -41,7 +41,7 @@
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
 
-            on {{ $item->created_at->format('M dS Y') }}
+            on {{ $post->created_at->format('M dS Y') }}
 
         </p>
         <p class="uk-article-lead"><img class="uk-thumbnail uk-align-center" src="../images/{{ $post->imgPath}}"></p>
