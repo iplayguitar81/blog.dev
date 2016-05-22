@@ -68,6 +68,8 @@
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
         <p class="uk-article-meta">Written by {{$item->user_id}}
 
+            {{User::find($item->user_id)}}
+
             on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
