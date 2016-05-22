@@ -17,7 +17,7 @@
                     {{-- */$x++;/* --}}
                     <tr>
                         {{--<td>{{ $x }}</td>--}}
-                        <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->body }}</td><td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
+                        <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{str_limit($item->body, 15)}}</td><td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
                         @can('isAdmin')
                             <td>
                                 <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
