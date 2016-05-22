@@ -20,7 +20,7 @@
     {{--</div>--}}
 
 
-    <div class="uk-grid-width-large-1-1">
+    <div class="uk-width-medium-3-4">
 
 
     <article class="uk-article">
