@@ -63,7 +63,7 @@
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
 
-        {{$posts-> $item->user }}
+        {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
         <p class="uk-article-meta">Written by {{$item->user_id}}
