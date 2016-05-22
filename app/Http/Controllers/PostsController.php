@@ -171,10 +171,12 @@ class PostsController extends Controller
 
     public function user_posts() {
 
+
+        $user_name = Auth::user()->name;
         $posts = Post::where('user_id','=', Auth::id())->get();
 
        # return view('user_posts', compact('posts'));
-        return \View::make('posts.user_posts', compact('posts'));
+        return \View::make('posts.user_posts', compact('posts', 'user_name'));
     }
 
 
