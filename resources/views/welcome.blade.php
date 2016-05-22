@@ -63,7 +63,11 @@
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
 
-        <p class="uk-article-meta">Written by {{$item->user_id}} on {{ $item->created_at}}.</p>
+        <p class="uk-article-meta">Written by {{$item->user_id}}
+            @foreach($item->user_id as $user)
+                {{ $user->name }}
+            @endforeach
+            on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
         <p>
