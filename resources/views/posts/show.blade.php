@@ -20,10 +20,6 @@
     {{--</div>--}}
 
 
-    <br/>
-
-    <hr>
-
     <article class="uk-article">
         <h1 class="uk-article-title">{{ $post->title }}</h1>
         <p class="uk-article-meta">
