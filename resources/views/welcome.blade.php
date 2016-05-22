@@ -63,8 +63,9 @@
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
 
+        {{$test_variable = $item->user_id}}
         <p class="uk-article-meta">Written by {{$item->user_id}}
-            @foreach($item->user_id as $user)
+            @foreach($test_variable as $user)
                 {{ $user->name }}
             @endforeach
             on {{ $item->created_at}}.</p>
