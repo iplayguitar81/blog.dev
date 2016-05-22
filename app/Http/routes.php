@@ -11,11 +11,15 @@
 |
 */
 use App\Post;
+use App\User;
+
 
 
 Route::get('/', function () {
     $posts = Post::paginate(15);
-    return view('welcome', compact('posts'));
+    $users = User::all();
+
+    return view('welcome', compact('posts', 'users'));
 });
 Route::get('/posts/user_posts','PostsController@user_posts');
 Route::group(['middleware' => ['web']], function () {
