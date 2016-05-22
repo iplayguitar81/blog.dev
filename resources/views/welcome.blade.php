@@ -73,6 +73,12 @@
 
             {{$book}}
 
+            @foreach($book as $author)
+
+                {{$author->name}}
+
+                @endforeach
+
 
 
             on {{ $item->created_at}}.</p>
