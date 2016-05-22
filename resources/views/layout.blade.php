@@ -70,7 +70,7 @@
                 <div data-uk-dropdown="{mode:'click'}">
 
                     <!-- This is the element toggling the dropdown -->
-                    <div>...</div>
+                    <div>This doesn't work wtf</div>
 
                     <!-- This is the dropdown -->
                     <div class="uk-dropdown">...</div>
