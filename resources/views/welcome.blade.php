@@ -63,9 +63,9 @@
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
 
-        {{$test_variable = $item->user_id}}
+        {{$test_variable =User::find($item->user_id) }}
         <p class="uk-article-meta">Written by {{$item->user_id}}
-            {{ Auth::user()->name->where('id' ==$item->user_id) }}
+       {{$test_variable->name}}
             on {{ $item->created_at}}.</p>
         <h2>{{ $item->subHead}}</h2>
 
