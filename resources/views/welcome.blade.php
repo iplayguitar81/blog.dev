@@ -80,8 +80,8 @@
             <a href="{{ url('posts', $item->id) }}"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></a>
         </p>
 
-        {{$item->body}}
-
+      <p>  {{$item->body}}</p>
+        <br/>
         <p>
             <a class="uk-button uk-button-primary" href="{{ url('posts', $item->id) }}">Continue Reading</a>
             <a class="uk-button" href="#">Comments</a>
