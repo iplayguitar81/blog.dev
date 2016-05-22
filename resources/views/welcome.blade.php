@@ -66,15 +66,12 @@
         {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
-        <p class="uk-article-meta">Written by {{$item->user_id}}
-
-
-
-            {{--{{$users::find($item->user_id)->name}}--}}
+        <p class="uk-article-meta">Written by
+            <?
+            //below is one way to get the name of the author.....
+            ?>
             <? $book = App\User::find($item->user_id); ?>
-
             <? $records[]=$book; ?>
-
             @foreach($records as $record)
 
                 {{$record->name}}
