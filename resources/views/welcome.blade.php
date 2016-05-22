@@ -43,14 +43,9 @@
         {{--</div>--}}
 
 
-
-
-
     {{--</article>--}}
     {{--<hr class="uk-article-divider">--}}
 {{--@endforeach--}}
-
-
 
 
 <div class="uk-width-medium-3-4 uk-row-first">
@@ -79,13 +74,7 @@
                 {{--{{$record->name}}--}}
                 {{--@endforeach--}}
 
-
-
-
-
             on {{ $item->created_at}}.</p>
-
-
 
         <p>
             <a href="{{ url('posts', $item->id) }}"><img class="uk-responsive-width" src="../images/{{ $item->imgPath}}"></a>
