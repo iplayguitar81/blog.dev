@@ -63,7 +63,7 @@
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
 
-        {{$test_variable =$user::find($item->user_id) }}
+        {{$test_variable =$users::find($item->user_id) }}
         <p class="uk-article-meta">Written by {{$item->user_id}}
 
             on {{ $item->created_at}}.</p>
