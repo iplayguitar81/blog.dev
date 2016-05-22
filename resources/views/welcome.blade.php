@@ -68,7 +68,7 @@
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
         <p class="uk-article-meta">Written by {{$item->user_id}}
 
-            {{$users::find($item->user_id)->name}}
+            {{--{{$users::find($item->user_id)->name}}--}}
             {{$book = App\User::find($item->user_id)}}
 
             {{$book}}
