@@ -74,10 +74,10 @@
 
             {{$book . "test this out here... meow"}}
 
-            @foreach($records as $record)
+            {{--@foreach($records as $record)--}}
 
-                {{$record->name}}
-                @endforeach
+                {{--{{$record->name}}--}}
+                {{--@endforeach--}}
 
 
 
