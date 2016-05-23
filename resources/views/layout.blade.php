@@ -115,20 +115,41 @@
                 <li><a href="{{ url('/login') }}">Login</a></li>
                 {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
             @else
-                <li class="dropdown">
-
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-
-                        {{Auth::user()->name}} <span class="caret"></span>
-                    </a>
-
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
 
-                    </ul>
 
-                </li>
+                {{--<ul href="#" class="uk-nav uk-nav-dropdow" role="button" aria-expanded="false">--}}
+
+                {{--{{Auth::user()->name}} <span class="caret"></span>--}}
+                {{--</ul>--}}
+
+                {{--<li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>--}}
+
+                {{--<li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>--}}
+
+
+                {{--<ul class="n" role="menu">--}}
+
+
+
+                {{--</ul>--}}
+
+                <div class="uk-button-dropdown uk-align-right" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
+                    <button class="uk-button">{{Auth::user()->name}}&nbsp;&nbsp;<i class="uk-icon-caret-down"></i></button>
+                    <div class="uk-dropdown uk-dropdown-bottom" style="top: 30px; left: 0px;">
+                        <ul class="uk-nav uk-nav-dropdown">
+                            <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            @endif
+
+
 
             @endif
         </ul>
