@@ -106,7 +106,7 @@
                 <a href="#">Portfolio</a>
             </li>
             <li class="uk-active">
-                <a href="#">Blog</a>
+                <a href="{{url('/posts')}}">Blog</a>
             </li>
             <li>
                 <a href="#">Contact</a>
