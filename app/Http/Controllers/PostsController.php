@@ -174,6 +174,8 @@ class PostsController extends Controller
         $user_name = Auth::user()->name;
         $posts = Post::where('user_id','=', Auth::id())->get();
 
+        $posts = $posts::orderBy('id', 'DESC')->get();
+
        # return view('user_posts', compact('posts'));
         return \View::make('posts.user_posts', compact('posts', 'user_name'));
     }
