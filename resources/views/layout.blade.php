@@ -9,8 +9,17 @@
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="/css/uikit.docs.min.css">
 
+
+
+
 </head>
 
+<style>
+    @font-face {
+        font-family: Creampuff;
+        src: url('{{ public_path('fonts/creampuffy.tff') }}');
+    }
+</style>
 <body>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
