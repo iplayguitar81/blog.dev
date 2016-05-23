@@ -21,6 +21,14 @@ Route::get('/', function () {
 
     return view('welcome', compact('posts', 'users'));
 });
+
+Route::get('/contact', function () {
+
+
+    return view('contact');
+});
+
+
 Route::get('/posts/user_posts','PostsController@user_posts');
 
 Route::group(['middleware' => ['web']], function () {
