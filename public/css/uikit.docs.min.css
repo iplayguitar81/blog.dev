@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Creampuff';
-    src: url('fonts/creampuffy.ttf') format('truetype');
-}
+@font-face{font-family:'Creampuff';src:url("creampuffy.ttf")}
 
 html {
     font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
