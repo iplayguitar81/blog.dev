@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-@section('title', 'Posts')
+@section('title', 'Blog')
 
     <h1>Posts </h1>
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan
