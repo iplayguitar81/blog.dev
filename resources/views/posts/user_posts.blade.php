@@ -23,7 +23,7 @@
                         <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{str_limit($item->body, 15)}}</td>
 
                         <td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
-                        <td>{{ $item->created_at}}</td>
+                        <td>{{ $item->created_at->format('m-d-Y') }}</td>
 
                         @can('isAdmin')
                             <td>
