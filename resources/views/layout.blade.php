@@ -16,7 +16,7 @@
 <style>
     @font-face {
         font-family: Creampuff;
-        src: url('{{ public_path('fonts/creampuffy.tff') }}');
+        src: url('{{ asset('fonts/creampuffy.tff') }}');
     }
 </style>
 <body>
