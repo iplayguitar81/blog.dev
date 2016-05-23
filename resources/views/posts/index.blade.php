@@ -9,7 +9,7 @@
         <table class="uk-table uk-table-hover uk-table-striped">
             <thead>
                 <tr>
-                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subHead') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
+                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subhead') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
                 </tr>
             </thead>
             <tbody>
