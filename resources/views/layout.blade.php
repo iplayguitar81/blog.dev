@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="/css/uikit.docs.min.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
-
-
 </head>
 
 
@@ -46,7 +44,7 @@
                 <a href="{{url('/posts')}}">Blog</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </li>
             @if (Auth::guest())
                 <li><a href="{{ url('/login') }}">Login</a></li>
@@ -113,7 +111,7 @@
                 <a href="{{url('/posts')}}">Blog</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </li>
             @if (Auth::guest())
                 <li><a href="{{ url('/login') }}">Login</a></li>
