@@ -85,7 +85,7 @@
                   'class'=>'form-control',
                   'placeholder'=>'Your name')) !!}
     </div>
-
+<br/>
     <div class="form-group">
         {!! Form::label('Your E-mail Address') !!}
         {!! Form::text('email', null,
