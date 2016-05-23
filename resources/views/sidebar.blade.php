@@ -56,7 +56,7 @@
 
             <li class="uk-nav-header">Header</li>
             <li class="uk-parent"><a href="#"><i class="uk-icon-star"></i> Parent</a></li>
-            <li><a href="#"><i class="uk-icon-twitter"></i> Item</a></li>
+            <li><a href="#"><i class="uk-icon-facebook-official"></i> Item</a></li>
             <li class="uk-nav-divider"></li>
             <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
         </ul>
