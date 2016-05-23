@@ -1,5 +1,5 @@
 <style>
-    <?php $url = asset('/fonts/creampuffy.ttf') ?>
+    <?php $url = asset('fonts/creampuffy.ttf') ?>
     @font-face {
         font-family: Creampuff;
         src: {{$url}};
