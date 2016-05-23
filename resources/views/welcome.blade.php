@@ -58,7 +58,7 @@
 
 
         <h1 class="uk-article-title">
-            <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
+            <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
         <p class="subheader-main">{{ $item->subHead}}</p>
         {{--{{$posts-> $item->user }}--}}
@@ -85,7 +85,7 @@
 
       <p>  {{str_limit($item->body, 100)}}...</p>
         <br/>
-            <a class="uk-button uk-button-danger" href="{{ url('posts', $item->id) }}">Continue Reading</a>
+            <a class="uk-button uk-button-danger" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
             <a style="margin-top:.2em;" class="uk-button" href="#">Comments</a>
         <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Test Link</a>
