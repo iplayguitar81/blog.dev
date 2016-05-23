@@ -25,7 +25,7 @@
 
     <article class="uk-article">
         <h1 class="uk-article-title">{{ $post->title }}</h1>
-        <p class="subheader-main">{{ $item->subHead}}</p>
+        <p class="subheader-main">{{ $post->subHead}}</p>
         <p class="uk-article-meta">
             Written by <?
             //below is one way to get the name of the author.....
