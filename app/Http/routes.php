@@ -16,7 +16,7 @@ use App\User;
 
 
 Route::get('/', function () {
-    $posts = Post::paginate(3);
+    $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
 
     return view('welcome', compact('posts', 'users'));
