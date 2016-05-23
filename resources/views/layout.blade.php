@@ -138,7 +138,7 @@
 
                 {{--</ul>--}}
 
-                <div class="uk-button-dropdown uk-align-left" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
+                <div class="uk-button-dropdown uk-align-left" data-uk-dropdown="{mode:'click', boundary:'#offcanvas'}" aria-haspopup="true" aria-expanded="false">
                     <button class="uk-button">{{Auth::user()->name}}&nbsp;&nbsp;<i class="uk-icon-caret-down"></i></button>
                     <div class="uk-dropdown uk-dropdown-bottom" style="top: 30px; left: 0px;">
                         <ul class="uk-nav uk-nav-dropdown">
@@ -156,29 +156,9 @@
     </div>
 </div>
 
-
-
-
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/uikit.min.js')}}"></script>
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
-
-
-
 @include('footer')
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
