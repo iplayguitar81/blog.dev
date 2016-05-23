@@ -64,7 +64,7 @@ to Bowtie<br/>Software &amp; Web Development!
 
             <li><a href="#">Item</a></li>
 
-            <li class="uk-nav-header">Header</li>
+            <li class="uk-nav-header">Social Links</li>
             <li class="uk-parent"><a href="#"><i class="uk-icon-star"></i> Parent</a></li>
             <li><a href="#"><i class="uk-icon-facebook-official"></i> Item</a></li>
             <li class="uk-nav-divider"></li>
