@@ -1,4 +1,4 @@
-@import url(http://resume.bowtiesoft.com/creampuffy.ttf)
+
 
 html {
     font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1316,7 +1316,7 @@ iframe {
     font-size: 36px;
     line-height: 42px;
     font-weight: 300;
-    font-family: 'Creampuff' !important;
+    font-family: 'Pacifico', cursive;
     text-transform: none;
 }
 
