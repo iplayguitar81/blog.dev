@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bowtie Software &amp; Web Development | @yield('title') </title>
-    <link rel="shortcut icon" href="{{ '/images/favicon.ico' }}">
+    <link rel="shortcut icon" href="{{ 'images/favicon.ico' }}">
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="/css/uikit.docs.min.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
