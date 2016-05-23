@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title', 'Welcome '.$user_name. ' Here Are Your Blog Posts!')
 @section('content')
 
         <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan</h1>
