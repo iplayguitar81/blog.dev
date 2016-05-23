@@ -5,7 +5,7 @@
 
 @section('content')
 
-    <h2>Contact Us Today!</h2>
+    <h2 class="uk-article-title">Contact Us Today!</h2>
     {{--<form class="uk-form uk-form-horizontal">--}}
 
         {{--<div class="uk-form-row">--}}
