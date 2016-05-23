@@ -43,7 +43,7 @@
                 @endforeach
                 </tbody>
             </table>
-            {{--<div class="pagination"> {!! $posts->render() !!} </div>--}}
+            <div class="pagination"> {!! $posts->render() !!} </div>
         </div>
 
         {{--@foreach($posts as $item)--}}
