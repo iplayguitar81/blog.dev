@@ -2862,6 +2862,9 @@ ul.pagination li a.active {
     background-color: silver;
     color: white;
 }
+ul.pagination li.active{
+background-color: silver;
+}
 
 ul.pagination li a:hover:not(.active) {background-color: #888a85;}
 
