@@ -88,6 +88,7 @@
             <a class="uk-button uk-button-danger" href="{{ url('posts', $item->id) }}">Continue Reading</a>
 
             <a style="margin-top:.2em;" class="uk-button" href="#">Comments</a>
+        <a href="{{ route('posts.show', [$item->id, urlencode($item->title)]) }}">Test Link</a>
 
 
     </article>
