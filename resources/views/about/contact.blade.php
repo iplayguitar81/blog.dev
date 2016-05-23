@@ -78,7 +78,7 @@
 
     {!! Form::open(array('route' => 'contact_store', 'class' => 'uk-form uk-form-horizontal')) !!}
 
-    <div class="form-group">
+    <div class="form-group uk-form-row">
         {!! Form::label('Your Name') !!}
         {!! Form::text('name', null,
             array('required',
@@ -86,7 +86,7 @@
                   'placeholder'=>'Your name')) !!}
     </div>
 <br/>
-    <div class="form-group">
+    <div class="form-group uk-form-row">
         {!! Form::label('Your E-mail Address') !!}
         {!! Form::text('email', null,
             array('required',
@@ -94,7 +94,7 @@
                   'placeholder'=>'Your e-mail address')) !!}
     </div>
 <br/>
-    <div class="form-group">
+    <div class="form-group uk-form-row">
         {!! Form::label('Your Message') !!}<br/>
         {!! Form::textarea('message', null,
             array('required',
@@ -102,7 +102,7 @@
                   'placeholder'=>'Your message')) !!}
     </div>
 <br/>
-    <div class="form-group">
+    <div class="form-group uk-form-row">
         {!! Form::submit('Contact Us!',
           array('class'=>'btn btn-primary')) !!}
     </div>
