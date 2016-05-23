@@ -57,7 +57,7 @@
 
 
         <h1 class="uk-article-title">
-            <a style="font-family: 'Creampuff' !important;" href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
+            <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
         <h2>{{ $item->subHead}}</h2>
         {{--{{$posts-> $item->user }}--}}
