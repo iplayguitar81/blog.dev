@@ -2863,7 +2863,8 @@ ul.pagination li a.active {
     color: white;
 }
 ul.pagination li.active{
-background-color: silver;
+background-color: black;
+    color: whitesmoke;
 }
 
 ul.pagination li a:hover:not(.active) {background-color: #888a85;}
