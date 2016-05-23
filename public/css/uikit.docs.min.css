@@ -1325,7 +1325,7 @@ iframe {
 .uk-article-title a {
     color: inherit;
     text-decoration: none;
-    font-family: Creampuff;
+    font-family: Creampuff !important;
 }
 
 .uk-article-meta {
