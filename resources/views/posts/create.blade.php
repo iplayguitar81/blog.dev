@@ -1,5 +1,5 @@
 @extends('layout')
-
+@section('title', 'Create New Post')
 @section('content')
 <div class="container">
 
