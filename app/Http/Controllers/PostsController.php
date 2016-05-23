@@ -172,7 +172,7 @@ class PostsController extends Controller
     public function user_posts() {
 
         $user_name = Auth::user()->name;
-        $posts = Post::where('user_id','=', Auth::id())->orderBy('created_at', 'desc')->get();
+        $posts = Post::where('user_id','=', Auth::id())->orderBy('created_at', 'desc')->get()->paginate(3);
 
 
 
