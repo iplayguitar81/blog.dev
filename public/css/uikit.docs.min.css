@@ -1336,6 +1336,10 @@ iframe {
     text-shadow: silver 2px 1px 2px;
 
 }
+.uk-article-title a:hover {
+    color: #000000;
+}
+
 
 .uk-article-meta {
     font-size: 12px;
