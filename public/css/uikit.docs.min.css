@@ -2844,10 +2844,11 @@ ul.pagination {
     display: inline-block;
     padding: 0;
     margin: 0;
+    font-size: 3em;
 }
 
 ul.pagination li {display: inline;
-                  margin-left: 1em;}
+                  margin-left: 1em;  }
 
 ul.pagination li a {
     color: black;
