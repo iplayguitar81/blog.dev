@@ -13,12 +13,7 @@
 
 </head>
 
-<style>
-    @font-face {
-        font-family: Creampuff;
-        src: url('{{ asset('fonts/creampuffy.tff') }}');
-    }
-</style>
+
 <body>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
