@@ -22,11 +22,17 @@ Route::get('/', function () {
     return view('welcome', compact('posts', 'users'));
 });
 
-Route::get('/contact', function () {
+//Route::get('/contact', function () {
+//
+//
+//    return view('contact');
+//});
 
+Route::get('contact',
+    ['as' => 'contact', 'uses' => 'AboutController@create']);
+Route::post('contact',
+    ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
-    return view('contact');
-});
 
 
 Route::get('/posts/user_posts','PostsController@user_posts');
