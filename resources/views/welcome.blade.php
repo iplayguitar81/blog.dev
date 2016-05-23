@@ -59,7 +59,7 @@
         <h1 class="uk-article-title">
             <a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a>
         </h1>
-        <p>{{ $item->subHead}}</p>
+        <p class="subheader-main">{{ $item->subHead}}</p>
         {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
