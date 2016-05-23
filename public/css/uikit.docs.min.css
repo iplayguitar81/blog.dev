@@ -2867,7 +2867,7 @@ ul.pagination li a.active {
     color: white;
 }
 ul.pagination li.active{
-background-color: black;
+background-color: color: #E63C4D;
     color: whitesmoke;
     padding: 8px 16px;
 }
