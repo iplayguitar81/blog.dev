@@ -95,7 +95,7 @@
     </div>
 <br/>
     <div class="form-group">
-        {!! Form::label('Your Message') !!}
+        {!! Form::label('Your Message') !!}<br/>
         {!! Form::textarea('message', null,
             array('required',
                   'class'=>'form-control',
