@@ -31,7 +31,7 @@ Route::group(['middleware' => ['web']], function () {
 
 });
 
-Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'ArticlesController@show']);
+Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
 Route::resource('posts', 'PostsController');
 
 Route::auth();
