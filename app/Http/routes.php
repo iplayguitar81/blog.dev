@@ -22,6 +22,7 @@ Route::get('/', function () {
     return view('welcome', compact('posts', 'users'));
 });
 Route::get('/posts/user_posts','PostsController@user_posts');
+
 Route::group(['middleware' => ['web']], function () {
 	Route::resource('posts', 'PostsController');
 
@@ -29,6 +30,10 @@ Route::group(['middleware' => ['web']], function () {
 
 
 });
+
+Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'ArticlesController@show']);
+Route::resource('posts', 'PostsController');
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
