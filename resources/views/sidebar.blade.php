@@ -26,7 +26,16 @@
 
     <div class="uk-panel uk-panel-box">
 
-        <h3 class="uk-panel-title">Welcome  {{Auth::user()->name}}</h3>
+        <h3 class="uk-panel-title">Welcome
+
+            @if(Auth::user()) {
+
+            {{Auth::user()->name}}
+            }
+                @else{}
+                @endif
+
+            </h3>
 
         <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="">
             <li class="uk-active"><a href="#">Active</a></li>
