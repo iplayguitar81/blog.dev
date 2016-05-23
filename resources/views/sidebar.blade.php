@@ -32,7 +32,8 @@
 
             {{Auth::user()->name}}
             }
-                @else{}
+                @else
+
                 @endif
 
             </h3>
