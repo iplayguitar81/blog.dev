@@ -91,6 +91,7 @@
     <div class="uk-grid" data-uk-grid-margin>
         @yield('content')
 
+        <style type="text/css">@font-face { font-family:Creampuff; src: url('fonts/creampuffy.ttf'); }</style>
 
 
 
