@@ -66,7 +66,7 @@ to Bowtie<br/>Software &amp; Web Development!
 
             <li class="uk-nav-header">Social Links</li>
             <li class="uk-parent"><a href="#"><i class="uk-icon-github"></i> Github</a></li>
-            <li><a href="#"><i class="uk-icon-facebook-official"></i> Item</a></li>
+            <li><a href="#"><i class="uk-icon-facebook-official"></i> Facebook</a></li>
             <li class="uk-nav-divider"></li>
             <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
         </ul>
