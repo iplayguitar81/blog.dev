@@ -1319,13 +1319,14 @@ iframe {
     font-size: 36px;
     line-height: 42px;
     font-weight: 300;
-    text-transform: none
+    font-family: Creampuff !important;
+    text-transform: none;
 }
 
 .uk-article-title a {
     color: inherit;
     text-decoration: none;
-    font-family: Creampuff !important;
+
 }
 
 .uk-article-meta {
