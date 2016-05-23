@@ -1,5 +1,5 @@
 @extends('layout')
-
+@section('title', 'Edit '.$post->title)
 @section('content')
 <div class="container">
 
