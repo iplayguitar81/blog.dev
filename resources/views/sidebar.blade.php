@@ -33,7 +33,7 @@
             {{Auth::user()->name}}
             }
                 @else
-
+to Bowtie<br/>Software &amp; Web Development!
                 @endif
 
             </h3>
