@@ -93,7 +93,7 @@
                   'class'=>'form-control',
                   'placeholder'=>'Your e-mail address')) !!}
     </div>
-
+<br/>
     <div class="form-group">
         {!! Form::label('Your Message') !!}
         {!! Form::textarea('message', null,
@@ -101,7 +101,7 @@
                   'class'=>'form-control',
                   'placeholder'=>'Your message')) !!}
     </div>
-
+<br/>
     <div class="form-group">
         {!! Form::submit('Contact Us!',
           array('class'=>'btn btn-primary')) !!}
