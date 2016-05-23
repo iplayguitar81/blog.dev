@@ -28,10 +28,10 @@
 
         <h3 class="uk-panel-title">Welcome
 
-            @if(Auth::user()) {
+            @if(Auth::user())
 
             {{Auth::user()->name}}
-            }
+
                 @else
 to Bowtie<br/>Software &amp; Web Development!
                 @endif
