@@ -2846,12 +2846,14 @@ ul.pagination {
     margin: 0;
 }
 
-ul.pagination li {display: inline;}
+ul.pagination li {display: inline;
+                  margin-left: 1em;}
 
 ul.pagination li a {
     color: black;
     padding: 8px 16px;
     text-decoration: none;
+
 }
 
 ul.pagination li a.active {
