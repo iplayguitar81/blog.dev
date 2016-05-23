@@ -2,9 +2,9 @@
 
 return [
     'title' => 'Title',
-    'subhead' => 'SubHead',
+    'subhead' => 'Heading',
 'body' => 'Body',
-'imgPath' => 'Imgpath',
+'imgPath' => 'Image',
 
 
 ];
