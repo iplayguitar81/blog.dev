@@ -39,7 +39,7 @@ class PostsController extends Controller
 
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
-        $posts = Post::orderBy('created_at', 'desc')->whereBetween('created_at',array('2016-05-24','2016-05-24'))->paginate(3);
+        $posts = Post::orderBy('created_at', 'desc')->whereBetween('created_at',array('2016-05-23','2016-05-24'))->paginate(3);
 
         #$posts=User::with(['posts'])->all();
       #  $posts = Post::where('user_id','=', Auth::id())->get();
