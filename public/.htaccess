@@ -42,6 +42,8 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
     ModPagespeedFetchHttps enable
     ModPagespeedEnableFilters remove_comments,rewrite_javascript,rewrite_css,rewrite_images
     ModPagespeedEnableFilters elide_attributes,defer_javascript,move_css_to_head
+    ModPagespeedEnableFilters make_google_analytics_async
+
 </IfModule>
 
 # BEGIN Caching
