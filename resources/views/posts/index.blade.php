@@ -43,10 +43,7 @@
 
                         @endif
 
-                        {
-
-
-                        !! Form::close() !!}
+                        {!! Form::close() !!}
                     </td>
                     @endcan
                 </tr>
