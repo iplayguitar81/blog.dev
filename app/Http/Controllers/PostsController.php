@@ -144,6 +144,15 @@ class PostsController extends Controller
             'title' => 'required',
             'body' => 'required',
         ]);
+
+        if(Input::hasFile('file')){
+
+            $file = Input::file('file');
+            $file->move('images', $file->getClientOriginalName());
+
+
+
+        }
         
         $post = Post::findOrFail($id);
         $post->update($request->all());
