@@ -39,7 +39,7 @@
                         ]) !!}
 
 
-                            {!! Form::submit('Delete', ['class' => 'uk-button uk-button-danger']) !!}
+                            {!! Form::submit(Auth::user()->name.' - -Delete Post', ['class' => 'uk-button uk-button-danger']) !!}
 
                         @endif
 
