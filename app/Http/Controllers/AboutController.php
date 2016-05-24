@@ -34,7 +34,7 @@ class AboutController extends Controller
             ), function($message)
             {
                 $message->from('info@bowtiesoft.com');
-                $message->to('info@bowtiesoft.com', 'Bowtie Software & Web Development')->subject('TODOParrot Feedback');
+                $message->to('snyder.chris.m@gmail.com', 'Bowtie Software & Web Development')->subject('bowtiesoft.com Contact Email!');
             });
 
 
