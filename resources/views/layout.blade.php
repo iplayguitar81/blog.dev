@@ -151,7 +151,7 @@
         </ul>
     </div>
 </div>
-<div class="uk-modal-footer">
+<div class="uk-footer">
     @include('footer')
     </div>
 <script src="{{url('/js/jquery.js')}}"></script>
