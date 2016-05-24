@@ -19,7 +19,7 @@
                 {{-- */$x++;/* --}}
                 <tr>
                     {{--<td>{{ $x }}</td>--}}
-                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->created_at }}</td><td>
+                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->created_at->format('M dS Y') }}</td><td>
 
                         {{str_limit($item->body, 20)}}
 
