@@ -15,8 +15,13 @@ class AboutController extends Controller
         return view('about.contact');
     }
 
-    public function store()
+    public function store(ContactFormRequest $request)
     {
+
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required',
+        ]);
         return \Redirect::route('contact')
             ->with('message', 'Thanks for contacting us!');
 
