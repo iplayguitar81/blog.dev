@@ -81,7 +81,7 @@
     <div class="form-group uk-form-row">
         {!! Form::label('Your Name') !!}
         {!! Form::text('name', null,
-            array('required',
+            array(
                   'class'=>'form-control',
                   'placeholder'=>'Your name')) !!}
     </div>
@@ -89,7 +89,7 @@
     <div class="form-group uk-form-row">
         {!! Form::label('Your E-mail Address') !!}
         {!! Form::text('email', null,
-            array('required',
+            array(
                   'class'=>'form-control',
                   'placeholder'=>'Your e-mail address')) !!}
     </div>
@@ -97,7 +97,7 @@
     <div class="form-group uk-form-row">
         {!! Form::label('Your Message') !!}<br/>
         {!! Form::textarea('message', null,
-            array('required',
+            array(
                   'class'=>'form-control',
                   'placeholder'=>'Your message')) !!}
     </div>
