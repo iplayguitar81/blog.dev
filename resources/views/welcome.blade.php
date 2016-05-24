@@ -52,6 +52,12 @@
 
 
 <div class="uk-width-medium-3-4 uk-row-first">
+    @section('content')
+        @if(Session::has('message'))
+            <div class="alert alert-info">
+                {{Session::get('message')}}
+            </div>
+        @endif
 
     @foreach($posts as $item)
     <article class="uk-article">
