@@ -151,7 +151,7 @@
         </ul>
     </div>
 </div>
-<div class="uk-footer">
+<div class="uk-footer" style="text-align:center;">
 
     @include('footer')
     </div>
