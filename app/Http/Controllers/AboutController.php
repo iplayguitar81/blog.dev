@@ -40,7 +40,7 @@ class AboutController extends Controller
 
 
 
-        return \Redirect::route('/')
+        return \Redirect::to('/')
             ->with('message', 'Thanks for contacting us!');
 
     }
