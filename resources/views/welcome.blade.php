@@ -3,7 +3,7 @@
 @extends('layout')
 @section('title', 'Home')
 
-
+@section('content')
 {{--<div class="container">--}}
     {{--<div class="row">--}}
         {{--<div class="col-md-10 col-md-offset-1">--}}
@@ -52,13 +52,6 @@
 
 
 <div class="uk-width-medium-3-4 uk-row-first">
-    @if(Session::has('message'))
-        <div class="alert alert-info">
-            {{Session::get('message')}}
-        </div>
-    @endif
-    @section('content')
-
 
     @foreach($posts as $item)
     <article class="uk-article">
