@@ -85,6 +85,63 @@
         <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><!-- This is where you put branding text --></div>
     </nav>
 
+
+    <nav class="uk-navbar">
+
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li class="uk-active"><a href="">Active</a></li>
+            <li><a href="">Item</a></li>
+            <li class="uk-parent" data-uk-dropdown="">
+                <a href="">Parent</a>
+
+                <div class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Another item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Another item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+
+        <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+
+        <div class="uk-navbar-flip">
+
+            <a href="" class="uk-navbar-toggle uk-navbar-toggle-alt uk-visible-small"></a>
+
+            <ul class="uk-navbar-nav uk-hidden-small">
+                <li class="uk-parent" data-uk-dropdown="">
+                    <a href="">Parent</a>
+
+                    <div class="uk-dropdown uk-dropdown-navbar">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Another item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Another item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Separated item</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="">Item</a></li>
+                <li class="uk-active"><a href="">Active</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
     <div class="uk-grid" data-uk-grid-margin>
         @yield('content')
 
