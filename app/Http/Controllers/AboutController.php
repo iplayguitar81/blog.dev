@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ContactFormRequest;
 
 use App\Http\Requests;
+use Validator;
 
 class AboutController extends Controller
 {
