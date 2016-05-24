@@ -24,8 +24,6 @@ use Illuminate\Support\Facades\Input;
 
 
 
-
-
 class PostsController extends Controller
 {
     /**
