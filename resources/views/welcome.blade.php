@@ -1,8 +1,7 @@
 
 
 @extends('layout')
-@section('title', 'Home')@endsection
-@section('content)
+@section('title', 'Home')
 
 
 {{--<div class="container">--}}
