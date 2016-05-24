@@ -10,7 +10,7 @@
         <table class="uk-table uk-table-hover uk-table-striped">
             <thead>
                 <tr>
-                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subhead') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
+                    <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subhead') }}</th><th>Date</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
                 </tr>
             </thead>
             <tbody>
@@ -19,7 +19,7 @@
                 {{-- */$x++;/* --}}
                 <tr>
                     {{--<td>{{ $x }}</td>--}}
-                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>
+                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{ $item->created_at }}</td><td>
 
                         {{str_limit($item->body, 20)}}
 
