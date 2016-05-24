@@ -13,7 +13,8 @@ class ContactFormRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        //change to true so anyone can send a message through the contact form...
+        return true;
     }
 
     /**
