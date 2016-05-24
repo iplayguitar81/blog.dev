@@ -4,7 +4,11 @@
 @section('title', 'Contact Us')
 
 @section('content')
-
+    @if(Session::has('message'))
+        <div class="alert alert-info">
+            {{Session::get('message')}}
+        </div>
+    @endif
     <h2 class="uk-article-title">Contact Us Today!</h2>
     {{--<form class="uk-form uk-form-horizontal">--}}
 
