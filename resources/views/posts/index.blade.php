@@ -5,7 +5,7 @@
     <h1>Posts </h1>
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan
 
-        {{$user}}
+
     <div class="table">
         <table class="uk-table uk-table-hover uk-table-striped">
             <thead>
@@ -27,6 +27,9 @@
 
                     </td><td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
                     @can('isAdmin')
+
+                        @if($item->user_id == $user)
+
                     <td>
                         <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
                         {!! Form::open([
@@ -34,8 +37,16 @@
                             'url' => ['/posts', $item->id],
                             'style' => 'display:inline'
                         ]) !!}
+
+
                             {!! Form::submit('Delete', ['class' => 'uk-button uk-button-danger']) !!}
-                        {!! Form::close() !!}
+
+                        @endif
+
+                        {
+
+
+                        !! Form::close() !!}
                     </td>
                     @endcan
                 </tr>
