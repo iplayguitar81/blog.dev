@@ -40,7 +40,6 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
     ModPagespeed on
     ModPagespeedEnableFilters inline_google_font_css
     ModPagespeedFetchHttps enable
-    ModPagespeedEnableFilters remove_comments,rewrite_javascript,rewrite_css,rewrite_images
     ModPagespeedEnableFilters make_google_analytics_async
 
 </IfModule>
