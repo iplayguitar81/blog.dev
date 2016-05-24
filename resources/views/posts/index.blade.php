@@ -31,7 +31,7 @@
                         @if($item->user_id == $user)
 
                     <td>
-                        <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update</a>
+                        <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="uk-button uk-button-primary">Update Your Post<br/>{{Auth::user()->name}} </a>
                         {!! Form::open([
                             'method'=>'DELETE',
                             'url' => ['/posts', $item->id],
