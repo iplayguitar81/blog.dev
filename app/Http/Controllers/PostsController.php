@@ -39,7 +39,11 @@ class PostsController extends Controller
         $user=Auth::id();
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
-        $posts = Post::orderBy('created_at', 'desc')->whereBetween('created_at',array('2016-05-24','2016-05-25'))->paginate(3);
+
+        // the right way to do target date range for archives if need be....
+        //$posts = Post::orderBy('created_at', 'desc')->whereBetween('created_at',array('2016-05-24','2016-05-25'))->paginate(3);
+
+        $posts = Post::orderBy('created_at', 'desc')->paginate(3);
 
         #$posts=User::with(['posts'])->all();
       #  $posts = Post::where('user_id','=', Auth::id())->get();
