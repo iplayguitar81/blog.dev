@@ -73,13 +73,14 @@
 
     {{--</form>--}}
 
+<div class="uk-grid-large">
 
     <ul>
         @foreach($errors->all() as $error)
             <li>{{ $error }}</li>
         @endforeach
     </ul>
-
+</div>
     {!! Form::open(array('route' => 'contact_store', 'class' => 'uk-form uk-form-horizontal')) !!}
 
     <div class="form-group uk-form-row">
