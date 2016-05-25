@@ -1551,7 +1551,7 @@ ul.uk-nav-sub {
     color: #0b5f90
 }
 
-header#top {
+#top {
     position:fixed;
 }
 .uk-nav-offcanvas > li > a {
