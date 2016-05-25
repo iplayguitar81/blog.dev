@@ -176,10 +176,9 @@
         {{--document.querySelector("head").appendChild(link);--}}
     {{--})();--}}
 {{--</script>--}}
-
-
 <style scoped>
     @import "https://fonts.googleapis.com/css?family=Pacifico";
+    @import "https://fonts.googleapis.com/css?family=Boogaloo";
 </style>
 </body>
 </html>
