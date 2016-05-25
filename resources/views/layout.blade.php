@@ -179,7 +179,7 @@
 <style scoped>
     @import "https://fonts.googleapis.com/css?family=Pacifico";
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
-    @import "https://www.checkenginefree.com/simulate.css?family=Creampuff";
+    @import "https://www.checkenginefree.com/simulate.css";
 
 </style>
 
