@@ -1278,6 +1278,7 @@ iframe {
     line-height: 42px;
     font-weight: 300;
     text-transform: none
+    color: transparent;
 }
 
 .uk-article-title a:hover {
