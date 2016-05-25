@@ -167,6 +167,14 @@
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/uikit.min.js')}}"></script>
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
+<script>
+    (function() {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = "fonts.googleapis.com/css?family=Pacifico";
+        document.querySelector("head").appendChild(link);
+    })();
+</script>
 
 </body>
 </html>
