@@ -38,7 +38,7 @@
 
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-    <div id="nav-bar-logo-stick" data-uk-sticky="{boundary:'uk-container uk-container-center uk-margin-top uk-margin-large-bottom'}">
+    <div id="nav-bar-logo-stick" data-uk-sticky="{boundary:'body'}">
     <header id="top">
         <a href="{{url('/')}}" ><img alt="bowtie software &amp; web development" src="{{url('/images/bowtiebranded.png')}}"></a>
     </header>
