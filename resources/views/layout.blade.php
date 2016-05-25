@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="/css/uikit.docs.min.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        @font-face {
+            font-family: Creampuff;
+            src: url('{{ public_path('fonts/Creampuff.tff') }}');
+        }
+    </style>
+
 </head>
 <body>
 <script>
