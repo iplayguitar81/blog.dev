@@ -25,7 +25,7 @@
 
 
     <article class="uk-article">
-        <h1 class="uk-article-title" style="font-family: FabFelt, cursive;font-size:5em;line-height:1em;text-align:center;">{{ $post->title }}</h1>
+        <h1 class="uk-article-title" style="font-family: Pacifico, cursive;font-size:5em;line-height:1em;text-align:center;">{{ $post->title }}</h1>
         <p class="subheader-main" style="text-align:center;">{{ $post->subHead}}</p>
         <p class="uk-article-meta" style="text-align:center;">
             Written by <?
