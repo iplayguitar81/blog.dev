@@ -167,14 +167,19 @@
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/uikit.min.js')}}"></script>
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
-<script>
-    (function() {
-        var link = document.createElement('link');
-        link.rel = "stylesheet";
-        link.href = "https://fonts.googleapis.com/css?family=Pacifico";
-        document.querySelector("head").appendChild(link);
-    })();
-</script>
 
+{{--<script>--}}
+    {{--(function() {--}}
+        {{--var link = document.createElement('link');--}}
+        {{--link.rel = "stylesheet";--}}
+        {{--link.href = "https://fonts.googleapis.com/css?family=Pacifico";--}}
+        {{--document.querySelector("head").appendChild(link);--}}
+    {{--})();--}}
+{{--</script>--}}
+
+
+<style scoped>
+    @import "https://fonts.googleapis.com/css?family=Pacifico";
+</style>
 </body>
 </html>
