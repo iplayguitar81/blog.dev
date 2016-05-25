@@ -17,7 +17,7 @@
  <style>
      @font-face {
          font-family: 'Creampuff';
-         src: url("https://dl.dropboxusercontent.com/s/tcnjs3e59zb4d0r/creampuffy.ttf"); !important }
+         src: url("https://dl.dropboxusercontent.com/s/e0x8cw1pczwvz90/fabfeltscript-bold.woff2"); !important }
  </style>
 </head>
 <body>
