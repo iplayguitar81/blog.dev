@@ -93,8 +93,8 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
     ModPagespeedEnableFilters remove_comments,rewrite_javascript,rewrite_css,rewrite_images
     ModPagespeedEnableFilters elide_attributes,defer_javascript,move_css_to_head
     ModPagespeedJpegRecompressionQuality -1
-    ModPagespeedEnableFilters inline_google_font_css
     ModPagespeedFetchHttps enable
+    ModPagespeedEnableFilters inline_google_font_css
     ModPagespeedEnableFilters make_google_analytics_async
     ModPagespeedMapOriginDomain http://www.bowtiesoft.com/ https://www.bowtiesoft.com/
 </IfModule>
