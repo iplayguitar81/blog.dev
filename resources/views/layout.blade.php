@@ -21,6 +21,9 @@
        z-index: 1030;
        height: 105px;
     }
+    .main-contain {
+        margin-top: 10em !important;
+    }
 
 </style>
 
@@ -104,7 +107,7 @@
 </div>
 
 
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom main-contain">
 
 
     <div class="uk-grid" data-uk-grid-margin>
