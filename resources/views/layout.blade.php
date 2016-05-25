@@ -15,7 +15,7 @@
     header#top {
         position:fixed;
     }
-    nav{ position:fixed;}
+
 </style>
 
  <style>
