@@ -1273,9 +1273,7 @@ iframe {
     font-size: 2em
 }
 
-nav {
-    z-index:999;
-}
+
 .uk-article-title {
     font-size: 36px;
     line-height: 42px;
@@ -1553,6 +1551,9 @@ ul.uk-nav-sub {
     color: #0b5f90
 }
 
+header #top {
+    position:fixed;
+}
 .uk-nav-offcanvas > li > a {
     color: #ccc;
     padding: 10px 15px;
