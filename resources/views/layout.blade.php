@@ -13,7 +13,7 @@
     <style type="text/css">
         @font-face {
             font-family: Creampuff;
-            src: url('{{ public_path('fonts/Creampuff.tff') }}');
+            src: url('{{ public_path('fonts/creampuffy.tff') }}');
         }
     </style>
 
