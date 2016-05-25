@@ -12,8 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
     <style type="text/css">
         @font-face {
-            font-family: Creampuff;
-            src: url('{{ url('fonts/creampuffy.tff') }}');
+            font-family: OptimusPrinceps;
+            src: url('{{ public_path('fonts/creampuffy.tff') }}');
         }
     </style>
 
