@@ -171,7 +171,7 @@
     (function() {
         var link = document.createElement('link');
         link.rel = "stylesheet";
-        link.href = "fonts.googleapis.com/css?family=Pacifico+Cursive:400,700";
+        link.href = "https://fonts.googleapis.com/css?family=Pacifico";
         document.querySelector("head").appendChild(link);
     })();
 </script>
