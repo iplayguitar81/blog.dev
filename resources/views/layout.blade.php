@@ -19,6 +19,7 @@
        left: 0;
        top: 0;
        z-index: 1030;
+       height: 105px;
     }
 
 </style>
