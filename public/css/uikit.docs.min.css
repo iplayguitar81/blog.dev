@@ -1273,6 +1273,9 @@ iframe {
     font-size: 2em
 }
 
+nav {
+    z-index:999;
+}
 .uk-article-title {
     font-size: 36px;
     line-height: 42px;
