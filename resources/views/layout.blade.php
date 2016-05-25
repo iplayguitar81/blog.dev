@@ -187,6 +187,8 @@
     $(document).ready(function(){
 
             $(".uk-article-title").hide();
+            $(".uk-article-title").show();
+
 
     });
 
