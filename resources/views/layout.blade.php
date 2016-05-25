@@ -38,6 +38,7 @@
 
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
+    <div data-uk-sticky>
     <header id="top">
         <a href="{{url('/')}}" ><img alt="bowtie software &amp; web development" src="{{url('/images/bowtiebranded.png')}}"></a>
     </header>
@@ -97,7 +98,7 @@
         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
         <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><!-- This is where you put branding text --></div>
     </nav>
-
+    </div>
 
 
 
