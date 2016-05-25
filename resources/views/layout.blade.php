@@ -38,7 +38,7 @@
 
 <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-    <div id="nav-bar-logo-stick" data-uk-sticky="{boundary:'.pagination'}">
+    <div id="nav-bar-logo-stick" data-uk-sticky="{boundary:'#footsy'}">
     <header id="top">
         <a href="{{url('/')}}" ><img alt="bowtie software &amp; web development" src="{{url('/images/bowtiebranded.png')}}"></a>
     </header>
@@ -171,6 +171,7 @@
     </div>
 </div>
 <div class="uk-footer" style="text-align:center;">
+    <div id="footsy"></div>
 
     @include('footer')
     </div>
