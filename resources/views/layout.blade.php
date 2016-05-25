@@ -180,5 +180,16 @@
     @import "https://fonts.googleapis.com/css?family=Pacifico";
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
 </style>
+
+
+<script>
+
+    $(document).ready(function(){
+
+            $(".uk-article-title").hide();
+
+    });
+
+</script>
 </body>
 </html>
