@@ -6,8 +6,8 @@
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan
 
 
-    <div class="table">
-        <table class="">
+
+        <table class="table">
             <thead>
                 <tr>
                     <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subhead') }}</th><th>Date</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
@@ -52,7 +52,7 @@
             </tbody>
         </table>
         <div class="pagination"> {!! $posts->render() !!} </div>
-    </div>
+
 
 {{--@foreach($posts as $item)--}}
 
