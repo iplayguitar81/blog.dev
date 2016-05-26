@@ -90,7 +90,7 @@
 
     <div class="form-group">
         <div class="">
-            {!! Form::submit('Update', ['class' => 'uk-button uk-width-1-1 uk-margin-small-bottom']) !!}
+            {!! Form::submit('Update', ['class' => 'btn btn-success']) !!}
         </div>
     </div>
     {!! Form::close() !!}
