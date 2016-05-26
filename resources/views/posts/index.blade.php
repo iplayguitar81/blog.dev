@@ -7,7 +7,7 @@
 
 
     <div class="table">
-        <table class="uk-table uk-table-hover uk-table-striped">
+        <table class="">
             <thead>
                 <tr>
                     <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subhead') }}</th><th>Date</th><th>{{ trans('posts.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
@@ -25,7 +25,7 @@
 
 
 
-                    </td><td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
+                    </td><td><img class="thumbnail" src="../images/{{ $item->imgPath}}"></td>
                     @can('isAdmin')
 
                         @if($item->user_id == $user)
