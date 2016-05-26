@@ -47,6 +47,7 @@
         <br/>
         <div class="center-block">
        <p class="text-center"> {{ $post->body }}</p>
+
         </div>
 
     </article>
