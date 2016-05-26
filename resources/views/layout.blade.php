@@ -73,10 +73,16 @@ hr {
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                @if (Auth::guest())
                 <li><a href="{{url('/login')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                @else
                 <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>
 
                 <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+
+
+                @endif
             </ul>
         </div>
     </div>
