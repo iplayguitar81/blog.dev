@@ -81,8 +81,8 @@ hr {
                 <li><a href="{{url('/login')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
                 @else
-                    <li>Welcome {{Auth::user()->name}} !</li>
-                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>View Posts Made</a></li>
+                    <span>Welcome {{Auth::user()->name}} ! &nbsp;</span>
+                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>View Your Posts</a></li>
 
                 <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
