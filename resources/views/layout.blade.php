@@ -62,7 +62,11 @@ hr {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 3em;"><img src="{{url('images/bowtiebranded.png')}}" alt=""><!-- put text here if want/need be--></a>
+            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 3em;">
+                {{--<img src="{{url('images/bowtiebranded.png')}}" alt="">--}}
+                <!-- put text here if want/need be-->
+                Bowtie
+            </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -77,7 +81,8 @@ hr {
                 <li><a href="{{url('/login')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
                 @else
-                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>{{Auth::user()->name}} Posts Made</a></li>
+                    <li>Welcome {{Auth::user()->name}} !</li>
+                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>View Posts Made</a></li>
 
                 <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
