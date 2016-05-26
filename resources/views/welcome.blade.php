@@ -96,7 +96,7 @@
     </article>
     @endforeach
 
-        <h1>All Cards</h1>
+        {{--<h1>All Cards</h1>--}}
 
 
 
