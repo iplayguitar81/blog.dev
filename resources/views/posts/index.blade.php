@@ -25,7 +25,7 @@
 
 
 
-                    </td><td><img class="thumbnail" src="../images/{{ $item->imgPath}}"></td>
+                    </td><td><img class="img-responsive thumbnail" src="../images/{{ $item->imgPath}}"></td>
                     @can('isAdmin')
 
                         @if($item->user_id == $user)
