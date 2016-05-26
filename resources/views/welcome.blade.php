@@ -126,7 +126,7 @@
 
 </div>
 
-<div class="uk-width-medium-1-4">
+<div class="col-md-4">
     @include('sidebar')
 </div>
 
