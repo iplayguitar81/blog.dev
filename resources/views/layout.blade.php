@@ -29,6 +29,13 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
     color: #E63C4D;
     text-shadow: silver 2px 1px 2px;
 }
+hr {
+    height: 2px;
+    background-color:#555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+}
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
