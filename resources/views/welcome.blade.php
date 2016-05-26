@@ -51,7 +51,7 @@
 {{--@endforeach--}}
 
 
-<div class="uk-width-medium-3-4 uk-row-first">
+<div class="col-md-7">
     @if(Session::has('message'))
         <div class="alert alert-info" style="color:red;">
             {{Session::get('message')}}
@@ -98,7 +98,27 @@
     </article>
     @endforeach
 
-    <hr>
+        <h1>All Cards</h1>
+
+
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3><a href="/cards/1">once upon a rhyme</a></h3>
+                <h4>2016-04-28 00:00:00</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="/cards/1">View Card <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+
+        <hr>
 <br/>
         <br/>
         <div class="pagination"> {!! $posts->render() !!} </div>
