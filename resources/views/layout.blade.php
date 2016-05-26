@@ -27,6 +27,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 }
 .article-title-show {
     color: #E63C4D;
+    text-shadow: silver 2px 1px 2px;
 }
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
