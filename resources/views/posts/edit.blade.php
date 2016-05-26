@@ -14,7 +14,7 @@
             @endforeach
         </ul>
     @endif
-    <hr/>
+
 
 
     {!! Form::model($post, [
