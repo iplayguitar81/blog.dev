@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 @section('title', 'Blog')
-
+<div class="col-md-4">
     <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan
 
@@ -77,5 +77,5 @@
    {{--<p>{{ print_r($route) }}</p> heres where i need to figure out how to
    display the route name better.....
    --}}
-
+</div>
 @endsection
