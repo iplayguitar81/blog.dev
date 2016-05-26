@@ -90,9 +90,9 @@
 
       <p>  {{str_limit($item->body, 100)}}...</p>
         <br/>
-            <a class="uk-button uk-button-danger" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+            <a class="btn-danger" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
-            <a style="margin-top:.2em;" class="uk-button" href="#">Comments</a>
+            <a style="margin-top:.2em;" class="btn-default" href="#">Comments</a>
 
 
     </article>
