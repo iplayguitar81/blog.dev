@@ -13,7 +13,7 @@
         </div>
     @endif
 
-    <h2 class="" style="font-family:Pacifico,cursive;color:#E63C4D;font-size:4em;">Contact Us Today!</h2>
+    <h2 class="text-center" style="font-family:Pacifico,cursive;color:#E63C4D;font-size:4em;">Contact Us Today!</h2>
     {{--<form class="uk-form uk-form-horizontal">--}}
 
         {{--<div class="uk-form-row">--}}
