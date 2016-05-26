@@ -12,7 +12,6 @@
             @endforeach
         </ul>
     @endif
-    <hr/>
 
 
     {!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}
