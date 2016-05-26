@@ -117,8 +117,6 @@
             {{--</div>--}}
         {{--</div>--}}
 
-
-        <hr>
 <br/>
         <br/>
         <div class="pagination"> {!! $posts->render() !!} </div>
