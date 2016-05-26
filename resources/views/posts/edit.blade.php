@@ -24,8 +24,8 @@
     ]) !!}
 
                 <div class="form-group {{ $errors->has('title') ? 'has-error' : ''}}">
-                {!! Form::label('title', trans('posts.title'), ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
+                {!! Form::label('title', trans('posts.title'), ['class' => 'control-label']) !!}
+                <div class="">
                     {!! Form::text('title', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('title', '<p class="help-block">:message</p>') !!}
                 </div>
@@ -33,10 +33,10 @@
     <br/>
 
         <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
-            {!! Form::label('subHead', trans('posts.subhead'), ['class' => 'col-sm-3 control-label']) !!}
-            <div class="col-sm-6">
+            {!! Form::label('subHead', trans('posts.subhead'), ['class' => '']) !!}
+            <div class="">
                 {!! Form::text('subHead', null, ['class' => 'form-control']) !!}
-                {!! $errors->first('subHead', '<p class="uk-alert-danger">:message</p>') !!}
+                {!! $errors->first('subHead', '<p class="">:message</p>') !!}
             </div>
         </div>
 
@@ -44,8 +44,8 @@
 
 
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
-                {!! Form::label('body', trans('posts.body'), ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
+                {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
+                <div class="">
                     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('body', '<p class="help-block">:message</p>') !!}
                 </div>
@@ -59,12 +59,12 @@
             {{--</div>--}}
 <br/>
     <label>Current Image:</label>
-    <img class="uk-thumbnail-small" src="../../images/{{ $post->imgPath}}">
+    <img class="img-responsive thumbnail" src="../../images/{{ $post->imgPath}}">
 
         <br/>
     <label>Update Image</label>
         <div class="form-group">
-            <div class="col-sm-offset-3 col-sm-3">
+            <div class="">
                 <input type="file" name="file" id="file" onchange="readURL(this);"/>
             </div>
         </div>
@@ -72,13 +72,13 @@
         {{csrf_field()}}
 
         <div id="blah2">
-            <img id="blah" class="uk-thumbnail" src="#" alt="uploaded image">
+            <img id="blah" class="img-responsive thumbnail" src="#" alt="uploaded image">
         </div>
 
 
         <div class="form-group {{ $errors->has('imgPath') ? 'has-error' : ''}}">
             {{--{!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}--}}
-            <div class="col-sm-6">
+            <div class="">
                 {!! Form::text('imgPath', null, ['class' => 'form-control filename']) !!}
                 {!! $errors->first('imgPath', '<p class="help-block">:message</p>') !!}
             </div>
@@ -89,7 +89,7 @@
 <br/>
 
     <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-3">
+        <div class="">
             {!! Form::submit('Update', ['class' => 'uk-button uk-width-1-1 uk-margin-small-bottom']) !!}
         </div>
     </div>
