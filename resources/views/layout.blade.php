@@ -136,61 +136,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 </div>
 </div>
 
-<div id="offcanvas" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li class="uk-active">
-                <a href="{{url('/posts')}}">Blog</a>
-            </li>
-            <li>
-                <a href="/contact">Contact</a>
-            </li>
-            @if (Auth::guest())
-                <li><a href="{{ url('/login') }}">Login</a></li>
-                {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
-            @else
 
-
-
-                {{--<ul href="#" class="uk-nav uk-nav-dropdow" role="button" aria-expanded="false">--}}
-
-                {{--{{Auth::user()->name}} <span class="caret"></span>--}}
-                {{--</ul>--}}
-
-                {{--<li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>--}}
-
-                {{--<li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>--}}
-
-
-                {{--<ul class="n" role="menu">--}}
-
-
-
-                {{--</ul>--}}
-
-                <div class="uk-button-dropdown uk-align-left" data-uk-dropdown="{mode:'click', boundary:'#offcanvas'}" aria-haspopup="true" aria-expanded="false">
-                    <button class="uk-button">{{Auth::user()->name}}&nbsp;&nbsp;<i class="uk-icon-caret-down"></i></button>
-                    <div class="uk-dropdown uk-dropdown-bottom" style="top: 30px; left: 0px;">
-                        <ul class="uk-nav uk-nav-dropdown">
-                            <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>Posts You Made</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-
-
-            @endif
-        </ul>
-    </div>
-</div>
 <div class="uk-footer" style="text-align:center;">
     <div id="footsy"></div>
 
