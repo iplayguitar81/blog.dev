@@ -2,6 +2,7 @@
 @section('title', 'Welcome '.$user_name. ' Here Are Your Blog Posts!')
 @section('content')
 
+    <div class="col-md-12">
         <h1>Posts @can('isAdmin')<a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan</h1>
         <br/>
         <br/>
@@ -45,6 +46,10 @@
             </table>
             <div class="pagination"> {!! $posts->render() !!} </div>
         </div>
+
+
+
+    </div>
 
         {{--@foreach($posts as $item)--}}
 
