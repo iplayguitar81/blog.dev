@@ -29,13 +29,13 @@
 
                         @can('isAdmin')
                             <td>
-                                <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="btn btn-primary btn-md active">Update</a><br/><br/>
+                                <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="btn btn-success">Update</a><br/><br/>
                                 {!! Form::open([
                                     'method'=>'DELETE',
                                     'url' => ['/posts', $item->id],
                                     'style' => 'display:inline'
                                 ]) !!}
-                                {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-md active']) !!}
+                                {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                                 {!! Form::close() !!}
                             </td>
                         @endcan
