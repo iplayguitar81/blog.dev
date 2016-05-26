@@ -91,7 +91,7 @@
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
             <a style="margin-top:.2em;" class="btn btn-primary btn-md active" href="#">Comments</a>
-        </hr>
+        <hr>
 
 
     </article>
