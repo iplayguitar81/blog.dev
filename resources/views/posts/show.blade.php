@@ -21,7 +21,7 @@
     {{--</div>--}}
 
 
-    <div class=".uk-width-2-3">
+    <div class="col-md-12">
 
 
     <article class="uk-article">
