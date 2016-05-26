@@ -125,7 +125,7 @@
 {{--</div>--}}
 
 
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom main-contain">
+<div class="container-fluid main-contain">
 
 
     <div class="uk-grid" data-uk-grid-margin>
