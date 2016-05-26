@@ -58,12 +58,12 @@
 
     <a href="{{url('posts')}}">
 
-        <button type="submit" class="uk-button-danger">Back to All Posts</button>
+        <button type="submit" class="uk-button-danger center-block">Back to All Posts</button>
     </a>
    &nbsp;
     <a href="{{url('/')}}">
 
-        <button type="submit" class="uk-button-success">Back Home</button>
+        <button type="submit" class="uk-button-success center-block">Back Home</button>
     </a>
 
     </div>
