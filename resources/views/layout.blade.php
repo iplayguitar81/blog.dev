@@ -83,6 +83,16 @@
         <a href="{{url('/')}}" ><img alt="bowtie software &amp; web development" src="{{url('/images/bowtiebranded.png')}}"></a>
     </header>
 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="{{url('/images/bowtiebranded.png')}}">
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <br/>
     <nav class="uk-navbar uk-margin-large-bottom">
         {{--<a class="uk-navbar-brand uk-hidden-small" href="{{url('/')}}"><img src="{{url('/images/bowtiebranded.png')}}" alt="bowtiesoftware &amp; web development"/></a>--}}
