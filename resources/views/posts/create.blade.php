@@ -71,7 +71,7 @@
 
     <div class="form-group">
         <div class="">
-            {!! Form::submit('Create', ['class' => 'btn btn-primary form-control']) !!}
+            {!! Form::submit('Create', ['class' => 'btn btn-success form-control']) !!}
         </div>
     </div>
     {!! Form::close() !!}
