@@ -20,7 +20,7 @@
     {!! Form::model($post, [
         'method' => 'PATCH',
         'url' => ['/posts', $post->id],
-        'class' => '.uk-form-row','files' => true
+        'class' => '','files' => true
     ]) !!}
 
                 <div class="form-group {{ $errors->has('title') ? 'has-error' : ''}}">
