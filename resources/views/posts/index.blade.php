@@ -2,7 +2,7 @@
 @section('content')
 @section('title', 'Blog')
 
-    <h1>Posts </h1>
+    <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-left btn-sm">Add New Post</a>@endcan
 
 
