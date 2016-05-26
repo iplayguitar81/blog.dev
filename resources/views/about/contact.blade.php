@@ -9,7 +9,7 @@
             {{Session::get('message')}}
         </div>
     @endif
-    <h2 class="uk-article-title">Contact Us Today!</h2>
+    <h2 class="uk-article-title" style="font-family:Pacifico,cursive;">Contact Us Today!</h2>
     {{--<form class="uk-form uk-form-horizontal">--}}
 
         {{--<div class="uk-form-row">--}}
