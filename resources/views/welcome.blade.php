@@ -60,7 +60,7 @@
     <article class="">
 
 
-        <h1 class="" style="font-family: Pacifico, cursive;">
+        <h1 class="main-article-titles" style="font-family: Pacifico, cursive;">
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
         <p class="subheader-main" style="font-family: Boogaloo, cursive;">{{ $item->subHead}}</p>
