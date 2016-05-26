@@ -49,9 +49,7 @@
     {{--</article>--}}
     {{--<hr class="uk-article-divider">--}}
 {{--@endforeach--}}
-
-
-
+<div class="col-md-8">
     @if(Session::has('message'))
         <div class="alert alert-info" style="color:red;">
             {{Session::get('message')}}
@@ -124,7 +122,7 @@
         <div class="pagination"> {!! $posts->render() !!} </div>
 
 
-
+</div>
 
 <div class="col-md-4">
     @include('sidebar')
