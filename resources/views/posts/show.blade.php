@@ -20,8 +20,8 @@
         {{--</table>--}}
     {{--</div>--}}
 
-
     <div class="col-md-12">
+
 
 
     <article class="center-block">
