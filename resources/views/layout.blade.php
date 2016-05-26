@@ -62,7 +62,7 @@ hr {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 3em;">Bowtie</a>
+            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 3em;">Bowtie<img src="{{url('images/bowtiebranded.png')}}" alt=""></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
