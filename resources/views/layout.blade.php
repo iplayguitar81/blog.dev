@@ -45,7 +45,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="{{url('/')}}">Home</a></li>
                 <li><a href="{{url('/posts')}}">Blog</a></li>
                 <li><a href="{{url('#')}}">Portfolio</a></li>
                 <li><a href="{{url('/contact')}}">Contact</a></li>
