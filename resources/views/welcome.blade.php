@@ -63,7 +63,7 @@
         <h1 class="main-article-titles" style="font-family: Pacifico, cursive;">
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
-        <p class="subheader-main" style="font-family: Boogaloo, cursive;">{{ $item->subHead}}</p>
+        <p class="subheader-main" style="font-family: Boogaloo, cursive; font-size:2em;">{{ $item->subHead}}</p>
         {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
