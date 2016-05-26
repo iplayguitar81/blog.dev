@@ -137,15 +137,13 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 </div>
 
 
-<div class="uk-footer" style="text-align:center;">
+<div class="container-fluid" style="text-align:center;">
     <div id="footsy"></div>
 
     @include('footer')
     </div>
 <script src="{{url('/js/jquery.js')}}"></script>
-<script src="{{url('/js/uikit.min.js')}}"></script>
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
-
 {{--<script>--}}
     {{--(function() {--}}
         {{--var link = document.createElement('link');--}}
@@ -157,16 +155,11 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 <style scoped>
     @import "https://fonts.googleapis.com/css?family=Pacifico";
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
-    @import "https://www.checkenginefree.com/simulate.css";
-
 </style>
-
 
 <script>
 
     $(document).ready(function(){
-
-
 
 
     });
