@@ -4,12 +4,16 @@
 @section('title', 'Contact Us')
 
 @section('content')
+
+
+    <div class="col-md-12">
     @if(Session::has('message'))
         <div class="alert alert-info">
             {{Session::get('message')}}
         </div>
     @endif
-    <h2 class="uk-article-title" style="font-family:Pacifico,cursive;">Contact Us Today!</h2>
+
+    <h2 class="" style="font-family:Pacifico,cursive;">Contact Us Today!</h2>
     {{--<form class="uk-form uk-form-horizontal">--}}
 
         {{--<div class="uk-form-row">--}}
@@ -112,7 +116,7 @@
           array('class'=>'btn btn-primary')) !!}
     </div>
     {!! Form::close() !!}
-
+</div>
 
 @endsection
 
