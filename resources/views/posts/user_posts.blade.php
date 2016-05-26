@@ -9,8 +9,8 @@
 
         <p> <span>Welcome {{$user_name}}! <br/> Below are all the posts you have made!</span></p>
         <br/>
-        <div class="table">
-            <table class="uk-table uk-table-hover uk-table-striped">
+
+            <table class="table">
                 <thead>
                 <tr>
                     <th>{{ trans('posts.title') }}</th><th>{{ trans('posts.subhead') }}</th><th>{{ trans('posts.body') }}</th><th>Image</th><th>Date</th>@can('isAdmin')<th>Actions</th>@endcan
@@ -24,7 +24,7 @@
                         {{--<td>{{ $x }}</td>--}}
                         <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{str_limit($item->body, 15)}}</td>
 
-                        <td><img class="uk-thumbnail-mini" src="../images/{{ $item->imgPath}}"></td>
+                        <td><img class="img-responsive thumbnail" src="../images/{{ $item->imgPath}}"></td>
                         <td>{{ $item->created_at->format('m-d-Y') }}</td>
 
                         @can('isAdmin')
@@ -45,7 +45,7 @@
                 </tbody>
             </table>
             <div class="pagination"> {!! $posts->render() !!} </div>
-        </div>
+
 
 
 
