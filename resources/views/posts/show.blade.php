@@ -24,7 +24,7 @@
     <div class="col-md-12">
 
 
-    <article class="uk-article">
+    <article class="article-title-show">
         <h1 class="uk-article-title" style="font-family: Pacifico, cursive;font-size:4em;line-height:1em;text-align:center;">{{ $post->title }}</h1>
         <p class="subheader-main" style="text-align:center;">{{ $post->subHead}}</p>
         <p class="uk-article-meta" style="text-align:center;">
