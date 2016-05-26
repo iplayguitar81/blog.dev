@@ -17,6 +17,8 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
     .main-contain{
         margin-top: 5em !important;
     }
+
+/* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
          font-family: 'FabFelt';
          src: url("https://dl.dropboxusercontent.com/s/e0x8cw1pczwvz90/fabfeltscript-bold.woff2"); !important }
