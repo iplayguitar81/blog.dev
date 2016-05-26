@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 
-    @can('isAdmin')<h1>Create New Post</h1>
+    @can('isAdmin')<h1 class="" style="font-family:Pacifico,cursive;color:#E63C4D;font-size:4em;">Create New Post</h1>
 
     @if ($errors->any())
         <ul class="uk-alert-danger">
@@ -15,13 +15,13 @@
     <hr/>
 
 
-    {!! Form::open(['url' => '/posts', 'class' => '.uk-form-row', 'files' =>true]) !!}
+    {!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}
 
 
 
                 <div class="form-group {{ $errors->has('title') ? 'has-error' : ''}}">
-                {!! Form::label('title', trans('posts.title'), ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
+                {!! Form::label('title', trans('posts.title'), ['class' => '']) !!}
+                <div class="">
                     {!! Form::text('title', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('title', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
@@ -29,8 +29,8 @@
     <br/>
 
     <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
-        {!! Form::label('subHead', trans('posts.subhead'), ['class' => 'col-sm-3 control-label']) !!}
-        <div class="col-sm-6">
+        {!! Form::label('subHead', trans('posts.subhead'), ['class' => '']) !!}
+        <div class="">
             {!! Form::text('subHead', null, ['class' => 'form-control']) !!}
             {!! $errors->first('subHead', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
@@ -39,8 +39,8 @@
 <br/>
 
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
-                {!! Form::label('body', trans('posts.body'), ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
+                {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
+                <div class="">
                     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('body', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
@@ -49,7 +49,7 @@
 <br/>
 
     <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-3">
+        <div class="">
             <input type="file" name="file" id="file" onchange="readURL(this);"/>
         </div>
     </div>
@@ -63,7 +63,7 @@
 
             <div class="form-group {{ $errors->has('imgPath') ? 'has-error' : ''}}">
                 {{--{!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}--}}
-                <div class="col-sm-6">
+                <div class="">
                     {!! Form::text('imgPath', null, ['class' => 'form-control filename']) !!}
                     {!! $errors->first('imgPath', '<p class="help-block">:message</p>') !!}
                 </div>
@@ -71,7 +71,7 @@
             <br/>
 
     <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-3">
+        <div class="">
             {!! Form::submit('Create', ['class' => 'btn btn-primary form-control']) !!}
         </div>
     </div>
