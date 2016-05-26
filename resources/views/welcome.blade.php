@@ -59,17 +59,17 @@
     @endif
 
     @foreach($posts as $item)
-    <article class="uk-article">
+    <article class="">
 
 
-        <h1 class="uk-article-title" style="font-family: Pacifico, cursive;">
+        <h1 class="" style="font-family: Pacifico, cursive;">
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
         <p class="subheader-main">{{ $item->subHead}}</p>
         {{--{{$posts-> $item->user }}--}}
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
-        <p class="uk-article-meta">Written by
+        <p class="">Written by
             <?
             //below is one way to get the name of the author.....
             ?>
