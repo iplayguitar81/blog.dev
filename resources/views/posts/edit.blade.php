@@ -1,9 +1,10 @@
 @extends('layout')
 @section('title', 'Edit '.$post->title)
 @section('content')
-<div class="container">
 
     @can('isAdmin')
+
+        <div class="col-md-12">
     <h1>Edit Post</h1>
 
     @if ($errors->any())
