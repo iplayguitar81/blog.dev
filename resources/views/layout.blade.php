@@ -127,16 +127,12 @@
 
 <div class="container-fluid main-contain">
 
-
-    <div class="uk-grid" data-uk-grid-margin>
+<div class="row">
+    <div class="col-md-8">
         @yield('content')
 
-        <style type="text/css">@font-face { font-family:Creampuff; URL('/fonts/creampuffy.ttf'); }</style>
-
-
-
     </div>
-
+</div>
 </div>
 
 <div id="offcanvas" class="uk-offcanvas">
