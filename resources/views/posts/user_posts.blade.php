@@ -29,7 +29,7 @@
 
                         @can('isAdmin')
                             <td>
-                                <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="btn btn-primary btn-md active">Update</a><br/>
+                                <a href="{{ url('/posts/' . $item->id . '/edit') }}" class="btn btn-primary btn-md active">Update</a><br/><br/>
                                 {!! Form::open([
                                     'method'=>'DELETE',
                                     'url' => ['/posts', $item->id],
