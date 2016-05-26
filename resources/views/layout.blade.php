@@ -68,7 +68,6 @@
     </div>
 </nav>
 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9"> <ul class="nav navbar-nav"> <li class="active"><a href="#">Home</a></li> <li><a href="#">Link</a></li> <li><a href="#">Link</a></li> </ul> </div>
 <div id="nav-bar-logo-stick" data-uk-sticky="{boundary:'#footsy'}">
     <header id="top">
         <a href="{{url('/')}}" ><img alt="bowtie software &amp; web development" src="{{url('/images/bowtiebranded.png')}}"></a>
