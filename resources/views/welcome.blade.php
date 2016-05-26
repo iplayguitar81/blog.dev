@@ -88,7 +88,7 @@
 
       <p>  {{str_limit($item->body, 100)}}...</p>
         <br/>
-            <a class="btn-danger" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+            <a class="btn btn-danger btn-lg active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
             <a style="margin-top:.2em;" class="btn-default" href="#">Comments</a>
 
