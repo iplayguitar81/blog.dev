@@ -123,7 +123,7 @@
 
 
 </div>
-<hr>
+
 
 <div class="col-md-4">
     @include('sidebar')
