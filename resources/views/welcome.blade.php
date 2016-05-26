@@ -94,6 +94,7 @@
 
 
     </article>
+        </hr>
     @endforeach
 
         {{--<h1>All Cards</h1>--}}
