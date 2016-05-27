@@ -18,9 +18,7 @@
         <h3 class="uk-panel-title">Social Links</h3>
         <ul class="uk-list">
             <li><a href="#">GitHub</a></li>
-            <li> <a class="btn btn-social-icon btn-twitter">
-                    <span class="fa fa-twitter"></span>
-                </a><a href="#">Twitter</a></li>
+            <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>
         </ul>
     </div>
