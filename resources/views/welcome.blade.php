@@ -86,7 +86,7 @@
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img class="img-responsive" src="../images/{{ $item->imgPath}}"></a>
         </p>
 {{$variable = str_limit($item->body, 100)}}
-   <?$variable= html_entity_decode($variable)?>
+   <?$variable= htmlspecialchars_decode($variable)?>
         {!! trim($variable) !!}
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
         <br/>
