@@ -177,7 +177,7 @@ hr {
     </div>
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
-<script src="{{url('/js/ckeditor.js')}}"></script>
+
 
 {{--<script>--}}
     {{--(function() {--}}
