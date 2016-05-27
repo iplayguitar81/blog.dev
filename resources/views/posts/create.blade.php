@@ -88,7 +88,7 @@
 <script src="{{url('/js/ckeditor.js')}}"></script>
 
 <script>
-    CKEDITOR.replace( 'editor1' );
+    CKEDITOR.replace( 'body' );
 </script>
 
 
