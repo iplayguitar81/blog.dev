@@ -37,6 +37,7 @@ to Bowtie<br/>Software &amp; Web Development!
                 @endif
 
             </h3>
+        <br/>
 
         <div class="list-group">
             <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
