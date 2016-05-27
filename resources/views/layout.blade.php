@@ -201,6 +201,7 @@ div.pagination {
 <style scoped>
     @import "https://fonts.googleapis.com/css?family=Pacifico";
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
+    @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
 </style>
 
 <script>
