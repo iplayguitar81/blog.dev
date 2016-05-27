@@ -85,6 +85,7 @@
 
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/image_upload.js')}}"></script>
+<script src="{{url('/js/ckeditor.js')}}"></script>
 
 <script>
     CKEDITOR.replace( 'editor1' );
