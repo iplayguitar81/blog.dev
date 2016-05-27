@@ -40,7 +40,7 @@
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
                 <div class="">
-                    {!! Form::textarea('body', null, ['class' => 'form-control', 'name'=>'editor1', 'id'=>'editor1']) !!}
+                    {!! Form::textarea('body', null, ['class' => 'form-control', 'name'=>'body', 'id'=>'body']) !!}
                     {!! $errors->first('body', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
             </div>
@@ -88,7 +88,7 @@
 <script src="{{url('/js/ckeditor.js')}}"></script>
 
 <script>
-    CKEDITOR.replace( '#editor1' );
+    CKEDITOR.replace( '#body' );
 </script>
 
 
