@@ -36,6 +36,11 @@ hr {
     margin-bottom: 20px;
     width: 100%;
 }
+iframe{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
