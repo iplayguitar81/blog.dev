@@ -77,7 +77,7 @@
 
     {{--</form>--}}
 
-<div class="uk-grid-large">
+<div class="alert alert-danger">
 
     <ul>
         @foreach($errors->all() as $error)
