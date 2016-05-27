@@ -67,12 +67,12 @@ iframe{
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;">
+            <a class="navbar-brand" href="{{url('/')}}">
                 <img src="{{url('images/bowtie-brand-transparent.png')}}"alt="">
                 <!-- put text here if want/need be-->
 
             </a>
-            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 3em;">
+            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;">
                 Bowtie
             </a>
         </div>
