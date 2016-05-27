@@ -77,14 +77,16 @@
 
     {{--</form>--}}
 
-<div class="alert alert-danger">
+
 
     <ul>
         @foreach($errors->all() as $error)
+            <div class="alert alert-danger">
             <li>{{ $error }}</li>
+            </div>
         @endforeach
     </ul>
-</div>
+
     {!! Form::open(array('route' => 'contact_store', 'class' => 'uk-form uk-form-horizontal')) !!}
 
     <div class="form-group uk-form-row">
