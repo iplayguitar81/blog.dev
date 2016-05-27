@@ -87,6 +87,8 @@
         </p>
 
       <p>  {!!(($item->body))!!}...</p>
+
+        <p>{{Str::words($item->body, $words = 50, $end = '...')}}</p>
         <br/>
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
