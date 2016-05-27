@@ -86,9 +86,7 @@
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img class="img-responsive" src="../images/{{ $item->imgPath}}"></a>
         </p>
 
-      <p>  {!!(($item->body))!!}...</p>
-
-
+      <p>  {(str_limit($item->body, 100))}...</p>
         <br/>
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
