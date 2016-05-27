@@ -89,7 +89,7 @@
    <?
 
             $variable=$item->body;
-        $variable = (str_limit($item->body, 100));
+       // $variable = (str_limit($item->body, 100));
        // $variable= htmlentities($variable);
         ?>
         {!! str_limit($variable) !!}
