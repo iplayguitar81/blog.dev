@@ -26,7 +26,8 @@
 
     <div class="panel panel-primary">
 
-        <h3 class="panel-title">Welcome
+        <div class="panel-heading">
+            <h3 class="panel-title">Welcome
 
             @if(Auth::user())
 
@@ -37,6 +38,7 @@ to Bowtie<br/>Software &amp; Web Development!
                 @endif
 
             </h3>
+        </div>
         <br/>
 
         <div class="list-group">
