@@ -39,11 +39,9 @@ to Bowtie<br/>Software &amp; Web Development!
             </h3>
 
         <div class="list-group">
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i>Facebook</button></a>
-            <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-            <button type="button" class="list-group-item">Morbi leo risus</button>
-            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-            <button type="button" class="list-group-item">Vestibulum at eros</button>
+            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
+            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-twitter"></i> &nbsp;Twitter</button></a>
+
         </div>
 
     </div>
