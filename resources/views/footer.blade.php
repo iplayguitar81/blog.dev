@@ -1,3 +1,3 @@
 <br/>
-<div class="uk-align-center">Bowtie Software &amp; Web Development Copyright {{date("Y")}}</div>
+<div class="panel-footer">Bowtie Software &amp; Web Development Copyright {{date("Y")}}</div>
 
