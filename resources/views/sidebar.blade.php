@@ -5,8 +5,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut.</p>
     </div>
     <div class="panel">
-        <h3 class="panel-title">Archives</h3>
-        <ul class="uk-list uk-list-line">
+        <div class="panel-heading">
+        <h3 class="panel-title">Archives</h3></div>
+        <ul class="">
             <li><a href="#">January 2014</a></li>
             <li><a href="#">December 2013</a></li>
             <li><a href="#">November 2013</a></li>
@@ -14,6 +15,12 @@
             <li><a href="#">September 2013</a></li>
         </ul>
     </div>
+
+    <div class="well">
+
+
+    </div>
+
     <div class="panel panel-success"> <div class="panel-heading"> <h3 class="panel-title">Panel title</h3> </div> <div class="panel-body"> Panel content </div> </div>
 
 
