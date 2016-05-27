@@ -87,9 +87,13 @@ div.pagination {
                 <li><a href="{{url('/contact')}}">Contact</a></li>
 
             </ul>
+
+
+
+
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
-                <li><a href="{{url('/login')}}"><span class="external-link-square"></span> Login</a></li>
+                <li><a href="{{url('/login')}}"><i class="fa fa-btn fa-sign-in"></i> Login</a></li>
 
                 @else
 
