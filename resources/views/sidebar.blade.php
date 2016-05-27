@@ -38,45 +38,13 @@ to Bowtie<br/>Software &amp; Web Development!
 
             </h3>
 
-        <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="">
-            <li class="uk-active"><a href="#">Active</a></li>
-
-            <li class="uk-parent" aria-expanded="false">
-                <a href="#">Parent</a>
-                <div style="overflow: hidden; position: relative; height: 0px;" class="uk-hidden"><ul class="uk-nav-sub">
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a>
-                            <ul>
-                                <li><a href="#">Sub item</a></li>
-                                <li><a href="#">Sub item</a></li>
-                            </ul>
-                        </li>
-                    </ul></div>
-            </li>
-
-            <li class="uk-parent" aria-expanded="false">
-                <a href="#">Parent</a>
-                <div style="overflow: hidden; position: relative; height: 0px;" class="uk-hidden"><ul class="uk-nav-sub">
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a></li>
-                    </ul></div>
-            </li>
-
-            <li><a href="#">Item</a></li>
-
-            <li class="uk-nav-header">Social Links</li>
-            <li class="uk-parent"><a href="#"><i class="uk-icon-github"></i> Github</a></li>
-            <li><a href="#"><i class="uk-icon-facebook-official"></i> Facebook</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
-        </ul>
+        <div class="list-group">
+            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i>Facebook</button></a>
+            <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+            <button type="button" class="list-group-item">Morbi leo risus</button>
+            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+            <button type="button" class="list-group-item">Vestibulum at eros</button>
+        </div>
 
     </div>
 
-    <div class="list-group">
-        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i>Facebook</button></a>
-        <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-        <button type="button" class="list-group-item">Morbi leo risus</button>
-        <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-        <button type="button" class="list-group-item">Vestibulum at eros</button>
-    </div>
