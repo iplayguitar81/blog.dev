@@ -14,14 +14,6 @@
             <li><a href="#">September 2013</a></li>
         </ul>
     </div>
-    <div class="panel">
-        <h3 class="uk-panel-title">Social Links</h3>
-        <ul class="uk-list">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
-    </div>
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
