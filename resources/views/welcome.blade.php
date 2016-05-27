@@ -87,7 +87,7 @@
         </p>
 {{--{{$variable = str_limit($item->body, 100)}}--}}
    <?
-        $variable = htmlspecialchars(str_limit($item->body, 100));
+        $variable = htmlspecialchars_decode(str_limit($item->body, 100));
        // $variable= htmlentities($variable);
         ?>
         {!! ($variable) !!}
