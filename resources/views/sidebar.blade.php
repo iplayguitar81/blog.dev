@@ -1,5 +1,34 @@
+<div class="panel panel-primary">
 
-    <div class="panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Welcome
+
+            @if(Auth::user())
+
+                {{Auth::user()->name}}
+
+            @else
+                to Bowtie<br/>Software &amp; Web Development!
+            @endif
+
+        </h3>
+    </div>
+    <br/>
+
+    <div class="list-group">
+        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
+        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-twitter"></i> &nbsp;Twitter</button></a>
+        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-github"></i> &nbsp;Github</button></a>
+        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-youtube"></i> &nbsp;YouTube</button></a>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="panel">
         <div class="panel-heading">
         <h3 class="panel-title">Title</h3></div>
         <ul class="list-group">
@@ -45,33 +74,3 @@
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
     </div>
-
-
-
-    <div class="panel panel-primary">
-
-        <div class="panel-heading">
-            <h3 class="panel-title">Welcome
-
-            @if(Auth::user())
-
-            {{Auth::user()->name}}
-
-                @else
-to Bowtie<br/>Software &amp; Web Development!
-                @endif
-
-            </h3>
-        </div>
-        <br/>
-
-        <div class="list-group">
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-twitter"></i> &nbsp;Twitter</button></a>
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-github"></i> &nbsp;Github</button></a>
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-youtube"></i> &nbsp;YouTube</button></a>
-
-        </div>
-
-    </div>
-
