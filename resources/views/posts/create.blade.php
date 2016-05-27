@@ -85,10 +85,10 @@
 
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/image_upload.js')}}"></script>
-<script src="{{url('/js/ckeditor.js')}}"></script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
 <script>
-    CKEDITOR.replace( '#body' );
+    tinymce.init({ selector:'textarea' });
 </script>
 
 
