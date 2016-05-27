@@ -22,7 +22,10 @@
                     {{-- */$x++;/* --}}
                     <tr>
                         {{--<td>{{ $x }}</td>--}}
-                        <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>{{str_limit($item->body, 15)}}</td>
+                        <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->subHead }}</td><td>
+
+                            {{strip_tags(str_limit($item->body, 20))}}
+                        </td>
 
                         <td><img class="img-responsive thumbnail" src="../images/{{ $item->imgPath}}"></td>
                         <td>{{ $item->created_at->format('m-d-Y') }}</td>
