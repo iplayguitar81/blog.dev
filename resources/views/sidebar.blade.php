@@ -14,6 +14,8 @@
             <li><a href="#">September 2013</a></li>
         </ul>
     </div>
+    <div class="panel panel-success"> <div class="panel-heading"> <h3 class="panel-title">Panel title</h3> </div> <div class="panel-body"> Panel content </div> </div>
+
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
