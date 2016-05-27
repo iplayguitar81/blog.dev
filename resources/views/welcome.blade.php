@@ -88,7 +88,8 @@
 {{--{{$variable = str_limit($item->body, 100)}}--}}
    <?
         $variable = str_limit($item->body, 100);
-        $variable= htmlentities($variable);?>
+       // $variable= htmlentities($variable);
+        ?>
         {!! ($variable) !!}
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
         <br/>
