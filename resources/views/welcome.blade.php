@@ -87,10 +87,10 @@
         </p>
 {{--{{$variable = str_limit($item->body, 100)}}--}}
    <?
-        $variable = str_limit($item->body, 100);
+        $variable = htmlspecialchars(str_limit($item->body, 100));
        // $variable= htmlentities($variable);
         ?>
-        {!! strip_tags($variable) !!}
+        {!! ($variable) !!}
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
         <br/>
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
