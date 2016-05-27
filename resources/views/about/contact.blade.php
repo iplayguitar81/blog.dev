@@ -115,7 +115,7 @@
 <br/>
     <div class="form-group uk-form-row">
         {!! Form::submit('Contact Us!',
-          array('class'=>'btn btn-primary')) !!}
+          array('class'=>'btn btn-success form-control')) !!}
     </div>
     {!! Form::close() !!}
 </div>
