@@ -74,7 +74,7 @@ to Bowtie<br/>Software &amp; Web Development!
     </div>
 
     <div class="list-group">
-        <button type="button" class="list-group-item">Cras justo odio</button>
+        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i>Facebook</button></a>
         <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
         <button type="button" class="list-group-item">Morbi leo risus</button>
         <button type="button" class="list-group-item">Porta ac consectetur ac</button>
