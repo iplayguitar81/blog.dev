@@ -40,7 +40,7 @@
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
                 <div class="">
-                    {!! Form::textarea('body', null, ['class' => 'form-control', 'name'=>'editor1']) !!}
+                    {!! Form::textarea('body', null, ['class' => 'form-control', 'name'=>'editor1', 'id'=>'editor1']) !!}
                     {!! $errors->first('body', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
             </div>
