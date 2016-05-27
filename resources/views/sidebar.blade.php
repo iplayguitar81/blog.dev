@@ -41,8 +41,8 @@ to Bowtie<br/>Software &amp; Web Development!
         <div class="list-group">
             <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
             <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-twitter"></i> &nbsp;Twitter</button></a>
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-github"></i> &nbsp;Twitter</button></a>
-            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-stack-youtube"></i> &nbsp;Twitter</button></a>
+            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-github"></i> &nbsp;Github</button></a>
+            <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-youtube"></i> &nbsp;YouTube</button></a>
 
         </div>
 
