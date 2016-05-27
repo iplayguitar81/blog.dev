@@ -7,12 +7,12 @@
     <div class="panel">
         <div class="panel-heading">
         <h3 class="panel-title">Archives</h3></div>
-        <ul class="">
-            <li><a href="#">January 2014</a></li>
-            <li><a href="#">December 2013</a></li>
-            <li><a href="#">November 2013</a></li>
-            <li><a href="#">October 2013</a></li>
-            <li><a href="#">September 2013</a></li>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#">January 2014</a></li>
+            <li class="list-group-item"><a href="#">December 2013</a></li>
+            <li class="list-group-item"><a href="#">November 2013</a></li>
+            <li class="list-group-item"><a href="#">October 2013</a></li>
+            <li class="list-group-item"><a href="#">September 2013</a></li>
         </ul>
     </div>
 
