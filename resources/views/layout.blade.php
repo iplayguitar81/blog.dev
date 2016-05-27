@@ -89,7 +89,7 @@ div.pagination {
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
-                <li><a href="{{url('/login')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="{{url('/login')}}"><span class="external-link-square"></span> Login</a></li>
 
                 @else
 
