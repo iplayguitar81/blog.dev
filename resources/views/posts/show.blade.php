@@ -46,7 +46,7 @@
         <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
         <br/>
         <div class="center-block">
-       <p class="text-center"> {{ html_entity_decode($post->body) }}</p>
+       <p class="text-center"> {{ htmlentities($post->body) }}</p>
 
         </div>
 
