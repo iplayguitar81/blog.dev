@@ -24,7 +24,7 @@
     </div>
 
 
-    <div class="panel">
+    <div class="panel panel-primary">
 
         <h3 class="panel-title">Welcome
 
