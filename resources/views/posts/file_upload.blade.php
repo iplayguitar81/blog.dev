@@ -12,7 +12,7 @@
     @endif
   <h1>File Upload...... Coming soon.....</h1>
 
-  {!! Form::open(['url' => '/posts/file_upload', 'class' => '', 'files' =>true]) !!}
+  {!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}
       <div class="">
           <input type="file" name="csv-file" id="csv-file"/>
       </div>
