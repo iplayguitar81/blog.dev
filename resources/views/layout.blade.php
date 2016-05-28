@@ -45,7 +45,7 @@ div.pagination {
     text-align:center;
 }
 
-span.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em}
+p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em}
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
