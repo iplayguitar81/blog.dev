@@ -57,7 +57,7 @@
     @endif
 
     @foreach($posts as $item)
-    <article class="">
+    <article class="text-center">
 
 
         <h1 class="main-article-titles" style="font-family: Pacifico, cursive;">
