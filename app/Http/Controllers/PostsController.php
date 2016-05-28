@@ -101,7 +101,7 @@ class PostsController extends Controller
         else
         {
             try {
-                Excel::load(Input::file('file'), function ($reader) {
+                Excel::load(Input::file('csv-file'), function ($reader) {
 
                     foreach ($reader->toArray() as $row) {
                         Post::firstOrCreate($row);
