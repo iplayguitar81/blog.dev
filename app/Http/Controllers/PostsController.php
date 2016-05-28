@@ -42,6 +42,9 @@ class PostsController extends Controller
     {
         $excel= \App::make('excel');
 
+        $results = Excel::load('app/test-file.csv')->get();
+
+
         $user=Auth::id();
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
@@ -56,7 +59,7 @@ class PostsController extends Controller
 
        #$posts=dd(\App\User::paginate(5));
 
-        return view('posts.index', compact('posts', 'user'));
+        return view('posts.index', compact('posts', 'user', 'results'));
 
         $this->authorize('isAdmin');
     }
