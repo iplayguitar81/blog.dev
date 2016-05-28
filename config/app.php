@@ -209,7 +209,7 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
         'HTML'      => Collective\Html\HtmlFacade::class,
 //        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
 
     ],
 
