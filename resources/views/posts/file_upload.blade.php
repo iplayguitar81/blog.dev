@@ -19,6 +19,8 @@
   </div>
 
   {{csrf_field()}}
+    <br/>
+    <br/>
 
   {!! Form::submit('Upload CSV', ['class' => 'btn btn-success form-control']) !!}
 
