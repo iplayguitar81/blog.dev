@@ -59,7 +59,7 @@
     <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
             <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Thank you for visiting Bowtie Software &amp; Web Development.  Please take time to like us on Facebook and/or follow us on Twitter!</p>
         </div>
         <div id="menu1" class="tab-pane fade">
             <h3>Menu 1</h3>
