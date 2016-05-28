@@ -3,7 +3,7 @@
 @section('title', 'Blog')
 <div class="col-md-12">
     <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
-    @foreach($result as $tubular)
+    @foreach($results as $tubular)
     <p>{{$tubular->col_1}}</p>
     <p>{{$tubular->col_2}}</p>
     <p>{{$tubular->col_3}}</p>
