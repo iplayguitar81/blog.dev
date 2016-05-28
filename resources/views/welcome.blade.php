@@ -133,7 +133,7 @@
 
 <br/>
 
-<div class="col-md-3 col-md-offset-8">
+<div class="col-md-3 pull-right">
     @include('sidebar')
 </div>
 
