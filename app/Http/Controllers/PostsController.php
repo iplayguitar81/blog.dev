@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Facade;
 
 use App\Post;
 
+use \App;
+
 use App\User;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -38,7 +40,7 @@ class PostsController extends Controller
 
     public function index( )
     {
-        $excel=App::make('excel');
+        $excel= \App::make('excel');
 
         $user=Auth::id();
 
