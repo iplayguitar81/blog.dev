@@ -149,7 +149,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Maatwebsite\Excel\ExcelServiceProvider::class,
+        Maatwebsite\Excel\Facades\ExcelServiceProvider::class,
 //        Laravel\Socialite\SocialiteServiceProvider::class,
 
 
@@ -210,7 +210,7 @@ return [
         'HTML'      => Collective\Html\HtmlFacade::class,
 //        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
-        
+
 
     ],
 
