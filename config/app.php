@@ -149,7 +149,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Maatwebsite\Excel\Facades\ExcelServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 //        Laravel\Socialite\SocialiteServiceProvider::class,
 
 
