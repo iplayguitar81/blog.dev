@@ -85,6 +85,40 @@ class PostsController extends Controller
      *
      * @return void
      */
+    public function postUploadCsv()
+    {
+        $rules = array(
+            'file' => 'required',
+            'num_records' => 'required',
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        // process the form
+        if ($validator->fails())
+        {
+            return Redirect::route(('posts.file_upload'))->withErrors($validator);
+        }
+        else
+        {
+            try {
+                Excel::load(Input::file('file'), function ($reader) {
+
+                    foreach ($reader->toArray() as $row) {
+                        Post::firstOrCreate($row);
+                    }
+                });
+                \Session::flash('success', 'Post uploaded successfully.');
+                return redirect(route('posts.index'));
+            } catch (\Exception $e) {
+                \Session::flash('error', $e->getMessage());
+                return redirect(route('posts.index'));
+            }
+        }
+    }
+
+
+
+
     public function store(Request $request)
     {
 
