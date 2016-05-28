@@ -9,6 +9,6 @@
           <input type="file" name="csv-file" id="csv-file"/>
       </div>
   </div>
-
+<input type="submit">
 
 @endsection
