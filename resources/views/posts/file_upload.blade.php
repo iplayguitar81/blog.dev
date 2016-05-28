@@ -4,11 +4,17 @@
 
   <h1>File Upload...... Coming soon.....</h1>
 
-  <div class="form-group">
+  {!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}
       <div class="">
           <input type="file" name="csv-file" id="csv-file"/>
       </div>
   </div>
-<input type="submit">
+
+  {{csrf_field()}}
+
+  {!! Form::submit('Upload CSV', ['class' => 'btn btn-success form-control']) !!}
+
+  {!! Form::close() !!}
+
 
 @endsection
