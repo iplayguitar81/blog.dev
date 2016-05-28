@@ -133,7 +133,7 @@
 
 <br/>
 
-<div class="col-md-4">
+<div class="col-md-3 col-md-offset-8">
     @include('sidebar')
 </div>
 
