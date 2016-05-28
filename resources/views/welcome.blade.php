@@ -93,7 +93,7 @@
        // $variable = (str_limit($item->body, 100));
        // $variable= htmlentities($variable);
         ?>
-        <p><span class="article-texterson">{{$variable}} ...</span></p>
+       <span class="article-texterson">{{$variable}} ...</span>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
         <br/>
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
