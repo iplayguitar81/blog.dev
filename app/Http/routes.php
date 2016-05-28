@@ -35,7 +35,10 @@ Route::post('contact',
 
 
 
+
 Route::get('/posts/user_posts','PostsController@user_posts');
+Route::get('/posts/file_upload','PostsController@file_upload');
+
 
 Route::group(['middleware' => ['web']], function () {
 	Route::resource('posts', 'PostsController');
