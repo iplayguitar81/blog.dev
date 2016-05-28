@@ -21,6 +21,7 @@ use Illuminate\Routing\Route;
 use Auth;
 
 use Illuminate\Support\Facades\Input;
+use Maatwebsite\Excel\Facades\Excel;
 
 
 
@@ -30,9 +31,14 @@ class PostsController extends Controller
      * Display a listing of the resource.
      *
      * @return void
+     *
+     *
+     *
      */
+
     public function index( )
     {
+        $excel=App::make('excel');
 
         $user=Auth::id();
 
