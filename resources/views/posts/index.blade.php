@@ -3,7 +3,16 @@
 @section('title', 'Blog')
 <div class="col-md-12">
     <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
-    {{$results}}
+    @foreach($result as $tubular)
+    <p>{{$tubular->col_1()}}</p>
+    <p>{{$tubular->col_2()}}</p>
+    <p>{{$tubular->col_3()}}</p>
+    <p>{{$tubular->col_4()}}</p>
+
+
+
+    @endforeach
+
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan
 
 
