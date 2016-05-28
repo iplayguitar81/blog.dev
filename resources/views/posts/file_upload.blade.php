@@ -2,6 +2,11 @@
 @section('title', 'Post CSV Upload')
 @section('content')
 
+    @if(Session::has('error'))
+        <div class="alert-danger">
+            <h2>{{ Session::get('error') }}</h2>
+        </div>
+    @endif
 
     @if ($errors->any())
         <ul class="uk-alert-danger">
