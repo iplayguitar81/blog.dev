@@ -54,8 +54,6 @@
         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
         <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-facebook"></i>&nbsp;Facebook</a></li>
         <li><a data-toggle="tab" href="#menu2"><i class="fa fa-lg fa-twitter"></i>&nbsp;Twitter</a></li>
-        <li><a data-toggle="tab" href="#menu3"><i class="fa fa-lg fa-github"></i>&nbsp;GitHub</a></li>
-
     </ul>
 
     <div class="tab-content">
