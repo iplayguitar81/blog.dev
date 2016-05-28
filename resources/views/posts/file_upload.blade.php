@@ -6,7 +6,7 @@
 
   <div class="form-group">
       <div class="">
-          <input type="file" name="csv-file" id="file" onchange="readURL(this);"/>
+          <input type="file" name="csv-file" id="csv-file"/>
       </div>
   </div>
 
