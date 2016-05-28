@@ -205,7 +205,8 @@ class PostsController extends Controller
     public function file_upload()
     {
 
-        return view();
+
+        return view('posts.file_upload');
 
     }
 
