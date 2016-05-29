@@ -15,7 +15,8 @@ class AddFieldsToPosts extends Migration
 
         Schema::table('posts', function ($table) {
             $table->string('subHead');
-            $table->string('imgPath');//
+            $table->string('imgPath');
+            
         });
 
     }
