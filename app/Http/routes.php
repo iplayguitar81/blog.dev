@@ -40,8 +40,9 @@ Route::post('contact',
 Route::get('/posts/user_posts','PostsController@user_posts');
 
 Route::get('/posts/file_upload','PostsController@file_upload');
-Route::post('file_upload',
-    ['as' => 'contact_store', 'uses' => 'PostsController@postUploadCsv']);
+
+Route::post('/posts/file_upload', 'UsersController@postUploadCsv');
+
 
 
 Route::group(['middleware' => ['web']], function () {
