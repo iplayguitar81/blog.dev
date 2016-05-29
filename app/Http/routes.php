@@ -39,7 +39,7 @@ Route::post('contact',
 
 Route::get('/posts/user_posts','PostsController@user_posts');
 
-Route::get('/posts/file_upload','PostsController@file_upload');
+Route::get('/posts/file_upload',['as' => 'file_upload', 'uses'=>'PostsController@file_upload']);
 
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
 
