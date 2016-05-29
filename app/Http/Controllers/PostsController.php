@@ -97,7 +97,7 @@ class PostsController extends Controller
         // process the form
         if ($validator->fails())
         {
-            return Redirect::route(('posts/file_upload'))->withErrors($validator);
+            return Redirect::route(('posts.file_upload'))->withErrors($validator);
         }
         else
         {
