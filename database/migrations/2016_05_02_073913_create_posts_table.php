@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->text('body');
             $table->string('imgPath');
             $table->timestamps();
+            
         });
 
         Schema::table('posts', function($table) {
