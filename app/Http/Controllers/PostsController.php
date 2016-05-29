@@ -110,29 +110,29 @@ class PostsController extends Controller
         {
             try {
 
-                $results = Excel::load(Input::file(('csv-file'))->get());
-                foreach($results as $key => $value) {
-                    $insert[] = ['title' => $value->title, 'subhead' => $value->subhead, 'body'=>$value->body,'imgpath'=>$value->imgpath];
-
-                    //add a check here.......
-
-                    Post::table('posts')->insert($insert);
-                    dd('Insert Posts Record(s) successfully.');
-                }
-
-
-
-//                Excel::load(Input::file('csv-file'), function ($reader) {
+//                $results = Excel::load(Input::file(('csv-file'))->get());
+//                foreach($results as $key => $value) {
+//                    $insert[] = ['title' => $value->title, 'subhead' => $value->subhead, 'body'=>$value->body,'imgpath'=>$value->imgpath];
 //
+//                    //add a check here.......
 //
-//
-////                    foreach ($reader->toArray() as $row) {
-////                        Post::firstOrCreate($row);
-////
-////                     //   Post::create(array('title' => $row->title, 'body' => $row->body, 'subhead' => $row->subhead, 'imgpath' => $row->imgpath));
-////
-////                    }
-//                });
+//                    Post::table('posts')->insert($insert);
+//                    dd('Insert Posts Record(s) successfully.');
+//                }
+
+
+
+                Excel::load(Input::file('csv-file'), function ($reader) {
+
+
+
+                    foreach ($reader->first()->toArray() as $row) {
+                        Post::firstOrCreate($row);
+
+                     //   Post::create(array('title' => $row->title, 'body' => $row->body, 'subhead' => $row->subhead, 'imgpath' => $row->imgpath));
+
+                    }
+                });
                 \Session::flash('success', 'Post uploaded successfully.');
                 return redirect(route('posts.index'));
             } catch (\Exception $e) {
