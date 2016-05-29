@@ -41,11 +41,12 @@ class PostsController extends Controller
 
     public function index( )
     {
-        $excel= \App::make('excel');
+
+  //      $excel= \App::make('excel');
 
         $results = Excel::load('app/test-file.csv')->get();
 
-
+    
         $user=Auth::id();
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
@@ -54,6 +55,8 @@ class PostsController extends Controller
         //$posts = Post::orderBy('created_at', 'desc')->whereBetween('created_at',array('2016-05-24','2016-05-25'))->paginate(3);
 
         $posts = Post::orderBy('created_at', 'desc')->paginate(3);
+        
+        
 
         #$posts=User::with(['posts'])->all();
       #  $posts = Post::where('user_id','=', Auth::id())->get();
