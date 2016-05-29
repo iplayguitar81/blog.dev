@@ -109,29 +109,13 @@ class PostsController extends Controller
         else
         {
             try {
-
-//                $results = Excel::load(Input::file(('csv-file'))->get());
-//                foreach($results as $key => $value) {
-//                    $insert[] = ['title' => $value->title, 'subhead' => $value->subhead, 'body'=>$value->body,'imgpath'=>$value->imgpath];
-//
-//                    //add a check here.......
-//
-//                    Post::table('posts')->insert($insert);
-//                    dd('Insert Posts Record(s) successfully.');
-//                }
-
-
-
+                
                 Excel::load(Input::file('csv-file'), function ($reader) {
-
-
 
                     foreach ($reader->toArray() as $row) {
 
-
                         //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
                         Post::create($row);
-
 
                     }
                 });
