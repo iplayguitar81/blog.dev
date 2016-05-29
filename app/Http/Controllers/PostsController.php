@@ -127,11 +127,11 @@ class PostsController extends Controller
 
 
                     foreach ($reader->toArray() as $row) {
-                       // Post::firstOrCreate($row);
 
+
+                        //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
                         Post::create($row);
 
-                   //   Post::create(array('title' => $row->title, 'body' => $row->body, 'subhead' => $row->subhead, 'imgpath' => $row->imgpath));
 
                     }
                 });
