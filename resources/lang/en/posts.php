@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Title',
-    'subhead' => 'Sub Title',
+    'title' => 'title',
+    'subhead' => 'subhead',
 'body' => 'Body',
-'imgPath' => 'Image',
+'imgPath' => 'imgPath',
 
 
 ];
