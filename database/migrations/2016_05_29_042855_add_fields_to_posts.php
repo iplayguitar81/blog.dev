@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSubheadImgpathColumnsToPosts extends Migration
+class AddFieldsToPosts extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class AddSubheadImgpathColumnsToPosts extends Migration
     public function up()
     {
 
-        Schema::table('posts', function($table)
-        {
-            $table->string('subHead')->after('title');
-            $table->string('imgPath')->after('body');
-
+        Schema::table('posts', function ($table) {
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->string('subHead');
+            $table->string('imgPath');//
         });
-        //
+
     }
 
     /**
