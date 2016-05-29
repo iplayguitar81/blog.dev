@@ -15,8 +15,8 @@
             @endforeach
         </ul>
     @endif
-  <h1>File Upload...... Coming soon.....</h1>
-
+  <h1>File Upload...... Fix Error reporting...</h1>
+    {{Auth::user()->id}}
     {{--echo Form::open(array('action' => 'Controller@postUploadCsv','files' =>true))--}}
   {!! Form::open(array('url'=>'/posts/file_upload', 'files'=>true)) !!}
     {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
