@@ -116,8 +116,11 @@ class PostsController extends Controller
 
                         //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
                        //also need to associate the user_id to each record uploaded if possible.......
-                        
+                       //'user_id'=> Auth::user()->id;
+
                         Post::create($row);
+
+
 
                     }
                 });
