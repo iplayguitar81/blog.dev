@@ -89,8 +89,10 @@ class PostsController extends Controller
     public function postUploadCsv()
     {
         $rules = array(
-            'file' => 'required',
-            'num_records' => 'required',
+            'title' => 'required',
+            'subHead' => 'required',
+            'body' => 'required'
+
         );
 
         $validator = Validator::make(Input::all(), $rules);
