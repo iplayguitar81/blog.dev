@@ -16,7 +16,7 @@
         </ul>
     @endif
   <h1>File Upload...... Fix Error reporting...</h1>
-   @if(Auth)
+   @if(Auth::user())
     {{Auth::user()->id}}
     @endif
     {{--echo Form::open(array('action' => 'Controller@postUploadCsv','files' =>true))--}}
