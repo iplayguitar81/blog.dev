@@ -10,9 +10,7 @@
     {{--<p>{{$tubular->subhead}}</p>--}}
     {{--<p>{{$tubular->body}}</p>--}}
     {{--<p>{{$tubular->imgpath}}</p>--}}
-
-
-    @endforeach
+    {{--@endforeach--}}
 
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan
 
