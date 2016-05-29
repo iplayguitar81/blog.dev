@@ -8,13 +8,13 @@
         </div>
     @endif
 
-    {{--@if ($errors->any())--}}
-        {{--<ul class="uk-alert-danger">--}}
-            {{--@foreach ($errors->all() as $error)--}}
-                {{--<li>{{ $error }}</li>--}}
-            {{--@endforeach--}}
-        {{--</ul>--}}
-    {{--@endif--}}
+    @if ($errors->any())
+        <ul class="uk-alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
   <h1>File Upload...... Coming soon.....</h1>
 
     {{--echo Form::open(array('action' => 'Controller@postUploadCsv','files' =>true))--}}
