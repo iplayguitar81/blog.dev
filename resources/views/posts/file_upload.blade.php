@@ -17,7 +17,9 @@
     {{--@endif--}}
   <h1>File Upload...... Coming soon.....</h1>
 
-  {!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}
+    {{--echo Form::open(array('action' => 'Controller@postUploadCsv','files' =>true))--}}
+  {!! Form::open(array('action'=>'PostsController@postUploadCsv', 'files'=>true)) !!}
+    {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
 
           <input type="file" name="csv-file" id="csv-file"/>
 
