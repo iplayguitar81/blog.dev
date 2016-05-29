@@ -13,6 +13,7 @@ use App\Post;
 use \App;
 use Illuminate\Support\Facades\DB;
 
+
 use App\User;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -115,7 +116,7 @@ class PostsController extends Controller
 
                     //add a check here.......
 
-                    DB::table('posts')->insert($insert);
+                    Post::table('posts')->insert($insert);
                     dd('Insert Posts Record(s) successfully.');
                 }
 
