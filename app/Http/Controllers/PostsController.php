@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
 use App\Post;
 
 use \App;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 use App\User;
 use Illuminate\Http\Request;
