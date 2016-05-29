@@ -13,6 +13,8 @@
 
     @endforeach
 
+
+
     @can('isAdmin') <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>@endcan
 
 
@@ -25,6 +27,8 @@
             </thead>
             <tbody>
             {{-- */$x=0;/* --}}
+
+            {{$posts->getFillable()}}
             @foreach($posts as $item)
                 {{-- */$x++;/* --}}
                 <tr>
