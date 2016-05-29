@@ -108,8 +108,9 @@ class PostsController extends Controller
 
                     foreach ($reader->toArray() as $row) {
                         //Post::firstOrCreate($row);
+                        $row->title;
 
-                    //    Post::create(array('title' => Input::get('title'), 'body' => Input::get('body'), 'subHead' => Input::get('subHead'), 'imgPath' => Input::get('imgPath')));
+                    //    Post::create(array('title' => Input::get('title'), 'subhead' => Input::get('subhead'), 'body' => Input::get('body'), 'image' => Input::get('image')));
 
                     }
                 });
