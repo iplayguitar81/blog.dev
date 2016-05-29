@@ -104,24 +104,15 @@ class PostsController extends Controller
         else
         {
             try {
+                Excel::load(Input::file('csv-file'), function ($reader) {
 
-                $results = Excel::load(Input::file('csv-file')->get());
-//                Excel::load(Input::file('csv-file'), function ($reader) {
-//
-//                    foreach ($reader->toArray() as $row) {
-//                        Post::firstOrCreate($row);
-//                      //  $row->title;
-//
-//                       // Post::first(array('title' => $row->title, 'subHead' => $row->subHead, 'body' => $row->body, 'imgPath' => $row->imgPath));
-//
-//                    }
+                    foreach ($reader->toArray() as $row) {
+                        Post::firstOrCreate($row);
 
-                foreach ($results as $result){
+                      //  Post::firstOrCreate(array('title' => Input::get('title'), 'body' => Input::get('body'), 'subHead' => Input::get('subHead'), 'imgPath' => Input::get('imgPath')));
 
-                    Post::first(array('title' => $result->title, 'subHead' => $result->subHead, 'body' => $result->body, 'imgPath' => $result->imgPath));
-                }
-
-
+                    }
+                });
                 \Session::flash('success', 'Post uploaded successfully.');
                 return redirect(route('posts.index'));
             } catch (\Exception $e) {
