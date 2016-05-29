@@ -89,9 +89,9 @@ class PostsController extends Controller
     public function postUploadCsv()
     {
         $rules = array(
-            'title' => 'required',
-            'subHead' => 'required',
-            'body' => 'required'
+//            'title' => 'required',
+//            'subHead' => 'required',
+//            'body' => 'required'
 
         );
 
