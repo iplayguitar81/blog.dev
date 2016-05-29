@@ -107,7 +107,7 @@ class PostsController extends Controller
                 Excel::load(Input::file('csv-file'), function ($reader) {
 
                     foreach ($reader->toArray() as $row) {
-                        //Post::firstOrCreate($row);
+                        Post::firstOrCreate($row);
                       //  $row->title;
 
                        // Post::first(array('title' => $row->title, 'subHead' => $row->subHead, 'body' => $row->body, 'imgPath' => $row->imgPath));
