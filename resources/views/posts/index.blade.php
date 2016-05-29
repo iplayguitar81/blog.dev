@@ -5,9 +5,9 @@
     <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
     @foreach($results as $tubular)
     <p>{{$tubular->title}}</p>
-    <p>{{$tubular->subHead}}</p>
+    <p>{{$tubular->subhead}}</p>
     <p>{{$tubular->body}}</p>
-    <p>{{$tubular->imgPath}}</p>
+    <p>{{$tubular->imgpath}}</p>
 
 
 
