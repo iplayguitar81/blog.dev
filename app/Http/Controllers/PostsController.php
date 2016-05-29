@@ -109,12 +109,14 @@ class PostsController extends Controller
         else
         {
             try {
-                
+
                 Excel::load(Input::file('csv-file'), function ($reader) {
 
                     foreach ($reader->toArray() as $row) {
 
                         //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
+                       //also need to associate the user_id to each record uploaded if possible.......
+                        
                         Post::create($row);
 
                     }
