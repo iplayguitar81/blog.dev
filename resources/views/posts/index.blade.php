@@ -3,12 +3,13 @@
 @section('title', 'Blog')
 <div class="col-md-12">
     <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
-    @foreach($results as $tubular)
-    <p>{{$tubular->title}}</p>
-    <p>{{$tubular->subhead}}</p>
-    <p>{{$tubular->body}}</p>
-    <p>{{$tubular->imgpath}}</p>
 
+    {{--{{'This is the code to test output for locally stored CSV file... see controller'}}--}}
+    {{--@foreach($results as $tubular)--}}
+    {{--<p>{{$tubular->title}}</p>--}}
+    {{--<p>{{$tubular->subhead}}</p>--}}
+    {{--<p>{{$tubular->body}}</p>--}}
+    {{--<p>{{$tubular->imgpath}}</p>--}}
 
 
     @endforeach
