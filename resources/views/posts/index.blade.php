@@ -28,7 +28,7 @@
             <tbody>
             {{-- */$x=0;/* --}}
 
-            {{$posts->getFillable()}}
+
             @foreach($posts as $item)
                 {{-- */$x++;/* --}}
                 <tr>
