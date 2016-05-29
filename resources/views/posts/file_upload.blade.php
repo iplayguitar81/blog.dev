@@ -27,8 +27,6 @@
 
           <input type="file" name="csv-file" id="csv-file"/>
 
-
-
   {{csrf_field()}}
     <br/>
     <br/>
