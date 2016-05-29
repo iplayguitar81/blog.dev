@@ -31,9 +31,12 @@
             Written by <?
             //below is one way to get the name of the author.....
             ?>
+
+           @if($post->user_id != null)
             <? $author = App\User::find($post->user_id)->name; ?>
 
             {{$author}}
+            @endif
 
             {{--@foreach($records as $record)--}}
 
