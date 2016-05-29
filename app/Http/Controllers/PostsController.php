@@ -129,6 +129,8 @@ class PostsController extends Controller
         $this->validate($request, [
         'title' => 'required',
         'body' => 'required',
+        'subHead' => 'required',
+
     ]);
 
         if(Input::hasFile('file')){
