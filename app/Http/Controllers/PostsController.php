@@ -110,7 +110,7 @@ class PostsController extends Controller
                         //Post::firstOrCreate($row);
                       //  $row->title;
 
-                        Post::create(array('title' => Input::get('title'), 'subhead' => Input::get('subhead'), 'body' => Input::get('body'), 'image' => Input::get('image')));
+                        Post::create(array('title' => $row->title, 'subHead' => $row->subHead, 'body' => $row->body, 'imgPath' => $row->imgPath));
 
                     }
                 });
