@@ -17,11 +17,9 @@
                 <h3 class="panel-title">Nifty Admin Functions</h3> </div>
             <div class="panel-body">
                 <a href="{{ url('/posts/create') }}" class="btn btn-primary btn-sm">Add New Post</a>
-                <br/>
-                <br/>
+                &nbsp;
                 <a href="{{ url('/posts/file_upload') }}" class="btn btn-success btn-sm">Import CSV Posts</a>
-                <br/>
-                <br/>
+             &nbsp;
                 <a href="{{ url('/posts/file_export') }}" class="btn btn-warning btn-sm">Export Excel Posts</a>
 
             </div>
