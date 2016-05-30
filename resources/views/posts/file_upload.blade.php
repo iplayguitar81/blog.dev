@@ -1,7 +1,7 @@
 @extends('layout')
 @section('title', 'Post CSV Upload')
 @section('content')
-
+    @can('isAdmin')
     @if(Session::has('error'))
         <div class="alert-danger">
             <h2>{{ Session::get('error') }}</h2>
@@ -34,6 +34,9 @@
   {!! Form::submit('Upload CSV', ['class' => 'btn btn-success form-control']) !!}
 
   {!! Form::close() !!}
+    @else
+        <?php header("Location: /"); die(); ?>
 
+@endcan
 
 @endsection
