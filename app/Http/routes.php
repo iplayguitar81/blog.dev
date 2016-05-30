@@ -41,6 +41,8 @@ Route::get('/posts/user_posts','PostsController@user_posts');
 
 Route::get('/posts/file_upload', ['as' => 'posts.file_upload', 'uses'=>'PostsController@file_upload']);
 
+Route::get('/posts/file_export', ['as' => 'posts.file_export', 'uses'=>'PostsController@file_export']);
+
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
 
 
