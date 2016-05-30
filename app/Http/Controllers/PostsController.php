@@ -261,11 +261,22 @@ class PostsController extends Controller
         return \View::make('posts.user_posts', compact('posts', 'user_name'));
     }
 
+
+
+
     public function file_upload()
     {
 
 
         return view('posts.file_upload');
+
+    }
+
+    public function file_export()
+    {
+
+
+        return view('posts.file_export');
 
     }
 
