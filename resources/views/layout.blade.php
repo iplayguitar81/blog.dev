@@ -77,7 +77,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
                 <!-- put text here if want/need be-->
 
             </a>
-            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;">
+            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;color: #D71B32;text-shadow: #230D10 1px 1px 1px;">
                 Bowtie
             </a>
         </div>
