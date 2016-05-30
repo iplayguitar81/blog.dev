@@ -46,7 +46,7 @@ class PostsController extends Controller
 
   //      $excel= \App::make('excel');
 
-        $results = Excel::load('app/test-file.csv')->get();
+//        $results = Excel::load('app/test-file.csv')->get();
 
     
         $user=Auth::id();
@@ -149,7 +149,7 @@ class PostsController extends Controller
 //                    }
 //                });
                 \Session::flash('success', 'Post uploaded successfully.');
-                return redirect(route('posts.index'));
+                return redirect(route('posts.index',compact('results')));
             } catch (\Exception $e) {
                 \Session::flash('error', $e->getMessage());
                 return redirect(route('posts.index'));
