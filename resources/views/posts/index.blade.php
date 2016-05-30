@@ -20,7 +20,7 @@
                 &nbsp;
                 <a href="{{ url('/posts/file_upload') }}" class="btn btn-success btn-sm">Import CSV Posts</a>
              &nbsp;
-                <a href="{{ url('/posts/file_export') }}" class="btn btn-warning btn-sm">Export Excel Posts</a>
+                <a href="{{ url('/posts/file_export') }}" class="btn btn-warning btn-sm">Export Excel All Posts</a>
 
             </div>
         </div>
