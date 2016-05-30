@@ -37,14 +37,10 @@
 
             {{$author}}
             @endif
-
             {{--@foreach($records as $record)--}}
-
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
-
             on {{ $post->created_at->format('M dS Y') }}
-
         </p>
         <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
         <br/>
