@@ -120,11 +120,12 @@ class PostsController extends Controller
 
                        // Post::create($row);
 
-                        $csv_import = new Post(['user_id'=> Auth::user()->id,
-                            'title' => $row->title,
-                            'subhead' => $row->subhead,
-                            'body' => $row->body,
-                            'imgpath' => $row->imgpath
+                        $csv_import = new Post([
+                            'user_id'=> Auth::user()->id,
+                            'title' => $row()->title,
+                            'subhead' => $row()->subhead,
+                            'body' => $row()->body,
+                            'imgpath' => $row()->imgpath
                         ]);
                         $csv_import->save();
 
