@@ -108,30 +108,40 @@ class PostsController extends Controller
         }
         else
         {
+
+
+
+
+
             try {
 
-                Excel::load(Input::file('csv-file'), function ($reader) {
 
-                    foreach ($reader->toArray() as $row) {
+                $results = Excel::load(Input::file('csv-file')->get());
 
-                        //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
-                       //also need to associate the user_id to each record uploaded if possible.......
-                       //'user_id'=> Auth::user()->id;
+                foreach($results as $result)
+                {
 
-                       // Post::create($row);
-
-                        $csv_import = new Post([
-                            'user_id'=> Auth::user()->id,
-                            'title' => $row[0],
-                            //'subhead' => $row()->subhead,
-                            'body' => $row[2]
-                            //'imgpath' => $row()->imgpath
-                        ]);
-                        $csv_import->save();
+                    $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $result->title,'subhead' => $result->subhead,'body' => $result->body,'imgpath' => $result->imgpath ]);
+                    $csv_import->save();
+                }
 
 
-                    }
-                });
+//                Excel::load(Input::file('csv-file'), function ($reader) {
+//
+//                    foreach ($reader->toArray() as $row) {
+//
+//                        //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
+//                       //also need to associate the user_id to each record uploaded if possible.......
+//                       //'user_id'=> Auth::user()->id;
+//
+//                       // Post::create($row);
+//
+//                        $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $results->title,'subhead' => 'subhead','body' => 'body','imgpath' => 'imgpath' ]);
+//                        $csv_import->save();
+//
+//
+//                    }
+//                });
                 \Session::flash('success', 'Post uploaded successfully.');
                 return redirect(route('posts.index'));
             } catch (\Exception $e) {
