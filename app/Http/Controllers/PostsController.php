@@ -118,8 +118,10 @@ class PostsController extends Controller
                        //also need to associate the user_id to each record uploaded if possible.......
                        //'user_id'=> Auth::user()->id;
 
-                        Post::create($row);
+                       // Post::create($row);
 
+                        $csv_import = new Model(['title' => 'title','subhead' => 'subhead','body' => 'body','imgpath' => 'imgpath' ]);
+                        $csv_import->save();
 
 
                     }
