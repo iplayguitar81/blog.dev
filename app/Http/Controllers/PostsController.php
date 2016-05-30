@@ -130,22 +130,6 @@ class PostsController extends Controller
                 }
 
 
-//                Excel::load(Input::file('csv-file'), function ($reader) {
-//
-//                    foreach ($reader->toArray() as $row) {
-//
-//                        //maybe add logic here to provide safe guards to validate columns..... but otherwise it works...
-//                       //also need to associate the user_id to each record uploaded if possible.......
-//                       //'user_id'=> Auth::user()->id;
-//
-//                       // Post::create($row);
-//
-//                        $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $results->title,'subhead' => 'subhead','body' => 'body','imgpath' => 'imgpath' ]);
-//                        $csv_import->save();
-//
-//
-//                    }
-//                });
                 \Session::flash('success', 'Post uploaded successfully.');
                 return redirect(route('posts.index',compact('results')));
             } catch (\Exception $e) {
