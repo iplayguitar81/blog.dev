@@ -13,26 +13,15 @@
     {{--@endforeach--}}
 
     @can('isAdmin')
-
         <div class="panel panel-success pull-right"> <div class="panel-heading">
                 <h3 class="panel-title">Nifty Admin Functions</h3> </div>
             <div class="panel-body">
-
                 <a href="{{ url('/posts/create') }}" class="btn btn-primary btn-sm">Add New Post</a>
                 <br/>
                 <br/>
-
                 <a href="{{ url('/posts/file_upload') }}" class="btn btn-success btn-sm">Import CSV Posts</a>
-
-
-
             </div> </div>
-
-
     @endcan
-
-
-
         <table class="table">
             <thead>
                 <tr>
