@@ -16,12 +16,15 @@
 
         <div class="panel panel-success"> <div class="panel-heading">
                 <h3 class="panel-title">Nifty Admin Functions</h3> </div>
-            <div class="panel-body"> Panel content
+            <div class="panel-body">
+
+                <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a>
+                <br/>
+                <a href="{{ url('/posts/file_upload') }}" class="btn btn-success pull-right btn-sm">Import CSV Posts</a>
+
 
 
             </div> </div>
-
-        <a href="{{ url('/posts/create') }}" class="btn btn-primary pull-right btn-sm">Add New Post</a><br/><a href="{{ url('/posts/file_upload') }}" class="btn btn-success pull-right btn-sm">Import CSV Posts</a>
 
 
     @endcan
