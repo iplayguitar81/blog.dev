@@ -114,17 +114,17 @@ class PostsController extends Controller
 
 
             try {
+                $test_this =Excel::load(Input::file('csv-file')->get());
 
+               // $results = Excel::load(Input::file('csv-file')->get());
 
-                $results = Excel::load(Input::file('csv-file')->get());
-
-                foreach($results as $result)
+                foreach($test_this as $test_it)
                 {
 
-                    $title=$result->title;
-                    $subhead=$result->subhead;
-                    $body =$result->body;
-                    $imgpath =$result->imgpath;
+                    $title=$test_it->title;
+                    $subhead=$test_it->subhead;
+                    $body =$test_it->body;
+                    $imgpath =$test_it->imgpath;
 
 
                     $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $title,'subhead' => $subhead,'body' => $body,'imgpath' => $imgpath ]);
