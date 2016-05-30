@@ -20,6 +20,8 @@
 
                 <a href="{{ url('/posts/create') }}" class="btn btn-primary btn-sm">Add New Post</a>
                 <br/>
+                <br/>
+
                 <a href="{{ url('/posts/file_upload') }}" class="btn btn-success btn-sm">Import CSV Posts</a>
 
 
