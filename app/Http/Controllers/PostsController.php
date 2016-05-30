@@ -124,7 +124,7 @@ class PostsController extends Controller
                             'user_id'=> Auth::user()->id,
                             'title' => $row->title,
                             //'subhead' => $row()->subhead,
-                            'body' => $row()->body,
+                            'body' => $row()->body
                             //'imgpath' => $row()->imgpath
                         ]);
                         $csv_import->save();
