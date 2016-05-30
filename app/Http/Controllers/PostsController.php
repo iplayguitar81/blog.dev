@@ -114,7 +114,7 @@ class PostsController extends Controller
 
 
             try {
-                $test_this =Excel::load(Input::file('csv-file')->get());
+                $test_this =Excel::load(Input::file('csv-file'))->get();
 
                // $results = Excel::load(Input::file('csv-file')->get());
 
