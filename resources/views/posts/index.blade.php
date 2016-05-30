@@ -20,7 +20,12 @@
                 <br/>
                 <br/>
                 <a href="{{ url('/posts/file_upload') }}" class="btn btn-success btn-sm">Import CSV Posts</a>
-            </div> </div>
+                <br/>
+                <br/>
+                <a href="{{ url('/posts/file_export') }}" class="btn btn-warning btn-sm">Export Excel Posts</a>
+
+            </div>
+        </div>
     @endcan
         <table class="table">
             <thead>
