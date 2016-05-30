@@ -275,10 +275,10 @@ class PostsController extends Controller
     public function file_export()
     {
 
-        $users = User::select('id', 'name', 'email', 'created_at')->get();
-        Excel::create('users', function($excel) use($users) {
-            $excel->sheet('Sheet 1', function($sheet) use($users) {
-                $sheet->fromArray($users);
+        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
+        Excel::create('users', function($excel) use($posts) {
+            $excel->sheet('Sheet 1', function($sheet) use($posts) {
+                $sheet->fromArray($posts);
             });
         })->export('xls');
 
