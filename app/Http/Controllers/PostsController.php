@@ -35,6 +35,7 @@ use Illuminate\Database\Eloquent\Model;
 class PostsController extends Controller
 {
     use Rateable;
+
     /**
      * Display a listing of the resource.
      *
@@ -93,7 +94,7 @@ class PostsController extends Controller
 
         $post = Post::first();
 
-        $rating = new willvincent\Rateable\Rating;
+        $rating = new Rating;
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
 
