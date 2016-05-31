@@ -99,7 +99,7 @@ class PostsController extends Controller
     }
 
 
-    public function userRating(){
+    public function userRating(Request $request){
 
         //this needs to be similar to show function and pass $id into it to pull up right
         // record then it will work
@@ -109,7 +109,7 @@ class PostsController extends Controller
         $rating = new Rating;
 
         //this is where you store the actual user input from the request probably.....
-        $rating->rating = $this->user-rate;
+        $rating->rating = $request;
         
 
 
