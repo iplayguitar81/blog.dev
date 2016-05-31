@@ -11,9 +11,9 @@ class Rating extends Model
      *
      * @var string
      */
-    public function ratings(){
-        return $this->belongsTo('App\Post', 'post_id');
-    }
+//    public function ratings(){
+//        return $this->belongsTo('App\Post', 'post_id');
+//    }
     protected $table = 'ratings';
 
     /**
