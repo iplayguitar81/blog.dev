@@ -160,6 +160,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        willvincent\Rateable\RateableServiceProvider::class,
 
     ],
 
@@ -210,6 +211,7 @@ return [
         'HTML'      => Collective\Html\HtmlFacade::class,
 //        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+
 
 
     ],
