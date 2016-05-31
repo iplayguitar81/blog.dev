@@ -11,9 +11,7 @@ class Rating extends Model
      *
      * @var string
      */
-    public function ratings(){
-        return $this->belongsTo('App\Post', 'id');
-    }
+
     protected $table = 'ratings';
 
     /**
@@ -28,5 +26,5 @@ class Rating extends Model
      *
      * @var array
      */
-    protected $fillable = ['rating_id', 'contents', 'rater_email', 'rating'];
+    protected $fillable = ['rating', 'user_id', 'rateable_id', 'post_id'];
 }
