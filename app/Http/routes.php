@@ -45,6 +45,8 @@ Route::get('/posts/file_export', ['as' => 'posts.file_export', 'uses'=>'PostsCon
 
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
 
+Route::post('/posts/post_rating', 'PostsController@userRating');
+
 
 
 Route::group(['middleware' => ['web']], function () {
