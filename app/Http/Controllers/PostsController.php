@@ -32,7 +32,7 @@ use willvincent\Rateable\Rating;
 
 class PostsController extends Controller
 {
-    use Rateable;
+
     /**
      * Display a listing of the resource.
      *
