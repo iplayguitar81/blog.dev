@@ -105,7 +105,7 @@ class PostsController extends Controller
         $rating = new Rating;
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
-      //  $rating->post_id = 32;
+       $rating->rateable_id = 32;
 
         $post->ratings()->save($rating);
        dd(Post::first()->ratings);
