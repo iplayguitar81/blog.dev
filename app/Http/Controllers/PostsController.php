@@ -90,16 +90,17 @@ class PostsController extends Controller
 
     public function userRating($id){
 
-        $post = Post::findOrFail($id);
+        $post = Post::first();
+
         $rating = new Rating();
-        
-        
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
 
         $post->ratings()->save($rating);
 
-     
+        dd(Post::first()->ratings);
+
+
 
     }
 
