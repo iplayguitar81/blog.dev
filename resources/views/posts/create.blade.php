@@ -27,7 +27,7 @@
             </div>
     <br/>
 
-    <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
+    <div class="form-group {{ $errors->has('subhead') ? 'has-error' : ''}}">
         {!! Form::label('subhead', trans('posts.subhead'), ['class' => '']) !!}
         <div class="">
             {!! Form::text('subhead', null, ['class' => 'form-control']) !!}
