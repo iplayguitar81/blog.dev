@@ -7,3 +7,4 @@ return [
 'rater_email' => 'Rater Email',
 'rating' => 'Rating',
 ];
+
