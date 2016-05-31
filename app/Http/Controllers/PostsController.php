@@ -90,7 +90,7 @@ class PostsController extends Controller
 
     public function userRating(){
 
-        $post = Post::first();
+        $post = Post::all()->get();
         $rating = new Rating();
         
         
@@ -99,7 +99,7 @@ class PostsController extends Controller
 
         $post->ratings()->save($rating);
 
-        dd(Post::first()->ratings);
+        dd(Post::all()->ratings);
 
     }
 
