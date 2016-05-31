@@ -101,7 +101,7 @@ class PostsController extends Controller
     public function userRating(){
 
         $post = Post::first();
-        $rating = new Rating;
+        $rating = new \Rating();
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
         $post->ratings()->save($rating);
