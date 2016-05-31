@@ -28,5 +28,5 @@ class Rating extends Model
      *
      * @var array
      */
-    protected $fillable = ['rating_id', 'post_id', 'contents', 'rater_email', 'rating'];
+    protected $fillable = ['rating_id', 'contents', 'rater_email', 'rating'];
 }
