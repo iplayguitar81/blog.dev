@@ -90,6 +90,14 @@ class PostsController extends Controller
         $this->authorize('isAdmin');
     }
 
+    public function post_rating(){
+
+        
+        return view('posts.post_rating');
+
+    }
+
+
     public function userRating(){
 
 //        $post = \Post::first();
