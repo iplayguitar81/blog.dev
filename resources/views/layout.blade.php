@@ -49,8 +49,6 @@ div.pagination {
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     min-width: 95% !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
 
 }
 
