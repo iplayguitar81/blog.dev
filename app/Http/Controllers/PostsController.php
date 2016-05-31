@@ -99,7 +99,7 @@ class PostsController extends Controller
 
         $post->ratings()->save($rating);
 
-        dd(Post::all()->ratings);
+        dd(Post::all()->get()->ratings);
 
     }
 
