@@ -100,6 +100,8 @@ class PostsController extends Controller
 
       // dd(Post::first()->ratings);
 
+        return view("posts.post_rating");
+
 
 
     }
