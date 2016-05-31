@@ -109,7 +109,7 @@ class PostsController extends Controller
         $rating = new Rating;
 
         //this is where you store the actual user input from the request probably.....
-        $rating->rating = $request[0];
+        $rating->rating = $request->get('userRate');
 
 
 
