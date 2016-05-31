@@ -12,7 +12,7 @@ class Rating extends Model
      * @var string
      */
     public function ratings(){
-        return $this->belongsTo('App\Post', 'post_id');
+        return $this->belongsTo('App\Post', 'id');
     }
     protected $table = 'ratings';
 
