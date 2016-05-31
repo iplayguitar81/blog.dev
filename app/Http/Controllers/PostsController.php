@@ -86,6 +86,19 @@ class PostsController extends Controller
         $this->authorize('isAdmin');
     }
 
+    public function userRating(){
+
+        $post = Post::first();
+        $rating = new willvincent\Rateable\Rating;
+
+        
+        $rating->rating = 5;
+        $rating->user_id = \Auth::id();
+
+        $post->ratings()->save($rating);
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -108,11 +121,7 @@ class PostsController extends Controller
         }
         else
         {
-
-
-
-
-
+            
             try {
                 $csv_file =Excel::load(Input::file('csv-file'))->get();
 
