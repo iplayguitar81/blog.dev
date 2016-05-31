@@ -152,11 +152,11 @@ class PostsController extends Controller
                 foreach($csv_file as $csv)
                 {
                     $title=$csv->title;
-                    $subhead=$csv->subHead;
+                    $subhead=$csv->subhead;
                     $body =$csv->body;
-                    $imgpath =$csv->imgPath;
+                    $imgpath =$csv->imgpath;
 
-                    $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $title,'subhead' => $subhead,'body' => $body,'imgpath' => $imgpath ]);
+                    $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $title,'subHead' => $subhead,'body' => $body,'imgPath' => $imgpath ]);
                     $csv_import->save();
                 }
 
