@@ -39,6 +39,9 @@ class RatingsController extends Controller
      *
      * @return void
      */
+
+  
+
     public function store(Request $request)
     {
         
