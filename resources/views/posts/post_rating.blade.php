@@ -9,8 +9,6 @@
 
     {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
 
-    <input type="file" name="csv-file" id="csv-file"/>
-
 
     <br/>
     <br/>
