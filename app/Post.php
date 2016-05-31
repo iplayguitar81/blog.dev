@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Rateable;
 
 class Post extends Model
 {
@@ -12,10 +11,6 @@ class Post extends Model
      *
      * @var string
      */
-    public function ratings(){
-        return $this ->hasMany('App\Rating');
-
-    }
     public function posts(){
         return $this->belongsTo('App\User', 'user_id');
     }
@@ -34,5 +29,5 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = [ 'user_id','title','subhead','body','imgpath'];
+    protected $fillable = [ 'user_id','title','subhead','body','imgPath'];
 }
