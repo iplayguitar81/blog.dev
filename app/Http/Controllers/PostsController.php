@@ -27,7 +27,7 @@ use Auth;
 use Illuminate\Support\Facades\Input;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Redirect;
-
+use willvincent\Rateable\Rating;
 
 
 class PostsController extends Controller
@@ -90,8 +90,8 @@ class PostsController extends Controller
     public function userRating(){
 
         $post = Post::first();
-        $rating = new willvincent\Rateable\Rating;
-
+        $rating = new Rating();
+        
         
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
