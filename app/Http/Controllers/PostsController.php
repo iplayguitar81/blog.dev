@@ -32,6 +32,7 @@ use Illuminate\Support\Facades\Redirect;
 
 class PostsController extends Controller
 {
+    use Rateable;
     /**
      * Display a listing of the resource.
      *
