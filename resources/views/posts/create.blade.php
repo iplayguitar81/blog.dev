@@ -28,10 +28,10 @@
     <br/>
 
     <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
-        {!! Form::label('subHead', trans('posts.subhead'), ['class' => '']) !!}
+        {!! Form::label('subhead', trans('posts.subhead'), ['class' => '']) !!}
         <div class="">
-            {!! Form::text('subHead', null, ['class' => 'form-control']) !!}
-            {!! $errors->first('subHead', '<p class="uk-alert-danger">:message</p>') !!}
+            {!! Form::text('subhead', null, ['class' => 'form-control']) !!}
+            {!! $errors->first('subhead', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
     </div>
 <br/>
