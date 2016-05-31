@@ -108,7 +108,9 @@ class PostsController extends Controller
         $post = Post::first();
         $rating = new Rating;
 
-        //this is where you store the actual user input from the request probably.....
+        //gotta pass the post_id into this also.....hidden value.......
+
+        //store the actual user input for the rating.....
         $rating->rating = $request->input('userRate');
 
 
