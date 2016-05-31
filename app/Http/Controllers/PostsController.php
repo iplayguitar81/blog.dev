@@ -88,7 +88,7 @@ class PostsController extends Controller
         $this->authorize('isAdmin');
     }
 
-    public function userRating($id){
+    public function userRating(){
 
         $post = Post::first();
 
