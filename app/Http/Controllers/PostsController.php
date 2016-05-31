@@ -128,7 +128,6 @@ class PostsController extends Controller
                 $csv_file =Excel::load(Input::file('csv-file'))->get();
 
 
-
                 foreach($csv_file as $csv)
                 {
                     $title=$csv->title;
@@ -286,7 +285,8 @@ class PostsController extends Controller
     public function file_export()
     {
 
-        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
+        $posts = Post::where('user_id','=', Auth::id())->orderBy('created_at', 'desc')->get();
+//        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
         Excel::create('blog-posts', function($excel) use($posts) {
             $excel->sheet('Sheet 1', function($sheet) use($posts) {
                 $sheet->fromArray($posts);
