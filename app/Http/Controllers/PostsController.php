@@ -98,7 +98,7 @@ class PostsController extends Controller
 
         $post->ratings()->save($rating);
 
-        dd(Post::first()->ratings);
+      // dd(Post::first()->ratings);
 
 
 
