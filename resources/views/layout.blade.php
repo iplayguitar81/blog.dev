@@ -48,11 +48,11 @@ div.pagination {
 .fb_iframe_widget_fluid span, iframe.fb_ltr { width: 100% !important; }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    min-width: 90% !important;
-    width: 90% !important;
+    min-width: 95% !important;
+    width: 95% !important;
     margin-left:auto !important;
     margin-right:auto !important;
-    background-color: #FFFFFF;
+
 }
 
 p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em}
