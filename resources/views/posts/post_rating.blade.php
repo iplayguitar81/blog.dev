@@ -2,7 +2,7 @@
 @section('title', 'Post CSV Upload')
 @section('content')
 
-{!! Form::open(['url' => '/posts', 'class' => 'form-horizontal']) !!}
+{!! Form::open(['url' => '/posts/post_rating', 'class' => 'form-horizontal']) !!}
 
 <div class="form-group {{ $errors->has('rating') ? 'has-error' : ''}}">
     {!! Form::label('rating', trans('ratings.rating'), ['class' => 'col-sm-3 control-label']) !!}
