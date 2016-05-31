@@ -88,9 +88,9 @@ class PostsController extends Controller
         $this->authorize('isAdmin');
     }
 
-    public function userRating(){
+    public function userRating($id){
 
-        $post = Post::all()->get();
+        $post = Post::findOrFail($id);
         $rating = new Rating();
         
         
