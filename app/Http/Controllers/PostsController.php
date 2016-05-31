@@ -29,6 +29,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Redirect;
 use willvincent\Rateable\Rateable;
 use willvincent\Rateable\Rating;
+use Illuminate\Database\Eloquent\Model;
 
 
 class PostsController extends Controller
