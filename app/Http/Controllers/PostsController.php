@@ -101,11 +101,14 @@ class PostsController extends Controller
 
     public function userRating(){
 
+        //this needs to be similar to show function and pass $id into it to pull up right
+        // record then it will work
+
+
         $post = Post::first();
         $rating = new Rating;
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
-       $rating->rateable_id = 32;
 
         $post->ratings()->save($rating);
        dd(Post::first()->ratings);
