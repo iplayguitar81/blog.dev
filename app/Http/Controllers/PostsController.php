@@ -92,13 +92,13 @@ class PostsController extends Controller
 
         $post = Post::first();
 
-        $rating = new Rating();
+        $rating = new willvincent\Rateable\Rating;
         $rating->rating = 5;
         $rating->user_id = \Auth::id();
 
         $post->ratings()->save($rating);
 
-     //   dd(Post::first()->ratings);
+        dd(Post::first()->ratings);
 
 
 
