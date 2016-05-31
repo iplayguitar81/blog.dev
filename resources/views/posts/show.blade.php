@@ -44,8 +44,8 @@
 
     <br/>
 
-        <div class="fb-comments" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($item->title)}}" data-numposts="10"></div>
-        {{ route('posts.show', [$item->id, str_slug($item->title)]) }}
+        <div class="fb-comments" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
+
     <br/>
 
 
