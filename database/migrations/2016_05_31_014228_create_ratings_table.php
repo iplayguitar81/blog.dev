@@ -21,6 +21,7 @@ class CreateRatingsTable extends Migration
             $table->integer('rating');
             $table->timestamps();
         });
+        
 
         Schema::table('ratings', function($table) {
             $table->foreign('post_id')->references('id')->on('posts');
