@@ -44,8 +44,8 @@
 
     <br/>
 
-        <div class="fb-comments" data-href="https://www.bowtiesoft.com/posts/32/drexler-vs-jordan" data-numposts="10"></div>
-
+        <div class="fb-comments" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($item->title)}}" data-numposts="10"></div>
+        {{ route('posts.show', [$item->id, str_slug($item->title)]) }}
     <br/>
 
 
