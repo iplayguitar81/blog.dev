@@ -8,7 +8,7 @@
     {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
 
     {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
-    {{ Form::selectRange('user-rate', 1, 5) }}
+    {{ Form::selectRange('userRate', 1, 5) }}
 
     <br/>
     <br/>
