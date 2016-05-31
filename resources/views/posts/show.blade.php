@@ -41,7 +41,7 @@
         </div>
         <br/>
 
-        <div class="fb-comments" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
+        <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
 
         <br/>
 
