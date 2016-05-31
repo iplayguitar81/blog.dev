@@ -92,7 +92,7 @@ class PostsController extends Controller
 
     public function userRating(){
 
-        $post = Post::first();
+        $post = \Post::first();
 
         $rating = new Rating;
         $rating->rating = 5;
@@ -100,7 +100,7 @@ class PostsController extends Controller
 
         $post->ratings()->save($rating);
 
-       dd(Post::first()->ratings);
+       dd(\Post::first()->ratings);
 
       //  return view("posts.post_rating");
 
