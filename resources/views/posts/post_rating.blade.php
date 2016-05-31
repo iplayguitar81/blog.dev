@@ -1,3 +1,7 @@
+@extends('layout')
+@section('title', 'Post CSV Upload')
+@section('content')
+
 {!! Form::open(['url' => '/posts', 'class' => 'form-horizontal']) !!}
 
 <div class="form-group {{ $errors->has('rating') ? 'has-error' : ''}}">
@@ -15,3 +19,5 @@
     </div>
 </div>
 {!! Form::close() !!}
+
+    @endsection
