@@ -48,7 +48,7 @@ div.pagination {
 .fb_iframe_widget_fluid span, iframe.fb_ltr { width: 100% !important; }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    min-width: 95% !important;
+    min-width: 90% !important;
 
 }
 
