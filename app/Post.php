@@ -11,6 +11,10 @@ class Post extends Model
      *
      * @var string
      */
+    public function ratings(){
+        return $this ->hasMany('App\Rating');
+
+    }
     public function posts(){
         return $this->belongsTo('App\User', 'user_id');
     }
