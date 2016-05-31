@@ -109,8 +109,8 @@ class PostsController extends Controller
         $rating = new Rating;
 
         //this is where you store the actual user input from the request probably.....
-        $rating->rating = $request;
-        
+        $rating->rating = $request->all();
+
 
 
         $rating->user_id = \Auth::id();
