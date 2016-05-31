@@ -285,8 +285,12 @@ class PostsController extends Controller
     public function file_export()
     {
 
+        //export user posts
         $posts = Post::where('user_id','=', Auth::id())->orderBy('created_at', 'desc')->get();
+
+//export all posts for super user
 //        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
+
         Excel::create('blog-posts', function($excel) use($posts) {
             $excel->sheet('Sheet 1', function($sheet) use($posts) {
                 $sheet->fromArray($posts);
