@@ -46,9 +46,6 @@
 
 
 
-
-{{$ratings}}
-
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
 
