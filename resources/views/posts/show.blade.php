@@ -47,9 +47,11 @@
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
             @foreach($post_ratings as $rating)
+        @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
                 {{--*/ @ $hide_rating_form = true; /*--}}
                 @endif
+        @endif
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
