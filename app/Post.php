@@ -16,7 +16,7 @@ class Post extends Model
     }
 
     public function ratings(){
-        return $this->hasMany('App\Rating', 'post_id');
+        return $this->hasMany('willvincent\Rateable\Rating', 'post_id');
     }
 
     protected $table = 'posts';
