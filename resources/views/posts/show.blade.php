@@ -55,7 +55,7 @@
 
 
 
-                {!! Form::number('post_id', $post->id, ['class' => 'form-control']) !!}
+                {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
 
             <div class="">
                 {!! Form::textarea('userRateMsg', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
