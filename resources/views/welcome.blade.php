@@ -69,7 +69,6 @@
 
         @endforeach
 
-        <div class="rating"><div class="stars"></div><div class="back" style="width:95%;"></div></div>
 
 
 {{'Rating Sum: '.$rate_sum}}
@@ -79,6 +78,8 @@
         {{'Rating Avg: '.$rate_avg}}
 
         {{'Rating %: '.$rate_pct}}
+        <div class="rating"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
+
 
 
         <br/>
