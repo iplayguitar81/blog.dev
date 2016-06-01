@@ -86,6 +86,7 @@
 
         <br/>
 
+        {{Auth::user()->id}}
 
     </article>
 
