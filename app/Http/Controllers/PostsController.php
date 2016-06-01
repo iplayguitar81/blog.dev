@@ -112,11 +112,15 @@ class PostsController extends Controller
 
         //store the actual user input for the rating.....
         $rating->rating = $request->input('userRate');
+        $rating->rate_message = $request->input('userRateMsg');
+
 
         //logged in user id of user making rating
         $rating->user_id = \Auth::id();
 
         $post->ratings()->save($rating);
+
+
        dd(Post::first()->ratings);
       //  return view("posts.post_rating");
 
