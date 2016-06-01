@@ -45,14 +45,14 @@
         </p>
 
 
-
+<? $rate_sum =0?>
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
 
-            {{$rating->sum('rating')}}
+            <? $rate_sum +=$rating->rating ?>
 
-            <p>{{$rating->rating}}</p>
-            <p>{{$rating->rate_message}}</p>
+            {{--<p>{{$rating->rating}}</p>--}}
+            {{--<p>{{$rating->rate_message}}</p>--}}
 
             @else
 
