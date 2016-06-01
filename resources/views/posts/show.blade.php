@@ -53,16 +53,12 @@
         <div class="form-group">
             {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
 
-
-
                 {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
-
             <div class="">
                 {!! Form::textarea('userRateMsg', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
                 {!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}
             </div>
         </div>
-
         <br/>
         <br/>
 
@@ -73,9 +69,7 @@
 
         <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
 
-
         <p>Number of Ratings: {{$rating_count}}</p>
-
             @foreach($post_ratings as $rating)
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
