@@ -54,7 +54,7 @@
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
             @endforeach
-
+@if( $hide_rating_form)
         <h2>Rate this article!!!</h2>
         <hr>
 
@@ -79,6 +79,12 @@
         {!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}
 
         {!! Form::close() !!}
+        @else
+
+    <p>You have already rated this article!  :D We assure you your rating has been figured into the total score!</p>
+
+        @endif
+
         <br/>
         <br/>
         <hr>
@@ -87,9 +93,9 @@
 
         <br/>
 
-        {{Auth::user()->id}}
 
-        {{$hide_rating_form}}
+
+
 
     </article>
 
