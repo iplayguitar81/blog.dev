@@ -46,11 +46,12 @@
 
 
 
-<? $rate_sum =0?>
+<? $rate_sum =0; $rate_count=0;?>
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
 
-            <? $rate_sum +=$rating->rating ?>
+            <? $rate_sum +=$rating->rating; $rate_count++; ?>
+
 
             {{--<p>{{$rating->rating}}</p>--}}
             {{--<p>{{$rating->rate_message}}</p>--}}
@@ -63,7 +64,9 @@
 
         @endforeach
 
-{{$rate_sum}}
+{{'Rating Sum: '.$rate_sum}}
+{{'Rating Count: '.$rate_count}}
+
 <!--            --><?//$ratings= $ratings($item->id)?>
 
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
