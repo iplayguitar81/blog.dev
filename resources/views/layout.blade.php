@@ -45,6 +45,27 @@ div.pagination {
     text-align:center;
 }
 
+.rating {
+    width: 100px;
+    height: 30px;
+    position:relative;
+}
+.stars {
+    width:100%;
+    height:100%;
+    background: url(http://i.stack.imgur.com/jOhrl.png);
+    z-index: 10;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.back {
+    background : gold;
+    width:100%;
+    height:100%;
+}
+
 .fb_iframe_widget_fluid span, iframe.fb_ltr { width: 100% !important; }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
