@@ -53,7 +53,7 @@ div.pagination {
 .stars {
     width:100%;
     height:100%;
-    background: url(http://i.stack.imgur.com/jOhrl.png);
+    background: url('stars-to-rate.png');
     z-index: 10;
     position:absolute;
     top:0;
