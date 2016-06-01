@@ -69,13 +69,8 @@
 
         @endforeach
 
-
-
-{{'Rating Sum: '.$rate_sum}}
         <br/>
-{{'Rating Count: '.$rate_count}}
-
-        {{'Rating Avg: '.$rate_avg}}
+    {{'Article # of Ratings: '.$rate_count}}
 
         {{'Rating %: '.$rate_pct}}
         <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
