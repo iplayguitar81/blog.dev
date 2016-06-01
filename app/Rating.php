@@ -11,6 +11,10 @@ class Rating extends Model
      *
      * @var string
      */
+    public function ratings(){
+        return $this->belongsTo('willvincent\Rateable\Rating', 'id');
+    }
+
 
     protected $table = 'ratings';
 
