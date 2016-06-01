@@ -13,6 +13,8 @@
 use App\Post;
 use App\User;
 
+use willvincent\Rateable\Rateable;
+use willvincent\Rateable\Rating;
 
 
 Route::get('/', function () {
