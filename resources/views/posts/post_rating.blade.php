@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Post CSV Upload')
+@section('title', 'Post Rating Test')
 @section('content')
 
 
@@ -21,7 +21,7 @@
     <br/>
     <br/>
 
-    {!! Form::submit('Upload CSV', ['class' => 'btn btn-success form-control']) !!}
+    {!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}
 
     {!! Form::close() !!}
 
