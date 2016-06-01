@@ -224,9 +224,9 @@ class PostsController extends Controller
 
         //aggregate functions Eloquent style........
         $rating_count =Rating::where('post_id','=', $id)->count();
-        $rating_sum =Rating::where('post_id','=', $id)->get('rating')->sum();
+      //  $rating_sum =Rating::where('post_id','=', $id)->get('rating')->sum();
 
-        $rating_avg = $rating_sum/$rating_count;
+       // $rating_avg = $rating_sum/$rating_count;
 
 
 
