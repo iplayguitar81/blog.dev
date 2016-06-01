@@ -31,6 +31,14 @@ class AuthServiceProvider extends ServiceProvider
 
         });
 
+        $gate->define('loggedIn', function($user){
+
+            if($user->name !=null)
+            {   
+            return $user;
+            }
+        });
+
         //
     }
 }
