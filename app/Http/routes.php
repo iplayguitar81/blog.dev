@@ -26,7 +26,9 @@ Route::get('/', function () {
 
     $users = User::all();
 
-    return view('welcome', compact('posts', 'users'));
+    $ratings =Rating::all();
+
+    return view('welcome', compact('posts', 'users','ratings'));
 });
 
 //Route::get('/contact', function () {
