@@ -106,6 +106,8 @@ class PostsController extends Controller
 
 
         $post = Post::first();
+
+        $post = $post->id = 32;
         $rating = new Rating;
 
         //gotta pass the post_id into this also.....hidden value.......
