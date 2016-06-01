@@ -48,7 +48,7 @@
 
 
 
-            {{$post=Post::findOrFail($item->id)}}
+            {{$post= App\Post::findOrFail($item->id)}}
 
         <p>Average Rating: {{$post->averageRating}}</p>
         <p>Rating %: {{$post->ratingPercent}}</p>
