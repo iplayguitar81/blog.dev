@@ -71,9 +71,10 @@
 
 
         <br/>
-{{'Rating Count: '.$rate_count}}
+
 
         {{'Rating Avg: '.$rate_avg}}/5
+        {{'# of Ratings: '.$rate_count}}
 
         <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
 
