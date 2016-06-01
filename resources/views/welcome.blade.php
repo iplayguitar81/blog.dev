@@ -45,7 +45,10 @@
         </p>
 
 
-<? $rate_sum =0?>
+        @section
+            {{ $rate_sum = 0 }}
+        @endsection
+
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
 
