@@ -39,8 +39,15 @@
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
 
         </div>
-        <br/>
 
+        <br/>
+        <h2>Rate this article!!!</h2>
+        <hr>
+
+
+        <br/>
+        <hr>
+        <h2>Leave a Facebook Comment!</h2>
         <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
 
         <br/>
