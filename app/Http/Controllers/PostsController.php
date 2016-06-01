@@ -226,13 +226,13 @@ class PostsController extends Controller
         $rating_count =Rating::where('post_id','=', $id)->count();
         $rating_avg =Rating::where('post_id','=', $id)->avg('rating');
 
-
+        $rating_pct =($rating_avg/5)*100;
        // $rating_avg = $rating_sum/$rating_count;
 
 
 
 
-        return view('posts.show', compact('post','post_ratings','rating_count','rating_avg'));
+        return view('posts.show', compact('post','post_ratings','rating_count','rating_avg','rating_pct'));
     }
 
     /**
