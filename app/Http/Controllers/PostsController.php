@@ -105,9 +105,9 @@ class PostsController extends Controller
         // record then it will work
 
 
-        $post = Post::first();
+        $post = Post::findOrFail(32);
 
-        $post = $post->id = 32;
+        
         $rating = new Rating;
 
         //gotta pass the post_id into this also.....hidden value.......
