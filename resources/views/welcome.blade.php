@@ -48,7 +48,7 @@
 
 
 
-            <?$ratings= $ratings::findOrFail($item->id)?>
+            <?$ratings= $ratings($item->id)?>
 
         <p>Average Rating: {{$ratings->averageRating}}</p>
         <p>Rating %: {{$ratings->ratingPercent}}</p>
