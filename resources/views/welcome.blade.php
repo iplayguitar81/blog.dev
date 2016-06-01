@@ -2,6 +2,9 @@
 
 @extends('layout')
 @section('title', 'Home')
+@section
+    {{ $rate_sum = 0 }}
+@endsection
 
 @section('content')
 
@@ -45,9 +48,7 @@
         </p>
 
 
-        @section
-            {{ $rate_sum = 0 }}
-        @endsection
+
 
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
