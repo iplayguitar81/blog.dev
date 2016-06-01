@@ -47,17 +47,16 @@
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
             @foreach($post_ratings as $rating)
+             @if($rating->user_id==Auth::user()->id)
+                {{--*/ @ $hide_rating_form = true; /*--}}
+                @endif
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
-
             @endforeach
-
-
 
         <h2>Rate this article!!!</h2>
         <hr>
-
 
         {!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}
         {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
@@ -89,6 +88,8 @@
         <br/>
 
         {{Auth::user()->id}}
+
+        {{$hide_rating_form}}
 
     </article>
 
