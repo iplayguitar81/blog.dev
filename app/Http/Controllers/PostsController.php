@@ -126,7 +126,7 @@ class PostsController extends Controller
 
      //  dd(Post::first()->ratings);
 
-        return view("/");
+        return Redirect::back();
 
     }
 
