@@ -12,11 +12,11 @@
 */
 use App\Post;
 use App\User;
-use App\Rating;
+//use App\Rating;
 
 
 use willvincent\Rateable\Rateable;
-//use willvincent\Rateable\Rating;
+use willvincent\Rateable\Rating;
 
 
 Route::get('/', function () {
