@@ -44,8 +44,14 @@
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img class="img-responsive center-block" src="../images/{{ $item->imgPath}}"></a>
         </p>
 
-        <p>Average Rating: {{$item->averageRating}}</p>
-        <p>Rating %: {{$item->ratingPercent}}</p>
+
+
+
+
+            {{$post=Post::findOrFail($item->id)}}
+
+        <p>Average Rating: {{$post->averageRating}}</p>
+        <p>Rating %: {{$post->ratingPercent}}</p>
 
 {{--{{$variable = str_limit($item->body, 100)}}--}}
    <?
