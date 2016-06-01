@@ -72,9 +72,9 @@
         <br/>
         @foreach($post_ratings as $rating)
 
-            <p>{{$rating->rating}}</p>
-            <p>{{$rating->rating_message}}</p>
-            <p>{{$rating->user_id}}</p>
+            <p>Rating: {{$rating->rating}}/5</p>
+            <p>Rater Message: {{$rating->rate_message}}</p>
+            <p>User ID: {{$rating->user_id}}</p>
 
 
             @endforeach
