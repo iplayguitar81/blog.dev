@@ -53,7 +53,9 @@
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
-            @endforeach
+        @endforeach
+
+        @can('loggedIn')
 @if( $hide_rating_form == false)
         <h2>Rate this article!!!</h2>
         <hr>
@@ -84,6 +86,7 @@
     <p>You have already rated this article!  :D We assure you your rating has been figured into the total score!</p>
 
         @endif
+        @endcan
 
         <br/>
         <br/>
