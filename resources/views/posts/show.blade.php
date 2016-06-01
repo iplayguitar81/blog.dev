@@ -71,19 +71,15 @@
         {!! Form::close() !!}
         <br/>
 
-        <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
+        <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
 
-        <p> Average Post Rating: {{$rating_avg}}/5 Stars</p>
+
         <p>Number of Ratings: {{$rating_count}}</p>
 
             @foreach($post_ratings as $rating)
-
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
-
-
-
 
             @endforeach
         <br/>
