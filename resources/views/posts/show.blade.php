@@ -54,7 +54,7 @@
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
             @endforeach
-@if( $hide_rating_form==1)
+@if( $hide_rating_form == false)
         <h2>Rate this article!!!</h2>
         <hr>
 
