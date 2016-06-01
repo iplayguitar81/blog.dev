@@ -70,11 +70,16 @@
 
         {!! Form::close() !!}
         <br/>
+
+        {{--*/ @ $rate_sum = 0; $rate_count=0; $rate_avg=0; $rate_pct=0;  /*--}}
+
         @foreach($post_ratings as $rating)
 
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
+
+
 
 
             @endforeach
