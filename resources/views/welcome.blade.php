@@ -74,6 +74,7 @@
 
 
         {{'Rating Avg: '.$rate_avg}}/5
+        <br/>
         {{'# of Ratings: '.$rate_count}}
 
         <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
