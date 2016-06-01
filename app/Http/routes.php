@@ -21,10 +21,10 @@ Route::get('/', function () {
 
 
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
-    $avg_rate = $posts->averageRating;
+
     $users = User::all();
 
-    return view('welcome', compact('posts', 'users', 'avg_rate'));
+    return view('welcome', compact('posts', 'users'));
 });
 
 //Route::get('/contact', function () {
