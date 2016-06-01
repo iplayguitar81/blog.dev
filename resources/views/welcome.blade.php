@@ -64,6 +64,9 @@
 
         @endforeach
 
+        <div class="rating"><div class="stars"></div><div class="back" style="width:95%;"></div></div>
+
+
 {{'Rating Sum: '.$rate_sum}}
         <br/>
 {{'Rating Count: '.$rate_count}}
