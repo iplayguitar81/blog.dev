@@ -47,11 +47,11 @@
 
 
 
+{{$ratings}}
+<!--            --><?//$ratings= $ratings($item->id)?>
 
-            <?$ratings= $ratings($item->id)?>
-
-        <p>Average Rating: {{$ratings->averageRating}}</p>
-        <p>Rating %: {{$ratings->ratingPercent}}</p>
+        {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
+        {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
 {{--{{$variable = str_limit($item->body, 100)}}--}}
    <?
