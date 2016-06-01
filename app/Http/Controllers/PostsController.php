@@ -124,8 +124,9 @@ class PostsController extends Controller
         $post->ratings()->save($rating);
 
 
-       dd(Post::first()->ratings);
-      //  return view("posts.post_rating");
+     //  dd(Post::first()->ratings);
+
+        return view("/");
 
     }
 
