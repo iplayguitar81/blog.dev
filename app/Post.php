@@ -15,6 +15,10 @@ class Post extends Model
         return $this->belongsTo('App\User', 'user_id');
     }
 
+    public function ratings(){
+        return $this->hasMany('App\Rating', 'post_id');
+    }
+
     protected $table = 'posts';
 
     /**
