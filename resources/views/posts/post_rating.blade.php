@@ -10,6 +10,14 @@
     {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
     {{ Form::selectRange('userRate', 1, 5) }}
 
+    <div class="form-group">
+        {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
+        <div class="">
+            {!! Form::textarea('userRateMsg', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
+            {!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}
+        </div>
+    </div>
+
     <br/>
     <br/>
 
