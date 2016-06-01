@@ -72,8 +72,10 @@
         <br/>
 
         {{--*/ @ $rate_sum = 0; $rate_count=0; $rate_avg=0; $rate_pct=0;  /*--}}
+        <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
 
-        @foreach($post_ratings as $rating)
+
+    @foreach($post_ratings as $rating)
 
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
