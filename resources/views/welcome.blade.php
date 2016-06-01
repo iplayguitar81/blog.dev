@@ -48,10 +48,10 @@
 
 
 
-            <?$post= App\Post::findOrFail($item->id)?>
+            <?$post_rate= App\Post::findOrFail($item->id)?>
 
-        <p>Average Rating: {{$post->averageRating}}</p>
-        <p>Rating %: {{$post->ratingPercent}}</p>
+        <p>Average Rating: {{$post_rate->averageRating}}</p>
+        <p>Rating %: {{$post_rate->ratingPercent}}</p>
 
 {{--{{$variable = str_limit($item->body, 100)}}--}}
    <?
