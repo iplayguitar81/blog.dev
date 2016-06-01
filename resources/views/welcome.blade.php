@@ -49,6 +49,8 @@
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
 
+            {{$ratings->sum('rating')}}
+
             <p>{{$rating->rating}}</p>
             <p>{{$rating->rate_message}}</p>
 
