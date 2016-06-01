@@ -44,7 +44,26 @@
         <h2>Rate this article!!!</h2>
         <hr>
 
+        {!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}
+        {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
 
+        {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
+        {{ Form::selectRange('userRate', 1, 5) }}
+
+        <div class="form-group">
+            {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
+            <div class="">
+                {!! Form::textarea('userRateMsg', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
+                {!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        {!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}
+
+        {!! Form::close() !!}
         <br/>
         <hr>
         <h2>Leave a Facebook Comment!</h2>
