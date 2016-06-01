@@ -221,10 +221,11 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
 
         $post_ratings =Rating::where('post_id','=', $id)->orderBy('created_at', 'desc')->paginate(3);
+        $rating_count =Rating::where('post_id','=', $id)->count();
 
 
 
-        return view('posts.show', compact('post','post_ratings'));
+        return view('posts.show', compact('post','post_ratings','rating_count'));
     }
 
     /**
