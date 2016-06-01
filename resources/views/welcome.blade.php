@@ -53,8 +53,7 @@
             <p>{{$rating->rate_message}}</p>
 
             @else
-            No rating at this time....
-            Rate this article today!!!
+
 
             @endif
 
