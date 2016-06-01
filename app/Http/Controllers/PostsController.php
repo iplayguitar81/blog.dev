@@ -105,8 +105,7 @@ class PostsController extends Controller
         // record then it will work
 
 
-        $post = Post::findOrFail(32);
-
+        $post = Post::findOrFail($request->input('post_id'));
         
         $rating = new Rating;
 
@@ -115,6 +114,8 @@ class PostsController extends Controller
         //store the actual user input for the rating.....
         $rating->rating = $request->input('userRate');
         $rating->rate_message = $request->input('userRateMsg');
+      
+        
 
 
         //logged in user id of user making rating
