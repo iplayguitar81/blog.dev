@@ -48,6 +48,22 @@
 
 
 {{$ratings}}
+
+        @foreach($ratings as $rating)
+        @if($rating->post_id ==$item->id)
+
+            <p>{{$rating->rating}}</p>
+            <p>{{$rating->rate_message}}</p>
+
+            @else
+            No rating at this time....
+            Rate this article today!!!
+
+            @endif
+
+
+        @endforeach
+
 <!--            --><?//$ratings= $ratings($item->id)?>
 
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
