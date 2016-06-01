@@ -47,10 +47,15 @@
             {{--{{//# way to declare variables in view next line......}}--}}
         {{--*/ @ $rate_sum = 0; $rate_count=0; $rate_avg=0;  /*--}}
 
+
+
+
         @foreach($ratings as $rating)
         @if($rating->post_id ==$item->id)
 
-            <? $rate_sum +=$rating->rating; $rate_count++; $rate_avg=$rate_sum/$rate_count; ?>
+     {{--*/ @ $rate_sum+=$rating->rating; $rate_count++; $rate_avg=$rate_sum/$rate_count; /*--}}
+
+
 
 
             {{--<p>{{$rating->rating}}</p>--}}
