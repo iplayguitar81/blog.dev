@@ -42,7 +42,7 @@ Route::get('github/login', function(){
         $user->save();
       //  dd($userDetails);
     });
-    return'done';
+    return Redirect::intended();
 
 });
 //facebook routes.....
