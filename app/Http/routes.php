@@ -91,7 +91,13 @@ Route::get('facebook/login', function() {
 
     // Automatically log in existing users
     // or create a new user if necessary.
-    OAuth::login('facebook');
+    OAuth::login('facebook', function ($user, $userDetails){
+
+        $user->email = $userDetails->email;
+        $user->name = $userDetails->full_name;
+        $user->save();
+        //  dd($userDetails);
+    });
 
     // Current user is now available via Auth facade
   //  $user = Auth::user();
