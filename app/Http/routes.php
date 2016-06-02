@@ -27,15 +27,13 @@ Route::get('/', function () {
     return view('welcome', compact('posts', 'users','ratings'));
 });
 
-
+//social login package routes......
 Route::get('github/authorize', function(){
     return OAuth::authorize('github');
 });
-//Route::get('/contact', function () {
-//
-//
-//    return view('contact');
-//});
+
+
+
 
 Route::get('contact',
     ['as' => 'contact', 'uses' => 'AboutController@create']);
