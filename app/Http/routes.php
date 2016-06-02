@@ -58,6 +58,14 @@ Route::get('facebook/login', function(){
         $user->email = $userDetails->email;
         $user->name = $userDetails->full_name;
 
+        if (($user->email != $userDetails->email)) {
+            // It does not exist - add to favorites button will show
+        } else {
+            // It exists - remove from favorites button will show
+            dd("you are a richard head");
+        }
+
+
         $user->save();
         dd($userDetails);
     });
