@@ -1,10 +1,7 @@
 <br/>
-
 <div class="panel panel-primary">
-
     <div class="panel-heading">
         <h3 class="panel-title">Welcome
-
             @if(Auth::user())
 
                 {{Auth::user()->name}}
