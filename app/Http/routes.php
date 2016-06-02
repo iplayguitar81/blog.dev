@@ -72,10 +72,11 @@ Route::get('facebook/login', function(){
             // It exists - remove from favorites button will show
             dd("Sorry!  Email address exists in our system already!  Unfortunately it appears that you are a richard head");
         }
-
-
+        
+        return view("posts.index");
 
     });
+
     return'done';
 
 });
