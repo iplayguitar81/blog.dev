@@ -73,7 +73,7 @@
         <br/>
 
 
-        {{'Rating Avg: '.$rate_avg}}/5
+        {{'Rating Avg: '.round($rate_avg,2)}}/5
         <br/>
         {{'# of Ratings: '.$rate_count}}
 
