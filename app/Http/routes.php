@@ -55,7 +55,7 @@ Route::get('facebook/authorize', function(){
 Route::get('facebook/login', function(){
     OAuth::login('facebook', function ($user, $userDetails){
 
-        $user_exists_query = DB::table('user')
+        $user_exists_query = DB::table('users')
             ->where('email', '=', $userDetails->email)
             ->first();
 
