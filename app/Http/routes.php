@@ -55,16 +55,22 @@ Route::get('facebook/authorize', function(){
 Route::get('facebook/login', function(){
     OAuth::login('facebook', function ($user, $userDetails){
 
-        $user->email = $userDetails->email;
-        $user->name = $userDetails->full_name;
+        $user_exists_query = DB::table('user')
+            ->where('email', '=', $userDetails->email)
+            ->first();
 
-        if (($user->email != $userDetails->email)) {
+
+
+
+        if (is_null($user_exists_query)) {
             // It does not exist - add to favorites button will show
+            $user->email = $userDetails->email;
+            $user->name = $userDetails->full_name;
             $user->save();
             dd($userDetails);
         } else {
             // It exists - remove from favorites button will show
-            dd("you are a richard head");
+            dd("Sorry!  Email address exists in our system already!  Unfortunately it appears that you are a richard head");
         }
 
 
