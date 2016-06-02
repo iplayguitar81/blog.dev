@@ -27,6 +27,10 @@ Route::get('/', function () {
     return view('welcome', compact('posts', 'users','ratings'));
 });
 
+
+Route::get('github/authorize', function(){
+    return OAuth::authorize('github');
+});
 //Route::get('/contact', function () {
 //
 //
