@@ -27,12 +27,16 @@ Route::get('/', function () {
     return view('welcome', compact('posts', 'users','ratings'));
 });
 
-//social login package routes......
+//social login package establish authorize route......
 Route::get('github/authorize', function(){
     return OAuth::authorize('github');
 });
+//log user into social network....
+Route::get('github/login', function(){
+    OAuth::login('github');
+    return'done';
 
-
+});
 
 
 Route::get('contact',
