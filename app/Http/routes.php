@@ -12,6 +12,7 @@
 */
 use App\Post;
 use App\User;
+use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use App\Rating;
 
 
