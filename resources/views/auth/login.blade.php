@@ -59,6 +59,15 @@
                             </div>
                         </div>
                     </form>
+            <h1>Login/Register with your favorite Social Media:</h1>
+<p>This can be convenient for those who do not wish to keep track of remembering another username and password just for use on this site.  The alternative to that is to login with your favorite social media provider below.  We will only store your email address and name from these sites.  We will not sell your information to anyone!  Thank you!  This was implemented as a convenience to you! :D</p>
+                    <div class="list-group">
+                        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
+                        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-twitter"></i> &nbsp;Twitter</button></a>
+                        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-github"></i> &nbsp;Github</button></a>
+                        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-youtube"></i> &nbsp;YouTube</button></a>
+
+                    </div>
                 </div>
             </div>
         </div>
