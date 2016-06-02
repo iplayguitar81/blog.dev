@@ -14,7 +14,7 @@
                 @else
 
 
-        <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded">
+        <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded" width="50" size="50">
                 @endif
 
             @else
