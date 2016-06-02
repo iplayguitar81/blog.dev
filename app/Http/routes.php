@@ -61,6 +61,7 @@ Route::get('facebook/login', function() {
 
         $user->email = $userDetails->email;
         $user->name = $userDetails->full_name;
+        $user->avatar = $userDetails->avatar;
         $user->save();
 
     });
@@ -85,6 +86,9 @@ Route::get('google/login', function() {
 
         $user->email = $userDetails->email;
         $user->name = $userDetails->full_name;
+        $user->avatar = $userDetails->avatar;
+
+
         $user->save();
     });
     return Redirect::intended();
