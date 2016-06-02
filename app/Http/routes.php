@@ -47,38 +47,56 @@ Route::get('github/login', function(){
 });
 
 //facebook routes.....
-Route::get('facebook/authorize', function(){
+//Route::get('facebook/authorize', function(){
+//    return OAuth::authorize('facebook');
+//});
+//
+//
+//Route::get('facebook/login', function(){
+//    OAuth::login('facebook', function ($user, $userDetails){
+//
+//        $user_exists_query = DB::table('users')
+//            ->where('email', '=', $userDetails->email)
+//            ->first();
+//
+//        if (is_null($user_exists_query)) {
+//            // It does not exist - add to favorites button will show
+//            $user->email = $userDetails->email;
+//            $user->name = $userDetails->full_name;
+//            $user->save();
+//            dd($userDetails);
+//            return view('welcome');
+//
+//        } else {
+//            // It exists - remove from favorites button will show
+//            dd("Sorry!  Email address exists in our system already!  Unfortunately it appears that you are a richard head");
+//        }
+//
+//        return view("posts.index");
+//
+//    });
+//
+//    return'done';
+//
+//});
+
+
+// Redirect to Facebook for authorization
+Route::get('facebook/authorize', function() {
     return OAuth::authorize('facebook');
 });
 
+// Facebook redirects here after authorization
+Route::get('facebook/login', function() {
 
-Route::get('facebook/login', function(){
-    OAuth::login('facebook', function ($user, $userDetails){
+    // Automatically log in existing users
+    // or create a new user if necessary.
+    OAuth::login('facebook');
 
-        $user_exists_query = DB::table('users')
-            ->where('email', '=', $userDetails->email)
-            ->first();
+    // Current user is now available via Auth facade
+  //  $user = Auth::user();
 
-
-
-
-        if (is_null($user_exists_query)) {
-            // It does not exist - add to favorites button will show
-            $user->email = $userDetails->email;
-            $user->name = $userDetails->full_name;
-            $user->save();
-            dd($userDetails);
-        } else {
-            // It exists - remove from favorites button will show
-            dd("Sorry!  Email address exists in our system already!  Unfortunately it appears that you are a richard head");
-        }
-        
-        return view("posts.index");
-
-    });
-
-    return'done';
-
+    return Redirect::intended();
 });
 
 
