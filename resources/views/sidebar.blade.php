@@ -12,7 +12,9 @@
                 @if(is_null(Auth::user()->avatar))
 
                 @else
-        <img src="{{Auth::user()->avatar}}" alt="user avatar">
+
+
+        <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded">
                 @endif
 
             @else
