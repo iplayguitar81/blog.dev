@@ -161,6 +161,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         willvincent\Rateable\RateableServiceProvider::class,
+        'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
 
     ],
 
@@ -211,6 +212,7 @@ return [
         'HTML'      => Collective\Html\HtmlFacade::class,
 //        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'SocialAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
 
 
 
