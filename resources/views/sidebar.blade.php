@@ -9,7 +9,7 @@
 
                 {{Auth::user()->name}}
 
-                @if(is_null(Auth::user()->avatar || !isset(Auth::user()->avatar)))
+                @if(empty(Auth::user()->avatar)))
 
                 @else
 
