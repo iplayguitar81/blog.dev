@@ -9,6 +9,12 @@
 
                 {{Auth::user()->name}}
 
+                @if(is_null(Auth::user()->avatar))
+
+                @else
+        <img src="{{Auth::user()->avatar}}" alt="user avatar">
+                @endif
+
             @else
                 to Bowtie<br/>Software &amp; Web Development!
             @endif
