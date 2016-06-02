@@ -69,6 +69,31 @@ Route::get('facebook/login', function() {
 });
 
 
+//google routes.....
+
+// Redirect to Google for authorization
+Route::get('google/authorize', function() {
+    return OAuth::authorize('google');
+});
+
+// Google redirects here after authorization
+Route::get('google/login', function() {
+
+    // Automatically log in existing users
+    // or create a new user if necessary.
+    OAuth::login('google', function ($user, $userDetails){
+
+        $user->email = $userDetails->email;
+        $user->name = $userDetails->full_name;
+        $user->save();
+
+    });
+
+    return Redirect::intended();
+});
+
+
+
 Route::get('contact',
     ['as' => 'contact', 'uses' => 'AboutController@create']);
 Route::post('contact',
