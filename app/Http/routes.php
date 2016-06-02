@@ -40,7 +40,7 @@ Route::get('github/login', function(){
         $user->name = $userDetails->full_name;
 
         $user->save();
-        dd($userDetails);
+      //  dd($userDetails);
     });
     return'done';
 
