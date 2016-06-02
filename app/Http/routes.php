@@ -86,9 +86,7 @@ Route::get('google/login', function() {
         $user->email = $userDetails->email;
         $user->name = $userDetails->full_name;
         $user->save();
-
     });
-
     return Redirect::intended();
 });
 
