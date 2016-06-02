@@ -34,7 +34,7 @@ Route::get('github/authorize', function(){
 });
 //log user into social network.... also store users email within this function...
 Route::get('github/login', function(){
-    OAuth::login('github', function ($userDetails){
+    OAuth::login('github', function ($user, $userDetails){
 
 dd($userDetails);
     });
