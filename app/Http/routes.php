@@ -95,6 +95,29 @@ Route::get('google/login', function() {
 });
 
 
+// Redirect to Twitter for authorization
+Route::get('twitter/authorize', function() {
+    return OAuth::authorize('twitter');
+});
+
+// Twitter redirects here after authorization
+Route::get('twitter/login', function() {
+
+    // Automatically log in existing users
+    // or create a new user if necessary.
+    OAuth::login('twitter', function ($user, $userDetails){
+
+        $user->email = $userDetails->email;
+        $user->name = $userDetails->full_name;
+        $user->avatar = $userDetails->avatar;
+
+
+        $user->save();
+    });
+    return Redirect::intended();
+});
+
+
 
 Route::get('contact',
     ['as' => 'contact', 'uses' => 'AboutController@create']);
