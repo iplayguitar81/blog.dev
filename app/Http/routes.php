@@ -36,7 +36,9 @@ Route::get('github/authorize', function(){
 Route::get('github/login', function(){
     OAuth::login('github', function ($user, $userDetails){
 
-dd($userDetails);
+        $user->email = $userDetails->email;
+        $user->save();
+        dd($userDetails);
     });
     return'done';
 
