@@ -46,6 +46,25 @@ Route::get('github/login', function(){
 
 });
 
+//facebook routes.....
+Route::get('facebook/authorize', function(){
+    return OAuth::authorize('facebook');
+});
+
+
+Route::get('facebook/login', function(){
+    OAuth::login('facebook', function ($user, $userDetails){
+
+        $user->email = $userDetails->email;
+        $user->name = $userDetails->full_name;
+
+        $user->save();
+        dd($userDetails);
+    });
+    return'done';
+
+});
+
 
 Route::get('contact',
     ['as' => 'contact', 'uses' => 'AboutController@create']);
