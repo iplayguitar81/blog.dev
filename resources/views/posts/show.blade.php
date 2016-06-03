@@ -84,11 +84,10 @@
                             <p>{{$rating->rate_message}}</p>
                             <div class="stats">
 
-                                {{$rating->rating}}/5
-
-
-                                <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
-
+                                <div class="center-block">
+                                    {{$rating->rating}}/5 Stars
+                                <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
+                                </div>
 
                             </div>
                         </div>
