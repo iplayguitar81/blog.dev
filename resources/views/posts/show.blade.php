@@ -88,7 +88,7 @@
                                     <a href="#"><b>{{$author}}</b></a>
                                     rated this post.
                                 </div>
-                                <h6 class="text-muted time">{{$rating->created_at}}</h6>
+                                <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
                             </div>
                         </div>
                         <div class="post-description">
