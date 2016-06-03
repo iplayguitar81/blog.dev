@@ -87,11 +87,11 @@
                         </div>
                     </div>
 
-
+                </div>
 
 
         @endforeach
-        </div>
+
 
 
         @can('loggedIn')
