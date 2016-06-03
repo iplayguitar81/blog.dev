@@ -128,7 +128,7 @@
         {!! Form::close() !!}
         @else
 
-    <p>You have already rated this article!  :D We assure you your rating has been figured into the total score!</p>
+    <div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>
 
         @endif
         @endcan
