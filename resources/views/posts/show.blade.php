@@ -56,47 +56,53 @@
             <? $author = App\User::find($rating->user_id)->name; ?>
 
             </div>
-                <div class="col-sm-8">
 
-                        <div class="post-heading">
-                            <div class=" col-sm-2 pull-left image">
+                <div class="col-md2">
 
-                                <? $avatar = App\User::find($rating->user_id)->avatar; ?>
+                    <? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
-                                @if(empty($avatar))
+                    @if(empty($avatar))
 
-                                        No Avatar Image
-                                    @else
+                        No Avatar Image
+                    @else
 
-                                        <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
+                        <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
 
-                                    @endif
-
-                            </div>
-                            <div class="col-sm-4 pull-left meta">
-                                <div class="title h5">
-                                    <a href="#"><b>{{$author}}</b></a>
-                                    rated this post.
-                                </div>
-                                <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 post-description">
-                            <p>{{$rating->rate_message}}</p>
+                    @endif
 
 
-                                <div class="pull-right">
-                                    <p>{{$rating->rating}}/5 Stars</p>
-                                <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
-                                </div>
+                </div>
 
-                        </div>
+
+                <div class="col-md3">
+
+
+                    <div class="title h5">
+                        <a href="#"><b>{{$author}}</b></a>rated this post.
+                    </div>
+
+                    <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
+
+
+                </div>
+
+                <div class="col-md7">
+
+                    <p>{{$rating->rate_message}}</p>
+
+
+                    <div class="pull-right">
+                        <p>{{$rating->rating}}/5 Stars</p>
+                        <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
+                    </div>
+
 
                 </div>
 
 
         @endforeach
                 </div>
+
 
         @can('loggedIn')
 @if( $hide_rating_form == false)
