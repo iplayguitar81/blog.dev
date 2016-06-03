@@ -74,7 +74,7 @@
                 </div>
 
 
-                <div class="col-md3">
+                <div class="col-md3 center-block">
 
 
                     <div class="title h5">
