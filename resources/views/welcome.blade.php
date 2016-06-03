@@ -74,7 +74,7 @@
 
 
         <div class="row">
-            <div class="col-md-8 center-block">
+            <div class="col-md-8">
 
                 {{'Rating Avg: '.round($rate_avg,2)}}/5
                 <br/>
