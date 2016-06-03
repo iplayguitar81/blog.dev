@@ -80,13 +80,10 @@
                     <div class="col-md-6"><p>{{$rating->rate_message}}</p></div>
                     <div class="col-md-2 offset-1">
 
-
-                        <div class="">
                             <p>{{$rating->rating}}/5 Stars</p>
                             <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
 <hr>
     <br/>
@@ -130,7 +127,7 @@
 
         <br/>
         <br/>
-        <hr>
+
         <h2>Leave a Facebook Comment!</h2>
         <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
 
