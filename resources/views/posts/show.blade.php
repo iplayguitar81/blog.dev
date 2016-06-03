@@ -47,6 +47,7 @@
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
         <div class="row">
+            {{--*/ @ $rate_pct = (($rating->rating/5)*100); /*--}}
             @foreach($post_ratings as $rating)
 
             <div class="col-md-8 center-block">
@@ -93,12 +94,11 @@
                         <div class="post-description">
                             <p>{{$rating->rate_message}}</p>
                             <div class="stats">
-                                <a href="#" class="btn btn-default stat-item">
-                                    <i class="fa fa-thumbs-up icon"></i>2
-                                </a>
-                                <a href="#" class="btn btn-default stat-item">
-                                    <i class="fa fa-thumbs-down icon"></i>12
-                                </a>
+
+                                {{$rating->rating}}/5
+
+                                {{$rate_pct}}
+
                             </div>
                         </div>
                     </div>
