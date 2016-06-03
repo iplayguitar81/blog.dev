@@ -60,45 +60,32 @@
 
 
 
-                <div class="col-md2">
 
-                    <? $avatar = App\User::find($rating->user_id)->avatar; ?>
+                    <div class="col-md-3"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
-                    @if(empty($avatar))
+                        @if(empty($avatar))
 
-                        No Avatar Image
-                    @else
+                            No Avatar Image
+                        @else
 
-                        <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
+                            <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
 
-                    @endif
+                        @endif
 
-
-                </div>
-
-
-                <div class="col-md3">
-
-
-                    <div class="title h5">
-                        <a href="#"><b>{{$author}}</b></a> rated this post.
                     </div>
 
-                    <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
+                    <div class="col-md-6"><p>{{$rating->rate_message}}</p></div>
+                    <div class="col-md-3">
+                        <div class="title h5">
+                            <a href="#"><b>{{$author}}</b></a>rated this post.
+                        </div>
 
-
-                </div>
-
-                <div class="col-md7">
-
-                    <p>{{$rating->rate_message}}</p>
-
-
-                    <div class="pull-right">
-                        <p>{{$rating->rating}}/5 Stars</p>
-                        <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
+                        <span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>
+                        <div class="pull-right">
+                            <p>{{$rating->rating}}/5 Stars</p>
+                            <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
+                        </div>
                     </div>
-
 
                 </div>
 
