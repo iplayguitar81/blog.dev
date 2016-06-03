@@ -80,7 +80,7 @@
                 <br/>
                 {{'# of Ratings: '.$rate_count}}
 
-                <div class="rating"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
+                {{--<div class="rating"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>--}}
 
 
             </div>
