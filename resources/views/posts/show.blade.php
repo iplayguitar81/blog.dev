@@ -38,6 +38,9 @@
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
         </div>
+        </article>
+        </div>
+
         <br/>
         <div class="rating"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
         <p> Average Article Rating: {{$rating_avg}}/5 Stars</p>
@@ -47,7 +50,7 @@
         <div class="row">
             @foreach($post_ratings as $rating)
                 {{--*/ @ $rate_pct_reviewer = (($rating->rating/5)*100); /*--}}
-            <div class="col-md-12 center-block">
+
         @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
                 {{--*/ @ $hide_rating_form = true; /*--}}
@@ -101,7 +104,7 @@
 
 
         @endforeach
-                </div>
+
 
 
         @can('loggedIn')
@@ -149,7 +152,7 @@
 
 
 
-    </article>
+
 
 
 
