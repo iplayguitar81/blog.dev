@@ -97,7 +97,9 @@
 
                                 {{$rating->rating}}/5
 
-                                {{$rate_pct}}
+
+                                <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
+
 
                             </div>
                         </div>
