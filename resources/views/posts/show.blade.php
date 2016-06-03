@@ -84,7 +84,7 @@
                             <p>{{$rating->rate_message}}</p>
                             <div class="stats">
 
-                                <div class="center-block">
+                                <div class="pull-right">
                                     {{$rating->rating}}/5 Stars
                                 <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
                                 </div>
