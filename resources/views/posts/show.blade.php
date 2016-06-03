@@ -50,7 +50,7 @@
 
             @foreach($post_ratings as $rating)
                 {{--*/ @ $rate_pct = (($rating->rating/5)*100); /*--}}
-            <div class="col-md-8 center-block">
+            <div class="col-md-12 center-block">
         @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
                 {{--*/ @ $hide_rating_form = true; /*--}}
