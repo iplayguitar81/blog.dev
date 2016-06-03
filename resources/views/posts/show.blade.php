@@ -47,9 +47,9 @@
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
         <div class="row">
-            {{--*/ @ $rate_pct = (($rating->rating/5)*100); /*--}}
-            @foreach($post_ratings as $rating)
 
+            @foreach($post_ratings as $rating)
+                {{--*/ @ $rate_pct = (($rating->rating/5)*100); /*--}}
             <div class="col-md-8 center-block">
         @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
