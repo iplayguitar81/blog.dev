@@ -37,17 +37,12 @@
         <br/>
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
-
         </div>
-
         <br/>
-
-
         <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
         <div class="row">
-
             @foreach($post_ratings as $rating)
                 {{--*/ @ $rate_pct = (($rating->rating/5)*100); /*--}}
             <div class="col-md-12 center-block">
@@ -56,14 +51,8 @@
                 {{--*/ @ $hide_rating_form = true; /*--}}
                 @endif
         @endif
-            <p>Rating: {{$rating->rating}}/5</p>
-            <p>Rater Message: {{$rating->rate_message}}</p>
             <? $author = App\User::find($rating->user_id)->name; ?>
 
-
-
-            <p>Reviewer Name: {{$author}}</p>
-            <p>User ID: {{$rating->user_id}}</p>
             </div>
                 <div class="col-sm-8">
                     <div class="panel panel-white post panel-shadow">
