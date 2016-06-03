@@ -45,7 +45,7 @@
         <br/>
         <div class="row">
             @foreach($post_ratings as $rating)
-                {{--*/ @ $rate_pct = (($rating->rating/5)*100); /*--}}
+                {{--*/ @ $rate_pct_reviewer = (($rating->rating/5)*100); /*--}}
             <div class="col-md-12 center-block">
         @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
@@ -86,7 +86,7 @@
 
                                 <div class="center-block">
                                     {{$rating->rating}}/5 Stars
-                                <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
+                                <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
                                 </div>
 
                             </div>
