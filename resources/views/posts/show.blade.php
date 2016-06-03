@@ -73,7 +73,7 @@
                                     @endif
 
                             </div>
-                            <div class="pull-left meta">
+                            <div class="col-sm-4 pull-left meta">
                                 <div class="title h5">
                                     <a href="#"><b>{{$author}}</b></a>
                                     rated this post.
@@ -81,7 +81,7 @@
                                 <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
                             </div>
                         </div>
-                        <div class="col-sm-5 post-description">
+                        <div class="col-sm-4 post-description">
                             <p>{{$rating->rate_message}}</p>
                             <div class="stats">
 
