@@ -49,7 +49,7 @@
         <div class="row">
             @foreach($post_ratings as $rating)
 
-            <div class="col-md-8">
+            <div class="col-md-8 center-block">
         @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
                 {{--*/ @ $hide_rating_form = true; /*--}}
