@@ -87,7 +87,7 @@
 
                                 <div class="pull-right">
 
-                                <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
+                                <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
                                 </div>
 
                             </div>
