@@ -88,7 +88,8 @@
                     </div>
 
                 </div>
-
+<hr>
+    <br/>
 
         @endforeach
 
