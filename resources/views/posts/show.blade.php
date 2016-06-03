@@ -58,7 +58,7 @@
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
             <? $author = App\User::find($rating->user_id)->name; ?>
-            <? $avatar = App\User::find($rating->user_id)->avatar; ?>
+
 
 
             <p>Reviewer Name: {{$author}}</p>
@@ -68,7 +68,18 @@
                     <div class="panel panel-white post panel-shadow">
                         <div class="post-heading">
                             <div class="pull-left image">
-                                <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
+
+                                <? $avatar = App\User::find($rating->user_id)->avatar; ?>
+
+                                @if(empty($avatar))
+
+                                        <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
+
+                                    @else
+                                    No Avatar Image
+
+                                    @endif
+
                             </div>
                             <div class="pull-left meta">
                                 <div class="title h5">
