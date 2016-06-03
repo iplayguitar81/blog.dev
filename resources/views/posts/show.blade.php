@@ -91,7 +91,7 @@
                     <p>{{$rating->rate_message}}</p>
 
 
-                    <div class="pull-right">
+                    <div class="">
                         <p>{{$rating->rating}}/5 Stars</p>
                         <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
                     </div>
