@@ -70,7 +70,7 @@
                             <p><img src="{{$avatar}}" class="img-circle avatar" alt="user profile image"></p>
 
                         @endif
-                        <p> <a href="#">rated by <b>{{$author}}</b></a></p>
+                        <p>rated by <a href="#"> <b>{{$author}}</b></a></p>
 
 
                         <span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>
