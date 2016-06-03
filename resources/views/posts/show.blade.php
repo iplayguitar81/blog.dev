@@ -126,7 +126,6 @@
         @endcan
 
         <br/>
-        <br/>
 
         <h2>Leave a Facebook Comment!</h2>
         <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
