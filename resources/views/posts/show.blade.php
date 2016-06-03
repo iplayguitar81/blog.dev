@@ -57,7 +57,7 @@
 
             </div>
 
-                <div class="col-md2 offset-1">
+                <div class="col-md2">
 
                     <? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
