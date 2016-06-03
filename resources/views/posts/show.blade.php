@@ -10,7 +10,7 @@
 @section('title', $post->title)
 @section('content')
 
-
+<div class="row">
     <div class="col-md-12">
 
 
@@ -40,7 +40,8 @@
         </div>
     </article>
         </div>
-
+</div>
+<div class="row">
 
         <br/>
     <div class="col-md-12 center-block">
@@ -49,6 +50,7 @@
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
         </div>
+    </div>
 
         <br/>
         <div class="row">
