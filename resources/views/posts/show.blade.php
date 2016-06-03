@@ -53,7 +53,7 @@
     </div>
 
         <br/>
-<h2>See what the reviewers have had to say.....</h2>
+<h2>Reviewers Ratings &amp; Opinions</h2>
         <div class="row">
             @foreach($post_ratings as $rating)
                 {{--*/ @ $rate_pct_reviewer = (($rating->rating/5)*100); /*--}}
