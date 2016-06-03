@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="post-description">
-                            <p>Bootdey is a gallery of free snippets resources templates and utilities for bootstrap css hmtl js framework. Codes for developers and web designers</p>
+                            <p>{{$rating->rate_message}}</p>
                             <div class="stats">
                                 <a href="#" class="btn btn-default stat-item">
                                     <i class="fa fa-thumbs-up icon"></i>2
