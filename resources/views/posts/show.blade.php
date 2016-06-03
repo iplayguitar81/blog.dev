@@ -57,6 +57,9 @@
         @endif
             <p>Rating: {{$rating->rating}}/5</p>
             <p>Rater Message: {{$rating->rate_message}}</p>
+            <? $author = App\User::find($rating->user_id)->name; ?>
+
+            <p>Reviewer Name: {{$author}}</p>
             <p>User ID: {{$rating->user_id}}</p>
             </div>
 
