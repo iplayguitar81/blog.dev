@@ -64,13 +64,13 @@
                     <div class="col-md-3"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
                         @if(empty($avatar))
-                            No Avatar Image
+                           <p>No Avatar Image</p>
                         @else
 
-                            <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
+                            <p><img src="{{$avatar}}" class="img-circle avatar" alt="user profile image"></p>
 
                         @endif
-                        <a href="#"><b>{{$author}}</b></a>rated this post.
+                        <p> <a href="#"><b>{{$author}}</b></a>rated this post.</p>
 
 
                         <span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>
