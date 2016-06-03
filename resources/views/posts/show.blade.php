@@ -74,7 +74,7 @@
                 </div>
 
 
-                <div class="col-md3">
+                <div class="col-md3 offset-1">
 
 
                     <div class="title h5">
