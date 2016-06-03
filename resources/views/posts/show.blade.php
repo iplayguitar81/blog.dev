@@ -39,7 +39,8 @@
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
         </div>
         <br/>
-        <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
+        <div class="rating"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
+        <p> Average Article Rating: {{$rating_avg}}/5 Stars</p>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
         <br/>
