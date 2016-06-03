@@ -73,11 +73,19 @@
         <br/>
 
 
-        {{'Rating Avg: '.round($rate_avg,2)}}/5
-        <br/>
-        {{'# of Ratings: '.$rate_count}}
+        <div class="row">
+            <div class="col-md-8 center-block">
 
-        <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
+                {{'Rating Avg: '.round($rate_avg,2)}}/5
+                <br/>
+                {{'# of Ratings: '.$rate_count}}
+
+                <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rate_pct}}%;"></div></div>
+
+
+            </div>
+
+        </div>
 
         <br/>
 
