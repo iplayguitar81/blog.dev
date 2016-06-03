@@ -71,7 +71,7 @@
                     <div class="col-md-2 col-md-offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
                         @if(empty($avatar))
-                           <p> <img src="{{'images/default-user-img.png'}}" class="img-circle avatar" alt="user profile image"></p>
+                           <p> <img src="{{url('images/default-user-img.png')}}" class="img-circle avatar" alt="user profile image"></p>
 
                         @else
 
