@@ -84,10 +84,10 @@
                             </div>
                             <div class="pull-left meta">
                                 <div class="title h5">
-                                    <a href="#"><b>Ryan Haywood</b></a>
-                                    made a post.
+                                    <a href="#"><b>{{$author}}</b></a>
+                                    rated this post.
                                 </div>
-                                <h6 class="text-muted time">1 minute ago</h6>
+                                <h6 class="text-muted time">{{$rating->created_at}}</h6>
                             </div>
                         </div>
                         <div class="post-description">
