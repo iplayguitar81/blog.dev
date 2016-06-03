@@ -67,7 +67,7 @@
 
 
 
-                    <div class="col-md-2 offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
+                    <div class="col-md-2 col-md-offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
                         @if(empty($avatar))
                            <p>No Avatar Image</p>
