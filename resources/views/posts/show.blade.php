@@ -59,7 +59,7 @@
                 <div class="col-sm-8">
                     <div class="panel panel-white post panel-shadow">
                         <div class="post-heading">
-                            <div class="pull-left image">
+                            <div class=" col-sm-2 pull-left image">
 
                                 <? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
@@ -81,7 +81,7 @@
                                 <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
                             </div>
                         </div>
-                        <div class="post-description">
+                        <div class="col-sm-5 post-description">
                             <p>{{$rating->rate_message}}</p>
                             <div class="stats">
 
