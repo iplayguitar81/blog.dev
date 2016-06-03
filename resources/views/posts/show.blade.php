@@ -46,9 +46,9 @@
         <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div><p> Average Article Rating: {{$rating_avg}}/5 Stars</p></div>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
-
+        <div class="row">
             @foreach($post_ratings as $rating)
-                <div class="row">
+
             <div class="col-md-4">
         @if(Auth::user())
              @if($rating->user_id==Auth::user()->id)
@@ -59,11 +59,11 @@
             <p>Rater Message: {{$rating->rate_message}}</p>
             <p>User ID: {{$rating->user_id}}</p>
             </div>
-            </div>
+
 
 
         @endforeach
-
+                </div>
 
         @can('loggedIn')
 @if( $hide_rating_form == false)
