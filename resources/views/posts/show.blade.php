@@ -73,10 +73,11 @@
 
                                 @if(empty($avatar))
 
-                                        <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
+                                        No Avatar Image
 
                                     @else
-                                    No Avatar Image
+
+                                        <img src="{{$avatar}}" class="img-circle avatar" alt="user profile image">
 
                                     @endif
 
