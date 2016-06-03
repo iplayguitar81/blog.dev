@@ -57,7 +57,7 @@
 
             </div>
                 <div class="col-sm-8">
-                    <div class="panel panel-white post panel-shadow">
+
                         <div class="post-heading">
                             <div class=" col-sm-2 pull-left image">
 
@@ -91,7 +91,7 @@
                                 </div>
 
                         </div>
-                    </div>
+
                 </div>
 
 
