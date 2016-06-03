@@ -38,14 +38,18 @@
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
         </div>
-        </article>
+    </article>
         </div>
 
+
         <br/>
+    <div class="col-md-12">
         <div class="rating"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
         <p> Average Article Rating: {{$rating_avg}}/5 Stars</p>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
+        </div>
+
         <br/>
         <div class="row">
             @foreach($post_ratings as $rating)
