@@ -58,7 +58,7 @@
         @endif
             <? $author = App\User::find($rating->user_id)->name; ?>
 
-            </div>
+
 
                 <div class="col-md2">
 
@@ -81,7 +81,7 @@
 
 
                     <div class="title h5">
-                        <a href="#"><b>{{$author}}</b></a>rated this post.
+                        <a href="#"><b>{{$author}}</b></a> rated this post.
                     </div>
 
                     <h6 class="text-muted time">{{$rating->created_at->format('M dS Y')}}</h6>
@@ -104,7 +104,7 @@
 
 
         @endforeach
-
+        </div>
 
 
         @can('loggedIn')
