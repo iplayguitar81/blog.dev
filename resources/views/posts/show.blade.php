@@ -89,7 +89,7 @@
                     <div class="col-md-2 offset-1">
 
                             <p>{{$rating->rating}}/5 Stars</p>
-                            <div class="rating "><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
+                            <div class="rating2"><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
 
                     </div>
                 </div>
