@@ -102,7 +102,7 @@
 
         @can('loggedIn')
 @if( $hide_rating_form == false)
-    <div class="col-md-12">
+
         <h2>Rate this article!!!</h2>
         <hr>
 
@@ -111,9 +111,9 @@
 
         {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
         {{ Form::selectRange('userRate', 1, 5) }}
-
+        <div class="col-md-12">
         <input id="input-id" type="text" class="rating" name="starRate" data-size="lg" >
-
+        </div>
         <div class="form-group">
             {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
 
@@ -129,7 +129,7 @@
         {!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}
 
         {!! Form::close() !!}
-        </div>
+
         @else
 
     <div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>
