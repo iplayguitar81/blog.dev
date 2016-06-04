@@ -112,7 +112,7 @@ class PostsController extends Controller
         //gotta pass the post_id into this also.....hidden value.......
 
         //store the actual user input for the rating.....
-        $rating->rating = $request->input('userRate');
+        $rating->rating = $request->input('starRate');
         $rating->rate_message = $request->input('userRateMsg');
 
         //logged in user id of user making rating
