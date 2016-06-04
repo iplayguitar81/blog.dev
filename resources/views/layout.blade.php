@@ -45,7 +45,7 @@ div.pagination {
     text-align:center;
 }
 
-.rating {
+.rating2 {
     width: 100px;
     height: 30px;
     position:relative;
