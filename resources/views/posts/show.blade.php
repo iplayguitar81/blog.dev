@@ -175,5 +175,6 @@
 
 <script>
     // initialize with defaults
-    $("#input-id").rating();
+
+    $('#input-id').rating({showClear: false, showCaption: false});
 </script>
