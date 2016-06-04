@@ -45,7 +45,7 @@
 
         <br/>
     <div class="col-md-12 text-center">
-        <div class="rating center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
+        <div class="rating2 center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
         <p> Average Article Rating: {{round($rating_avg,2)}}/5 Stars</p>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
