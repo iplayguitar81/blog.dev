@@ -13,8 +13,6 @@
 <div class="row">
     <div class="col-md-12">
 
-
-
     <article class="center-block">
         <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1em;text-align:center;">{{ $post->title }}</h1>
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $post->subHead}}</p>
@@ -42,17 +40,14 @@
         </div>
 </div>
 <div class="row">
-
         <br/>
     <div class="col-md-12 text-center">
-
         <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating_avg}}" diabled="true" >
         <p> Average Article Rating: {{round($rating_avg,2)}}/5 Stars</p>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
         </div>
     </div>
-
         <br/>
 <h2 class="text-center">Bowtie User Ratings</h2>
         <div class="row">
@@ -65,11 +60,6 @@
                 @endif
         @endif
             <? $author = App\User::find($rating->user_id)->name; ?>
-
-
-
-
-
 
                     <div class="col-md-2 col-md-offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
 
