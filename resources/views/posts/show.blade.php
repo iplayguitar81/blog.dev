@@ -50,6 +50,12 @@
     </div>
         <br/>
 <h2 class="text-center">Bowtie User Ratings</h2>
+@can('loggedIn')
+    @if( $hide_rating_form == false)
+        <div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>
+
+    @endif
+    @endcan
         <div class="row">
             @foreach($post_ratings as $rating)
                 {{--*/ @ $rate_pct_reviewer = (($rating->rating/5)*100); /*--}}
@@ -127,7 +133,6 @@
 
         @else
 
-    <div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>
 
         @endif
         @endcan
