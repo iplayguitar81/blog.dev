@@ -96,4 +96,13 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    public function show_user($id)
+    {
+        User::findOrFail($id);
+
+        return view('show_user');
+
+    }
+
 }
