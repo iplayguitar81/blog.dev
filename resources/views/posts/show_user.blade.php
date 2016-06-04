@@ -24,9 +24,12 @@
 
      {{--<p>{{$rating->post_id}}</p>--}}
      <p><a href="{{ route('posts.show', [$rating->post_id, str_slug($title)]) }}">{{$title}}</a></p>
+         <p>Post Rating:</p>
+         <p>{{$rating->rating}}</p>
 
-         <p>Rating Comments: {{$rating->rate_message}}</p>
+         <p>Rating Comments:</p>
          <p>{{$rating->rate_message}}</p>
+
             <hr>
             <br/>
          @endforeach
