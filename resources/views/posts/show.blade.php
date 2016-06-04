@@ -111,6 +111,8 @@
         {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
         {{ Form::selectRange('userRate', 1, 5) }}
 
+        <input id="input-id" type="text" class="rating" name="starRate" data-size="lg" >
+
         <div class="form-group">
             {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
 
@@ -166,3 +168,7 @@
     @endsection
 
 
+<script>
+    // initialize with defaults
+    $("#input-id").rating();
+</script>
