@@ -215,23 +215,24 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 /**
  * Caption
  */
-/*.rating-container .caption {*/
-    /*color: #999;*/
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-    /*font-size: 60%;*/
-    /*margin-top: -0.6em;*/
-/*}*/
+.rating-container .caption {
+    color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 60%;
+    margin-top: -0.6em;
+    display:none;
+}
 
-/*.rating-container .caption {*/
-    /*margin-left: 5px;*/
-    /*margin-right: 0;*/
-/*}*/
+.rating-container .caption {
+    margin-left: 5px;
+    margin-right: 0;
+}
 
-/*.rating-rtl .caption {*/
-    /*margin-right: 5px;*/
-    /*margin-left: 0;*/
-/*}*/
+.rating-rtl .caption {
+    margin-right: 5px;
+    margin-left: 0;
+}
 
 /**
  * Print
