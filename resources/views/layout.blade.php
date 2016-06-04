@@ -92,7 +92,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     height: 25px;
     font-size: 0;
     color: #fff;
-    background: transparent url('../img/loading.gif') top left no-repeat;
+    background: transparent url({{url('images/loading.gif')}}) top left no-repeat;
     border: none;
 }
 
