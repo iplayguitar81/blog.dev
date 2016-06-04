@@ -400,7 +400,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     </div>
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
-<script src="{{url('/js/start-rating.js')}}"></script>
+<script src="{{url('/js/star-rating.js')}}"></script>
 
 
 
