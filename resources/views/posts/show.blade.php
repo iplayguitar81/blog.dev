@@ -121,7 +121,7 @@
 
             {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
             <div class="">
-                {!! Form::textarea('userRateMsg', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
+                {!! Form::textarea('', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
                 {!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}
             </div>
         </div>
