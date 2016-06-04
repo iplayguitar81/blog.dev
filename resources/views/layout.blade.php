@@ -306,7 +306,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
                 @else
 
-                <li><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i> Welcome {{Auth::user()->name}}! &nbsp; View Your Posts</a></li>
+                <li> <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded" style="width:32px; height:32px; position:absolute; top:10px; left: 10px;"><a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i> Welcome {{Auth::user()->name}}!</a></li>
 
                 <li><a href="{{url('/logout')}}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
