@@ -23,7 +23,7 @@
          {{--<p>{{$rating->user_id}}</p>--}}
 
      {{--<p>{{$rating->post_id}}</p>--}}
-     <p>{{$title}}</p>
+     <p><a href="#">{{$title}}</a></p>
          <p>Rating Comments: {{$rating->rate_message}}</p>
          <p>{{$rating->rate_message}}</p>
             <hr>
