@@ -417,6 +417,8 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+    @import "http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css";
+
 
 </style>
 
