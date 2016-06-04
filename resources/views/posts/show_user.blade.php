@@ -12,7 +12,7 @@
 
 
 <p><img src="{{$user->avatar}}" alt="user avatar"></p>
-<p>Member since: {{$user->created_at->format('Y-m-d')}}</p>
+<p>Member since: {{$user->created_at->format('M-d-Y')}}</p>
 
 </div>
 </div>
