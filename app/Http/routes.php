@@ -134,6 +134,8 @@ Route::get('/posts/file_upload', ['as' => 'posts.file_upload', 'uses'=>'PostsCon
 
 Route::get('/posts/file_export', ['as' => 'posts.file_export', 'uses'=>'PostsController@file_export']);
 
+
+
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
 
 Route::post('/posts/post_rating', 'PostsController@userRating');
@@ -154,6 +156,7 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
+Route::get('/show_user', ['as' => 'auth.show_user', 'uses'=>'AuthController@show_user']);
 Route::resource('posts', 'PostsController');
 
 Route::auth();
