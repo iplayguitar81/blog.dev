@@ -99,9 +99,9 @@ class AuthController extends Controller
 
     public function show_user($id)
     {
-        User::findOrFail($id);
+        $user=User::findOrFail($id);
 
-        return view('posts.show_user');
+        return view('posts.show_user', compact('user'));
 
     }
 
