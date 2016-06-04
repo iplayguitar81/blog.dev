@@ -172,7 +172,6 @@
     @endsection
 
 <script src="{{url('/js/jquery.js')}}"></script>
-<script src="{{url('/js/star-rating.js')}}"></script>
 
 
 <script>
