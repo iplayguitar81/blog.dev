@@ -24,8 +24,8 @@
      <p>{{$title}}</p>
          <p>Rating Comments: {{$rating->rate_message}}</p>
          <p>{{$rating->rate_message}}</p>
-
-
+            <hr>
+            <br/>
          @endforeach
 
 </div>
