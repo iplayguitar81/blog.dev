@@ -109,7 +109,7 @@
         {!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}
         {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
 <div class="form-group center-block">
-        <div class="rate-width">
+        <div class="rate-width text-center">
         <input id="input-id" type="text" class="rating" name="starRate" data-size="md" >
             </div>
 </div>
