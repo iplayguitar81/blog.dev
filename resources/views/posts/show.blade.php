@@ -178,13 +178,8 @@
 <script>
     // initialize with defaults
 
-    $('#input-id').rating('refresh', {disabled: true, showClear: false, showCaption: false});
+    $('#input-id').rating({disabled: true, showClear: false, showCaption: false});
 
-    // method chaining
-    var ratingValue = $('#input-id').rating('refresh', {
-        disabled: true,
-        showClear: false,
-        showCaption: false
-    }).val();
+
 
 </script>
