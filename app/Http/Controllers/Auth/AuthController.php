@@ -11,10 +11,12 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
 use willvincent\Rateable\Rating;
+use willvincent\Rateable\Rateable;
 
 
 class AuthController extends Controller
 {
+    use Rateable;
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
