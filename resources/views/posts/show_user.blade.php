@@ -23,7 +23,8 @@
          {{--<p>{{$rating->user_id}}</p>--}}
 
      {{--<p>{{$rating->post_id}}</p>--}}
-     <p><a href="#">{{$title}}</a></p>
+     <p><a href="{{ route('posts.show', [$rating->post_id, str_slug($title)]) }}">{{$title}}</a></p>
+
          <p>Rating Comments: {{$rating->rate_message}}</p>
          <p>{{$rating->rate_message}}</p>
             <hr>
