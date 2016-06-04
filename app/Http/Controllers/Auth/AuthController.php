@@ -101,7 +101,7 @@ class AuthController extends Controller
     {
         User::findOrFail($id);
 
-        return view('auth.show_user');
+        return view('posts.show_user');
 
     }
 
