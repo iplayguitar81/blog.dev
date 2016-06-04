@@ -156,7 +156,7 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
-Route::get('/show_user', ['as' => 'auth.show_user', 'uses'=>'\Auth\AuthController@show_user']);
+Route::get('/show_user', ['as' => 'auth.show_user', 'uses'=>'Auth\AuthController@show_user']);
 Route::resource('posts', 'PostsController');
 
 Route::auth();
