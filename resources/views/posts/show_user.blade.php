@@ -6,6 +6,7 @@
 @section('content')
 
 
+<img src="{{$user->avatar}}" alt="user avatar">
 
 
     @endsection
