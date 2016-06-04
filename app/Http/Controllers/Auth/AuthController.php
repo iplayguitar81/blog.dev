@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
+use willvincent\Rateable\Rating;
 
 
 class AuthController extends Controller
@@ -100,8 +101,10 @@ class AuthController extends Controller
     public function show_user($id)
     {
         $user=User::findOrFail($id);
+       // App\User::find($id);
+        $ratings =Rating::where('user_id','=', $id);
 
-        return view('posts.show_user', compact('user'));
+        return view('posts.show_user', compact('user','ratings'));
 
     }
 
