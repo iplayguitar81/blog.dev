@@ -4,6 +4,7 @@
 
 
 @section('content')
+<h1>{{$user->name}}</h1>
 
 
 <img src="{{$user->avatar}}" alt="user avatar">
