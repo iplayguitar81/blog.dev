@@ -46,6 +46,7 @@
         <br/>
     <div class="col-md-12 text-center">
         <div class="rating2 center-block"><div class="stars"></div><div class="back" style="width:{{$rating_pct}}%;"></div></div>
+        <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating}}" >
         <p> Average Article Rating: {{round($rating_avg,2)}}/5 Stars</p>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
@@ -89,7 +90,7 @@
 
                     <div class="col-md-6"><p>{{$rating->rate_message}}</p></div>
                     <div class="col-md-2 offset-1">
-                        <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating}}" >
+
                             <p>{{$rating->rating}}/5 Stars</p>
                             <div class="rating2"><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
 
