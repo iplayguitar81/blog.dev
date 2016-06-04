@@ -65,7 +65,7 @@
         @endif
             <? $author = App\User::find($rating->user_id)->name; ?>
 
-               <a href="{{ url('/show_user/' . $rating->user_id) }}">Test This Route Link to User......</a>
+
 
 
 
@@ -80,7 +80,7 @@
                             <p><img src="{{$avatar}}" class="img-circle avatar" alt="user profile image"></p>
 
                         @endif
-                        <p>rated by <a href="#"> <b>{{$author}}</b></a></p>
+                        <p>rated by <a href="{{ url('/show_user/' . $rating->user_id) }}"> <b>{{$author}}</b></a></p>
 
 
                         <span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>
