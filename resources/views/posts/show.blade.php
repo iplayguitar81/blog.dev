@@ -114,7 +114,7 @@
 
 </div>
         {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
-        {{ Form::selectRange('userRate', 1, 5) }}
+        {{--{{ Form::selectRange('userRate', 1, 5) }}--}}
 
         <div class="form-group">
             {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
