@@ -16,6 +16,13 @@
 
      <p>{{$ratings}}</p>
 
+     @foreach($ratings as $rating)
+
+         <p>{{$rating->user_id}}</p>
+         <p>{{$rating->rate_message}}</p>
+
+         @endforeach
+
 </div>
 </div>
     @endsection
