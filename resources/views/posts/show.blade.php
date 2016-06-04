@@ -89,7 +89,7 @@
 
                     <div class="col-md-6"><p>{{$rating->rate_message}}</p></div>
                     <div class="col-md-2 offset-1">
-
+                        <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating}}" >
                             <p>{{$rating->rating}}/5 Stars</p>
                             <div class="rating2"><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
 
