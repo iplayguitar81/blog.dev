@@ -17,9 +17,11 @@
      <p>{{$ratings}}</p>
 
      @foreach($ratings as $rating)
-
-         <p>{{$rating->user_id}}</p>
+{{--<span>test this line out below to be sure output is for correct user.....</span>--}}
+         {{--<p>{{$rating->user_id}}</p>--}}
+         <p>Rating Comments: {{$rating->rate_message}}</p>
          <p>{{$rating->rate_message}}</p>
+
 
          @endforeach
 
