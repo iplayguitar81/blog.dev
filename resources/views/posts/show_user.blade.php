@@ -14,7 +14,7 @@
 <p><img src="{{$user->avatar}}" alt="user avatar"></p>
 <p>Member since: {{$user->created_at->format('M jS, Y')}}</p>
 
-    <h1>Ratings Made &amp; Associated Posts</h1>
+    <h1 class="text-center">Ratings Made &amp; Associated Posts</h1>
 
      @foreach($ratings as $rating)
 
