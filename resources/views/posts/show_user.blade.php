@@ -14,6 +14,8 @@
 <p><img src="{{$user->avatar}}" alt="user avatar"></p>
 <p>Member since: {{$user->created_at->format('M jS, Y')}}</p>
 
+     <p>{{$ratings}}</p>
+
 </div>
 </div>
     @endsection
