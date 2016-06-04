@@ -27,6 +27,7 @@
          <p>Post Rating:</p>
          <p>{{$rating->rating}}</p>
 
+
          <p>Rating Comments:</p>
          <p>{{$rating->rate_message}}</p>
 
