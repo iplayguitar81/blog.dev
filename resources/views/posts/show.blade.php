@@ -65,7 +65,7 @@
         @endif
             <? $author = App\User::find($rating->user_id)->name; ?>
 
-               <a href="{{ route('posts.show_user', [$rating->user_id, str_slug($author)])}}">Test This Route Link to User......</a>
+               <a href="{{ route('posts.show_user')}}">Test This Route Link to User......</a>
 
 
 
