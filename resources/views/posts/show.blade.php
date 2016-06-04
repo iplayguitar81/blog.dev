@@ -108,12 +108,14 @@
 
         {!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}
         {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
+<div class="form-group">
 
+        <input id="input-id" type="text" class="rating" name="starRate" data-size="sm" >
+
+</div>
         {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
         {{ Form::selectRange('userRate', 1, 5) }}
-        <div class="col-md-12">
-        <input id="input-id" type="text" class="rating" name="starRate" data-size="lg" >
-        </div>
+
         <div class="form-group">
             {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
 
