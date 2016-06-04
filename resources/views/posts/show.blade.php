@@ -65,6 +65,8 @@
         @endif
             <? $author = App\User::find($rating->user_id)->name; ?>
 
+                {{ url('/show_user/'.$rating->user_id) }}
+
 
 
 
@@ -117,7 +119,7 @@
         {{--{{ Form::selectRange('userRate', 1, 5) }}--}}
 
         <div class="form-group">
-            {!! Form::label('userRateMsg', 'userRateMsg', ['class' => '']) !!}
+            {!! Form::label('Please Leave Your Comments With Your Rating', 'userRateMsg', ['class' => '']) !!}
 
             {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
             <div class="">
