@@ -235,6 +235,8 @@ class PostsController extends Controller
         return view('posts.show', compact('post','post_ratings','rating_count','rating_avg','rating_pct'));
     }
 
+
+    
     /**
      * Show the form for editing the specified resource.
      *
