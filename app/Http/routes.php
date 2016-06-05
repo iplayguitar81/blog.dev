@@ -17,9 +17,11 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 
 //use Stevebauman\Location\Facades\Location;
 //use Stevebauman\Location\Objects\Location;
-
 //use Stevebauman\Location;
-use GeoIp2\Record\Location;
+use Stevebauman\Location\Location;
+
+//use GeoIp2\Record\Location;
+
 
 use willvincent\Rateable\Rating;
 
