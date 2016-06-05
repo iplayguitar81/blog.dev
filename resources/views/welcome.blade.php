@@ -12,7 +12,11 @@
         </div>
     @endif
 
+    {{'Test this out...  '.$location['city']}}
+
     {{var_dump($location)}}
+
+
     @foreach($location as $user_locate)
         {{$user_locate('city')}}
 
