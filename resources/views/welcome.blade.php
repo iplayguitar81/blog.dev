@@ -13,8 +13,8 @@
     @endif
 
     {{var_dump($location)}}
-    @foreach($location->array as $user_locate)
-        {{$user_locate->city}}
+    @foreach($location as $user_locate)
+        {{$user_locate}}
 
         @endforeach
     @foreach($posts as $item)
