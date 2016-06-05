@@ -342,6 +342,15 @@ class PostsController extends Controller
 
     }
 
+    public function show_user($id)
+    {
+        $user=User::findOrFail($id);
+        // App\User::find($id);
+        $ratings =Rating::where('user_id','=', $id)->orderBy('created_at', 'desc')->paginate(3);
+
+        return view('posts.show_user', compact('user','ratings'));
+
+    }
 
 
 }
