@@ -6,7 +6,7 @@
 @section('content')
 
 
-    <div data-role="page" data-theme="b" id="mappins">
+    <div  id="mappins">
         <div data-role="header" style="overflow:hidden;" data-theme="b"  data-tap-toggle="false">
             <img class='img-responsive' alt='nearbynativecasinos.com' src='checkenginelogoyay3.png'/>
             <div data-role="navbar">
