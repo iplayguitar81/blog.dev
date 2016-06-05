@@ -176,6 +176,10 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/map', 'HomeController@map');
+
+
+
 
 #Route::resource('users','UsersController');
 
