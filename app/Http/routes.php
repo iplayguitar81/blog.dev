@@ -26,7 +26,7 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use GeoIp2\Record\Location;
 
 //use Torann\GeoIP\GeoIP;
-use Torann\GeoIP\GeoIPFacade;
+//use Torann\GeoIP\GeoIPFacade;
 
 //use GeoIp2;
 //use Torann\GeoIP\GeoIP;
