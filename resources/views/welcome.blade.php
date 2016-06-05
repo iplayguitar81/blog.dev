@@ -11,7 +11,7 @@
             {{Session::get('message')}}
         </div>
     @endif
-<p>{{$location}}</p>
+<p>{{dd($location)}}</p>
     @foreach($posts as $item)
     <article class="text-center">
 
