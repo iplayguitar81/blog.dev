@@ -313,7 +313,7 @@
             $(".wrong_info_text").hide();
             $(".invalid_info_success").hide();
             $("#contact_success").hide();
-            $("#sidebar").collapsible().enhanceWithin()
+//            $("#sidebar").collapsible().enhanceWithin()
         }
         function openInfoWindowGeocoded(e, t, n) {
             if (geocoder) {
