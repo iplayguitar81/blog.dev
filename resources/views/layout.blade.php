@@ -308,7 +308,21 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
                 <li> <a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>  {{Auth::user()->name}}!</a></li>
 
-                <li><a style="position:relative; padding-left: 50px;" href="{{url('/logout')}}"><img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded" style="width:32px; height:32px; position:absolute; top:10px; left: 10px;"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                <li><a style="position:relative; padding-left: 50px;" href="{{url('/logout')}}">
+
+                        @if(empty(Auth::user()->avatar))
+
+
+                            <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
+
+                            @else
+                            <img src="{{url('images/default-user-img.png')}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
+
+
+                        @endif
+
+
+                        <i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
 
                 @endif
