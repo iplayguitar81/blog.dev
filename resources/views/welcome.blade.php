@@ -12,10 +12,7 @@
         </div>
     @endif
 
-    {{'Test this out...  '.$location['city']}}
-
-    {{var_dump($location)}}
-
+    {{'My sources tell me your location is '.$location['city'].','.$location['state']}}
 
 
     @foreach($posts as $item)
