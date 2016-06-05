@@ -23,14 +23,6 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use Stevebauman\Location\Objects\Location;
 //use Stevebauman\Location\Facades\Location;
 
-//use GeoIp2\Record\Location;
-
-//use Torann\GeoIP\GeoIP;
-//use Torann\GeoIP\GeoIPFacade;
-
-//use GeoIp2;
-//use Torann\GeoIP\GeoIP;
-//use Torann\GeoIP;
 use Torann\GeoIP\GeoIPFacade as GeoIP;
 
 
