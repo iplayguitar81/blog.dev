@@ -178,7 +178,7 @@
                 var r = new google.visualization.Query("https://www.google.com/fusiontables/gvizdata?tq=" + n);
                 r.send(getData);
                 google.setOnLoadCallback(createSidebar);
-                $("#sidebar").collapsible().enhanceWithin()
+//                $("#sidebar").collapsible().enhanceWithin()
             })
         }
         function findClosestN(e, t) {
