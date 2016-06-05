@@ -12,13 +12,13 @@
     </div>
     <br/>
 
-    <div id="wrappa">
-        <div id="loading_animation"><h3 class="contact_header">Finding locations near you...</h3><img src="loader.gif" alt="loading location"/> <img src="loader.gif" alt="loading location"/><img src="loader.gif" alt="loading location"/></div>
+
+        <div id="loading_animation"><h3 class="contact_header">Finding locations near you...</h3><img src="loader.gif" alt="loading location"/> <img src="loader.gif" alt="loading location"/><img src="{{url('images/loader.gif')}}" alt="loading location"/></div>
         <div id="map_canvas"></div>
         <br/>
         <div id="sidebar" data-role="collapsible">
             </div>
-        </div>
+
         <br/>
         <hr>
 
