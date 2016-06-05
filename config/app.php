@@ -162,6 +162,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         willvincent\Rateable\RateableServiceProvider::class,
         'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
+        Stevebauman\Location\LocationServiceProvider::class,
 
     ],
 
@@ -213,6 +214,7 @@ return [
 //        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
         'SocialAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
+        'Location' => 'Stevebauman\Location\Facades\Location',
 
 
 
