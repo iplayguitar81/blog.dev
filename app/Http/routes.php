@@ -25,7 +25,8 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 
 //use GeoIp2\Record\Location;
 
-use Torann\GeoIP\GeoIP;
+//use Torann\GeoIP\GeoIP;
+use Torann\GeoIP;
 
 
 use willvincent\Rateable\Rating;
