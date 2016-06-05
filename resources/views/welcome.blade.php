@@ -14,7 +14,7 @@
 
     {{var_dump($location)}}
     @foreach($location as $user_locate)
-        {{$user_locate['city']}}
+        {{$user_locate('city')}}
 
         @endforeach
     @foreach($posts as $item)
