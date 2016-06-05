@@ -451,24 +451,7 @@
                 }
             })
         });
-        $("#form1").validate({
-            rules: {name: {required: true}, comments: {required: true}, email: {required: true}},
-            messages: {
-                name: {required: "Please enter your first name."},
-                email: {required: "Please enter your email."},
-                comments: {required: "Please enter your comments."}
-            },
-            errorPlacement: function (e, t) {
-                e.appendTo(t.parent().prev())
-            },
-            submitHandler: function (e) {
-                sendContact();
-                $("#form1").hide();
-                $("#contact_success").show();
-                $("#contact_success").css("visibility", "visible");
-                return false
-            }
-        })
+
     </script>
 
     @endsection
