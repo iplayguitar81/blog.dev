@@ -12,8 +12,9 @@
         </div>
     @endif
 
+    {{var_dump($location)}}
     @foreach($location as $user_locate)
-<p>{{$user_locate->city}}</p>
+
 
         @endforeach
     @foreach($posts as $item)
