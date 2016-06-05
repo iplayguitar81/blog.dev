@@ -5,9 +5,6 @@
 
 @section('content')
 
-
-    <div  id="mappins">
-
         <br/>
 
         <br/>
@@ -27,7 +24,7 @@
 
         </div>
 
-    </div>
+
 
 
 
