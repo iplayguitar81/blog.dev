@@ -11,7 +11,11 @@
             {{Session::get('message')}}
         </div>
     @endif
-<p>{{var_dump($location->city())}}</p>
+
+    @foreach($location as $user_locate)
+<p>{{($user_locate->city)}}</p>
+
+        @endforeach
     @foreach($posts as $item)
     <article class="text-center">
 
