@@ -7,16 +7,7 @@
 
 
     <div  id="mappins">
-        <div data-role="header" style="overflow:hidden;" data-theme="b"  data-tap-toggle="false">
-            <img class='img-responsive' alt='nearbynativecasinos.com' src='checkenginelogoyay3.png'/>
-            <div data-role="navbar">
-                <ul class="nav-trickery">
-                    <li><a href="#mappins" class="ui-state-persist" data-icon="navigation"><span class="orangose">Map</span></a></li>
-                    <li><a href="#about" data-icon="info"><span class="orangose">About</span></a></li>
-                    <li><a href="#contact" data-icon="mail"><span class="orangose">Contact</span></a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div>
+
         <br/>
 
         <br/>
