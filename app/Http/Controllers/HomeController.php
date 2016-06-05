@@ -33,4 +33,11 @@ class HomeController extends Controller
 //
 //        return view(compact('posts'));
     }
+
+
+    public function map()
+    {
+
+        return view('map');
+    }
 }
