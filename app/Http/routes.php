@@ -14,14 +14,16 @@ use App\Post;
 use App\User;
 use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use App\Rating;
-use Stevebauman\Location\Objects\Location;
 
 
+//use Stevebauman\Location\Objects\Location;
+use Stevebauman\Location;
 
 use willvincent\Rateable\Rating;
 
 use willvincent\Rateable\Rateable;
 Route::get('/', function () {
+
     $location = Location::get();
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
