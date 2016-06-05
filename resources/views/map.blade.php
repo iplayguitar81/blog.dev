@@ -11,17 +11,22 @@
         <a data-role='button'  data-icon='search' data-theme="a" data-iconpos="right" onclick="codeAddress();"><span class="orangose3">Switch Location</span></a>
     </div>
     <br/>
-
-
-        <div id="loading_animation"><h3 class="contact_header">Finding locations near you...</h3><img src="{{url('images/loader.gif')}}" alt="loading location"/> <img src="{{url('images/loader.gif')}}" alt="loading location"/><img src="{{url('images/loader.gif')}}" alt="loading location"/></div>
+    <div id="wrappa">
+        <div id="loading_animation"><h3 class="contact_header">Finding locations near you...</h3><img src="loader.gif" alt="loading location"/> <img src="loader.gif" alt="loading location"/><img src="loader.gif" alt="loading location"/></div>
         <div id="map_canvas"></div>
         <br/>
         <div id="sidebar" data-role="collapsible">
-            </div>
-
+        </div>
         <br/>
         <hr>
-
+        <br/>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <br/>
+        <br/>
+        <div class="fb-like-box" data-href="https://www.facebook.com/checkenginefree" data-colorscheme="dark" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
+        <br/>
+        <br/>
+    </div>
 
 
 
