@@ -17,7 +17,7 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 
 
 //use Stevebauman\Location\Objects\Location;
-use Stevebauman\Location;
+use Stevebauman\Location\Facades\Location;
 
 use willvincent\Rateable\Rating;
 
