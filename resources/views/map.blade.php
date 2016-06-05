@@ -18,14 +18,7 @@
             </div><!-- /navbar -->
         </div>
         <br/>
-        <div id="google_ad3">
-            <style>
-                .checkrespond1 { width: 320px; height: 50px; }
-                @media(min-width: 500px) { .checkrespond1 { width: 468px; height: 60px; } }
-                @media(min-width: 800px) { .checkrespond1 { width: 728px; height: 90px; } }
-            </style>
 
-        </div>
         <br/>
         <div id="search_holder">
             <input id="address"  data-clear-btn="true"  data-theme="a" data-type="search" placeholder="Address, City, State, or Zip"/>
