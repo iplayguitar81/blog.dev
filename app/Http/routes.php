@@ -20,7 +20,8 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use Stevebauman\Location;
 //use Stevebauman\Location\Location;
 
-use Stevebauman\Location\Objects\Location;
+//use Stevebauman\Location\Objects\Location;
+use Stevebauman\Location\Facades\Location;
 
 //use GeoIp2\Record\Location;
 
