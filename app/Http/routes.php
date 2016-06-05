@@ -21,9 +21,11 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use Stevebauman\Location\Location;
 
 //use Stevebauman\Location\Objects\Location;
-use Stevebauman\Location\Facades\Location;
+//use Stevebauman\Location\Facades\Location;
 
 //use GeoIp2\Record\Location;
+
+use Torann\GeoIP\GeoIP;
 
 
 use willvincent\Rateable\Rating;
@@ -31,7 +33,7 @@ use willvincent\Rateable\Rating;
 use willvincent\Rateable\Rateable;
 Route::get('/', function () {
 
-    $location =Location::get();
+    $location = GeoIP::getLocation();
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
     $ratings =Rating::all();
