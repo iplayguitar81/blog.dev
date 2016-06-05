@@ -49,7 +49,7 @@
 
         @can('loggedIn')
             @if( $hide_rating_form == false)
-                <div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>
+                {{--<div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>--}}
 
             @endif
         @endcan
