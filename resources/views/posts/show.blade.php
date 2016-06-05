@@ -118,7 +118,7 @@
         {{--{{ Form::selectRange('userRate', 1, 5) }}--}}
 
         <div class="form-group">
-            {!! Form::label('userRateMsg', 'Please Leave Your Comments With Your Rating', ['class' => '']) !!}
+            {!! Form::label('userRateMsg', 'Please Leave Comments With Your Rating', ['class' => '']) !!}
 
             {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
             <div class="">
