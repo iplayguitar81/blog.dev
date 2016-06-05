@@ -22,7 +22,7 @@ use willvincent\Rateable\Rating;
 use willvincent\Rateable\Rateable;
 Route::get('/', function () {
 
-    $location =Location::get(NULL, 'countryCode');
+    $location =Location::get(NULL);
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
     $ratings =Rating::all();
