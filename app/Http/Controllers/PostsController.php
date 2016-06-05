@@ -352,5 +352,11 @@ class PostsController extends Controller
 
     }
 
+    public function map()
+    {
+
+        return view('map');
+    }
+
 
 }
