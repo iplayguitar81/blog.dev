@@ -10,9 +10,15 @@
 
 <h1>{{$user->name}}</h1>
 
+@if(empty($user->avatar))
 
+    <img src="{{url('images/default-user-img.png')}}" alt="default user avatar">
+    <a href="#">Change Your Avatar Image...</a>
+ @else
 <p><img src="{{$user->avatar}}" alt="user avatar"></p>
-<p>Member since: {{$user->created_at->format('M jS, Y')}}</p>
+@endif
+
+     <p>Member since: {{$user->created_at->format('M jS, Y')}}</p>
 
     <h1 class="text-center">Ratings Made &amp; Associated Posts</h1>
 
