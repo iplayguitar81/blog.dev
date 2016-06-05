@@ -30,7 +30,8 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 
 //use GeoIp2;
 //use Torann\GeoIP\GeoIP;
-use Torann\GeoIP;
+//use Torann\GeoIP;
+use Torann\GeoIP\GeoIP;
 
 
 use willvincent\Rateable\Rating;
