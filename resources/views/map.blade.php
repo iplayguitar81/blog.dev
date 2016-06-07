@@ -340,13 +340,30 @@
         $(document).ready(function () {
             $("#search_holder").hide();
             $("h1#locations_header").hide();
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
+            var healCodeLoadingInterval = setInterval(function(){
+                var healCodeLoading = document.getElementById("address2").value;
 
+                if (healCodeLoading.length == 0) {
+                    clearInterval(healCodeLoadingInterval);
 
-            } else {
-                alert("Device probably not ready.")
-            }
+                    // Everything should be loaded now, so you can do something here
+
+                }
+
+                else{
+
+                    codeAddress2();
+
+                }
+
+            }, 100);
+//            if (navigator.geolocation) {
+//                navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
+//
+//
+//            } else {
+//                alert("Device probably not ready.")
+//            }
         });
         var FT_TableID = "1hFcGeKfBgELMvxajsoMvgabWJX9jwNDKUB4HoAxG";
         google.load("visualization", "1", {packages: ["corechart", "table", "geomap"]});
@@ -368,23 +385,7 @@
                     codeAddress()
                 }
 
-                var healCodeLoadingInterval = setInterval(function(){
-                    var healCodeLoading = document.getElementById("address2").value;
 
-                    if (healCodeLoading.length == 0) {
-                        clearInterval(healCodeLoadingInterval);
-
-                        // Everything should be loaded now, so you can do something here
-
-                    }
-
-                    else{
-
-                        codeAddress2();
-
-                    }
-
-                }, 100);
 
             })
 
