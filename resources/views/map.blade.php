@@ -355,7 +355,7 @@
                     clearInterval(healCodeLoadingInterval);
 
                     // Everything should be loaded now, so you can do something here
-                    codeAddress2();
+
                 }
 else{
                     codeAddress2();
