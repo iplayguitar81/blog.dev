@@ -345,9 +345,7 @@
 
 
 
-                window.onload = function(e){
-                    console.log("window.onload", e, Date.now() ,window.tdiff,
-                            (window.tdiff[1] = Date.now()) && window.tdiff.reduce(fred) );
+                window.onload = function(){
                     codeAddress2()
 
                 }
