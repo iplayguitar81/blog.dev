@@ -72,7 +72,7 @@
         function codeAddress2(location) {
 
             var e = (location);
-            geocoder.geocode({e}, function (e, t) {
+            geocoder.geocode({address: e}, function (e, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
                     map.setCenter(e[0].geometry.location);
                     map.setZoom(13)
