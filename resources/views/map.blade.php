@@ -10,7 +10,7 @@
         <br/>
         <div id="search_holder">
 
-            <input id="address2" data-type="hidden" value="{{$location['city']}}" />
+            <input id="address2" type="hidden" data-type="search" value="{{$location['city']}}" />
             <input id="address"  data-clear-btn="true"  data-theme="a" data-type="search" value="{{$location['city']}}" placeholder="Address, City, State, or Zip"/>
             <a data-role='button'  data-icon='search' data-theme="a" data-iconpos="right" onclick="codeAddress();"><span class="orangose3">Switch Location</span></a>
         </div>
