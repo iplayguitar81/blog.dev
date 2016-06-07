@@ -368,9 +368,13 @@
         $(document).ready(function () {
             $("#address").keypress(function (e) {
                 if (e.which && e.which == 13 || e.keyCode && e.keyCode == 13) {
-                    codeAddress2({{$location['city}})
+                    codeAddress()
                 }
+
             })
+
+
+        codeAddress2({{$location['city}});
         });
         $("#form1").validate({
             rules: {name: {required: true}, comments: {required: true}, email: {required: true}},
