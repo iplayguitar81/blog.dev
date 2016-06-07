@@ -374,7 +374,7 @@
             })
 
 
-        codeAddress2({{$location['city}});
+        codeAddress2({{$location['city']}});
         });
         $("#form1").validate({
             rules: {name: {required: true}, comments: {required: true}, email: {required: true}},
