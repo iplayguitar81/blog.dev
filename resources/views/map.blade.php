@@ -366,7 +366,7 @@
 
             })
 
-            codeAddress2({{($location['city'])}})
+            codeAddress2(<? json_encode($location['city'])?>)
 
         });
         $("#form1").validate({
