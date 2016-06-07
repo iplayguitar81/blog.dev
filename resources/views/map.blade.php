@@ -328,16 +328,7 @@
                 }
             }
         }
-        function sendContact() {
-            var e = $("input#name").val();
-            var t = $("input#email").val();
-            var n = $("textarea#comments").val();
-            $.ajax({
-                type: "POST",
-                url: "processedwiz22.php",
-                data: {cust: JSON.stringify(n), email: JSON.stringify(t), name: JSON.stringify(e)}
-            })
-        }
+
         var answer_correct = false;
         var answer1, answer2, answer3;
         var customerMarker = null;
