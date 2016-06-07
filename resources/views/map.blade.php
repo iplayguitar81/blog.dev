@@ -71,15 +71,15 @@
 
         function codeAddress2(location) {
 
-
-            geocoder.geocode({address: location}, function (location, t) {
+            var e = json_encode(location);
+            geocoder.geocode({address: e}, function (e, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
-                    map.setCenter(location[0].geometry.location);
+                    map.setCenter(e[0].geometry.location);
                     map.setZoom(13)
                 } else {
                     alert("Your search was not successful Please try again using both city and state! ")
                 }
-                var n = encodeURIComponent("SELECT 'Location', 'Fcilty_nam' AS 'Store Name', 'Locality' AS 'Address/Phone','telephone', 'latitude-col','longitude-col' FROM " + FT_TableID + " ORDER BY ST_DISTANCE(Location, LATLNG" + location[0].geometry.location + ") LIMIT 3");
+                var n = encodeURIComponent("SELECT 'Location', 'Fcilty_nam' AS 'Store Name', 'Locality' AS 'Address/Phone','telephone', 'latitude-col','longitude-col' FROM " + FT_TableID + " ORDER BY ST_DISTANCE(Location, LATLNG" + e[0].geometry.location + ") LIMIT 3");
                 var r = new google.visualization.Query("https://www.google.com/fusiontables/gvizdata?tq=" + n);
                 r.send(getData);
                 google.setOnLoadCallback(createSidebar);
