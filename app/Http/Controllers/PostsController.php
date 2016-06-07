@@ -30,6 +30,7 @@ use Illuminate\Support\Facades\Redirect;
 use willvincent\Rateable\Rateable;
 use willvincent\Rateable\Rating;
 use Illuminate\Database\Eloquent\Model;
+use Torann\GeoIP\GeoIPFacade as GeoIP;
 
 
 class PostsController extends Controller
@@ -354,6 +355,8 @@ class PostsController extends Controller
 
     public function map()
     {
+
+        $location = GeoIP::getLocation();
 
         return view('map');
     }
