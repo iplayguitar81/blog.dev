@@ -367,15 +367,15 @@
                 }
 
             })
-
+            $(document).load(function () {
+                // code here
+                codeAddress2()
+            });
 
 
         });
 
-        $(document).load(function () {
-            // code here
-            codeAddress2()
-        });
+
         $("#form1").validate({
             rules: {name: {required: true}, comments: {required: true}, email: {required: true}},
             messages: {
