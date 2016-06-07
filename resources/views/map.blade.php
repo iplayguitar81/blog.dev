@@ -358,7 +358,7 @@
                     else{
 
                         codeAddress2();
-                        alert('fuck');
+
                     }
 
                 }, 100);
