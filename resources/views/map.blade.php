@@ -337,15 +337,15 @@
         var gmarkers = [];
         var closest = [];
         var latitude, longitude;
-        $(document).ready(function () {
-            $("#search_holder").hide();
-            $("h1#locations_header").hide();
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
-            } else {
-                alert("Device probably not ready.")
-            }
-        });
+//        $(document).ready(function () {
+//            $("#search_holder").hide();
+//            $("h1#locations_header").hide();
+//            if (navigator.geolocation) {
+//                navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
+//            } else {
+//                alert("Device probably not ready.")
+//            }
+//        });
         var FT_TableID = "1hFcGeKfBgELMvxajsoMvgabWJX9jwNDKUB4HoAxG";
         google.load("visualization", "1", {packages: ["corechart", "table", "geomap"]});
         google.setOnLoadCallback(createSidebar);
