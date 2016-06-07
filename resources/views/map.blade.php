@@ -342,7 +342,7 @@
             $("h1#locations_header").hide();
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
-          codeAddress2();
+
             } else {
                 alert("Device probably not ready.")
             }
