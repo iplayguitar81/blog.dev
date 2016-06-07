@@ -58,8 +58,8 @@
         function handle_errors(e) {
         }
         function handle_geolocation_query(e) {
-//            latitude = e.coords.latitude;
-//            longitude = e.coords.longitude;
+            latitude = e.coords.latitude;
+            longitude = e.coords.longitude;
             onPositionReady()
         }
         function onPositionReady() {
