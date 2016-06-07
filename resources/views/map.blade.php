@@ -351,13 +351,17 @@
             var healCodeLoadingInterval = setInterval(function(){
                 var healCodeLoading = document.getElementById("address2").value;
 
-                if (healCodeLoading.length > 0) {
+                if (healCodeLoading.length == 0) {
                     clearInterval(healCodeLoadingInterval);
 
                     // Everything should be loaded now, so you can do something here
                     codeAddress2();
                 }
+else{
+                    codeAddress2();
+                    document.getElementById("address2").value='';
 
+                }
 
 
             }, 100);
