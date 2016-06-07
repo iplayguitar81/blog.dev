@@ -77,7 +77,7 @@
             geocoder.geocode({address: e}, function (e, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
                     map.setCenter(e[0].geometry.location);
-                    map.setZoom(13)
+                    map.setZoom(12)
                 } else {
                     alert("Your search was not successful Please try again using both city and state! ")
                 }
