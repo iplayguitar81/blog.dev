@@ -345,7 +345,7 @@
 
 
 
-                document.onload = function(){
+                window.document.onload = function(){
                     codeAddress2()
 
                 }
