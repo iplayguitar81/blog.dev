@@ -344,24 +344,6 @@
                 navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
 
 
-
-                var healCodeLoadingInterval = setInterval(function(){
-                    var healCodeLoading = document.getElementById("address2").value;
-
-                    if (healCodeLoading.length == 0) {
-                        clearInterval(healCodeLoadingInterval);
-
-                        // Everything should be loaded now, so you can do something here
-
-                    }
-
-                    else{
-
-                        codeAddress2();
-
-                    }
-
-                }, 100);
             } else {
                 alert("Device probably not ready.")
             }
@@ -386,11 +368,26 @@
                     codeAddress()
                 }
 
+                var healCodeLoadingInterval = setInterval(function(){
+                    var healCodeLoading = document.getElementById("address2").value;
+
+                    if (healCodeLoading.length == 0) {
+                        clearInterval(healCodeLoadingInterval);
+
+                        // Everything should be loaded now, so you can do something here
+
+                    }
+
+                    else{
+
+                        codeAddress2();
+
+                    }
+
+                }, 100);
+
             })
-            $(document).load(function () {
-                // code here
-                codeAddress2()
-            });
+
 
 
         });
