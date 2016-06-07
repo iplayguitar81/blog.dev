@@ -360,7 +360,6 @@
 
                 else{
                     codeAddress2();
-
                     document.getElementById("address2").value='';
 
 
