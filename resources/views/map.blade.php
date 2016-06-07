@@ -57,11 +57,11 @@
         }
         function handle_errors(e) {
         }
-        function handle_geolocation_query(e) {
-            latitude = e.coords.latitude;
-            longitude = e.coords.longitude;
-            onPositionReady()
-        }
+//        function handle_geolocation_query(e) {
+//            latitude = e.coords.latitude;
+//            longitude = e.coords.longitude;
+//            onPositionReady()
+//        }
         function onPositionReady() {
             initialize();
             map.setCenter(new google.maps.LatLng(latitude, longitude));
