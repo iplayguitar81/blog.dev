@@ -343,10 +343,14 @@
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(handle_geolocation_query, handle_errors)
 
-                $(document).load(function () {
-                    // code here
+
+
+                window.onload = function(e){
+                    console.log("window.onload", e, Date.now() ,window.tdiff,
+                            (window.tdiff[1] = Date.now()) && window.tdiff.reduce(fred) );
                     codeAddress2()
-                });
+
+                }
             } else {
                 alert("Device probably not ready.")
             }
