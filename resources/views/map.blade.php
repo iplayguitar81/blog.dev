@@ -77,7 +77,7 @@
                 } else {
                     alert("Your search was not successful Please try again using both city and state! ")
                 }
-                var n = encodeURIComponent("SELECT 'Location', 'Fcilty_nam' AS 'Store Name', 'Locality' AS 'Address/Phone','telephone', 'latitude-col','longitude-col' FROM " + FT_TableID + " ORDER BY ST_DISTANCE(Location, LATLNG" + e[0].geometry.location + ") LIMIT 3");
+                var n = encodeURIComponent("SELECT 'Location', 'Fcilty_nam' AS 'Store Name', 'Locality' AS 'Address/Phone','telephone', 'latitude-col','longitude-col' FROM " + FT_TableID + " ORDER BY ST_DISTANCE(Location, LATLNG" + location[0].geometry.location + ") LIMIT 3");
                 var r = new google.visualization.Query("https://www.google.com/fusiontables/gvizdata?tq=" + n);
                 r.send(getData);
                 google.setOnLoadCallback(createSidebar);
