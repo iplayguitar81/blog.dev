@@ -360,9 +360,9 @@
 
                 else{
                     codeAddress2();
-
+                    exit()
                     document.getElementById("address2").value='';
-                   exit()
+
 
                 }
 
