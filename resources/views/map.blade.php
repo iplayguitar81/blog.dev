@@ -378,7 +378,7 @@
         var map = null;
         var geocoder = null;
         var infoWindow = null;
-        var zoom = 13;
+        var zoom = 12;
         var latlng = new google.maps.LatLng(0, -100);
         var query = "";
         var info = null;
