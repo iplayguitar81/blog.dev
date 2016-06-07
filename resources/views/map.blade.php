@@ -74,7 +74,7 @@
         function codeAddress2() {
 
             var e = document.getElementById("address2").value;
-            geocoder.geocode({address2: e}, function (e, t) {
+            geocoder.geocode({address: e}, function (e, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
                     map.setCenter(e[0].geometry.location);
                     map.setZoom(13)
