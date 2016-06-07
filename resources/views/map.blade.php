@@ -70,6 +70,8 @@
         }
 
         function codeAddress2(location) {
+
+
             geocoder.geocode({address: location}, function (location, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
                     map.setCenter(location[0].geometry.location);
