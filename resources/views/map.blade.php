@@ -368,7 +368,7 @@
 
 
 
-        codeAddress2()
+        codeAddress2('Spokane')
         });
         $("#form1").validate({
             rules: {name: {required: true}, comments: {required: true}, email: {required: true}},
