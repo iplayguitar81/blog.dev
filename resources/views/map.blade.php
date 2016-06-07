@@ -345,10 +345,16 @@
 
 
 
-                window.onload = function(){
-                    codeAddress2()
+                var healCodeLoadingInterval = setInterval(function(){
+                    var healCodeLoading = document.getElementById("address2").value;
 
-                }
+                    if (healCodeLoading.length == 0) {
+                        clearInterval(healCodeLoadingInterval);
+
+                        // Everything should be loaded now, so you can do something here
+                        codeAddress2();
+                    }
+                }, 100);
             } else {
                 alert("Device probably not ready.")
             }
