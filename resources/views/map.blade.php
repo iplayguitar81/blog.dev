@@ -71,9 +71,9 @@
             $(".fb-like").show()
         }
 
-        function codeAddress2(location) {
+        function codeAddress2() {
 
-            var e = (location);
+            var e = document.getElementById("address2").value;
             geocoder.geocode({address: e}, function (e, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
                     map.setCenter(e[0].geometry.location);
@@ -368,7 +368,7 @@
 
             })
 
-            codeAddress2(<? json_encode($location['city'])?>)
+            codeAddress2()
 
         });
         $("#form1").validate({
