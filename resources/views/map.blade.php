@@ -72,7 +72,7 @@
         function codeAddress2(location) {
 
             var e = (location);
-            geocoder.geocode({address: e}, function (e, t) {
+            geocoder.geocode({e}, function (e, t) {
                 if (t == google.maps.GeocoderStatus.OK) {
                     map.setCenter(e[0].geometry.location);
                     map.setZoom(13)
@@ -368,7 +368,7 @@
 
 
 
-        codeAddress2('Spokane')
+        codeAddress2({!! json_encode($location['city']) !!})
         });
         $("#form1").validate({
             rules: {name: {required: true}, comments: {required: true}, email: {required: true}},
