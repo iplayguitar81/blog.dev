@@ -352,9 +352,15 @@
                         clearInterval(healCodeLoadingInterval);
 
                         // Everything should be loaded now, so you can do something here
+
+                    }
+
+                    else{
+
                         codeAddress2();
                         alert('fuck');
                     }
+
                 }, 100);
             } else {
                 alert("Device probably not ready.")
