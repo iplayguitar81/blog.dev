@@ -360,12 +360,11 @@ class PostsController extends Controller
 
     public function postSearch()
     {
-        $q = Input::get('query');
+        $name = strtolower(Input::get('query'));
 
-        $results = Post::where('title',
-            "MATCH('title')",
-            array($q)
-        )->get();
+        $results = Post::where(function ($q) use ($name) {
+            $q->where('title', 'like', '%'.str_replace(' ', '', $name).'%')
+                ->orWhere('body', 'like', "%{$name}%");})->get();
 
         return View('posts.search', compact('results'));
 
