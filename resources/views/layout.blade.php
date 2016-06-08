@@ -290,13 +290,10 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{{url('/')}}">Home</a></li>
-
                 <li><a href="{{url('/posts')}}">Blog</a></li>
                 <li><a href="{{url('#')}}">Portfolio</a></li>
                 <li><a href="{{url('/contact')}}">Contact</a></li>
-
             </ul>
-
             <div class="search center-block">
                 {{ Form::model(null, array('route' => array('posts.search'))) }}
                 {{ Form::text('query', null, array( 'placeholder' => 'Search query...' )) }}
@@ -305,7 +302,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             </div>
 
 
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right pull-right">
                 @if (Auth::guest())
                 <li><a href="{{url('/login')}}"><i class="fa fa-btn fa-sign-in"></i> Login</a></li>
 
