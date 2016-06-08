@@ -360,19 +360,14 @@ class PostsController extends Controller
     {
         $user_input = strtolower(Input::get('query'));
 
-        $results = Post::where(function ($q) use ($user_input) {
-            $q->where('title', 'like', '%'.str_replace(' ', '', $user_input).'%')
-                ->orWhere('body', 'like', "%{$user_input}%")
-                ->orWhere('subhead', 'like', "%{$user_input}%");
+        $search = $user_input;
 
-        })->orderBy('created_at', 'desc')->paginate(3);
+        $results2 = Post::where('title', 'like', "%$search%")
+            ->orWhere('body', 'like', "%$search%")
+            ->paginate(3)
+        ;
 
-        $results2 =  Post::where('title', 'like', '%'.$user_input.'%')
-            ->orWhere('body', 'like', '%'.$user_input.'%')
-            ->orWhere('subhead', 'like', '%'.$user_input.'%')
-            ->paginate(3);
-
-        return View('posts.search', compact('results2', 'user_input'));
+        return View('posts.search', compact('results2', 'search'));
 
     }
 public function searchResults(){
