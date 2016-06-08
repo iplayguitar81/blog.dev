@@ -367,7 +367,7 @@ class PostsController extends Controller
             array($q)
         )->get();
 
-        return View::make('posts.search', compact('results'));
+        return View('posts.search', compact('results'));
 
     }
 public function searchResults(){
