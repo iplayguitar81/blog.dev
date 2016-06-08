@@ -370,7 +370,7 @@ class PostsController extends Controller
         $results2 =  Post::where('title', 'like', '%'.$user_input.'%')
             ->orWhere('body', 'like', '%'.$user_input.'%')
             ->orWhere('subhead', 'like', '%'.$user_input.'%')
-            ->paginate(10);
+            ->paginate(3);
 
         return View('posts.search', compact('results2', 'user_input'));
 
