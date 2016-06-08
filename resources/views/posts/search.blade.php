@@ -22,6 +22,8 @@
 
     @endforeach
 
-{!! $results->render() !!}
+
+
+{!! $results->appends(['key' => $tag])->render() !!}
 
 @endsection
