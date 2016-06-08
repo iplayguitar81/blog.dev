@@ -385,7 +385,9 @@ class PostsController extends Controller
             ->appends(['search' => $search])
         ;
 
-        return view('posts.search', compact('results2','search'));
+       $results_empty= $results2->isEmpty();
+
+        return view('posts.search', compact('results2','search','results_empty'));
     }
 
 }
