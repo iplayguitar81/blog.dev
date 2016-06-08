@@ -315,10 +315,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
                             @else
                             <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
 
-
                         @endif
-
-
                         <i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
 
