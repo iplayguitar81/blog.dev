@@ -8,7 +8,7 @@
 
 <h1>Showing Results for '{{$search}}'.....</h1>
 
-@if(emptyArray(($results2)))
+@if(empty(($results2)))
 
     No Results for your Query Try A Different Search!!!!!!!
 
