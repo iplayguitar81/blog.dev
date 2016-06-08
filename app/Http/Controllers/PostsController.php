@@ -386,7 +386,7 @@ class PostsController extends Controller
             ->paginate(3)
         ;
 
-        return view('posts.search', compact('results2'));
+        return view('posts/search', compact('results2'));
     }
 
 }
