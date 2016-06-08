@@ -369,7 +369,7 @@ class PostsController extends Controller
 
         })->get();
 
-        return View('posts.search', compact('results'));
+        return View('posts.search', compact('results', 'name'));
 
     }
 public function searchResults(){
