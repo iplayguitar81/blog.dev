@@ -22,6 +22,6 @@
 
     @endforeach
 
-<div class="pagination"> {!! $results->render() !!} </div>
+{!! $results->render() !!}
 
 @endsection
