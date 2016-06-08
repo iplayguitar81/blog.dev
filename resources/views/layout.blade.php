@@ -294,7 +294,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
                 <li><a href="{{url('#')}}">Portfolio</a></li>
                 <li><a href="{{url('/contact')}}">Contact</a></li>
             </ul>
-            <div class="search center-block">
+            <div class="search pull-right">
                 {{ Form::model(null, array('route' => array('posts.search'))) }}
                 {{ Form::text('query', null, array( 'placeholder' => 'Search query...' )) }}
                 {{ Form::submit('Search') }}
