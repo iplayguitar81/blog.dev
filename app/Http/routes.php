@@ -158,6 +158,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/map', 'PostsController@map');
 
+Route::resource('queries', 'PostsController@queries');
+
 
 #Route::resource('users','UsersController');
 
