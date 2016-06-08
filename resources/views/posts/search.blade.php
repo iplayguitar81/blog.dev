@@ -25,15 +25,17 @@
 
         <article>
         <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{$result->title}}</a></h3>
-        <p>Written by:
+        <p>Written &nbsp;
             @if($result->user_id != null)
+                by:
                 <? $author = App\User::find($result->user_id)->name; ?>
 
                 {{$author}}
             @endif
+
+            <span class="text-lowercase">{{$result->created_at->format('M dS, Y')}}</span>
         </p>
-        <span class="text-lowercase">{{$result->created_at->format('M dS, Y')}}</span>
-        <p>{{$result->user_id}}</p>
+
         <p>{{$variable}}...</p>
             <br/>
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a>
