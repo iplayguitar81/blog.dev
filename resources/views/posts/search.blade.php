@@ -19,7 +19,6 @@
                 {{$author}}
             @endif
         </p>
-        <br/>
         <span class="text-lowercase">{{$result->created_at->format('M dS, Y')}}</span>
         <p>{{$result->user_id}}</p>
         <p>{{$result->body}}</p>
