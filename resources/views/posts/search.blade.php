@@ -36,10 +36,8 @@
             <span class="text-lowercase">{{$result->created_at->format('M dS, Y')}}</span>
         </p>
 
-        <p>{{$variable}}...</p>
-            <br/>
-            <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a>
-            <hr>
+        <p>{{$variable}}...     <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">Read More</a></p>
+
 
     </article>
         <br/>
