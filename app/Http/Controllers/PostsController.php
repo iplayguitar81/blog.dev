@@ -362,7 +362,7 @@ class PostsController extends Controller
     {
         $name = strtolower(Input::get('query'));
 
-        $matchingUsers = Post::where(function ($q) use ($name) {
+        $results = Post::where(function ($q) use ($name) {
             $q->where('title', 'like', '%'.str_replace(' ', '', $name).'%')
                 ->orWhere('body', 'like', "%{$name}%")
                 ->orWhere('subhead', 'like', "%{$name}%");
