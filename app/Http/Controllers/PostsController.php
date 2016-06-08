@@ -195,8 +195,6 @@ class PostsController extends Controller
             $file = Input::file('file');
             $file->move('images', $file->getClientOriginalName());
 
-
-
         }
 
        // Post::create($request->all());
@@ -359,6 +357,13 @@ class PostsController extends Controller
         $location = GeoIP::getLocation();
         return view('map', compact('location'));
     }
+
+    public function queries()
+    {
+
+        
+    }
+
 
 
 }
