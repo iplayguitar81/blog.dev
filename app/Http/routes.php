@@ -176,4 +176,4 @@ Route::get('/home', 'HomeController@index');
 //Route::get('social/login/{provider}', 'Auth\AuthController@handleProviderCallback');
 Route::resource('ratings', 'RatingsController');
 
-Route::get('posts/search', ['as' => 'posts.search', 'uses'=>'PostsController@getIndex']);
+Route::post('posts/search', ['as' => 'posts.search', 'uses'=>'PostsController@getIndex']);
