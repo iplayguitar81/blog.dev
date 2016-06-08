@@ -5,7 +5,7 @@
 
 @section('content')
 
-<h1>Showing Results for '{{$user_input}}'.....</h1>
+<h1>Showing Results for '{{$search}}'.....</h1>
 
 {{$results2}}
 
