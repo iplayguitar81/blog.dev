@@ -8,7 +8,7 @@
 
 <h1>Showing Results for '{{$search}}'.....</h1>
 
-@if(is_null($results2))
+@if(isEmpty(var_dump($results2)))
 
     No Results for your Query Try A Different Search!!!!!!!
 
