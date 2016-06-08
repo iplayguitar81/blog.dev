@@ -326,10 +326,10 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             </ul>
 
             <div class="search pull-right">
-                <form action="/posts/search" method="GET">
-                    <input type="text" name="search" value=""/>
-                    <button type="submit">Search</button>
-                </form>
+                {{ Form::model(null, array('route' => array('posts.search'))) }}
+                {{ Form::text('search', null, array( 'placeholder' => 'Search query...' )) }}
+                {{ Form::submit('Search') }}
+                {{ Form::close() }}
             </div>
         </div>
     </div>
