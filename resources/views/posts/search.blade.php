@@ -8,7 +8,11 @@
 
 <h1>Showing Results for '{{$search}}'.....</h1>
 
-{{$results2}}
+@if(empty($results2))
+
+    No Results for your Query Try A Different Search!!!!!!!
+
+    @endif
 
 
 
