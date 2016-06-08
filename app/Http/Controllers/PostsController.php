@@ -358,16 +358,17 @@ class PostsController extends Controller
         return view('map', compact('location'));
     }
 
-    public function search(Request $request)
+    public function postSearch()
     {
-        // Gets the query string from our form submission
-        $query = Request::input('search');
-        // Returns an array of articles that have the query string located somewhere within
-        // our articles titles. Paginates them so we can break up lots of search results.
-        $articles = DB::table('posts')->where('title', 'LIKE', '%' . $query . '%')->paginate(10);
+        $q = Input::get('query');
 
-        // returns a view and passes the view the list of articles and the original query.
-        return view('page.search', compact('articles', 'query'));
+        $results = $this->post->whereRaw(
+            "MATCH(title,body) AGAINST(? IN BOOLEAN MODE)",
+            array($q)
+        )->get();
+
+        return View::make('posts.search', compact('results'));
+
     }
 
 
