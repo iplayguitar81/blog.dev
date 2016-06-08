@@ -22,5 +22,6 @@
 
     @endforeach
 
+<div class="pagination"> {!! $posts->render() !!} </div>
 
 @endsection
