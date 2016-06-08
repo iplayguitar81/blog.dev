@@ -22,8 +22,6 @@
 
     @endforeach
 
-
-
-{!! $results->appends(['key' => $tag])->render() !!}
+<div class="pagination"> {!! $results->render() !!} </div>
 
 @endsection
