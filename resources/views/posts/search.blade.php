@@ -31,7 +31,7 @@
         <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{$result->title}}</a></h3>
         <p>Written &nbsp;
             @if($result->user_id != null)
-                by:
+                by
                 <? $author = App\User::find($result->user_id)->name; ?>
 
                 {{$author}}
