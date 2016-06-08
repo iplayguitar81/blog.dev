@@ -9,9 +9,9 @@
 <h1>Showing Results for '{{$search}}'.....</h1>
 
 @if($results_empty)
-
-    No Results for your Query Try A Different Search!!!!!!!
-
+        <div class="alert alert-danger text-center">
+            No Results for your Query Try A Different Search!!!!!!!
+        </div>
     @endif
 
 
