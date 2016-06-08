@@ -9,4 +9,17 @@
 
 {{$results}}
 
+    @foreach($results as $result)
+    <article>
+
+        <h3>{{$result->title}}</h3>
+        <p>{{$result->user_id}}</p>
+        <p>{{$result->body}}</p>
+
+
+    </article>
+
+    @endforeach
+
+
 @endsection
