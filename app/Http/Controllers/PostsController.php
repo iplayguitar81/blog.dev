@@ -367,7 +367,7 @@ class PostsController extends Controller
                 ->orWhere('body', 'like', "%{$user_input}%")
                 ->orWhere('subhead', 'like', "%{$user_input}%");
 
-        })->paginate(3);
+        })->orderBy('created_at', 'desc')->paginate(3);
 
         return View('posts.search', compact('results', 'user_input'));
 
