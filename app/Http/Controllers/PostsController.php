@@ -357,7 +357,6 @@ class PostsController extends Controller
     {
 
         $location = GeoIP::getLocation();
-
         return view('map', compact('location'));
     }
 
