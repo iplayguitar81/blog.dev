@@ -9,7 +9,7 @@
 
 {{$results}}
 
-    @foreach($results as $result)
+    @foreach($results2 as $result)
     <article>
         <h3>{{$result->title}}</h3>
         <span class="text-lowercase">{{$result->created_at->format('M dS, Y')}}</span>
@@ -22,6 +22,6 @@
 
     @endforeach
 
-<div class="pagination"> {!! $results->render() !!} </div>
+<div class="pagination"> {!! $results2->render() !!} </div>
 
 @endsection
