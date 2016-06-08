@@ -326,7 +326,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             </ul>
 
             <div class="search pull-right">
-                <form action="/posts.search" method="GET">
+                <form action="/posts/search" method="GET">
                     <input type="text" name="search" value=""/>
                     <button type="submit">Search</button>
                 </form>
