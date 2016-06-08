@@ -372,8 +372,21 @@ class PostsController extends Controller
         return View('posts.search', compact('results2', 'user_input'));
 
     }
-public function searchResults(){
-    return View('posts.search');
-}
+
+    public function getIndex(Request $request)
+    {
+        $this->validate($request, [
+            'search' => 'required'
+        ]);
+
+        $search = $request->get('search');
+
+        $results2 = Post::where('title', 'like', "%$search%")
+            ->orWhere('body', 'like', "%$search%")
+            ->paginate(3)
+        ;
+
+        return view('posts.search', compact('results2'));
+    }
 
 }
