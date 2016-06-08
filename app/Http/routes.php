@@ -163,6 +163,7 @@ Route::post(
         'uses' => 'PostsController@postSearch'
     )
 );
+Route::get('posts/search', ['as' => 'posts.search', 'uses' => 'PostsController@searchResults']);
 
 //Route::resource('search','as'=>'posts.search';
 
