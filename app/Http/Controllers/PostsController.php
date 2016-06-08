@@ -363,7 +363,7 @@ class PostsController extends Controller
         $q = Input::get('query');
 
         $results = Post::whereRaw(
-            "MATCH(title,body) AGAINST(? IN BOOLEAN MODE)",
+            "MATCH(title,body) AGAINST(?)",
             array($q)
         )->get();
 
