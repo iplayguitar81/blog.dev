@@ -156,7 +156,13 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/map', 'PostsController@map');
+Route::post(
+    'posts/search',
+    array(
+        'as' => 'posts.search',
+        'uses' => 'PostsController@postSearch'
+    )
+);
 
 //Route::resource('search','as'=>'posts.search';
 
