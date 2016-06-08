@@ -11,7 +11,7 @@
 
     @foreach($results2 as $result)
     <article>
-        <h3>{{$result->title}}</h3>
+        <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{$result->title}}</a></h3>
         <span class="text-lowercase">{{$result->created_at->format('M dS, Y')}}</span>
         <p>{{$result->user_id}}</p>
         <p>{{$result->body}}</p>
