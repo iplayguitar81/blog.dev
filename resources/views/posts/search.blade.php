@@ -22,6 +22,6 @@
 
     @endforeach
 
-{!! $results2->render() !!}
+{!! $results->appends(['search' => Input::get('search')])->render() !!}
 
 @endsection
