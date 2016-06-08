@@ -299,7 +299,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 
 <div class="center-block">
-    {!! Form::open(array('route' => 'queries.search', 'class'=>'form navbar-form navbar-right searchform')) !!}
+    {!! Form::open(array('route' => 'posts.search', 'class'=>'form navbar-form navbar-right searchform')) !!}
     {!! Form::text('search', null,
                            array('required',
                                 'class'=>'form-control',
