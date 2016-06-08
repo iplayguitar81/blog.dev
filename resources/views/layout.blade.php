@@ -297,7 +297,12 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
             </ul>
 
-
+            <div class="search center-block">
+                {{ Form::model(null, array('route' => array('posts.search'))) }}
+                {{ Form::text('query', null, array( 'placeholder' => 'Search query...' )) }}
+                {{ Form::submit('Search') }}
+                {{ Form::close() }}
+            </div>
 
 
             <ul class="nav navbar-nav navbar-right">
