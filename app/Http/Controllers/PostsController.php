@@ -362,7 +362,7 @@ class PostsController extends Controller
     {
         $q = Input::get('query');
 
-        $results = Post::whereRaw(
+        $results = Post::where(
             "MATCH(title,body) AGAINST(?)",
             array($q)
         )->get();
