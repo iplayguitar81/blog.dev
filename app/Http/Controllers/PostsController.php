@@ -367,7 +367,7 @@ class PostsController extends Controller
             ->paginate(3)
         ;
 
-        return View('posts.search', compact('results2', 'search'));
+        return View('posts.search', compact('results2', 'user_input'));
 
     }
 public function searchResults(){
