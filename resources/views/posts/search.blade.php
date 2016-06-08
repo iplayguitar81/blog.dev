@@ -22,6 +22,6 @@
 
     @endforeach
 
-<div class="pagination"> {!! $results2->render() !!} </div>
+{!! $results2->appends(['search' => Input::get('search')])->render() !!}
 
 @endsection
