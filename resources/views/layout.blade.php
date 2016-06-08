@@ -298,7 +298,16 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             </ul>
 
 
-
+<div class="center-block">
+    {!! Form::open(array('route' => 'queries.search’)) !!}
+    {!! Form::text('search', null,
+                           array('required',
+                                'class'=>'form-control',
+                                'placeholder'=>'Search for a tutorial...')) !!}
+    {!! Form::submit('Search',
+                               array('class'=>'btn btn-default')) !!}
+    {!! Form::close() !!}
+</div>
 
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
