@@ -13,6 +13,8 @@
     <article>
 
         <h3>{{$result->title}}</h3>
+        <span class="text-lowercase">{{$result->created_at}}</span>
+
         <p>{{$result->user_id}}</p>
         <p>{{$result->body}}</p>
 
