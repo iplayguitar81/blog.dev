@@ -53,8 +53,6 @@ class PostsController extends Controller
   //      $excel= \App::make('excel');
 
 //        $results = Excel::load('app/test-file.csv')->get();
-
-    
         $user=Auth::id();
 
         #$posts = Post::where('user_id','=', Auth::id())->get();
@@ -369,7 +367,12 @@ class PostsController extends Controller
 
         })->orderBy('created_at', 'desc')->paginate(3);
 
-        return View('posts.search', compact('results', 'user_input'));
+        $results2 =  Post::where('title', 'like', '%'.$user_input.'%')
+            ->orWhere('body', 'like', '%'.$user_input.'%')
+            ->orWhere('subhead', 'like', '%'.$user_input.'%')
+            ->paginate(10);
+
+        return View('posts.search', compact('results2', 'user_input'));
 
     }
 public function searchResults(){
