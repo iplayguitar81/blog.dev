@@ -362,10 +362,11 @@ class PostsController extends Controller
 
         $search = $user_input;
 
+
         $results2 = Post::where('title', 'like', "%$search%")
             ->orWhere('body', 'like', "%$search%")
-            ->appends(['search' => $search])
             ->paginate(3)
+            ->appends(['search' => $search])
         ;
 
         return View('posts.search', compact('results2', 'user_input'));
