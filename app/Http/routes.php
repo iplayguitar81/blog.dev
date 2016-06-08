@@ -163,7 +163,7 @@ Route::post(
         'uses' => 'PostsController@postSearch'
     )
 );
-Route::get('posts/search', ['as' => 'posts.search', 'uses' => 'PostsController@searchResults']);
+//Route::get('posts/search', ['as' => 'posts.search', 'uses' => 'PostsController@searchResults']);
 
 //Route::resource('search','as'=>'posts.search';
 
@@ -176,4 +176,4 @@ Route::get('posts/search', ['as' => 'posts.search', 'uses' => 'PostsController@s
 //Route::get('social/login/{provider}', 'Auth\AuthController@handleProviderCallback');
 Route::resource('ratings', 'RatingsController');
 
-Route::get('search', 'PostsController@getIndex');
+Route::get('posts/search', 'PostsController@getIndex');
