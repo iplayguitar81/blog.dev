@@ -362,7 +362,7 @@ class PostsController extends Controller
     {
         $q = Input::get('query');
 
-        $results = Post::where(
+        $results = Post::where('title',
             "MATCH('title')",
             array($q)
         )->get();
