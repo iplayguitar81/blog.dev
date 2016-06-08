@@ -370,6 +370,8 @@ class PostsController extends Controller
         return View::make('posts.search', compact('results'));
 
     }
-
+public function searchResults(){
+    return View('posts.search');
+}
 
 }
