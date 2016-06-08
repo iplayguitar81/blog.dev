@@ -13,7 +13,7 @@
     <article>
         <h3><a href="{{ route('posts.show', [$result->id, str_slug($result->title)]) }}">{{$result->title}}</a></h3>
         <p>Written by:
-            @if($item->user_id != null)
+            @if($result->user_id != null)
                 <? $author = App\User::find($result->user_id)->name; ?>
 
                 {{$author}}
