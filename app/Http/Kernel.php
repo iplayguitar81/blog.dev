@@ -31,6 +31,9 @@ class Kernel extends HttpKernel
 
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
+            \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+            //move this for the form validation to work???
+            \Illuminate\Session\Middleware\StartSession::class,
         ],
 
         'api' => [
