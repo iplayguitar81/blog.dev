@@ -322,11 +322,21 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
                 @endif
             </ul>
 
+
+
+
+
             <div class="search pull-right">
-                <form action="/search" method="GET">
-                    <input type="text" name="search" value=""/>
-                    <button type="submit">Search</button>
+
+                <form class="navbar-form" role="search" action="/search" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="search" placeholder="Search" name="srch-term" id="srch-term">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
                 </form>
+
             </div>
         </div>
     </div>
