@@ -322,10 +322,6 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
                 @endif
             </ul>
 
-
-
-
-
             <div class="search pull-right">
 
                 <form class="navbar-form" role="search" action="/search" method="GET">
@@ -336,6 +332,8 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
                         </div>
                     </div>
                 </form>
+
+
 
             </div>
         </div>
