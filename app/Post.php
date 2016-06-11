@@ -11,6 +11,11 @@ class Post extends Model
      *
      * @var string
      */
+
+    public function post_image(){
+        return $this ->hasMany('App\PostImage');
+    }
+
     public function posts(){
         return $this->belongsTo('App\User', 'user_id');
     }
