@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Gate;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Facade;
-use App\Logic\Image\ImageRepository;
+
 
 use App\Post;
 use App\PostImage;
@@ -400,10 +400,10 @@ class PostsController extends Controller
 
     protected $image;
 
-    public function __construct(ImageRepository $imageRepository)
-    {
-        $this->image = $imageRepository;
-    }
+//    public function __construct(ImageRepository $imageRepository)
+//    {
+//        $this->image = $imageRepository;
+//    }
 
     public function getUpload()
     {
