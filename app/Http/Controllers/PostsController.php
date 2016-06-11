@@ -31,7 +31,7 @@ use willvincent\Rateable\Rateable;
 use willvincent\Rateable\Rating;
 use Illuminate\Database\Eloquent\Model;
 use Torann\GeoIP\GeoIPFacade as GeoIP;
-use Response;
+use Illuminate\Support\Facades\Response;
 
 
 class PostsController extends Controller
