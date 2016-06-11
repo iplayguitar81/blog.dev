@@ -45,6 +45,15 @@ class PostsController extends Controller
     use Rateable;
 
 
+
+    protected $image;
+
+    public function __construct(ImageRepository $imageRepository)
+    {
+        $this->image = $imageRepository;
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -398,7 +407,7 @@ class PostsController extends Controller
     }
 
 
-    protected $image;
+
 
 //    public function __construct(ImageRepository $imageRepository)
 //    {
