@@ -407,7 +407,7 @@ class PostsController extends Controller
 
 //    public function getUpload()
 //    {
-//        return view('upload');
+//        return view('posts/create');
 //    }
 
     public function postUpload()
