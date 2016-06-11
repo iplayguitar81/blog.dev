@@ -101,12 +101,19 @@
     var baseUrl = "{{ url('/') }}";
     var token = "{{ Session::getToken() }}";
     Dropzone.autoDiscover = false;
-    var myDropzone = new Dropzone("div#dropzoneFileUpload", {
-        url: baseUrl + "/dropzone/uploadFiles",
-        params: {
-            _token: token
-        }
-    });
+    if (document.getElementById('dropzoneFileUpload')) {
+        var myDropzone = new Dropzone("div#dropzoneFileUpload", { url: "/posts/create"});
+        // other code here
+
+    }
+
+
+//    var myDropzone = new Dropzone("div#dropzoneFileUpload", {
+//        url: baseUrl + "/dropzone/uploadFiles",
+//        params: {
+//            _token: token
+//        }
+//    });
     Dropzone.options.myAwesomeDropzone = {
         paramName: "file", // The name that will be used to transfer the file
         maxFilesize: 2, // MB
