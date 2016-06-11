@@ -156,6 +156,8 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::post('posts/create/uploadFiles', 'PostsController@uploadFiles');
+
 //Route::post(
 //    'posts/search',
 //    array(
