@@ -76,9 +76,10 @@
     </div>
     {!! Form::close() !!}
 
+    <div class="container">
     <div class="dropzone" id="dropzoneFileUpload">
     </div>
-
+    </div>
 
     @else <?php header("Location: /"); die(); ?>
 
