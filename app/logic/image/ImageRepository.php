@@ -54,8 +54,8 @@ class ImageRepository
         }
 
         $sessionImage = new PostImage;
-        $sessionImage->filename      = $allowed_filename;
-        $sessionImage->original_name = $originalName;
+        $sessionImage->img_path      = $allowed_filename;
+        
         $sessionImage->save();
 
         return Response::json([
