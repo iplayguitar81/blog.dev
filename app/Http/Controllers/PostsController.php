@@ -15,23 +15,26 @@ use Illuminate\Support\Facades\DB;
 
 
 use App\User;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Session;
-use Validator;
+//use Validator;
 use Flash;
 use Illuminate\Routing\Route;
 
 use Auth;
 
-use Illuminate\Support\Facades\Input;
+//use Illuminate\Support\Facades\Input;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Redirect;
 use willvincent\Rateable\Rateable;
 use willvincent\Rateable\Rating;
 use Illuminate\Database\Eloquent\Model;
 use Torann\GeoIP\GeoIPFacade as GeoIP;
-use Illuminate\Support\Facades\Response;
+use Input;
+use Validator;
+use Request;
+use Response;
 
 
 class PostsController extends Controller
