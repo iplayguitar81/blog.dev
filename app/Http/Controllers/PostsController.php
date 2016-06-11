@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Facade;
 
 
-use App\Logic\Image\ImageRepository;
+use App\logic\image\ImageRepository;
 use App\Post;
 use App\PostImage;
 
