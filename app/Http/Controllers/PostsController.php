@@ -227,8 +227,6 @@ class PostsController extends Controller
        // $rating_avg = $rating_sum/$rating_count;
 
 
-
-
         return view('posts.show', compact('post','post_ratings','rating_count','rating_avg','rating_pct'));
     }
 
