@@ -105,6 +105,10 @@
         var myDropzone = new Dropzone("div#dropzoneFileUpload", { url: "/posts/create"});
         // other code here
 
+        params: {
+            _token: token
+        }
+
     }
 
 
