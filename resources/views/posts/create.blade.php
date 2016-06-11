@@ -76,10 +76,12 @@
     </div>
     {!! Form::close() !!}
 
-    <div class="container">
-    <div class="dropzone" id="dropzoneFileUpload">
-    </div>
-    </div>
+    <form action="/posts/create" method="post" enctype="multipart/form-data">
+        <!-- some form fields... -->
+        <div class="dropzone" id="dropkicks"></div>
+        <!-- maybe some more form fields... -->
+        <button type="submit">Submit Form</button>
+    </form>
 
     @else <?php header("Location: /"); die(); ?>
 
@@ -97,35 +99,17 @@
     tinymce.init({ selector:'textarea',plugins: "media" });
 </script>
 
-<script type="text/javascript">
-    var baseUrl = "{{ url('/') }}";
-    var token = "{{ Session::getToken() }}";
-    Dropzone.autoDiscover = false;
-    if (document.getElementById('dropzoneFileUpload')) {
-        var myDropzone = new Dropzone("div#dropzoneFileUpload", { url: "/posts/create"});
-        // other code here
-
-        params: {
-            _token: token
-        }
-
+<script>
+    Dropzone.options.dropkicks = {
+        autoProcessQueue: false,
+        uploadMultiple: true,
+        parallelUploads: 100,
+        paramName: "files",
+        maxFiles: 100,
+        // This URL is not really used in your case but it's needed
+        // because the plugin won't attach itself without one specified
+        url: '#'
     }
-
-
-//    var myDropzone = new Dropzone("div#dropzoneFileUpload", {
-//        url: baseUrl + "/dropzone/uploadFiles",
-//        params: {
-//            _token: token
-//        }
-//    });
-    Dropzone.options.myAwesomeDropzone = {
-        paramName: "file", // The name that will be used to transfer the file
-        maxFilesize: 2, // MB
-        addRemoveLinks: true,
-        accept: function(file, done) {
-
-        },
-    };
 </script>
 
 
