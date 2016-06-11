@@ -323,31 +323,6 @@ class PostsController extends Controller
 
     }
 
-    public function uploadFiles() {
-
-        foreach(Input::file('files') as $file) {
-
-            $filename = time(). $file->getClientOriginalName();
-
-            $uploadflag = $file->move('uploads', $filename);
-
-            if($uploadflag) {
-                $uploadedfiles[] = $filename;
-
-                //here's where I need to create a model with a scaffold that is called ItemImage?
-
-                $item_image = PostImage::create(
-                    array(
-//                        'post_id'   => $item->id,
-//                        'image'     => $filename
-                    )
-                );
-            }
-
-        }
-    }
-
-
 
 
     public function file_export()
@@ -420,5 +395,43 @@ class PostsController extends Controller
 
         return view('posts.search', compact('results2','search','results_empty'));
     }
+
+
+    protected $image;
+
+    public function __construct(ImageRepository $imageRepository)
+    {
+        $this->image = $imageRepository;
+    }
+
+    public function getUpload()
+    {
+        return view('pages.upload');
+    }
+
+    public function postUpload()
+    {
+        $photo = Input::all();
+        $response = $this->image->upload($photo);
+        return $response;
+
+    }
+
+    public function deleteUpload()
+    {
+
+        $filename = Input::get('id');
+
+        if(!$filename)
+        {
+            return 0;
+        }
+
+        $response = $this->image->delete( $filename );
+
+        return $response;
+    }
+
+
 
 }
