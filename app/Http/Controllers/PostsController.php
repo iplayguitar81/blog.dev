@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Facade;
 
 use App\Post;
+use App\PostImage;
 
 use \App;
 use Illuminate\Support\Facades\DB;
@@ -35,6 +36,7 @@ use Input;
 use Validator;
 use Request;
 use Response;
+
 
 
 class PostsController extends Controller
@@ -323,27 +325,25 @@ class PostsController extends Controller
 
     public function uploadFiles() {
 
-        $input = Input::all();
+        foreach(Input::file('files') as $file) {
 
-        $rules = array(
-            'file' => 'image|max:3000',
-        );
+            $filename = time(). $file->getClientOriginalName();
 
-        $validation = Validator::make($input, $rules);
+            $uploadflag = $file->move('uploads', $filename);
 
-        if ($validation->fails()) {
-            return Response::make($validation->errors->first(), 400);
-        }
+            if($uploadflag) {
+                $uploadedfiles[] = $filename;
 
-        $destinationPath = 'uploads'; // upload path
-        $extension = Input::file('file')->getClientOriginalExtension(); // getting file extension
-        $fileName = rand(11111, 99999) . '.' . $extension; // renameing image
-        $upload_success = Input::file('file')->move($destinationPath, $fileName); // uploading file to given path
+                //here's where I need to create a model with a scaffold that is called ItemImage?
 
-        if ($upload_success) {
-            return Response::json('success', 200);
-        } else {
-            return Response::json('error', 400);
+                $item_image = PostImage::create(
+                    array(
+//                        'post_id'   => $item->id,
+//                        'image'     => $filename
+                    )
+                );
+            }
+
         }
     }
 
