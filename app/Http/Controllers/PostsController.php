@@ -405,10 +405,10 @@ class PostsController extends Controller
 //        $this->image = $imageRepository;
 //    }
 
-//    public function getUpload()
-//    {
-//        return view('posts/create');
-//    }
+    public function getUpload()
+    {
+        return view('posts/create');
+    }
 
     public function postUpload()
     {
