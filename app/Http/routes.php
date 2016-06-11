@@ -156,7 +156,13 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::post('posts/create/uploadFiles', 'PostsController@uploadFiles');
+//Route::post('posts/create/uploadFiles', 'PostsController@uploadFiles');
+
+
+Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpload']);
+Route::post('upload', ['as' => 'upload-post', 'uses' =>'ImageController@postUpload']);
+Route::post('upload/delete', ['as' => 'upload-remove', 'uses' =>'ImageController@deleteUpload']);
+
 
 //Route::post(
 //    'posts/search',
