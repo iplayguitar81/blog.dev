@@ -11,6 +11,7 @@
 |
 */
 use App\Post;
+use Intervention\Image\Facades\Image;
 use App\User;
 use AdamWathan\EloquentOAuth\Facades\OAuth;
 //use App\Rating;
@@ -194,7 +195,7 @@ Route::post('upload', function () {
             // resizing an uploaded file
             Image::make($destinationPath . $filename)->resize(100, 100)->save($destinationPath . "100x100_" . $filename);
 
-            $image = New PostImage();
+            $image = New Image();
             $image->img_path = $filename;
            // $image->path = $destinationPath;
           //  $image->album_id = $albumID;
