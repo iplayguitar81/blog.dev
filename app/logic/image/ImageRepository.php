@@ -17,7 +17,7 @@ class ImageRepository
     public function upload( $form_data )
     {
 
-        $validator = Validator::make($form_data, Image::$rules, Image::$messages);
+        $validator = Validator::make($form_data, PostImage::$rules, PostImage::$messages);
 
         if ($validator->fails()) {
 
@@ -85,7 +85,7 @@ class ImageRepository
      */
     public function original( $photo, $filename )
     {
-        $manager = new ImageManager();
+        $manager = new PostImage();
         $image = $manager->make( $photo )->encode('jpg')->save(Config::get('images.full_size') . $filename );
 
         return $image;
@@ -96,7 +96,7 @@ class ImageRepository
      */
     public function icon( $photo, $filename )
     {
-        $manager = new ImageManager();
+        $manager = new PostImage();
         $image = $manager->make( $photo )->encode('jpg')->resize(200, null, function($constraint){$constraint->aspectRatio();})->save( Config::get('images.icon_size')  . $filename );
 
         return $image;
