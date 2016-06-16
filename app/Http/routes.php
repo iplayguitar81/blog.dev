@@ -163,7 +163,7 @@ Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpl
 Route::post('upload', ['as' => 'upload-post', 'uses' =>'PostsController@postUpload']);
 //Route::post('upload/delete', ['as' => 'upload-remove', 'uses' =>'PostsController@deleteUpload']);
 
-Route::delete('upload/delete', [
+Route::delete('upload/delete/{id}', [
     'as' => 'upload-remove',
     'uses' => 'PostsController@deleteUpload'
 ]);
