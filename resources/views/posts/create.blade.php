@@ -156,13 +156,7 @@
 
     @endcan
 </div>
-<?php
 
-return [
-        'full_size'   => env('UPLOAD_FULL_SIZE'),
-        'icon_size'   => env('UPLOAD_ICON_SIZE'),
-];
-    ?>
 @endsection
 
 <script src="{{url('/js/jquery.js')}}"></script>
