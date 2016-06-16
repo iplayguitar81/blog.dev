@@ -22,7 +22,6 @@ class AboutController extends Controller
             'name' => 'required',
             'email' => 'required',
             'message' => 'required',
-            
 
         ]);
 
