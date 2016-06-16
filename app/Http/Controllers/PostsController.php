@@ -425,7 +425,8 @@ class PostsController extends Controller
     {
         $photo = Input::all();
 
-        $post_img = new PostImage($photo);
+        $post_img = new App\PostImage($photo);
+
 
        // $response = $this->image->upload($photo);
         return $post_img;
