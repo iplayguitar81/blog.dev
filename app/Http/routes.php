@@ -162,7 +162,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpload']);
 //Route::post('upload', ['as' => 'upload-post', 'uses' =>'PostsController@postUpload']);
 
-Route::post('posts/upload', function () {
+Route::post('upload', function () {
 
     $input = Input::all();
 
