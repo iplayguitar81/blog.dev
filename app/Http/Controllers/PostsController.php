@@ -424,14 +424,8 @@ class PostsController extends Controller
     public function postUpload()
     {
         $photo = Input::all();
-
-        $post_img = new PostImage(['post_image_id'=>1,'post_id'=>1,'img_path'=>'test this']);
-
-        $post_img->save();
-
-
-       // $response = $this->image->upload($photo);
-        return $post_img;
+        $response = $this->image->upload($photo);
+        return $response;
 
 
 
