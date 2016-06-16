@@ -50,9 +50,9 @@ class ImageRepository
 
         }
 
-        $sessionImage = new Image;
-        $sessionImage->filename      = $allowed_filename;
-        $sessionImage->original_name = $originalName;
+        $sessionImage = new PostImage;
+        $sessionImage->img_path      = $allowed_filename;
+       // $sessionImage->original_name = $originalName;
         $sessionImage->save();
 
         return Response::json([
@@ -108,7 +108,7 @@ class ImageRepository
         $full_size_dir = Config::get('images.full_size');
         $icon_size_dir = Config::get('images.icon_size');
 
-        $sessionImage = Image::where('original_name', 'like', $originalFilename)->first();
+        $sessionImage = Image::where('img_path', 'like', $originalFilename)->first();
 
 
         if(empty($sessionImage))
