@@ -8,7 +8,7 @@ use Gate;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Facade;
 
-
+use Illuminate\Support\Facades\Input;
 use App\logic\image\ImageRepository;
 use App\Post;
 use App\PostImage;
@@ -34,7 +34,7 @@ use willvincent\Rateable\Rateable;
 use willvincent\Rateable\Rating;
 use Illuminate\Database\Eloquent\Model;
 use Torann\GeoIP\GeoIPFacade as GeoIP;
-use Input;
+
 use Validator;
 use Request;
 use Response;
