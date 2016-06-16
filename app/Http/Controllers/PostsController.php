@@ -50,7 +50,7 @@ class PostsController extends Controller
     protected $image;
 
 
-    public function __construct(ImageRepository $imageRepository)
+    public function __construct(PostImage $imageRepository)
     {
         $this->image = $imageRepository;
     }
