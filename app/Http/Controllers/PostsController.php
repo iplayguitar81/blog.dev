@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\DB;
 
 
 use App\User;
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Session;
 //use Validator;
@@ -36,7 +36,7 @@ use Illuminate\Database\Eloquent\Model;
 use Torann\GeoIP\GeoIPFacade as GeoIP;
 
 use Validator;
-use Request;
+//use Request;
 use Response;
 
 
