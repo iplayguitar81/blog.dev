@@ -425,7 +425,7 @@ class PostsController extends Controller
     {
         $file = Input::file('file');
         Image::make($file[0]->getRealPath())->resize(540, null, true)->save('assets/example.png');
-        PostImage::make($file[0]->getRealPath())->save('assets/example.png');
+        PostImage::make($file);
         return $file;
 
     }
