@@ -50,7 +50,7 @@ class ImageRepository
 
         }
 
-        $sessionImage = new PostImage;
+        $sessionImage = new Image;
         $sessionImage->img_path      = $allowed_filename;
        // $sessionImage->original_name = $originalName;
         $sessionImage->save();
