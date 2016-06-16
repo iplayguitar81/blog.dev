@@ -2,22 +2,19 @@
 
 namespace App\Logic\Image;
 
-use App\PostImage;
-
+use App\Models\Image;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
-
 use Intervention\Image\ImageManager;
-
 
 class ImageRepository
 {
     public function upload( $form_data )
     {
 
-        $validator = Validator::make($form_data, PostImage::$rules, PostImage::$messages);
+        $validator = Validator::make($form_data, Image::$rules, Image::$messages);
 
         if ($validator->fails()) {
 
@@ -53,9 +50,9 @@ class ImageRepository
 
         }
 
-        $sessionImage = new PostImage;
-        $sessionImage->img_path      = $allowed_filename;
-        
+        $sessionImage = new Image;
+        $sessionImage->filename      = $allowed_filename;
+        $sessionImage->original_name = $originalName;
         $sessionImage->save();
 
         return Response::json([
@@ -85,7 +82,7 @@ class ImageRepository
      */
     public function original( $photo, $filename )
     {
-        $manager = new PostImage();
+        $manager = new ImageManager();
         $image = $manager->make( $photo )->encode('jpg')->save(Config::get('images.full_size') . $filename );
 
         return $image;
@@ -96,7 +93,7 @@ class ImageRepository
      */
     public function icon( $photo, $filename )
     {
-        $manager = new PostImage();
+        $manager = new ImageManager();
         $image = $manager->make( $photo )->encode('jpg')->resize(200, null, function($constraint){$constraint->aspectRatio();})->save( Config::get('images.icon_size')  . $filename );
 
         return $image;
@@ -111,7 +108,7 @@ class ImageRepository
         $full_size_dir = Config::get('images.full_size');
         $icon_size_dir = Config::get('images.icon_size');
 
-        $sessionImage = PostImage::where('img_path', 'like', $originalFilename)->first();
+        $sessionImage = Image::where('original_name', 'like', $originalFilename)->first();
 
 
         if(empty($sessionImage))
