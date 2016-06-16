@@ -423,10 +423,14 @@ class PostsController extends Controller
 
     public function postUpload()
     {
-        $file = Input::file('file');
-        Image::make($file[0]->getRealPath())->resize(540, null, true)->save('assets/example.png');
-        PostImage::make($file);
-        return $file;
+        //$photo = Input::all();
+
+        $post_img = new PostImage(Input::all());
+
+       // $response = $this->image->upload($photo);
+        return $post_img;
+
+
 
     }
 
