@@ -150,6 +150,7 @@ return [
         Appzcoder\CrudGenerator\CrudGeneratorServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 //        Laravel\Socialite\SocialiteServiceProvider::class,
 
 
@@ -217,6 +218,7 @@ return [
         'SocialAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
         'Location' => 'Stevebauman\Location\Facades\Location',
         'GeoIP' => 'Torann\GeoIP\GeoIPFacade',
+        'Image' => Intervention\Image\Facades\Image::class,
 
 
 
