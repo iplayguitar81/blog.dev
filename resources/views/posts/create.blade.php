@@ -188,7 +188,7 @@
             this.on("removedfile", function(file) {
 
                 $.ajax({
-                    type: 'POST',
+                    type: 'DELETE',
                     url: 'upload/delete',
                     data: {id: file.name},
                     dataType: 'html',
