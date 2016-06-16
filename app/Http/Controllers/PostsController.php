@@ -425,7 +425,7 @@ class PostsController extends Controller
     {
         $photo = Input::all();
 
-        $post_img = new PostImage(['img_path'=>'test this']);
+        $post_img = new PostImage(['post_image_id'=>1,'post_id'=>1,'img_path'=>'test this']);
 
         $post_img->save();
 
