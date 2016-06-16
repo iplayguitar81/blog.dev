@@ -424,7 +424,7 @@ class PostsController extends Controller
     public function postUpload()
     {
         $photo = Input::all();
-        $response = $this->image->post_image($photo);
+        $response = $this->image->post_image(1);
         return $response;
 
 
