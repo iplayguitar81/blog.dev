@@ -161,7 +161,12 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpload']);
 Route::post('upload', ['as' => 'upload-post', 'uses' =>'PostsController@postUpload']);
-Route::post('upload/delete', ['as' => 'upload-remove', 'uses' =>'PostsController@deleteUpload']);
+//Route::post('upload/delete', ['as' => 'upload-remove', 'uses' =>'PostsController@deleteUpload']);
+
+Route::delete('upload/delete', [
+    'as' => 'upload-remove',
+    'uses' => 'PostsController@deleteUpload'
+]);
 
 
 //Route::post(
