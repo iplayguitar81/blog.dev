@@ -189,7 +189,7 @@
 
                 $.ajax({
                     type: 'DELETE',
-                    url: 'upload/delete',
+                    url: 'upload/delete/',
                     data: {id: file.name},
                     dataType: 'html',
                     success: function(data){
