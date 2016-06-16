@@ -83,7 +83,7 @@
                 <h3>Images <span id="photoCounter"></span></h3>
                 <br />
 
-                {!! Form::open(['url' => route('posts/upload'), 'class' => 'dropzone', 'files'=>true, 'id'=>'real-dropzone']) !!}
+                {!! Form::open(['url' => route('upload'), 'class' => 'dropzone', 'files'=>true, 'id'=>'real-dropzone']) !!}
 
                 <div class="dz-message">
 
