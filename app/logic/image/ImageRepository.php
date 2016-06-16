@@ -111,7 +111,7 @@ class ImageRepository
         $full_size_dir = Config::get('images.full_size');
         $icon_size_dir = Config::get('images.icon_size');
 
-        $sessionImage = PostImage::where('original_name', 'like', $originalFilename)->first();
+        $sessionImage = PostImage::where('img_path', 'like', $originalFilename)->first();
 
 
         if(empty($sessionImage))
