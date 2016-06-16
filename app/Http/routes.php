@@ -161,52 +161,52 @@ Route::get('/home', 'HomeController@index');
 
 
 Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpload']);
-//Route::post('upload', ['as' => 'upload-post', 'uses' =>'PostsController@postUpload']);
+Route::post('upload', ['as' => 'upload-post', 'uses' =>'PostsController@postUpload']);
 
-Route::post('upload', function () {
-
-    $input = Input::all();
-
-    $rules = array(
-        'file' => 'image|max:3000',
-    );
-
-    $validation = Validator::make($input, $rules);
-
-    if ($validation->fails())
-    {
-        return Response::make($validation->errors->first(), 400);
-    }
-
-    $file = Input::file('file');
-    //$albumID = Input::get('albumID');
-  //  $museumName = Input::get('museumName');
-
-    if($file) {
-
-        $destinationPath = public_path() . '/images/';
-      //  $filename = $file->getClientOriginalName();
-        $filename = $file->getClientOriginalName();
-
-        $upload_success = Input::file('file')->move($destinationPath, $filename);
-
-        if ($upload_success) {
-
-            // resizing an uploaded file
-            Image::make($destinationPath . $filename)->resize(100, 100)->save($destinationPath . "100x100_" . $filename);
-
-            $image = New Image();
-            $image->img_path = $filename;
-           // $image->path = $destinationPath;
-          //  $image->album_id = $albumID;
-            $image->save();
-
-            return Response::json('success', 200);
-        } else {
-            return Response::json('error', 400);
-        }
-    }
-});
+//Route::post('upload', function () {
+//
+//    $input = Input::all();
+//
+//    $rules = array(
+//        'file' => 'image|max:3000',
+//    );
+//
+//    $validation = Validator::make($input, $rules);
+//
+//    if ($validation->fails())
+//    {
+//        return Response::make($validation->errors->first(), 400);
+//    }
+//
+//    $file = Input::file('file');
+//    //$albumID = Input::get('albumID');
+//  //  $museumName = Input::get('museumName');
+//
+//    if($file) {
+//
+//        $destinationPath = public_path() . '/images/';
+//      //  $filename = $file->getClientOriginalName();
+//        $filename = $file->getClientOriginalName();
+//
+//        $upload_success = Input::file('file')->move($destinationPath, $filename);
+//
+//        if ($upload_success) {
+//
+//            // resizing an uploaded file
+//            Image::make($destinationPath . $filename)->resize(100, 100)->save($destinationPath . "100x100_" . $filename);
+//
+//            $image = New Image();
+//            $image->img_path = $filename;
+//           // $image->path = $destinationPath;
+//          //  $image->album_id = $albumID;
+//            $image->save();
+//
+//            return Response::json('success', 200);
+//        } else {
+//            return Response::json('error', 400);
+//        }
+//    }
+//});
 //Route::post('upload/delete', ['as' => 'upload-remove', 'uses' =>'PostsController@deleteUpload']);
 
 Route::delete('upload/delete/', [
