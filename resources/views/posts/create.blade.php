@@ -169,20 +169,9 @@
 </script>
 
 <script>
-//    Dropzone.options.dropkicks = {
-//        autoProcessQueue: false,
-//        uploadMultiple: true,
-//        parallelUploads: 100,
-//        paramName: "files",
-//        maxFiles: 100,
-//        // This URL is not really used in your case but it's needed
-//        // because the plugin won't attach itself without one specified
-//        url: '#'
-//    }
-
 
     var photo_counter = 0;
-    Dropzone.options.dropkicks = {
+    Dropzone.options.realDropzone = {
 
         uploadMultiple: false,
         parallelUploads: 100,
