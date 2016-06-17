@@ -111,7 +111,7 @@
         {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
 <div class="form-group center-block">
         <div class="rate-width text-center">
-        <input id="input-id" type="number" class="rating" name="starRate" data-size="md" >
+        <input id="input-id2" type="number" class="rating" name="starRate" data-size="md" >
             </div>
 </div>
         {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
