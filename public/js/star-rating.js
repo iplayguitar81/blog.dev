@@ -504,6 +504,7 @@
         theme: '',
         language: 'en',
         stars: 5,
+        step: .1,
         filledStar: '<i class="glyphicon glyphicon-star"></i>',
         emptyStar: '<i class="glyphicon glyphicon-star-empty"></i>',
         containerClass: '',
