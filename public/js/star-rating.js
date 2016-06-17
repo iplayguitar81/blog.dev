@@ -513,7 +513,7 @@
         displayOnly: false,
         rtl: false,
         showClear: false,
-        showCaption: false,
+        showCaption: true,
         starCaptionClasses: {
             0.5: 'label label-danger',
             1: 'label label-danger',
