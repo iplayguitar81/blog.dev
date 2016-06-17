@@ -510,6 +510,7 @@
         containerClass: '',
         size: 'md',
         animate: true,
+        
         displayOnly: false,
         rtl: false,
         showClear: false,
