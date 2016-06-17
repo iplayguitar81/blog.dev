@@ -183,7 +183,7 @@
 
 
     $(document).on('ready', function(){
-        $('#input-id').rating({min: 0, max: 8, step: 0.1, stars: 8});
+        $('#input-id').rating({min: 0, max: 8, step: 0.1, stars: 5});
     });
 
 </script>
