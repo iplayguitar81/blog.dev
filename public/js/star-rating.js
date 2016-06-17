@@ -351,7 +351,7 @@
             if (self.displayOnly) {
                 self.inactive = true;
                 self.showClear = false;
-                self.showCaption = false;
+                self.showCaption = true;
             }
             self._generateRating();
             self._listen();
