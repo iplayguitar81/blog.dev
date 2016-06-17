@@ -179,12 +179,12 @@
 <script>
     // initialize with defaults
 
-//    $('#input-id').rating();
+    $('#input-id2').rating();
 
 
-
-    $(document).on('ready', function(){
-        $('#input-id').rating({min: 0, max: 5, step: 0.1, stars: 5});
-    });
+//
+//    $(document).on('ready', function(){
+//        $('#input-id').rating({min: 0, max: 5, step: 0.1, stars: 5});
+//    });
 
 </script>
