@@ -405,7 +405,7 @@
             var self = this, precision = getDecimalPlaces(self.step), val, factor, maxWidth = self.$rating.width();
             factor = (self.diff * pos) / (maxWidth * self.step);
             factor = self.rtl ? Math.floor(factor) : Math.ceil(factor);
-            val = applyPrecision(parseFloat(self.min + factor * self.step), 3);
+            val = applyPrecision(parseFloat(self.min + factor * self.step), precision);
             val = Math.max(Math.min(val, self.max), self.min);
             return self.rtl ? (self.max - val) : val;
         },
