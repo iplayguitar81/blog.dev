@@ -511,7 +511,7 @@
         size: 'md',
         animate: true,
         displayOnly: false,
-        rtl: true,
+        rtl: false,
         showClear: false,
         showCaption: false,
         starCaptionClasses: {
