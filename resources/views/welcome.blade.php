@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    {{'My sources tell me your location is '.$location['city'].','.$location['state']}}
+    {{--{{'My sources tell me your location is '.$location['city'].','.$location['state']}}--}}
 
 
     @foreach($posts as $item)
