@@ -178,8 +178,12 @@
 <script>
     // initialize with defaults
 
-    $('#input-id').rating();
+//    $('#input-id').rating();
 
 
+
+    $(document).on('ready', function(){
+        $('#input-id').rating({min: 0, max: 8, step: 0.1, stars: 8});
+    });
 
 </script>
