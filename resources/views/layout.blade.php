@@ -832,6 +832,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 <style scoped>
     @import "https://fonts.googleapis.com/css?family=Pacifico";
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
+    @import "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
