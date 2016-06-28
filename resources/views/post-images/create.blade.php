@@ -22,13 +22,13 @@
                     {!! $errors->first('post_id', '<p class="help-block">:message</p>') !!}
                 </div>
             </div>
-            <div class="form-group {{ $errors->has('img_path') ? 'has-error' : ''}}">
-                {!! Form::label('img_path', trans('post-images.img_path'), ['class' => 'col-sm-3 control-label']) !!}
-                <div class="col-sm-6">
-                    {!! Form::text('img_path', null, ['class' => 'form-control']) !!}
-                    {!! $errors->first('img_path', '<p class="help-block">:message</p>') !!}
-                </div>
-            </div>
+            {{--<div class="form-group {{ $errors->has('img_path') ? 'has-error' : ''}}">--}}
+                {{--{!! Form::label('img_path', trans('post-images.img_path'), ['class' => 'col-sm-3 control-label']) !!}--}}
+                {{--<div class="col-sm-6">--}}
+                    {{--{!! Form::text('img_path', null, ['class' => 'form-control']) !!}--}}
+                    {{--{!! $errors->first('img_path', '<p class="help-block">:message</p>') !!}--}}
+                {{--</div>--}}
+            {{--</div>--}}
 
 
     <div class="form-group">
