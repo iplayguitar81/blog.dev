@@ -809,7 +809,11 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
     @include('footer')
     </div>
+
+
 <script src="{{url('/js/jquery.js')}}"></script>
+<script src="{{url('https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js')}}"></script>
+
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
 
 
