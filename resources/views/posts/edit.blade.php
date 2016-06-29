@@ -98,6 +98,20 @@
 <br/>
 <br/>
 
+<div class="row">
+<div class="col-md-12">
+    <form action="{{url('image/do-upload')}}"
+    class="dropzone" id="addImages">
+
+
+
+    </form>
+</div>
+
+</div>
+<br/>
+<br/>
+
     <a href="{{url('posts')}}">
 
         <button type="submit" class="uk-button uk-width-1-1 uk-margin-small-bottom">Back to All Posts</button>
