@@ -103,7 +103,7 @@
     <form action="{{url('image/do-upload')}}"
     class="dropzone" id="addImages">
 
-
+    {{csrf_field()}}
 
     </form>
 </div>
