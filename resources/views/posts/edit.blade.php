@@ -104,6 +104,7 @@
     class="dropzone" id="addImages">
 
     {{csrf_field()}}
+<input type="hidden" name="gallery_id" value="{{$post->id}}">
 
     </form>
 </div>
