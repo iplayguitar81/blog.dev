@@ -334,6 +334,21 @@ class PostsController extends Controller
         return view('posts.file_upload');
 
     }
+    public function doImageUpload(Request $request)
+    {
+
+        //get the file from the edit post page request...
+        //return view('posts.file_upload');
+
+        $file= $request->file('file');
+
+
+        //set file name
+        //move the file to correct location
+        // save the image details into the database
+
+
+    }
 
 
 
