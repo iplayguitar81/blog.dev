@@ -337,15 +337,26 @@ class PostsController extends Controller
     public function doImageUpload(Request $request)
     {
 
-        //get the file from the edit post page request...
+
         //return view('posts.file_upload');
 
+        //get the file from the edit post page request...
         $file= $request->file('file');
+        //set the file name
+        $filename = uniqid(). $file->getClientOriginalName();
 
 
-        //set file name
         //move the file to correct location
+        $file->move('images/', $filename);
+
         // save the image details into the database
+
+        $post = Post::find($request->input('gallery_id'));
+        $image = $post->images()->create([
+
+
+
+        ]);
 
 
     }
