@@ -35,6 +35,10 @@
 
 </div>
 
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-lg fa-facebook"></i>&nbsp;Facebook</a></li>
+    <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-twitter"></i>&nbsp;Twitter</a></li>
+</ul>
 <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
         <h3>Like Us On Facebook!</h3>
@@ -68,13 +72,6 @@
     </div>
 
     <div class="panel panel-success"> <div class="panel-heading"> <h3 class="panel-title">Panel title</h3> </div> <div class="panel-body"> Panel content </div> </div>
-
-
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-facebook"></i>&nbsp;Facebook</a></li>
-        <li><a data-toggle="tab" href="#menu2"><i class="fa fa-lg fa-twitter"></i>&nbsp;Twitter</a></li>
-    </ul>
 
 
 
