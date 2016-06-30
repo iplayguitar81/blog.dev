@@ -12,8 +12,8 @@
 
     <div id="menu1" class="tab-pane fade">
         <h3>Twitter</h3>
-        <a class="twitter-timeline" href="https://twitter.com/search?q=from%3Abowtiesoftware%20OR%20from%3Atrailblazers" data-widget-id="599516450617856000">Tweets about from:bowtiesoftware OR from:trailblazers</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        {{--<a class="twitter-timeline" href="https://twitter.com/search?q=from%3Abowtiesoftware%20OR%20from%3Atrailblazers" data-widget-id="599516450617856000">Tweets about from:bowtiesoftware OR from:trailblazers</a>--}}
+        {{--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>--}}
     </div>
 
 </div>
