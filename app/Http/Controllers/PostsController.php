@@ -362,7 +362,7 @@ class PostsController extends Controller
 'created_by' => Auth::user()->id,
     ]);
 
-
+return $image;
     }
 
 
