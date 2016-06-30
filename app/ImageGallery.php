@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ImageGallery extends Model
 {
 
-    protected $fillable =['gallery_id', 'file_name', 'file_size', 'file_mime', 'file_path', 'created_by'];
+    protected $fillable =['post_id', 'file_name', 'file_size', 'file_mime', 'file_path', 'created_by'];
     //
 
     public function post(){
