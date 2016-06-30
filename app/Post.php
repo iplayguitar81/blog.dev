@@ -12,7 +12,7 @@ class Post extends Model
      * @var string
      */
 
-    public function image(){
+    public function images(){
         return $this ->hasMany('App\ImageGallery');
     }
 
