@@ -100,7 +100,7 @@
 
 <div class="row">
 <div class="col-md-12">
-    <form action="{{url('image/do-upload')}}"
+    <form action="{{url('do-upload')}}"
     class="dropzone" id="addImages">
 
     {{csrf_field()}}
