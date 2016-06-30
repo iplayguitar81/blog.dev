@@ -354,9 +354,13 @@ class PostsController extends Controller
         $post = Post::find($request->input('gallery_id'));
         $image = $post->images()->create([
 
-
-
-        ]);
+'gallery_id' => $request->input('gallery_id'),
+'file_name' => $filename,
+'file_size' => $file->getClientSize(),
+'file_mime' => $file->getClientMimeType(),
+'file_path' => 'images/' .$filename,
+'created_by' => Auth::user()->id,
+    ]);
 
 
     }
