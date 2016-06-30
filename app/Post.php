@@ -12,8 +12,8 @@ class Post extends Model
      * @var string
      */
 
-    public function post_image(){
-        return $this ->hasMany('App\PostImage');
+    public function image(){
+        return $this ->hasMany('App\ImageGallery');
     }
 
     public function posts(){
