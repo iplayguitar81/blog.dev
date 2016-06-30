@@ -866,7 +866,17 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
     });
 
-//    Dropzone.
+    Dropzone.options.addImages ={
+
+        maxFilesize: 2,
+
+        acceptedFiles: 'image/*',
+        success: function(file, response) {
+          console.log(file);
+            console.log(response);
+        },
+
+    };
 
 </script>
 </body>
