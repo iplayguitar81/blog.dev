@@ -112,7 +112,7 @@
 </div>
 
             <h4>Images Attributed to Post</h4>
-            {{$post->images}}
+            {{--{{$post->images}}--}}
 
             <div class="row">
 
