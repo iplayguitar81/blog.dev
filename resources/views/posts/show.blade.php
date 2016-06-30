@@ -35,6 +35,8 @@
         <br/>
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
+            {{$post->images}}
+
         </div>
     </article>
         </div>
