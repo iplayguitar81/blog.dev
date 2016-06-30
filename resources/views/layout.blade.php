@@ -872,7 +872,9 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             console.log(response);
         },
         handleSuccess: function(response){
-            console.log(response);
+           var imageList =$('#gallery-images ul');
+            var imageSrc = baseUrl + '/' + response.file_path;
+$(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a></li>');
         }
     };
 
