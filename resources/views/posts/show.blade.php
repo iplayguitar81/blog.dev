@@ -35,7 +35,35 @@
         <br/>
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
-            {{$post->images}}
+            <h4>Images Attributed to Post</h4>
+            {{--{{$post->images}}--}}
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div id="gallery-images">
+
+                        <ul>
+                            @foreach($post->images as $image)
+
+                                <li>
+                                    <a href="{{url($image->file_path)}}" target="_blank">
+                                        <img src="{{url($image->file_path)}}">
+
+                                    </a>
+
+                                </li>
+                            @endforeach
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
     </article>
