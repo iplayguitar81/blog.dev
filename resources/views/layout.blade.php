@@ -866,6 +866,16 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
     });
 
+    var handleDropzoneFileUpload ={
+
+        handleError: function(response) {
+            console.log(response);
+        },
+        handleSuccess: function(response){
+            console.log(response);
+        }
+    };
+
     Dropzone.options.addImages ={
 
         maxFilesize: 2,
@@ -874,6 +884,14 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         success: function(file, response) {
           console.log(file);
             console.log(response);
+
+            if(file.status =='success'){
+                handleDropzoneFileUpload.handleSuccess(response);
+
+            }
+            else{
+                handleDropzoneFileUpload.handleError(response);
+            }
         },
 
     };
