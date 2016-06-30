@@ -839,6 +839,23 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     @import "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.woff";
 
 
+  #gallery-images img {
+      width: 240px;
+      height: 160px;
+      border: 2px solid black;
+      margin-bottom: 10px;
+  }
+
+#gallery-images ul {
+    margin: 0;
+}
+#gallery-images li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+}
 
 </style>
 
@@ -848,6 +865,8 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 
     });
+
+//    Dropzone.
 
 </script>
 </body>
