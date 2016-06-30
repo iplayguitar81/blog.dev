@@ -110,6 +110,10 @@
 </div>
 
 </div>
+
+            <h4>Images For Post</h4>
+            {{$post->images}}
+
 <br/>
 <br/>
 
