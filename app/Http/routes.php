@@ -163,6 +163,10 @@ Route::get('/home', 'HomeController@index');
 Route::get('/posts/create', ['as' => 'upload', 'uses' => 'PostsController@getUpload']);
 Route::post('upload', ['as' => 'upload-post', 'uses' =>'PostsController@postUpload']);
 
+
+Route::post('do-upload', ['as' => 'do-upload', 'uses' =>'PostsController@doImageUpload']);
+
+
 //Route::post('upload', function () {
 //
 //    $input = Input::all();
