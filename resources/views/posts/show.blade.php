@@ -78,25 +78,14 @@
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="http://resume.bowtiesoft.com/images/ASP-mvc-albums-CRUD.png" itemprop="contentUrl" data-size="1024x1024">
-                                                <img src="http://resume.bowtiesoft.com/images/ASP-mvc-albums-CRUD-thumb.png" itemprop="thumbnail" alt="CRUD MVC ASP" />
-                                            </a>
-                                            <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
-                                        </figure>
-                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="http://resume.bowtiesoft.com/images/MVC-ASP-CRUD-with-image-upload.png" itemprop="contentUrl" data-size="1323x784">
-                                                <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-                                            </a>
-                                            <figcaption itemprop="caption description">MVC ASP Create view with image upload</figcaption>
-                                        </figure>
-
-                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="http://resume.bowtiesoft.com/images/social-logins-oauth-mvc-asp.png" itemprop="contentUrl" data-size="1323x784">
-                                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-                                            </a>
-                                            <figcaption itemprop="caption description">Social media OAuth2 login links<br/> I have test accounts working with all providers listed</figcaption>
-                                        </figure>
+                                        @foreach($post->images as $image)
+                                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                                <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="1024x1024">
+                                                    <img src="{{url($image->file_path)}}" itemprop="thumbnail" alt="CRUD MVC ASP" />
+                                                </a>
+                                                <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
+                                            </figure>
+                                        @endforeach
 
                                     </div>
 
