@@ -209,6 +209,8 @@
 
 <script src="{{url('/js/photoswipe.min.js')}}"></script>
 <script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
+<script src="{{url('/js/index.js')}}"></script>
+
 
 <script>
     // initialize with defaults
