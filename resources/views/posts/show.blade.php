@@ -426,6 +426,5 @@
 
     // execute above function
     initPhotoSwipeFromDOM('.my-gallery');
-</script>
 
 </script>
