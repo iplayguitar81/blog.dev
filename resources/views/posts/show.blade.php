@@ -74,28 +74,28 @@
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/blazers-section-main.png" itemprop="contentUrl" data-size="964x1024">
-                                                <img src="images/tblazersfans-main.png" itemprop="thumbnail" alt="Image description" data-size="964x1024" />
+                                            <a href="http://resume.bowtiesoft.com/images/blazers-section-main.png" itemprop="contentUrl" data-size="964x1024">
+                                                <img src="http://resume.bowtiesoft.com/images/tblazersfans-main.png" itemprop="thumbnail" alt="Image description" data-size="964x1024" />
                                             </a>
                                             <figcaption itemprop="caption description">Rails prototype- - Portland Trail Blazers fans website</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/tblazers-game-boxscore-fullpage.png" itemprop="contentUrl" data-size="756x751">
+                                            <a href="http://resume.bowtiesoft.com/images/tblazers-game-boxscore-fullpage.png" itemprop="contentUrl" data-size="756x751">
                                                 <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Rails prototype continued<br/>CSV Boxscore upload, pagination and CRUD</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/boxscore-confine-show.png" itemprop="contentUrl" data-size="562x1345">
+                                            <a href="http://resume.bowtiesoft.com/images/boxscore-confine-show.png" itemprop="contentUrl" data-size="562x1345">
                                                 <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Boxscore formatting after import</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/blazersfans-calendar-good.png" itemprop="contentUrl" data-size="1063x1108">
+                                            <a href="http://resume.bowtiesoft.com/images/blazersfans-calendar-good.png" itemprop="contentUrl" data-size="1063x1108">
                                                 <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Rails prototype continued <br/>Calendar with CRUD events</figcaption>
@@ -113,27 +113,27 @@
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
                                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/lilac-city-full.png" itemprop="contentUrl" data-size="1024x1024">
-                                                <img src="images/lilac-main.png" itemprop="thumbnail" alt="Image description" />
+                                            <a href="http://resume.bowtiesoft.com/images/lilac-city-full.png" itemprop="contentUrl" data-size="1024x1024">
+                                                <img src="http://resume.bowtiesoft.com/images/lilac-main.png" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Static HTML5/CSS site developed in 2013</figcaption>
                                         </figure>
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/jquery-dogbook-cover-good.png" itemprop="contentUrl" data-size="964x1024">
+                                            <a href="http://resume.bowtiesoft.com/images/jquery-dogbook-cover-good.png" itemprop="contentUrl" data-size="964x1024">
                                                 <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">jQuery flipbook featuring cute pets</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/roscoe-flipped-open-good.png" itemprop="contentUrl" data-size="964x1024">
+                                            <a href="http://resume.bowtiesoft.com/images/roscoe-flipped-open-good.png" itemprop="contentUrl" data-size="964x1024">
                                                 <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">jQuery flipped page of book.<br/> Charming little fella eh?</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/lilac-dogs-contact-page-good.png" itemprop="contentUrl" data-size="964x1024">
+                                            <a href="http://resume.bowtiesoft.com/images/lilac-dogs-contact-page-good.png" itemprop="contentUrl" data-size="964x1024">
                                                 <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Custom Contact page PHP</figcaption>
@@ -151,28 +151,28 @@
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/checkenginefree-map-view-page.png" itemprop="contentUrl" data-size="1048x1258">
-                                                <img src="images/checkengine-main.png" itemprop="thumbnail" alt="checkenginefree.com" />
+                                            <a href="http://resume.bowtiesoft.com/images/checkenginefree-map-view-page.png" itemprop="contentUrl" data-size="1048x1258">
+                                                <img src="http://resume.bowtiesoft.com/images/checkengine-main.png" itemprop="thumbnail" alt="checkenginefree.com" />
                                             </a>
                                             <figcaption itemprop="caption description">Single page jQuery Mobile fully responsive integrated with Google Maps API/Google Fusion Tables, GPS, browser geolocation, SSL,<br/> and functional search string location to GPS coordinates refresh map and nearest locations</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/checkengine-validation-show-good.png" itemprop="contentUrl" data-size="1063x2275">
+                                            <a href="http://resume.bowtiesoft.com/images/checkengine-validation-show-good.png" itemprop="contentUrl" data-size="1063x2275">
                                                 <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Location error reporting with clever Spam validation</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/checkenginefree-contact-good.png" itemprop="contentUrl" data-size="1063x975">
+                                            <a href="http://resume.bowtiesoft.com/images/checkenginefree-contact-good.png" itemprop="contentUrl" data-size="1063x975">
                                                 <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Contact form PHP</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/checkenginefree-form-validation-good.png" itemprop="contentUrl" data-size="1063x1035">
+                                            <a href="http://resume.bowtiesoft.com/images/checkenginefree-form-validation-good.png" itemprop="contentUrl" data-size="1063x1035">
                                                 <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Contact form validation</figcaption>
