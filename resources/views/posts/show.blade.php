@@ -193,21 +193,21 @@
                                 <div class="col-sm-4">
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/amhodgson-section-main.png" itemprop="contentUrl" data-size="1048x1333">
-                                                <img src="images/amhodgson-main.png" itemprop="thumbnail" alt="amhodgson.com" />
+                                            <a href="http://resume.bowtiesoft.com/images/amhodgson-section-main.png" itemprop="contentUrl" data-size="1048x1333">
+                                                <img src="http://resume.bowtiesoft.com/images/amhodgson-main.png" itemprop="thumbnail" alt="amhodgson.com" />
                                             </a>
                                             <figcaption itemprop="caption description">Custom responsive Tumblr template<br/> with added Contact page (PHP)</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/amhodgsonbooks-good.png" itemprop="contentUrl" data-size="600x2429">
+                                            <a href="http://resume.bowtiesoft.com/images/amhodgsonbooks-good.png" itemprop="contentUrl" data-size="600x2429">
                                                 <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Neatly laid out CSS/HTML based on client's vision<br>custom font yet SEO friendly!</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/amhodgsoncontact-full.png" itemprop="contentUrl" data-size="1063x1300">
+                                            <a href="http://resume.bowtiesoft.com/images/amhodgsoncontact-full.png" itemprop="contentUrl" data-size="1063x1300">
                                                 <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Custom Contact page PHP<br/>**Not built into Tumblr</figcaption>
@@ -229,20 +229,20 @@
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
                                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/ASP-mvc-albums-CRUD.png" itemprop="contentUrl" data-size="1024x1024">
-                                                <img src="images/ASP-mvc-albums-CRUD-thumb.png" itemprop="thumbnail" alt="CRUD MVC ASP" />
+                                            <a href="http://resume.bowtiesoft.com/images/ASP-mvc-albums-CRUD.png" itemprop="contentUrl" data-size="1024x1024">
+                                                <img src="http://resume.bowtiesoft.com/images/ASP-mvc-albums-CRUD-thumb.png" itemprop="thumbnail" alt="CRUD MVC ASP" />
                                             </a>
                                             <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
                                         </figure>
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/MVC-ASP-CRUD-with-image-upload.png" itemprop="contentUrl" data-size="1323x784">
+                                            <a href="http://resume.bowtiesoft.com/images/MVC-ASP-CRUD-with-image-upload.png" itemprop="contentUrl" data-size="1323x784">
                                                 <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">MVC ASP Create view with image upload</figcaption>
                                         </figure>
 
                                         <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="images/social-logins-oauth-mvc-asp.png" itemprop="contentUrl" data-size="1323x784">
+                                            <a href="http://resume.bowtiesoft.com/images/social-logins-oauth-mvc-asp.png" itemprop="contentUrl" data-size="1323x784">
                                                 <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
                                             </a>
                                             <figcaption itemprop="caption description">Social media OAuth2 login links<br/> I have test accounts working with all providers listed</figcaption>
@@ -439,13 +439,6 @@
         <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
 
         <br/>
-
-
-
-
-
-
-
 
 
 
