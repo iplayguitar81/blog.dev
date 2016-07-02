@@ -64,99 +64,264 @@
 
 
 
-                    <div class="col-sm-4">
+                    <div id="portfolio">
+                        <section class="clearfix">
 
-                        <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="https://www.bowtiesoft.com/images/577485710f713wsu-cougs-flag.jpg" itemprop="contentUrl" data-size="1024x1024">
-                                    <img src="https://www.bowtiesoft.com/images/577485710f713wsu-cougs-flag.jpg" itemprop="thumbnail" alt="CRUD MVC ASP" />
-                                </a>
-                                <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
-                            </figure>
-                            <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="images/MVC-ASP-CRUD-with-image-upload.png" itemprop="contentUrl" data-size="1323x784">
-                                    <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-                                </a>
-                                <figcaption itemprop="caption description">MVC ASP Create view with image upload</figcaption>
-                            </figure>
+                            <!-- heres where we can test photoswipe-->
+                            <div class="row">
+                                <div class="col-sm-4">
 
-                            <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="images/social-logins-oauth-mvc-asp.png" itemprop="contentUrl" data-size="1323x784">
-                                    <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-                                </a>
-                                <figcaption itemprop="caption description">Social media OAuth2 login links<br/> I have test accounts working with all providers listed</figcaption>
-                            </figure>
+                                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/blazers-section-main.png" itemprop="contentUrl" data-size="964x1024">
+                                                <img src="images/tblazersfans-main.png" itemprop="thumbnail" alt="Image description" data-size="964x1024" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Rails prototype- - Portland Trail Blazers fans website</figcaption>
+                                        </figure>
 
-                        </div>
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/tblazers-game-boxscore-fullpage.png" itemprop="contentUrl" data-size="756x751">
+                                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Rails prototype continued<br/>CSV Boxscore upload, pagination and CRUD</figcaption>
+                                        </figure>
 
-                        <a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>
-                        <div id="demo9" class="collapse">
-                            <p>Since I am familiar with Rails and MVC I decided to learn ASP MVC when not busy studying.  Here is some idea of what I can do with that technology.  Unfortunately,  I do not currently have a neatly designed page as I have mostly been focusing on learning the backend of this technology.  There are also other things that I have figured out with this technology like pagination of records- - for example, but I do not have a photo at this time only code.  I also do not have a live version of this site but if requested I can provide examples of my code!  It has been a cool experience learning ASP MVC because I have found that I am able to learn MVC frameworks fairly easily and am excited to learn more!</p></div>
-                    </div>
-                </div>
-                <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/boxscore-confine-show.png" itemprop="contentUrl" data-size="562x1345">
+                                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Boxscore formatting after import</figcaption>
+                                        </figure>
 
-                    <!-- Background of PhotoSwipe.
-                         It's a separate element, as animating opacity is faster than rgba(). -->
-                    <div class="pswp__bg"></div>
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/blazersfans-calendar-good.png" itemprop="contentUrl" data-size="1063x1108">
+                                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Rails prototype continued <br/>Calendar with CRUD events</figcaption>
+                                        </figure>
 
-                    <!-- Slides wrapper with overflow:hidden. -->
-                    <div class="pswp__scroll-wrap">
-
-                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                        <div class="pswp__container">
-                            <div class="pswp__item"></div>
-                            <div class="pswp__item"></div>
-                            <div class="pswp__item"></div>
-                        </div>
-
-                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                        <div class="pswp__ui pswp__ui--hidden">
-
-                            <div class="pswp__top-bar">
-
-                                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                                <div class="pswp__counter"></div>
-
-                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                                <!-- element will get class pswp__preloader--active when preloader is running -->
-                                <div class="pswp__preloader">
-                                    <div class="pswp__preloader__icn">
-                                        <div class="pswp__preloader__cut">
-                                            <div class="pswp__preloader__donut"></div>
-                                        </div>
                                     </div>
+                                    <a href="#demo5" class="btn btn-info" data-toggle="collapse">More Info</a>
+                                    <div id="demo5" class="collapse">
+                                        <p>I am a big basketball fan both college (Gonzaga and March Madness) and the NBA.  As a challenge to myself while in my down time after studying, I decided to try to create a Ruby on Rails application that was inspired by my favorite NBA team, the Portland Trail Blazers.  I took the time to implement the things that I had learned from the course I took in Rails at Spokane Community College and I also took the time to learn about and implement things that I did not know about before like how to call multiple databases from one page, create a calendar that you and load events into, and to upload a CSV file to seed data to a Model from a view.</p><p>I also learned to deploy this site using PostgreSQL  and Capistrano on an Apache Digital Ocean droplet.  If you wish to visit this site please do so at: <a href="http://dev.bowtiesoft.com/">http://dev.bowtiesoft.com</a>.  **Please note that this site is a prototype and still in development.  I hope to be able to develop this Rails application out more and will do so when I can.</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-4">
+
+                                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/lilac-city-full.png" itemprop="contentUrl" data-size="1024x1024">
+                                                <img src="images/lilac-main.png" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Static HTML5/CSS site developed in 2013</figcaption>
+                                        </figure>
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/jquery-dogbook-cover-good.png" itemprop="contentUrl" data-size="964x1024">
+                                                <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">jQuery flipbook featuring cute pets</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/roscoe-flipped-open-good.png" itemprop="contentUrl" data-size="964x1024">
+                                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">jQuery flipped page of book.<br/> Charming little fella eh?</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/lilac-dogs-contact-page-good.png" itemprop="contentUrl" data-size="964x1024">
+                                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Custom Contact page PHP</figcaption>
+                                        </figure>
+
+
+                                    </div>
+
+                                    <a href="#demo6" class="btn btn-info" data-toggle="collapse">More Info</a>
+                                    <div id="demo6" class="collapse">
+                                        <p>This was one of the first web pages I did during summer break of 2013.  It was around this time that I started feeling like I was gaining a greater competence with my HTML5/CSS skills and I also introduced myself to jQuery plug-in (See ‘All Stars’ page).  I did this project for a friend.  Unfortunately, she has decided to take her dog walking website down to focus on her regular 9-5 job.  I spent many hours developing my skills while creating this site.  I have decided to host this site so you may see a live version of it by visiting <a href="http://resume.bowtiesoft.com/lilac-dogs">http://resume.bowtiesoft.com/lilac-dogs</a></p></div>
+                                </div>
+
+                                <div class="col-sm-4">
+
+                                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/checkenginefree-map-view-page.png" itemprop="contentUrl" data-size="1048x1258">
+                                                <img src="images/checkengine-main.png" itemprop="thumbnail" alt="checkenginefree.com" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Single page jQuery Mobile fully responsive integrated with Google Maps API/Google Fusion Tables, GPS, browser geolocation, SSL,<br/> and functional search string location to GPS coordinates refresh map and nearest locations</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/checkengine-validation-show-good.png" itemprop="contentUrl" data-size="1063x2275">
+                                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Location error reporting with clever Spam validation</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/checkenginefree-contact-good.png" itemprop="contentUrl" data-size="1063x975">
+                                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Contact form PHP</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/checkenginefree-form-validation-good.png" itemprop="contentUrl" data-size="1063x1035">
+                                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Contact form validation</figcaption>
+                                        </figure>
+
+                                    </div>
+                                    <a href="#demo7" class="btn btn-info" data-toggle="collapse">More Info</a>
+                                    <div id="demo7" class="collapse">
+                                        <p>This one page responsive web app utilizes HTML5, CSS, Javascript/jQuery, jQuery Mobile, Google Maps API (JSON), Browser GPS and PHP (contact form page).  If you wish to see the live web page please visit: <a href="http://checkenginefree.com/">http://www.checkenginefree.com</a></p>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/amhodgson-section-main.png" itemprop="contentUrl" data-size="1048x1333">
+                                                <img src="images/amhodgson-main.png" itemprop="thumbnail" alt="amhodgson.com" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Custom responsive Tumblr template<br/> with added Contact page (PHP)</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/amhodgsonbooks-good.png" itemprop="contentUrl" data-size="600x2429">
+                                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Neatly laid out CSS/HTML based on client's vision<br>custom font yet SEO friendly!</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/amhodgsoncontact-full.png" itemprop="contentUrl" data-size="1063x1300">
+                                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Custom Contact page PHP<br/>**Not built into Tumblr</figcaption>
+                                        </figure>
+
+                                    </div>
+                                    <a href="#demo8" class="btn btn-info" data-toggle="collapse">More Info</a>
+                                    <div id="demo8" class="collapse">
+
+                                        <p>I created this responsive custom Tumblr theme for my sister and her writing career.  Before taking on this project I did not know much about Tumblr, so I was required to learn how to create a custom theme and found that it is a similar process to creating Wordpress themes.  For this project I also created a custom contact form page utilizing PHP.  I would not say that I am proficient at creating a Tumblr theme but I am confident I could get better at it and it also would not be difficult for me to learn similar technology.  If you wish to see the live version of this website please visit:  <a href="http://amhodgson.com/">http://www.amhodgson.com</a></p>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+
+                                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/ASP-mvc-albums-CRUD.png" itemprop="contentUrl" data-size="1024x1024">
+                                                <img src="images/ASP-mvc-albums-CRUD-thumb.png" itemprop="thumbnail" alt="CRUD MVC ASP" />
+                                            </a>
+                                            <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
+                                        </figure>
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/MVC-ASP-CRUD-with-image-upload.png" itemprop="contentUrl" data-size="1323x784">
+                                                <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">MVC ASP Create view with image upload</figcaption>
+                                        </figure>
+
+                                        <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <a href="images/social-logins-oauth-mvc-asp.png" itemprop="contentUrl" data-size="1323x784">
+                                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                            </a>
+                                            <figcaption itemprop="caption description">Social media OAuth2 login links<br/> I have test accounts working with all providers listed</figcaption>
+                                        </figure>
+
+                                    </div>
+
+                                    <a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>
+                                    <div id="demo9" class="collapse">
+                                        <p>Since I am familiar with Rails and MVC I decided to learn ASP MVC when not busy studying.  Here is some idea of what I can do with that technology.  Unfortunately,  I do not currently have a neatly designed page as I have mostly been focusing on learning the backend of this technology.  There are also other things that I have figured out with this technology like pagination of records- - for example, but I do not have a photo at this time only code.  I also do not have a live version of this site but if requested I can provide examples of my code!  It has been a cool experience learning ASP MVC because I have found that I am able to learn MVC frameworks fairly easily and am excited to learn more!</p></div>
                                 </div>
                             </div>
+                            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                <div class="pswp__share-tooltip"></div>
+                                <!-- Background of PhotoSwipe.
+                                     It's a separate element, as animating opacity is faster than rgba(). -->
+                                <div class="pswp__bg"></div>
+
+                                <!-- Slides wrapper with overflow:hidden. -->
+                                <div class="pswp__scroll-wrap">
+
+                                    <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                                    <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                                    <div class="pswp__container">
+                                        <div class="pswp__item"></div>
+                                        <div class="pswp__item"></div>
+                                        <div class="pswp__item"></div>
+                                    </div>
+
+                                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                                    <div class="pswp__ui pswp__ui--hidden">
+
+                                        <div class="pswp__top-bar">
+
+                                            <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                            <div class="pswp__counter"></div>
+
+                                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                            <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                            <!-- element will get class pswp__preloader--active when preloader is running -->
+                                            <div class="pswp__preloader">
+                                                <div class="pswp__preloader__icn">
+                                                    <div class="pswp__preloader__cut">
+                                                        <div class="pswp__preloader__donut"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                            <div class="pswp__share-tooltip"></div>
+                                        </div>
+
+                                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                                        </button>
+
+                                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                                        </button>
+
+                                        <div class="pswp__caption">
+                                            <div class="pswp__caption__center"></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
                             </div>
 
-                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                            </button>
-
-                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                            </button>
-
-                            <div class="pswp__caption">
-                                <div class="pswp__caption__center"></div>
-                            </div>
-
-                        </div>
-
+                        </section>
                     </div>
 
 
