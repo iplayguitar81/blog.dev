@@ -462,10 +462,10 @@
 <script src="{{url('/js/jquery.js')}}"></script>
 <script src="{{url('/js/star-rating.js')}}"></script>
 
-
+<script src="{{url('/js/index.js')}}"></script>
 <script src="{{url('/js/photoswipe.min.js')}}"></script>
 <script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
-<script src="{{url('/js/index.js')}}"></script>
+
 
 
 <script>
