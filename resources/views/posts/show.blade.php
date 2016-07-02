@@ -83,7 +83,9 @@
                                             <div class="col-md-2">
 
                                                 {{$pathy =$image->file_path }}
-                                                {{list($width, $height) = getimagesize($pathy)}}
+
+                                                {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
+
 
                                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                                 <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="1024x1024">
