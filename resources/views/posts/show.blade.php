@@ -65,7 +65,7 @@
 
 
                     <div id="portfolio">
-                        <section class="clearfix">
+
 
 
                             <!-- heres where we can test photoswipe-->
@@ -169,7 +169,7 @@
 
                             </div>
 
-                        </section>
+
                     </div>
 
 
