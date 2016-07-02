@@ -80,7 +80,7 @@
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
                                         @foreach($post->images as $image)
-                                            <div class="col-sm-1">
+                                            <div class="col-md-2">
 
                                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                                 <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="1024x1024">
