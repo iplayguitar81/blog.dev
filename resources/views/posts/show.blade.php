@@ -84,7 +84,7 @@
 
                                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                                 <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="1024x1024">
-                                                    <img src="{{url($image->file_path)}}" class="thumbnail" alt="CRUD MVC ASP" />
+                                                    <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
                                                 </a>
                                                 <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
                                             </figure>
