@@ -70,7 +70,7 @@
 
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                 <a href="images/ASP-mvc-albums-CRUD.png" itemprop="contentUrl" data-size="1024x1024">
-                                    <img src="images/ASP-mvc-albums-CRUD-thumb.png" itemprop="thumbnail" alt="CRUD MVC ASP" />
+                                    <img src="https://www.bowtiesoft.com/images/577485710f713wsu-cougs-flag.jpg" itemprop="thumbnail" alt="CRUD MVC ASP" />
                                 </a>
                                 <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
                             </figure>
