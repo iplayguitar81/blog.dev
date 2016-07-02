@@ -62,100 +62,97 @@
 
                     </div>
 
-                    <div class="my-gallery" >
-
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-                                <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
-                            </a>
-                            <figcaption itemprop="caption description">Image caption  1</figcaption>
-
-                        </figure>
-
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-                                <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-                            </a>
-                            <figcaption itemprop="caption description">Image caption 2</figcaption>
-                        </figure>
-
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-                                <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-                            </a>
-                            <figcaption itemprop="caption description">Image caption 3</figcaption>
-                        </figure>
-
-                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-                                <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
-                            </a>
-                            <figcaption itemprop="caption description">Image caption 4</figcaption>
-                        </figure>
 
 
+                    <div class="col-sm-4">
+
+                        <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="images/ASP-mvc-albums-CRUD.png" itemprop="contentUrl" data-size="1024x1024">
+                                    <img src="images/ASP-mvc-albums-CRUD-thumb.png" itemprop="thumbnail" alt="CRUD MVC ASP" />
+                                </a>
+                                <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
+                            </figure>
+                            <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="images/MVC-ASP-CRUD-with-image-upload.png" itemprop="contentUrl" data-size="1323x784">
+                                    <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                                <figcaption itemprop="caption description">MVC ASP Create view with image upload</figcaption>
+                            </figure>
+
+                            <figure style="display:none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="images/social-logins-oauth-mvc-asp.png" itemprop="contentUrl" data-size="1323x784">
+                                    <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                                <figcaption itemprop="caption description">Social media OAuth2 login links<br/> I have test accounts working with all providers listed</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>
+                        <div id="demo9" class="collapse">
+                            <p>Since I am familiar with Rails and MVC I decided to learn ASP MVC when not busy studying.  Here is some idea of what I can do with that technology.  Unfortunately,  I do not currently have a neatly designed page as I have mostly been focusing on learning the backend of this technology.  There are also other things that I have figured out with this technology like pagination of records- - for example, but I do not have a photo at this time only code.  I also do not have a live version of this site but if requested I can provide examples of my code!  It has been a cool experience learning ASP MVC because I have found that I am able to learn MVC frameworks fairly easily and am excited to learn more!</p></div>
                     </div>
+                </div>
+                <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-                    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                    <!-- Background of PhotoSwipe.
+                         It's a separate element, as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
 
-                        <!-- Background of PhotoSwipe.
-                             It's a separate element, as animating opacity is faster than rgba(). -->
-                        <div class="pswp__bg"></div>
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
 
-                        <!-- Slides wrapper with overflow:hidden. -->
-                        <div class="pswp__scroll-wrap">
+                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
 
-                            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-                            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                            <div class="pswp__container">
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                            </div>
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
 
-                            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                            <div class="pswp__ui pswp__ui--hidden">
+                            <div class="pswp__top-bar">
 
-                                <div class="pswp__top-bar">
+                                <!--  Controls are self-explanatory. Order can be changed. -->
 
-                                    <!--  Controls are self-explanatory. Order can be changed. -->
+                                <div class="pswp__counter"></div>
 
-                                    <div class="pswp__counter"></div>
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-                                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
 
-                                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 
-                                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-                                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                                    <div class="pswp__preloader">
-                                        <div class="pswp__preloader__icn">
-                                            <div class="pswp__preloader__cut">
-                                                <div class="pswp__preloader__donut"></div>
-                                            </div>
+                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                    <div class="pswp__share-tooltip"></div>
-                                </div>
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
 
-                                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                                </button>
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                            </button>
 
-                                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                                </button>
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                            </button>
 
-                                <div class="pswp__caption">
-                                    <div class="pswp__caption__center"></div>
-                                </div>
-
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
                             </div>
 
                         </div>
