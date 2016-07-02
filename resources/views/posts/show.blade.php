@@ -207,6 +207,9 @@
 <script src="{{url('/js/star-rating.js')}}"></script>
 
 
+<script src="{{url('/js/photoswipe.min.js')}}"></script>
+<script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
+
 <script>
     // initialize with defaults
 
@@ -428,3 +431,5 @@
     initPhotoSwipeFromDOM('.my-gallery');
 
 </script>
+
+
