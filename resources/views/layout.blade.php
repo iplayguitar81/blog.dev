@@ -816,7 +816,9 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
 
-
+<script src="{{url('/js/index.js')}}"></script>
+<script src="{{url('/js/photoswipe.min.js')}}"></script>
+<script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
 
 
 
