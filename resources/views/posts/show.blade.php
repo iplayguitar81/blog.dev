@@ -74,7 +74,7 @@
                             <div class="row">
 
 
-                                <div class="col-md-5">
+                                <div class="col-lg-1">
 
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
