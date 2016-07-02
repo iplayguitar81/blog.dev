@@ -81,7 +81,7 @@
                                         @foreach($post->images as $image)
                                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                                 <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="1024x1024">
-                                                    <img src="{{url($image->file_path)}}" itemprop="thumbnail" alt="CRUD MVC ASP" size="160x240" />
+                                                    <img src="{{url($image->file_path)}}" width="240" height="160" alt="CRUD MVC ASP" />
                                                 </a>
                                                 <figcaption itemprop="caption description">MVC ASP CRUD</figcaption>
                                             </figure>
