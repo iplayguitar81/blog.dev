@@ -8,7 +8,7 @@
 
             <div class="col-md-12">
 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="carousel-id" class="carousel slide" data-ride="carousel">
         {{--<ol class="carousel-indicators">--}}
             {{--<li data-target="#carousel-id" data-slide-to="0" class=""></li>--}}
             {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
