@@ -210,17 +210,14 @@
             <img src="img_chania.jpg" alt="Chania">
         </div>
 
-        <div class="item">
-            <img src="img_chania2.jpg" alt="Chania">
-        </div>
+        @foreach($post->images as $image)
 
-        <div class="item">
-            <img src="img_flower.jpg" alt="Flower">
-        </div>
+            <div class="item active">
+                <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+            </div>
 
-        <div class="item">
-            <img src="img_flower2.jpg" alt="Flower">
-        </div>
+
+            @endforeach
     </div>
 
     <!-- Left and right controls -->
