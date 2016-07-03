@@ -74,12 +74,12 @@
                             <div class="row">
 
 
-                                <div class="">
+
 
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-                                        <div class="col-md-8">
+
                                         @foreach($post->images as $image)
                                                 <div class="col-md-2">
 
@@ -97,11 +97,11 @@
                                                 </a>
                                                 <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
                                             </figure>
-</div>
+                                            </div>
                                         @endforeach
                                         </div>
-                                        </div>
-                                    </div>
+
+
 
                                     {{--<a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>--}}
                                     {{--<div id="demo9" class="collapse">--}}
