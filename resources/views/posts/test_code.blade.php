@@ -18,6 +18,7 @@
             {{--<li data-target="#carousel-id" data-slide-to="2" class="active"></li>--}}
         {{--</ol>--}}
         <div class="carousel-inner">
+            @foreach($post->images as $image)
             <div class="item">
                 <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
                 <div class="container">
@@ -29,6 +30,8 @@
                     </div>
                 </div>
             </div>
+            @endforeach
+
             <div class="item">
                 <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNmE2YTZhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
                 <div class="container">
@@ -74,13 +77,6 @@
 
 
             <div class="col-md-12">
-                <div id="carousel-id" class="carousel slide col-md-2" data-ride="carousel">
-                    {{--<ol class="carousel-indicators">--}}
-                    {{--<li data-target="#carousel-id" data-slide-to="0" class=""></li>--}}
-                    {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
-                    {{--<li data-target="#carousel-id" data-slide-to="2" class="active"></li>--}}
-                    {{--</ol>--}}
-                    <div class="carousel-inner">
 
 
                 @foreach($post->images as $image)
@@ -91,14 +87,13 @@
 
                     {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
-                            <div class="item">
+
                     <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                             <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
                         </a>
                         <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
                     </figure>
-                                </item>
                 @endforeach
             </div>
 
