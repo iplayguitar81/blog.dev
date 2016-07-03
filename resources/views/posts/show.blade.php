@@ -79,7 +79,7 @@
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-                                        <div class="col-md-1">
+                                        <div class="col-md-8">
                                         @foreach($post->images as $image)
 
 
