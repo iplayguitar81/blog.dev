@@ -150,9 +150,12 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
 
+Route::get('posts/{id}/test_code', ['as' => 'posts.test_code', 'uses' => 'PostsController@test_code']);
+
+
 Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsController@show_user']);
 
-Route::get('posts/test_code/{id}',['as' => 'posts.test_code', 'uses'=>'PostsController@test_code']);
+//Route::get('posts/test_code/{id}',['as' => 'posts.test_code', 'uses'=>'PostsController@test_code']);
 
 
 Route::resource('posts', 'PostsController');
