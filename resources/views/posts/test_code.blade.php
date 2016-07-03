@@ -11,13 +11,13 @@
 
             <div class="col-md-12">
 
-    <div id="carousel-id" class="carousel slide col-md-5 text-center" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
         {{--<ol class="carousel-indicators">--}}
             {{--<li data-target="#carousel-id" data-slide-to="0" class=""></li>--}}
             {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
             {{--<li data-target="#carousel-id" data-slide-to="2" class="active"></li>--}}
         {{--</ol>--}}
-        <div class="carousel-inner" style="height: 300px;">
+                    <div class="carousel-inner" role="listbox">
             @foreach($post->images as $image)
 
                 {{--*/ @ $pathy =$image->file_path  /*--}}
@@ -70,6 +70,7 @@
 </div>
             </div>
         </div>
+
 
     @endsection
 
