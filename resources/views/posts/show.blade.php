@@ -81,7 +81,7 @@
 
 
 
-                                                <div class="col-md-2">
+                                                <div class="col-md-12">
 
                                                     @foreach($post->images as $image)
 
@@ -92,7 +92,7 @@
                                                 {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
-                                            <figure width="180" height="120" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                                 <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                                                     <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
                                                 </a>
