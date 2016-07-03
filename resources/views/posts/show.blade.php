@@ -92,7 +92,7 @@
                                                 {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
-                                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                            <figure width="{{$width}}" height="{{$height}}" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                                                 <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                                                     <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
                                                 </a>
