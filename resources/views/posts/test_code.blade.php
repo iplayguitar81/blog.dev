@@ -206,9 +206,9 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="img_chania.jpg" alt="Chania">
-        </div>
+        {{--<div class="item active">--}}
+            {{--<img src="img_chania.jpg" alt="Chania">--}}
+        {{--</div>--}}
 
         @foreach($post->images as $image)
 
