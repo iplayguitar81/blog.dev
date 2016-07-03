@@ -121,7 +121,7 @@ Route::post('contact',
 
 Route::get('/posts/user_posts','PostsController@user_posts');
 
-Route::get('/posts/test_code','PostsController@test_code');
+
 
 Route::get('/posts/file_upload', ['as' => 'posts.file_upload', 'uses'=>'PostsController@file_upload']);
 
@@ -151,6 +151,8 @@ Route::group(['middleware' => ['web']], function () {
 Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
 
 Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsController@show_user']);
+
+Route::get('/posts/test_code/{id}','PostsController@test_code');
 
 
 Route::resource('posts', 'PostsController');
