@@ -2,74 +2,6 @@
 
 @section('content')
 
-{{--{{$post}}--}}
-    {{--<div class="row">--}}
-
-
-            {{--<div class="col-md-12">--}}
-
-                {{--<div id="carousel-id" class="carousel slide" data-ride="carousel">--}}
-        {{--<ol class="carousel-indicators">--}}
-            {{--<li data-target="#carousel-id" data-slide-to="0" class=""></li>--}}
-            {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
-            {{--<li data-target="#carousel-id" data-slide-to="2" class="active"></li>--}}
-        {{--</ol>--}}
-        {{--<div class="carousel-inner" style="height: 300px;">--}}
-            {{--@foreach($post->images as $image)--}}
-
-                {{--*/ @ $pathy =$image->file_path  /*--}}
-
-                {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
-
-                {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
-
-
-
-            {{--<div class="item">--}}
-                {{--<img  src="{{url($image->file_path)}}"  alt="" />--}}
-                {{--<div class="container">--}}
-                    {{--<div class="carousel-caption">--}}
-                        {{--<h1>Example headline.</h1>--}}
-                        {{--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>--}}
-                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>--}}
-                        {{--</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--@endforeach--}}
-
-            {{--<div class="item">--}}
-                {{--<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNmE2YTZhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="carousel-caption">--}}
-                        {{--<h1>Another example headline.</h1>--}}
-                        {{--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>--}}
-                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>--}}
-                        {{--</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="item active">--}}
-                {{--<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNWE1YTVhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="carousel-caption">--}}
-                        {{--<h1>One more for good measure.</h1>--}}
-                        {{--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>--}}
-                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>--}}
-                        {{--</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        {{--<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>--}}
-        {{--<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>--}}
-    {{--</div>--}}
-{{--</div>--}}
-
-        {{--</div>--}}
-
-
-
 
 
 <div id="portfolio">
@@ -183,42 +115,6 @@
 </div>
 
 
-
-{{--<div id="myCarousel" class="carousel slide" data-ride="carousel">--}}
-    {{--<!-- Indicators -->--}}
-    {{--<ol class="carousel-indicators">--}}
-        {{--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>--}}
-        {{--<li data-target="#myCarousel" data-slide-to="1"></li>--}}
-        {{--<li data-target="#myCarousel" data-slide-to="2"></li>--}}
-        {{--<li data-target="#myCarousel" data-slide-to="3"></li>--}}
-    {{--</ol>--}}
-
-    {{--<!-- Wrapper for slides -->--}}
-    {{--<div class="carousel-inner" role="listbox">--}}
-        {{--<div class="item active">--}}
-         {{--Article Gallery Images--}}
-        {{--</div>--}}
-
-        {{--@foreach($post->images as $image)--}}
-
-            {{--<div class="item">--}}
-                {{--<img class="col-md-4" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />--}}
-            {{--</div>--}}
-
-
-            {{--@endforeach--}}
-    {{--</div>--}}
-
-    {{--<!-- Left and right controls -->--}}
-    {{--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">--}}
-        {{--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--}}
-        {{--<span class="sr-only">Previous</span>--}}
-    {{--</a>--}}
-    {{--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">--}}
-        {{--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--}}
-        {{--<span class="sr-only">Next</span>--}}
-    {{--</a>--}}
-{{--</div>--}}
 <br/>
 <br/>
 
