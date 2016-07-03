@@ -79,8 +79,9 @@
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
+                                        <div class="col-md-5">
                                         @foreach($post->images as $image)
-                                            <div class="col-md-2">
+
 
 
                                                 {{--*/ @ $pathy =$image->file_path  /*--}}
@@ -96,8 +97,9 @@
                                                 </a>
                                                 <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
                                             </figure>
-                                                </div>
+
                                         @endforeach
+                                        </div>
                                         </div>
                                     </div>
 
