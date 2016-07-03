@@ -119,7 +119,7 @@
 <br/>
 <div style="margin: auto; max-width: 75%;">
 <div class="row">
-    <div class="col-md-8">
+
 
 <div class="slider">
 
@@ -132,7 +132,7 @@
 
 </div>
         </div>
-    </div>
+
 </div>
 
 @endsection
