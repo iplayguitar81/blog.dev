@@ -117,23 +117,23 @@
 
 <br/>
 <br/>
-<div style="margin: auto; max-width: 75%;">
-<div class="row">
+
+
 
 
 <div class="slider">
 
 
         @foreach($post->images as $image)
-        <img class="col-md-2" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+        <img class="" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
         @endforeach
 
 
 
 </div>
-        </div>
 
-</div>
+
+
 
 @endsection
 
