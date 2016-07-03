@@ -233,9 +233,9 @@
 <br/>
 <br/>
 <div class="slider">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+    <div class="col-sm-2">your content</div>
+    <div class="col-sm-2">your content</div>
+    <div class="col-sm-2">your content</div>
 </div>
 <script>
     // initialize with defaults
