@@ -325,7 +325,10 @@ class PostsController extends Controller
     }
 
 
+public function test_code(){
 
+    return \View::make('posts.test_code');
+}
 
     public function file_upload()
     {
