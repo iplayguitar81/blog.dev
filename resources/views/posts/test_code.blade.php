@@ -118,7 +118,7 @@
 <br/>
 <br/>
 
-<div class="row">
+<div class="row center-block">
     <div class="col-md-8">
 
 <div class="slider">
