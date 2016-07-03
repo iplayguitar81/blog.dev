@@ -29,7 +29,7 @@
 
 
             <div class="item">
-                <img  src="data:{{url($image->file_path)}}"  alt="" />
+                <img  src="{{url($image->file_path)}}"  alt="" />
                 {{--<div class="container">--}}
                     {{--<div class="carousel-caption">--}}
                         {{--<h1>Example headline.</h1>--}}
