@@ -74,6 +74,14 @@
 
 
             <div class="col-md-12">
+                <div id="carousel-id" class="carousel slide col-md-2" data-ride="carousel">
+                    {{--<ol class="carousel-indicators">--}}
+                    {{--<li data-target="#carousel-id" data-slide-to="0" class=""></li>--}}
+                    {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
+                    {{--<li data-target="#carousel-id" data-slide-to="2" class="active"></li>--}}
+                    {{--</ol>--}}
+                    <div class="carousel-inner">
+
 
                 @foreach($post->images as $image)
 
@@ -83,13 +91,14 @@
 
                     {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
-
+                            <div class="item">
                     <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                             <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
                         </a>
                         <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
                     </figure>
+                                </item>
                 @endforeach
             </div>
 
