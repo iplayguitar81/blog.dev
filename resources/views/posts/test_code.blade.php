@@ -11,7 +11,7 @@
 
             <div class="col-md-12">
 
-    <div id="carousel-id" class="carousel slide col-md-5 center-block" data-ride="carousel">
+    <div id="carousel-id" class="carousel slide col-md-5 text-center" data-ride="carousel">
         {{--<ol class="carousel-indicators">--}}
             {{--<li data-target="#carousel-id" data-slide-to="0" class=""></li>--}}
             {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
