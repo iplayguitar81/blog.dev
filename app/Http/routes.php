@@ -152,7 +152,7 @@ Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsControll
 
 Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsController@show_user']);
 
-Route::get('/posts/test_code/{id}','PostsController@test_code');
+Route::get('/test_code/{id}',['as' => 'posts.test_code', 'uses'=>'PostsController@test_code']);
 
 
 Route::resource('posts', 'PostsController');
