@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+{{$post}}
     <div class="row">
 
         <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
