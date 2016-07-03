@@ -38,31 +38,31 @@
             <h4>Article Images</h4>
             {{--{{$post->images}}--}}
 
+{{--images in another format.......--}}
+            {{--<div class="row">--}}
 
-            <div class="row">
+                {{--<div class="col-md-12">--}}
 
-                <div class="col-md-12">
+                    {{--<div id="gallery-images">--}}
 
-                    <div id="gallery-images">
+                        {{--<ul>--}}
+                            {{--@foreach($post->images as $image)--}}
 
-                        <ul>
-                            @foreach($post->images as $image)
+                                {{--<li>--}}
+                                    {{--<a href="{{url($image->file_path)}}" target="_blank">--}}
+                                        {{--<img src="{{url($image->file_path)}}">--}}
 
-                                <li>
-                                    <a href="{{url($image->file_path)}}" target="_blank">
-                                        <img src="{{url($image->file_path)}}">
+                                    {{--</a>--}}
 
-                                    </a>
-
-                                </li>
-                            @endforeach
+                                {{--</li>--}}
+                            {{--@endforeach--}}
 
 
-                        </ul>
+                        {{--</ul>--}}
 
-                    </div>
-                    </div>
-                </div>
+                    {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
 
 
@@ -72,10 +72,6 @@
 
                             <!-- heres where we can test photoswipe-->
                             <div class="row">
-
-
-
-
 
                                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
