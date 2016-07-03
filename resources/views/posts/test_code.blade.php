@@ -117,8 +117,8 @@
 
 <br/>
 <br/>
-
-<div class="row center-block">
+<div class="text-center">
+<div class="row">
     <div class="col-md-8">
 
 <div class="slider">
@@ -133,6 +133,7 @@
 </div>
         </div>
     </div>
+</div>
 
 @endsection
 
