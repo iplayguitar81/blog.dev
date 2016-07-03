@@ -17,7 +17,7 @@
             {{--<li data-target="#carousel-id" data-slide-to="1" class=""></li>--}}
             {{--<li data-target="#carousel-id" data-slide-to="2" class="active"></li>--}}
         {{--</ol>--}}
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 300px;">
             @foreach($post->images as $image)
 
                 {{--*/ @ $pathy =$image->file_path  /*--}}
