@@ -860,6 +860,38 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script>
+    $(".slider").slick({
+
+        // normal options...
+        infinite: false,
+
+        // the magic
+        responsive: [{
+
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                infinite: true
+            }
+
+        }, {
+
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                dots: true
+            }
+
+        }, {
+
+            breakpoint: 300,
+            settings: "unslick" // destroys slick
+
+        }]
+    });
+</script>
+
+<script>
 
     $(document).ready(function(){
 
@@ -901,3 +933,4 @@ $(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a></li>');
 </script>
 </body>
 </html>
+
