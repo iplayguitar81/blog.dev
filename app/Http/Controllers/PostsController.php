@@ -325,10 +325,29 @@ class PostsController extends Controller
     }
 
 
-public function test_code($id){
-    $post = Post::findOrFail($id);
-    return view('posts.test_code', compact('post'));
-}
+    public function test_code($id)
+    {
+        $post = Post::findOrFail($id);
+
+        $post_ratings =Rating::where('post_id','=', $id)->orderBy('created_at', 'desc')->paginate(3);
+
+        //aggregate functions Eloquent style........
+        $rating_count =Rating::where('post_id','=', $id)->count();
+        $rating_avg =Rating::where('post_id','=', $id)->avg('rating');
+
+        $rating_pct =($rating_avg/5)*100;
+        // $rating_avg = $rating_sum/$rating_count;
+
+
+        return view('posts.test_code', compact('post','post_ratings','rating_count','rating_avg','rating_pct'));
+    }
+
+    
+
+//public function test_code($id){
+//    $post = Post::findOrFail($id);
+//    return view('posts.test_code', compact('post'));
+//}
 
     public function file_upload()
     {
