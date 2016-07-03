@@ -213,7 +213,7 @@
         @foreach($post->images as $image)
 
             <div class="item">
-                <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+                <img class="col-md-4" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
             </div>
 
 
