@@ -29,7 +29,7 @@
 
 
             <div class="item">
-                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" src="{{url($image->file_path)}}"  alt="" />
+                <img data-src="holder.js/text:Second slide" src="{{url($image->file_path)}}"  alt="" />
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Example headline.</h1>
