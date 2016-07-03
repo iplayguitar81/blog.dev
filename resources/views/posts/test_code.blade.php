@@ -62,33 +62,35 @@
     @endsection
 
 
-{{--<div class="row">--}}
+<div class="row">
 
-    {{--<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">--}}
-
-
-
-        {{--<div class="col-md-12">--}}
-
-            {{--@foreach($post->images as $image)--}}
-
-                {{--*/ @ $pathy =$image->file_path  /*--}}
-
-                {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
-
-                {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 
-                {{--<figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">--}}
-                    {{--<a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">--}}
-                        {{--<img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />--}}
-                    {{--</a>--}}
-                    {{--<figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>--}}
-                {{--</figure>--}}
-            {{--@endforeach--}}
-        {{--</div>--}}
 
-    {{--</div>--}}
+        <div class="col-md-12">
+
+            @foreach($post->images as $image)
+
+                */ @ $pathy =$image->file_path  /*
+
+                */ @ list($width, $height) = getimagesize($pathy) /*
+
+                */ @ $dimensions =$width.'x'.$height  /*
+
+
+                <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
+                        <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+                    </a>
+                    <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
+                </figure>
+            @endforeach
+        </div>
+
+    </div>
+    </div>
+
 
 
 
