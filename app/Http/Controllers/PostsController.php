@@ -325,9 +325,9 @@ class PostsController extends Controller
     }
 
 
-public function test_code(){
-
-    return \View::make('posts.test_code');
+public function test_code($id){
+    $post = Post::findOrFail($id);
+    return \View::make('posts.test_code', compact('post'));
 }
 
     public function file_upload()
