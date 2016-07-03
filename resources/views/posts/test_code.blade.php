@@ -233,19 +233,20 @@
 <br/>
 <br/>
 
-
+<div class="row">
 <div class="slider">
 
 
 
 
         @foreach($post->images as $image)
-        <img class="col-md-4" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+        <img class="col-md-2" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
         @endforeach
 
 
 
 </div>
+    </div>
 <script>
     // initialize with defaults
 
