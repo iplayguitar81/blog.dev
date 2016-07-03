@@ -117,7 +117,7 @@
 
 <br/>
 <br/>
-<div style="margin: auto;">
+<div style="margin: auto; max-width: 50%;">
 <div class="row">
     <div class="col-md-8">
 
