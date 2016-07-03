@@ -5,9 +5,6 @@
 {{$post}}
     <div class="row">
 
-        <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-
 
             <div class="col-md-12">
 
@@ -68,7 +65,7 @@
         <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
 </div>
-            </div>
+
         </div>
 
 
