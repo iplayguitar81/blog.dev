@@ -237,7 +237,7 @@
 <div class="slider">
 
     @foreach($post->images as $image)
-    <div class="col-sm-2">
+    <div class="row">
         <img class="col-md-1" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
     </div>
         @endforeach
