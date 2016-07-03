@@ -62,43 +62,114 @@
     @endsection
 
 
-<div class="row">
-
-    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div id="portfolio">
 
 
 
-        <div class="col-md-12">
+    <!-- heres where we can test photoswipe-->
+    <div class="row">
 
-            @foreach($post->images as $image)
-
-                {{--*/ @ $pathy =$image->file_path  /*--}}
-
-                {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
-
-                {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
+        <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 
-                <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
-                        <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
-                    </a>
-                    <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
-                </figure>
-            @endforeach
+
+            <div class="col-md-12">
+
+                @foreach($post->images as $image)
+
+                    {{--*/ @ $pathy =$image->file_path  /*--}}
+
+                    {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
+
+                    {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
+
+
+                    <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
+                            <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+                        </a>
+                        <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
+                    </figure>
+                @endforeach
+            </div>
+
+        </div>
+
+
+
+        {{--<a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>--}}
+        {{--<div id="demo9" class="collapse">--}}
+        {{--<p>Since I am familiar with Rails and MVC I decided to learn ASP MVC when not busy studying.  Here is some idea of what I can do with that technology.  Unfortunately,  I do not currently have a neatly designed page as I have mostly been focusing on learning the backend of this technology.  There are also other things that I have figured out with this technology like pagination of records- - for example, but I do not have a photo at this time only code.  I also do not have a live version of this site but if requested I can provide examples of my code!  It has been a cool experience learning ASP MVC because I have found that I am able to learn MVC frameworks fairly easily and am excited to learn more!</p></div>--}}
+        {{--</div>--}}
+    </div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
-    </div>
 
 
-
-
-    {{--<a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>--}}
-    {{--<div id="demo9" class="collapse">--}}
-    {{--<p>Since I am familiar with Rails and MVC I decided to learn ASP MVC when not busy studying.  Here is some idea of what I can do with that technology.  Unfortunately,  I do not currently have a neatly designed page as I have mostly been focusing on learning the backend of this technology.  There are also other things that I have figured out with this technology like pagination of records- - for example, but I do not have a photo at this time only code.  I also do not have a live version of this site but if requested I can provide examples of my code!  It has been a cool experience learning ASP MVC because I have found that I am able to learn MVC frameworks fairly easily and am excited to learn more!</p></div>--}}
-    {{--</div>--}}
-{{--</div>--}}
+</div>
 
 
 <script>
