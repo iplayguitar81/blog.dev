@@ -230,7 +230,13 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
+<br/>
+<br/>
+<div class="slider">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+</div>
 <script>
     // initialize with defaults
 
