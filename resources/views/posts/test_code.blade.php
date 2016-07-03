@@ -232,13 +232,16 @@
 {{--</div>--}}
 <br/>
 <br/>
+
+
 <div class="slider">
-    <div class="col-sm-2">your content</div>
-    <div class="col-sm-2">your content</div>
-    <div class="col-sm-2">your content</div>
-    <div class="col-sm-2">your content</div>
-    <div class="col-sm-2">your content</div>
-    <div class="col-sm-2">your content</div>
+
+    @foreach($post->images as $image)
+    <div class="col-sm-2">
+        <img class="col-md-4" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+    </div>
+        @endforeach
+
 </div>
 <script>
     // initialize with defaults
