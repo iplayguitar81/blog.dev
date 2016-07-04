@@ -882,6 +882,11 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         height: auto;
     }
 
+    .owl-carousel .owl-item{
+        height:285px;
+        width:100%;
+    }
+
 </style>
 
 <script>
