@@ -887,6 +887,19 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         width:100%;
     }
 
+    .customNavigation{
+        text-align: center;
+    }
+    //use styles below to disable ugly selection
+      .customNavigation a{
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
 </style>
 
 <script>
