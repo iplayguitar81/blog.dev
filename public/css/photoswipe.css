@@ -185,8 +185,8 @@
 .my-gallery img {
     width: 100%;
     /* this was set to auto before i adjusted it....... C. Snyder*/
-    /*height: 426px;*/
-    height:auto;
+    height: 426px;
+    /*height:auto;*/
 
 
 }
