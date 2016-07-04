@@ -143,6 +143,8 @@
     <a class="btn prev">Previous</a>
     <a class="btn next">Next</a>
 </div>
+
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 <div id="owl-demo" class="owl-carousel owl-theme">
 
     @foreach($post->images as $image)
@@ -150,6 +152,8 @@
     @endforeach
 
 </div>
+    </div>
+
 @endsection
 
 
