@@ -816,6 +816,13 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 <script src="{{url('/js/photoswipe.min.js')}}"></script>
 <script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
 
+{{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
+
+
+<script src="{{url('/js/owl.carousel.js')}}"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 
 {{--<script>--}}
     {{--(function() {--}}
@@ -830,8 +837,16 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     @import "https://fonts.googleapis.com/css?family=Boogaloo";
     @import "https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css";
     @import "{{url('/css/default-skin.css')}}";
-    @import "{{url('/css/slick.css')}}";
+
+    {{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
+
+     @import "{{url('/css/slick.css')}}";
     @import "{{url('/css/slick-theme.css')}}";
+    @import "{{url('/css/slick-theme.css')}}";
+    @import "{{url('/css/owl.carousel.css')}}";
+    @import "{{url('/css/owl.theme.css')}}";
+
+
     @import "{{url('/css/photoswipe.css')}}";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
@@ -860,7 +875,6 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 
 </style>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script>
     $(document).ready(function(){
