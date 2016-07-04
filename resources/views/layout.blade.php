@@ -877,7 +877,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         margin: 3px;
     }
     #owl-demo .item img{
-        display: inline;
+        display: block;
         width: 100%;
         height: auto;
     }
