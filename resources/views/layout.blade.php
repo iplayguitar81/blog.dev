@@ -902,10 +902,19 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
         $(document).ready(function() {
 
-            $("#owl-demo").owlCarousel({
-                items : 3
 
-            });
+
+            var owl = $("#owl-demo");
+
+            owl.owlCarousel({items:3});
+
+            // Custom Navigation Events
+            $(".next").click(function(){
+                owl.trigger('owl.next');
+            })
+            $(".prev").click(function(){
+                owl.trigger('owl.prev');
+            })
 
     });
 </script>
