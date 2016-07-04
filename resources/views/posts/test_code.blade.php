@@ -328,6 +328,7 @@
 
                 // define gallery index (for URL)
                 galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+                allowPanToNext: true,
 
                 getThumbBoundsFn: function(index) {
                     // See Options -> getThumbBoundsFn section of documentation for more info
