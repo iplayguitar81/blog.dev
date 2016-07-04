@@ -372,4 +372,11 @@
     // execute above function
     initPhotoSwipeFromDOM('.my-gallery');
 
+
+    $(document).ready(function() {
+
+        $("#owl-example").owlCarousel();
+
+    });
+
 </script>
