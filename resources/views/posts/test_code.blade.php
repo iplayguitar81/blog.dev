@@ -146,7 +146,7 @@
 <div id="owl-demo" class="owl-carousel owl-theme">
 
     @foreach($post->images as $image)
-    <div class="item col-md-1" style=""><img class="thumbnail" src="{{url($image->file_path)}}"  alt=""/></div>
+    <div class="item col-md-5" style=""><img class="thumbnail" src="{{url($image->file_path)}}"  alt=""/></div>
     @endforeach
 
 </div>
