@@ -144,9 +144,9 @@
     <a class="btn next btn-danger">Next</a>
 </div>
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-<div id="owl-demo" class="owl-carousel owl-theme">
 
+<div id="owl-demo" class="owl-carousel owl-theme">
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
     @foreach($post->images as $image)
         {{--*/ @ $pathy =$image->file_path  /*--}}
 
@@ -155,6 +155,7 @@
         {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
     <div class="item col-md-5" style="">
+
         <figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
             <img class="thumbnail" src="{{url($image->file_path)}}"  alt=""/>
