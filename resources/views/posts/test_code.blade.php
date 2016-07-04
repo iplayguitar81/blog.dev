@@ -125,7 +125,7 @@
 
 
         @foreach($post->images as $image)
-        <img class="thumbnail" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP"  style="min-height:50px;height:50px;"/>
+        <img class="" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP"/>
         @endforeach
 
 
