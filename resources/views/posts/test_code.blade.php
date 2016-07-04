@@ -139,7 +139,7 @@
     <hr>
     <br/>
 
-<div id="owl-example" class="owl-carousel">
+<div id="owl-demo" class="owl-carousel">
     <div> Your Content 1</div>
     <div> Your Content 2 </div>
     <div> Your Content 3 </div>
