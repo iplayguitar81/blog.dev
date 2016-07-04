@@ -184,7 +184,8 @@
 }
 .my-gallery img {
     width: 100%;
-    height: auto;
+    /* this was set to auto before i adjusted it....... C. Snyder*/
+    height: 294px;
 }
 .my-gallery figure {
     display: block;
