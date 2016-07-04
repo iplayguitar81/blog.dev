@@ -897,6 +897,10 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
 
+    .owl-wrapper {
+        margin: 0 auto;
+    }
+
 </style>
 
 <script>
