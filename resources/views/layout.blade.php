@@ -879,7 +879,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     #owl-demo .item img{
         display: block;
         width: 100%;
-        height: auto;
+        /*height: auto;*/
     }
 
 
@@ -938,7 +938,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
             var owl = $("#owl-demo");
 
-            owl.owlCarousel({items:1,autoWidth: false, dotsEach: true, singleItem:true});
+            owl.owlCarousel({dotsEach: true, singleItem:true});
 
             // Custom Navigation Events
             $(".next").click(function(){
