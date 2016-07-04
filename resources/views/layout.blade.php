@@ -866,6 +866,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             infinite: true,
             arrows: true,
             speed: 500,
+            rows: 2,
             slidesToShow: 2,
             slidesToScroll: 2
     });
