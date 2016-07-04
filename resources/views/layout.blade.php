@@ -900,6 +900,19 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     .owl-wrapper {
         margin: 0 auto;
     }
+    .owl-carousel .owl-item {
+        position: relative;
+        min-height: 1px;
+        display:inline-block;
+        -webkit-backface-visibility: hidden;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none; }
+
+    .owl-carousel {
+        display: none;
+        width: 100%;
+        text-align:center;
+    }
 
 </style>
 
