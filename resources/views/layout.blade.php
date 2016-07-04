@@ -869,7 +869,6 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             arrows: true,
             speed: 500,
             slidesToShow: 3,
-            rows: 2,
             slidesToScroll: 3
     });
     });
