@@ -102,6 +102,7 @@
 {
     right: -25px;
     background-image: url('arrow-right.png');
+    width:50px;
 }
 [dir='rtl'] .slick-next
 {
