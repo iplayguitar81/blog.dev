@@ -140,14 +140,11 @@
     <br/>
 
 <div id="owl-demo" class="owl-carousel">
-    <div> Your Content 1</div>
-    <div> Your Content 2 </div>
-    <div> Your Content 3 </div>
-    <div> Your Content 4 </div>
-    <div> Your Content 5 </div>
-    <div> Your Content 6 </div>
-    <div> Your Content 7</div>
-    ...
+
+    @foreach($post->images as $image)
+    <div class="item"><img class="" src="{{url($image->file_path)}}"  alt=""/></div>
+    @endforeach
+
 </div>
 @endsection
 
