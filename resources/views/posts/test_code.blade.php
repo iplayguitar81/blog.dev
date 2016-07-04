@@ -135,7 +135,20 @@
 
 </div>
 
+<br/>
+    <hr>
+    <br/>
 
+<div id="owl-example" class="owl-carousel">
+    <div> Your Content 1</div>
+    <div> Your Content 2 </div>
+    <div> Your Content 3 </div>
+    <div> Your Content 4 </div>
+    <div> Your Content 5 </div>
+    <div> Your Content 6 </div>
+    <div> Your Content 7</div>
+    ...
+</div>
 @endsection
 
 
