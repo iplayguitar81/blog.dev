@@ -154,15 +154,15 @@
 
         {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
-    <div class="item" style="">
-        <figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    {{--<div class="item" style="">--}}
+        <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
             <img class="thumbnail img-responsive" src="{{url($image->file_path)}}"  alt=""/>
                 </a>
             <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
         </figure>
 
-    </div>
+    {{--</div>--}}
     @endforeach
 
 </div>
