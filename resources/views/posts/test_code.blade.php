@@ -139,12 +139,10 @@
     <hr>
     <br/>
 
-<div class="customNavigation">
-    <a class="btn prev btn-danger">Previous</a>
-    <a class="btn next btn-danger">Next</a>
-</div>
-
-
+{{--<div class="customNavigation">--}}
+    {{--<a class="btn prev btn-danger">Previous</a>--}}
+    {{--<a class="btn next btn-danger">Next</a>--}}
+{{--</div>--}}
 
     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         <div id="owl-demo" class="owl-carousel">
