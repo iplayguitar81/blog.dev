@@ -89,11 +89,13 @@
 }
 .slick-prev:before
 {
-    content: 'â†';
+    /*content: 'â†';*/
+    background-image: url('arrow-left.png');
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: 'â†’';
+    /*content: 'â†’';*/
+    background-image: url('arrow-left.png');
 }
 
 .slick-next
@@ -107,11 +109,11 @@
 }
 .slick-next:before
 {
-    content: '>>>’';
+    background-image: url('arrow-right.png');
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '>>>';
+    background-image: url('arrow-right.png');
 }
 
 /* Dots */
@@ -190,6 +192,8 @@
     height: 20px;
 
     content: '>>>';
+
+    background-image: url('arrow-right.png');
     text-align: center;
 
     opacity: .25;
