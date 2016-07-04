@@ -869,7 +869,9 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
             speed: 500,
             fade: true,
             cssEase: 'linear',
-            centerMode: true
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
     });
     });
 </script>
