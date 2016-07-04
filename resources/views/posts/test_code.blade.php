@@ -145,7 +145,7 @@
 </div>
 
 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-<div id="owl-demo" class="owl-carousel owl-theme">
+<div id="owl-demo" class="owl-carousel">
 
     @foreach($post->images as $image)
         {{--*/ @ $pathy =$image->file_path  /*--}}
