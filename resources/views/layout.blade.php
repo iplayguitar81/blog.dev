@@ -832,6 +832,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     @import "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css";
     @import "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css";
     @import "{{url('/css/default-skin.css')}}";
+    @import "{{url('/css/slick.css')}}";
     @import "{{url('/css/photoswipe.css')}}";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
     @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
@@ -856,6 +857,8 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     float: left;
     padding-right: 10px;
 }
+
+
 
 </style>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
