@@ -149,7 +149,7 @@
 
     @foreach($post->images as $image)
     <div class="item col-md-5" style="">
-        <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
             <img class="thumbnail" src="{{url($image->file_path)}}"  alt=""/>
 
