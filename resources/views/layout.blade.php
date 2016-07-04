@@ -890,7 +890,6 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     .customNavigation{
         text-align: center;
     }
-    //use styles below to disable ugly selection
       .customNavigation a{
           -webkit-user-select: none;
           -khtml-user-select: none;
