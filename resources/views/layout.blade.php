@@ -874,28 +874,13 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 
     #owl-demo .item{
-        background: #3fbf79;
-        padding: 30px 0px;
-        margin: 10px;
-        color: #FFF;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        text-align: center;
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: inline;
         width: 234px;
+        height: auto;
     }
-    .customNavigation{
-        text-align: center;
-    }
-
-      .customNavigation a{
-          -webkit-user-select: none;
-          -khtml-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
 
 </style>
 
