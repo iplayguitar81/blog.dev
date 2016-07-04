@@ -921,7 +921,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
             var owl = $("#owl-demo");
 
-            owl.owlCarousel({items:2,autoWidth: false, dotsEach: true});
+            owl.owlCarousel({items:1,autoWidth: false, dotsEach: true});
 
             // Custom Navigation Events
             $(".next").click(function(){
