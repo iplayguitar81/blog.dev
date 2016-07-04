@@ -154,7 +154,7 @@
         {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
     {{--<div class="item" style="">--}}
-        <figure class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <figure class="item col-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
             <img class="thumbnail img-responsive" src="{{url($image->file_path)}}"  alt=""/>
                 </a>
