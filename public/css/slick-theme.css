@@ -107,11 +107,11 @@
 }
 .slick-next:before
 {
-    content: 'â†’';
+    content: '>>>’';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: 'â†';
+    content: '>>>';
 }
 
 /* Dots */
