@@ -6,7 +6,7 @@
 
 
     <div class="container">
-        <h1>OwlCarousel &amp; PhotoSwipe</h1>
+        {{--<h1>OwlCarousel &amp; PhotoSwipe</h1>--}}
 
         <h2>First gallery</h2>
         <ul class="owl-carousel">
