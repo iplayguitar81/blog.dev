@@ -121,12 +121,28 @@
 
 
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6 my-gallery">
 <div class="slider">
 
 
         @foreach($post->images as $image)
-        <img class="col-sm-2" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP"/>
+
+
+        {{--*/ @ $pathy =$image->file_path  /*--}}
+
+        {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
+
+        {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
+
+
+        <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
+                <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
+            </a>
+            <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
+        </figure>
+
+
         @endforeach
 
 
