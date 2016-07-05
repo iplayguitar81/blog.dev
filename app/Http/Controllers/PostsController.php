@@ -428,7 +428,7 @@ class PostsController extends Controller
 
     public function test_slides(){
 
-        return view('test_slides');
+        return view('posts.test_slides');
     }
 
     public function postSearch()
