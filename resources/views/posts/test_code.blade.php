@@ -545,7 +545,7 @@
                     shareEl: false
                 };
 
-        initializeGallery($(".owl-carousel"), owlOptions, pswpOptions);
+        initializeGallery($(".my-gallery"), owlOptions, pswpOptions);
 
     });
 
