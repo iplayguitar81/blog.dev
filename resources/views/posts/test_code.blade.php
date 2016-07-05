@@ -139,7 +139,7 @@
             <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                 <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
             </a>
-            <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
+            {{--<figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>--}}
         </figure>
 
 
