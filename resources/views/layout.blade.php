@@ -875,49 +875,80 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 }
 
 
-    #owl-demo .item{
-        margin: 3px;
-        width: 80%;
-        margin-left:10%;
-        margin-right:10%;
+    /*#owl-demo .item{*/
+        /*margin: 3px;*/
+        /*width: 80%;*/
+        /*margin-left:10%;*/
+        /*margin-right:10%;*/
 
+    /*}*/
+    /*#owl-demo .item img{*/
+        /*display: block;*/
+        /*width: 100%;*/
+        /*!*height: auto;*!*/
+    /*}*/
+
+
+
+    /*.customNavigation{*/
+        /*text-align: center;*/
+    /*}*/
+
+      /*.customNavigation a{*/
+          /*-webkit-user-select: none;*/
+          /*-khtml-user-select: none;*/
+          /*-moz-user-select: none;*/
+          /*-ms-user-select: none;*/
+          /*user-select: none;*/
+          /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+      /*}*/
+
+    /*.owl-wrapper {*/
+        /*margin: 0 auto;*/
+    /*}*/
+    /*.owl-carousel .owl-item {*/
+        /*position: relative;*/
+        /*min-height: 1px;*/
+        /*display:inline-block;*/
+        /*-webkit-backface-visibility: hidden;*/
+        /*-webkit-tap-highlight-color: transparent;*/
+        /*-webkit-touch-callout: none; }*/
+
+    /*.owl-carousel {*/
+        /*display: none;*/
+        /*width: 100%;*/
+        /*text-align:center;*/
+    /*}*/
+
+    .owl-carousel li {
+        list-style:none;
     }
-    #owl-demo .item img{
-        display: block;
-        width: 100%;
-        /*height: auto;*/
+
+    .owl-carousel li img {
+        border-radius:5px;
+        transition:transform .15s ease-out;
+    }
+
+    .owl-carousel li img:hover {
+        transform:scale(.98, .98);
+    }
+
+    .owl-carousel li img:active {
+        transform:scale(.96, .96);
     }
 
 
+    @media only screen and (max-width: 960px) {
+        .container {
+            width:auto;
+            padding-right:15px;
+            padding-left:15px;
+        }
 
-    .customNavigation{
-        text-align: center;
-    }
-
-      .customNavigation a{
-          -webkit-user-select: none;
-          -khtml-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-
-    .owl-wrapper {
-        margin: 0 auto;
-    }
-    .owl-carousel .owl-item {
-        position: relative;
-        min-height: 1px;
-        display:inline-block;
-        -webkit-backface-visibility: hidden;
-        -webkit-tap-highlight-color: transparent;
-        -webkit-touch-callout: none; }
-
-    .owl-carousel {
-        display: none;
-        width: 100%;
-        text-align:center;
+        .owl-carousel li {
+            padding-right:5px;
+            padding-left:5px;
+        }
     }
 
 </style>
