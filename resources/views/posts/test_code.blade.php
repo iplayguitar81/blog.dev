@@ -578,6 +578,13 @@
 //        this.currItem.initialLayout = options.getThumbBoundsFn(this.getCurrentIndex());
 //    });
 
-
+    $('#s2').cycle({
+        fx:      'scrollDown',
+        speedIn:  2000,
+        speedOut: 500,
+        easeIn:  'easeInCirc',
+        easeOut: 'easeOutBounce',
+        delay:   -2000
+    });
 
 </script>
