@@ -121,7 +121,7 @@
 
 <div class="row">
 <div class="slider" itemscope itemtype="http://schema.org/ImageGallery">
-<div class="my-gallery">
+<div class="my-gallery slider">
 
         @foreach($post->images as $image)
 
