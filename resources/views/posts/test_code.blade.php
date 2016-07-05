@@ -121,8 +121,8 @@
 
 
 <div class="row">
-    <div class="col-sm-6 my-gallery">
-<div class="slider">
+    <div class="my-gallery">
+<div class="slider col-sm-6">
 
 
         @foreach($post->images as $image)
