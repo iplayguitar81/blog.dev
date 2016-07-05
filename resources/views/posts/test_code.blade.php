@@ -120,7 +120,7 @@
 
 
 
-<div class="slider" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="slider row" itemscope itemtype="http://schema.org/ImageGallery">
 <div class="my-gallery">
 
         @foreach($post->images as $image)
