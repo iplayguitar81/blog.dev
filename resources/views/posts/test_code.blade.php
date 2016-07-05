@@ -120,8 +120,8 @@
 
 
 <div class="row">
-<div class="slider my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-<div class="col-md-12">
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="slider col-md-12">
 
         @foreach($post->images as $image)
 
