@@ -15,7 +15,7 @@
 
 
 
-            <div class="col-md-12 slider">
+            <div class="col-md-12 slider" id="s2">
 
 
                 @foreach($post->images as $image)
