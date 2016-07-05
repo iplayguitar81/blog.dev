@@ -120,7 +120,7 @@
 
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="container-fluid">
 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 <div class="slider">
 
