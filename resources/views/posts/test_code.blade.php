@@ -122,7 +122,7 @@
 
 <div class="row">
     <div class="">
-<div class="slider col-sm-6 my-gallery">
+<div class="slider my-gallery">
 
 
         @foreach($post->images as $image)
