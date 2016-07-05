@@ -144,7 +144,7 @@
     {{--<a class="btn next btn-danger">Next</a>--}}
 {{--</div>--}}
 
-    <div id="owl-demo" class="my-gallery2" itemscope itemtype="http://schema.org/ImageGallery">
+    <div id="owl-demo" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
     @foreach($post->images as $image)
         {{--*/ @ $pathy =$image->file_path  /*--}}
@@ -390,7 +390,7 @@
 
     // execute above function
     initPhotoSwipeFromDOM('.my-gallery');
-    initPhotoSwipeFromDOM('.my-gallery2');
+
 
 
 
