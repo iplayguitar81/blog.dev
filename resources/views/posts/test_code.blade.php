@@ -119,9 +119,9 @@
 <br/>
 
 
-
-<div class="slider row" itemscope itemtype="http://schema.org/ImageGallery">
-<div class="my-gallery col-md-2">
+<div class="row">
+<div class="slider" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="my-gallery">
 
         @foreach($post->images as $image)
 
@@ -143,6 +143,7 @@
 
         @endforeach
 
+</div>
 </div>
 </div>
 
