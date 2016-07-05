@@ -121,9 +121,9 @@
 
 
 <div class="row">
-    <div class="">
-<div class="slider my-gallery">
 
+<div class="slider col-sm-6">
+    <div class="my-gallery">
 
         @foreach($post->images as $image)
 
@@ -135,11 +135,11 @@
         {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
-        <figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <figure class="col-md-1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                 <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
             </a>
-            {{--<figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>--}}
+            <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
         </figure>
 
 
