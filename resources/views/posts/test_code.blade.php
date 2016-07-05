@@ -144,7 +144,7 @@
     {{--<a class="btn next btn-danger">Next</a>--}}
 {{--</div>--}}
 
-    <div class="my-gallery owl-carousel" itemscope itemtype="http://schema.org/ImageGallery">
+    <div id="owl-demo" class="my-gallery owl-carousel" itemscope itemtype="http://schema.org/ImageGallery">
 
     @foreach($post->images as $image)
         {{--*/ @ $pathy =$image->file_path  /*--}}
