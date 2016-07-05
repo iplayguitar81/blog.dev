@@ -342,7 +342,7 @@ class PostsController extends Controller
         return view('posts.test_code', compact('post','post_ratings','rating_count','rating_avg','rating_pct'));
     }
 
-    
+
 
 //public function test_code($id){
 //    $post = Post::findOrFail($id);
@@ -424,6 +424,11 @@ class PostsController extends Controller
 
         $location = GeoIP::getLocation();
         return view('map', compact('location'));
+    }
+
+    public function test_slides(){
+
+        return view('test_slides');
     }
 
     public function postSearch()
