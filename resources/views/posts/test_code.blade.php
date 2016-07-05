@@ -158,7 +158,7 @@
 
     <div class="my-gallery">
     <div id="owl-demo" class="owl-carousel" itemscope itemtype="http://schema.org/ImageGallery">
-
+<div class="slide-container">
     @foreach($post->images as $image)
         {{--*/ @ $pathy =$image->file_path  /*--}}
 
@@ -177,6 +177,7 @@
 
     @endforeach
 </div>
+        </div>
 
     </div>
     </div>
