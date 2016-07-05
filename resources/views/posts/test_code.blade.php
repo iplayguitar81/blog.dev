@@ -27,7 +27,7 @@
                     {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
-                    <figure class="col-md-1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <figure class="col-sm-1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                             <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
                         </a>
