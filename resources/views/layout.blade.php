@@ -920,6 +920,9 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         /*text-align:center;*/
     /*}*/
 
+    .owl-carousel {
+    }
+
     .owl-carousel li {
         list-style:none;
     }
