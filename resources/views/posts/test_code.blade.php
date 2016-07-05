@@ -20,11 +20,11 @@
 
                 @foreach($post->images as $image)
 
-                    */ @ $pathy =$image->file_path  /*
+                    {{--*/ @ $pathy =$image->file_path  /*--}}
 
-                    */ @ list($width, $height) = getimagesize($pathy) /*
+                    {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
 
-                    */ @ $dimensions =$width.'x'.$height  /*
+                    {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
                     <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
