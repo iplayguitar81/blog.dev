@@ -121,8 +121,8 @@
 
 
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-<div class="slider container-fluid">
+<div class="my-gallery slider" itemscope itemtype="http://schema.org/ImageGallery">
+
 
         @foreach($post->images as $image)
 
@@ -144,7 +144,7 @@
 
         @endforeach
 
-</div>
+
 </div>
 
 
