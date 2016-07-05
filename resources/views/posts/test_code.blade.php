@@ -120,20 +120,20 @@
 
 
 
-<div class="row">
-    <div class="col-sm-6">
-<div class="slider">
+{{--<div class="row">--}}
+    {{--<div class="col-sm-6">--}}
+{{--<div class="slider">--}}
 
 
-        @foreach($post->images as $image)
-        <img class="col-sm-2" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP"/>
-        @endforeach
+        {{--@foreach($post->images as $image)--}}
+        {{--<img class="col-sm-2" src="{{url($image->file_path)}}"  alt="CRUD MVC ASP"/>--}}
+        {{--@endforeach--}}
 
 
-</div>
-</div>
+{{--</div>--}}
+{{--</div>--}}
 
-</div>
+{{--</div>--}}
 
 <br/>
     <hr>
