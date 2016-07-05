@@ -119,7 +119,7 @@
 <br/>
 
 
-<div class="row">
+
 <div class="slider" itemscope itemtype="http://schema.org/ImageGallery">
 <div class="my-gallery slider">
 
@@ -145,7 +145,7 @@
 
 </div>
 </div>
-</div>
+
 
 
 
