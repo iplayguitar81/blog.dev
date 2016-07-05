@@ -566,18 +566,18 @@
     });
 
 
-    // PhotoSwipeを表示
-    gallery = new PhotoSwipe($pswp.get(0), PhotoSwipeUI_Default, items, options);
-    gallery.init();
-
-    // PhotoSwipe側の切り替えに応じて、OwlCarouselも位置を調整する
-    gallery.listen("beforeChange", function(x){
-        owl.goTo(this.getCurrentIndex());
-    });
-
-    gallery.listen("close", function(){
-        this.currItem.initialLayout = options.getThumbBoundsFn(this.getCurrentIndex());
-    });
+//    // PhotoSwipeを表示
+//    gallery = new PhotoSwipe($pswp.get(0), PhotoSwipeUI_Default, items, options);
+//    gallery.init();
+//
+//    // PhotoSwipe側の切り替えに応じて、OwlCarouselも位置を調整する
+//    gallery.listen("beforeChange", function(x){
+//        owl.goTo(this.getCurrentIndex());
+//    });
+//
+//    gallery.listen("close", function(){
+//        this.currItem.initialLayout = options.getThumbBoundsFn(this.getCurrentIndex());
+//    });
 
 
 
