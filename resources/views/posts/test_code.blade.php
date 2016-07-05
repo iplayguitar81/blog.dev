@@ -166,6 +166,7 @@
 
 
     </div>
+    </div>
 
 @endsection
 
@@ -393,6 +394,8 @@
 
 
 
+    $(function(){
+
         // PhotoSwipe用のHTMLを描画
         function buildPswdHtml(){
             $("body").append([
@@ -542,8 +545,9 @@
                     shareEl: false
                 };
 
-        initializeGallery($(".my-gallery"), owlOptions, pswpOptions);
+        initializeGallery($(".owl-carousel"), owlOptions, pswpOptions);
 
+    });
 
 
 
