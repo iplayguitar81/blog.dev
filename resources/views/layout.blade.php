@@ -973,22 +973,27 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 
 
-            var owl = $("#owl-demo");
+//            var owl = $("#owl-demo");
+//
+//            owl.owlCarousel({dotsEach: true, singleItem:true, lazyLoad : true, navigation : true,nestedItemSelector: 'slide',   afterInit : function(elem){
+//                var that = this
+//                that.owlControls.prependTo(elem)
+//            }});
+//
+//            // Custom Navigation Events
+//            $(".next").click(function(){
+//                owl.trigger('owl.next');
+//            })
+//            $(".prev").click(function(){
+//                owl.trigger('owl.prev');
+//            })
+//
+//    });
 
-            owl.owlCarousel({dotsEach: true, singleItem:true, lazyLoad : true, navigation : true,nestedItemSelector: 'slide',   afterInit : function(elem){
-                var that = this
-                that.owlControls.prependTo(elem)
-            }});
 
-            // Custom Navigation Events
-            $(".next").click(function(){
-                owl.trigger('owl.next');
-            })
-            $(".prev").click(function(){
-                owl.trigger('owl.prev');
-            })
 
-    });
+
+
 </script>
 
 <script>
