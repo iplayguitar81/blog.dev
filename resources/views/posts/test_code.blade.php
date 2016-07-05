@@ -27,9 +27,8 @@
                     {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
-                        <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
                             <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
-                        </a>
+
 
                 @endforeach
             </div>
