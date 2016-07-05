@@ -9,13 +9,13 @@
 
 
     <!-- heres where we can test photoswipe-->
-    <div class="row">
+    <div class="row slider">
 
         <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
 
 
-            <div class="col-md-12 slider">
+            <div class="col-md-12">
 
 
                 @foreach($post->images as $image)
