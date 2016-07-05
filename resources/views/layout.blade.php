@@ -949,8 +949,8 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
         }
 
         .owl-carousel li {
-            /*padding-right:5px;*/
-            /*padding-left:5px;*/
+            padding-right:1em;
+            padding-left:1em;
         }
     }
 
