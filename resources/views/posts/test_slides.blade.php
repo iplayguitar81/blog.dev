@@ -188,7 +188,7 @@
                     pswpOptions = {
                         bgOpacity: 0.9,
                         history: false,
-                        shareEl: false
+                        shareEl: true
                     };
 
             initializeGallery($(".owl-carousel"), owlOptions, pswpOptions);
