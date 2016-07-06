@@ -85,7 +85,7 @@
         </div>
     </div>
         <br/>
-<h2 class="text-center">Bowtie User Ratings</h2>
+<h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;" >Bowtie User Ratings</h2>
 
         <div class="row">
             @foreach($post_ratings as $rating)
