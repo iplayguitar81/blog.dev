@@ -821,7 +821,7 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 {{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
 
 
-{{--<script src="{{url('/js/owl.carousel.js')}}"></script>--}}
+<script src="{{url('/js/owl.carousel.js')}}"></script>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
