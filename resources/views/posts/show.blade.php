@@ -350,7 +350,8 @@
 
         // In the sample to perform the processing for the `.owl-carousel`
         var owlOptions = {
-                    itemsCustom: [[0, 2]],
+            //what to mess with if you want to change the amount of slides on the page no matter what as default 3 will show up...
+                    itemsCustom: [[0, 3]],
                     responsiveRefreshRate: 0,
                     navigation: true,
 //                    pagination: true,
