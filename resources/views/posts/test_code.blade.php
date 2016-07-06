@@ -41,7 +41,7 @@
 
 
             <li>
-                <a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo01_lg.jpg" data-size="960x640">
+                <a href="{{url($image->file_path)}}" data-size="{{$dimensions}}">
                     <img class="img-responsive" src="{{url('images/thmb-'.$thumb_path)}}" alt="1"></a></li>
 @endforeach
 
