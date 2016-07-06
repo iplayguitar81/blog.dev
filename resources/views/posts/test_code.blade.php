@@ -35,7 +35,7 @@
 
                 {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
-                {{--*/ @  /*--}}
+
 
                 {{--*/  $img = Image::make(url($image->file_path))->resize(300, 200); /*--}}
 
