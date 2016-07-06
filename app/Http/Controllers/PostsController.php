@@ -371,6 +371,11 @@ class PostsController extends Controller
         //move the file to correct location
         $file->move('images/', $filename);
 
+        //here is where I need to add the thumbnail also....
+        $thumb_string="thmb-".$filename;
+
+        Image::make( 'https://www.bowtiesoft.com/images/'.$filename)->resize(200, 200)->save('images/'.$filename);
+
         // save the image details into the database
 
         $post = Post::find($request->input('gallery_id'));
