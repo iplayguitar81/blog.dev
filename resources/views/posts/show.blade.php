@@ -355,7 +355,8 @@
                     navigation: true,
                     pagination: true,
                     paginationNumbers: true,
-                    scrollPerPage: false
+                    scrollPerPage: false,
+                    dotsEach: true
                 },
                 pswpOptions = {
                     bgOpacity: 0.9,
