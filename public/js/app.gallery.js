@@ -3,7 +3,7 @@ $(function(){
     // PhotoSwipeç”¨ã®HTMLã‚’æç”»
     function buildPswdHtml(){
         $("body").append([
-            '<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">',
+            '<div class="pswp" tabindex="-1" role="dialog" >',
             '  <div class="pswp__bg"></div>',
             '  <div class="pswp__scroll-wrap">',
             '    <div class="pswp__container">',
