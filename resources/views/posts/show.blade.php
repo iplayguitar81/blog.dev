@@ -39,7 +39,7 @@
             <div class="container">
 
 
-                <h2 style="font-family: Pacifico, cursive;font-size:4em;line-height:.7em;text-align:center;">Article Gallery</h2>
+                <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;text-align:center;">Article Gallery</h2>
                     <br/>
                 <ul class="owl-carousel">
                     @foreach($post->images as $image)
