@@ -944,8 +944,8 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     @media only screen and (max-width: 960px) {
         .container {
             width:auto;
-            padding-right:15px;
-            padding-left:15px;
+            /*padding-right:15px;*/
+            /*padding-left:15px;*/
         }
 
         .owl-carousel li {
