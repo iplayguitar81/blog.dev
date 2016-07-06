@@ -42,7 +42,7 @@
 
             <li>
                 <a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo01_lg.jpg" data-size="960x640">
-                    <img class="img-responsive" src="{{$img}}" alt="1"></a></li>
+                    <img class="img-responsive" src="{{'thmb-'.url($image->file_path)}}" alt="1"></a></li>
 @endforeach
 
             {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02.jpg" alt="2"></a></li>--}}
