@@ -37,7 +37,7 @@
 
 
 
-                {{--*/  $img = Image::make(url($image->file_path))->resize(300, 200); /*--}}
+                {{--*/ $thumb_path= substr($image->file_path, 7);/*--}}
 
 
             <li>
