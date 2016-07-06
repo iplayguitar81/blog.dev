@@ -50,7 +50,7 @@
                         {{--*/ $thumb_path= substr($image->file_path, 7);/*--}}
                         <li class="owl-trick">
                             <a href="{{url($image->file_path)}}" data-size="{{$dimensions}}" data-title="{{$thumb_path}}">
-                                <img class="img-responsive2" src="{{url('images/thmb-'.$thumb_path)}}" alt="1"></a></li>
+                                <img class="img-responsive" src="{{url('images/thmb-'.$thumb_path)}}" alt="1"></a></li>
                     @endforeach
 
                 </ul>
