@@ -811,14 +811,12 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 <script src="{{url('https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js')}}"></script>
 
 <script src="{{url('/js/bootstrap.min.js')}}"></script>
-<script src="{{url('/js/jquery.cycle.all.js')}}"></script>
-
-
+{{--<script src="{{url('/js/jquery.cycle.all.js')}}"></script>--}}
 {{--<script src="{{url('/js/index.js')}}"></script>--}}
 <script src="{{url('/js/photoswipe.min.js')}}"></script>
 <script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
 
-{{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
+{{--figuring out right gallery sitch:--}}
 
 
 <script src="{{url('/js/owl.carousel.js')}}"></script>
