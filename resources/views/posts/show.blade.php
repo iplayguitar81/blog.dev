@@ -356,6 +356,7 @@
 //                    pagination: true,
 //                    paginationNumbers: true,
                     scrollPerPage: false,
+                    dots: true,
                     dotsEach: true
                 },
                 pswpOptions = {
