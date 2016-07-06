@@ -27,20 +27,32 @@
         <h2>First gallery</h2>
 
         <ul class="owl-carousel">
+            @foreach($post->images as $image)
+
+                {{--*/ @ $pathy =$image->file_path  /*--}}
+
+                {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
+
+                {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
+
+                {{--*/ @  /*--}}
+
+                {{--*/  $img = Image::make(url($image->file_path))->resize(300, 200); /*--}}
+
 
             <li>
                 <a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo01_lg.jpg" data-size="960x640">
-                    <img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo01.jpg" alt="1"></a></li>
+                    <img class="img-responsive" src="{{$img}}" alt="1"></a></li>
+@endforeach
 
-
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02.jpg" alt="2"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo03_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo03.jpg" alt="3"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo04_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo04.jpg" alt="4"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo05_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo05.jpg" alt="5"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo06_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo06.jpg" alt="6"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo07_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo07.jpg" alt="7"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo08_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo08.jpg" alt="8"></a></li>
-            <li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo09_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo09.jpg" alt="9"></a></li>
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02.jpg" alt="2"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo03_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo03.jpg" alt="3"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo04_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo04.jpg" alt="4"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo05_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo05.jpg" alt="5"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo06_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo06.jpg" alt="6"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo07_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo07.jpg" alt="7"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo08_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo08.jpg" alt="8"></a></li>--}}
+            {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo09_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo09.jpg" alt="9"></a></li>--}}
         </ul>
 
         {{--<h2>Second gallery</h2>--}}
