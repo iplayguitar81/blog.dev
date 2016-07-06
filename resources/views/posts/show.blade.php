@@ -353,7 +353,7 @@
                     itemsCustom: [[0, 3]],
                     responsiveRefreshRate: 0,
                     navigation: true,
-                    pagination: true,
+//                    pagination: true,
 //                    paginationNumbers: true,
                     scrollPerPage: false,
                     dotsEach: true
