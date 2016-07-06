@@ -814,14 +814,14 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 <script src="{{url('/js/jquery.cycle.all.js')}}"></script>
 
 
-<script src="{{url('/js/index.js')}}"></script>
-<script src="{{url('/js/photoswipe.min.js')}}"></script>
-<script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
+{{--<script src="{{url('/js/index.js')}}"></script>--}}
+{{--<script src="{{url('/js/photoswipe.min.js')}}"></script>--}}
+{{--<script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>--}}
 
 {{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
 
 
-<script src="{{url('/js/owl.carousel.js')}}"></script>
+{{--<script src="{{url('/js/owl.carousel.js')}}"></script>--}}
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
@@ -927,22 +927,22 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
 </style>
 
-<script>
-    $(document).ready(function(){
-        $('.slider').slick({
-            infinite: true,
-            arrows: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-    });
-    });
+{{--<script>--}}
+    {{--$(document).ready(function(){--}}
+        {{--$('.slider').slick({--}}
+            {{--infinite: true,--}}
+            {{--arrows: true,--}}
+            {{--speed: 500,--}}
+            {{--slidesToShow: 1,--}}
+            {{--slidesToScroll: 1--}}
+    {{--});--}}
+    {{--});--}}
 
 
 
 
 
-</script>
+{{--</script>--}}
 
 <script>
 
