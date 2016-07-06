@@ -353,7 +353,8 @@
                     itemsCustom: [[0, 3]],
                     responsiveRefreshRate: 0,
                     navigation: true,
-                    pagination: true
+                    pagination: true,
+                    scrollPerPage: true
                 },
                 pswpOptions = {
                     bgOpacity: 0.9,
