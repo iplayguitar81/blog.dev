@@ -38,6 +38,10 @@
             <div class="container">
                 <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Article Gallery</h2>
                     <br/>
+                {{--<div class="customNavigation">--}}
+                {{--<a class="btn prev btn-danger">Previous</a>--}}
+                {{--<a class="btn next btn-danger">Next</a>--}}
+                {{--</div>--}}
                 <ul class="owl-carousel">
                     @foreach($post->images as $image)
 
