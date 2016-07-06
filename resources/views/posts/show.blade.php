@@ -352,7 +352,8 @@
         var owlOptions = {
                     itemsCustom: [[0, 3]],
                     responsiveRefreshRate: 0,
-                    navigation: true
+                    navigation: true,
+                    pagination: true
                 },
                 pswpOptions = {
                     bgOpacity: 0.9,
