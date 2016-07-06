@@ -383,7 +383,7 @@ class PostsController extends Controller
 'file_path' => 'images/' .$filename,
 'created_by' => Auth::user()->id,
     ]);
-        $img = Image::make('foo.jpg')->resize(300, 200);
+        
 
         return $image;
     }
