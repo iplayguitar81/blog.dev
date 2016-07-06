@@ -354,7 +354,7 @@
                     responsiveRefreshRate: 0,
                     navigation: true,
                     pagination: true,
-                    paginationNumbers: true,
+//                    paginationNumbers: true,
                     scrollPerPage: false,
                     dotsEach: true
                 },
