@@ -41,7 +41,7 @@
 
 
             <li>
-                <a href="{{url($image->file_path)}}" data-size="{{$dimensions}}">
+                <a href="{{url($image->file_path)}}" data-size="{{$dimensions}}" data-title="{{$thumb_path}}">
                     <img class="img-responsive" src="{{url('images/thmb-'.$thumb_path)}}" alt="1"></a></li>
 @endforeach
 
