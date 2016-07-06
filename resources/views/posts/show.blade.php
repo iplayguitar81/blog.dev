@@ -354,7 +354,8 @@
                     responsiveRefreshRate: 0,
                     navigation: true,
                     pagination: true,
-                    scrollPerPage: true
+                    paginationNumbers: true,
+                    scrollPerPage: false
                 },
                 pswpOptions = {
                     bgOpacity: 0.9,
