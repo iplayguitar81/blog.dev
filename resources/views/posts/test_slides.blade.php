@@ -131,11 +131,11 @@
                     }
                 }, pswpOptions);
 
-                // PhotoSwipeを表示
+                //Display the PhotoSwipe
                 gallery = new PhotoSwipe($pswp.get(0), PhotoSwipeUI_Default, items, options);
                 gallery.init();
 
-                // PhotoSwipe側の切り替えに応じて、OwlCarouselも位置を調整する
+                // In accordance with the switching of PhotoSwipe slide , OwlCarousel also adjusts position
                 gallery.listen("beforeChange", function(x){
                     owl.goTo(this.getCurrentIndex());
                 });
@@ -146,22 +146,22 @@
             }
 
 
-            // 初期化
+            // Initialization
             function initializeGallery($elem, owlOptions, pswpOptions){
 
-                // PhotoSwipe用のDOMが存在しない場合、新しく描画
+                //If the DOM for PhotoSwipe does not exist , a new drawing
                 if( $(".pswp").size() === 0 ){
                     buildPswdHtml();
                 }
 
-                // 複数のギャラリーに対応するために走査
+                // Scan to accommodate a plurality of gallery
                 $elem.each(function(i){
                     var $gallery = $(this),
                             uid = i + 1,
                             items = getGalleryItems($gallery),
                             options = $.extend(true, {}, pswpOptions);
 
-                    // OwlCarouselの初期化
+                    // Initialization of OwlCarousel
                     $gallery.owlCarousel(owlOptions);
 
                     // 各ギャラリーに対してユニークなIDを割り当てる
@@ -180,7 +180,7 @@
             }
 
 
-            // サンプルでは`.owl-carousel`に対して処理を実行する
+            // In the sample to perform the processing for the `.owl-carousel`
             var owlOptions = {
                         itemsCustom: [[0, 3]],
                         responsiveRefreshRate: 0
