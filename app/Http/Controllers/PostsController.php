@@ -374,7 +374,7 @@ class PostsController extends Controller
         //here is where I need to add the thumbnail also....
         $thumb_string="thmb-".$filename;
 
-        Image::make( 'https://www.bowtiesoft.com/images/'.$filename)->resize(300, 200)->save('images/'.$filename);
+        Image::make( 'https://www.bowtiesoft.com/images/'.$filename)->resize(300, 200)->save('images/'.$thumb_string);
 
         // save the image details into the database
 
