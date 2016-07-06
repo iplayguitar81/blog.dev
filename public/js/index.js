@@ -9,6 +9,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             figureEl,
             linkEl,
             size,
+            size,
             item;
 
         for(var i = 0; i < numNodes; i++) {
