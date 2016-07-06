@@ -266,5 +266,5 @@
         });
 
     </script>
-    {{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
+
     @endsection
