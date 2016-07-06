@@ -14,7 +14,7 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1em;text-align:center;">{{ $post->title }}</h1>
+        <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;">{{ $post->title }}</h1>
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $post->subHead}}</p>
         <p class="uk-article-meta" style="text-align:center;">
             Written by <?
@@ -170,7 +170,7 @@
 
         <br/>
 
-        <h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.3em;color:#E63C4D;text-align:center;">Leave a Facebook Comment!</h2>
+        <h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Leave a Facebook Comment!</h2>
         <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
 
         <br/>
