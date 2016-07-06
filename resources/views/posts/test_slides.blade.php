@@ -6,7 +6,7 @@
 
 
     <div class="container">
-        {{--<h1>OwlCarousel &amp; PhotoSwipe</h1>--}}
+
 
         <h2>First gallery</h2>
         <ul class="owl-carousel">
@@ -33,8 +33,6 @@
     </div>
 
     <script src="{{url('/js/jquery-1.11.3.min.js')}}"></script>
-
-    {{--<script src="{{url('/js/index.js')}}"></script>--}}
     <script src="{{url('/js/owl.carousel.js')}}"></script>
     <script src="{{url('/js/photoswipe.min.js')}}"></script>
     <script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
@@ -42,7 +40,7 @@
 
         $(function(){
 
-            // PhotoSwipe用のHTMLを描画
+            // Drawing the HTML for PhotoSwipe
             function buildPswdHtml(){
                 $("body").append([
                     '<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">',
@@ -83,7 +81,7 @@
             }
 
 
-            // ギャラリーから、PhotoSwipe用のitemsを取得
+            // From the gallery, get the items for PhotoSwipe
             function getGalleryItems($gallery){
                 var items = [];
 
@@ -98,7 +96,7 @@
                                 h: parseInt(size[1])
                             };
 
-                    // キャプション
+                    // caption
                     if( title ) item.title = title;
 
                     items.push(item);
@@ -108,18 +106,18 @@
             }
 
 
-            // PhotoSwipeを開く
+            //Opening the PhotoSwipe
             function openGallery($gallery, index, items, pswpOptions){
                 var $pswp = $(".pswp"),
                         owl = $gallery.data("owlCarousel"),
                         gallery;
 
-                // オプション値を設定
+                //Set an option value
                 var options = $.extend(true, {
-                    // 開く画像番号
+                    // Image number to open
                     index: index,
 
-                    // 画像クリック時のズーム設定
+                    //Zoom setting at the time of image click
                     getThumbBoundsFn: function(index){
                         var $thumbnail = $(items[index].el).find("img"),
                                 offset = $thumbnail.offset();
@@ -164,15 +162,15 @@
                     // Initialization of OwlCarousel
                     $gallery.owlCarousel(owlOptions);
 
-                    // 各ギャラリーに対してユニークなIDを割り当てる
+                    //Assign a unique ID to each gallery
                     options.galleryUID = uid;
                     $gallery.attr("data-pswp-uid", uid);
 
-                    // 各アイテムのクリックで、PhotoSwipeを起動
+                    // With the click of each item , start PhotoSwipe
                     $gallery.find(".owl-item").on("click", function(e){
                         if( !$(e.target).is("img") ) return;
 
-                        // itemsはPhotoSwipe.init()に書き換えられるのでコピーを渡す
+                        //items pass a copy because it is rewritten to PhotoSwipe.init ()
                         openGallery($gallery, $(this).index(), items.concat(), options);
                         return false;
                     });
@@ -196,11 +194,5 @@
         });
 
     </script>
-
-
     {{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
-
-
-
-
     @endsection
