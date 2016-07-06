@@ -34,7 +34,7 @@
         <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
         <br/>
         <div class="center-block">
-       <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
+       <p class="article-texterson"> {!! ($post->body) !!} </p>
             <div class="container">
                 <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Article Gallery</h2>
                     <br/>
