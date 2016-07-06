@@ -350,7 +350,7 @@
 
         // In the sample to perform the processing for the `.owl-carousel`
         var owlOptions = {
-//                    itemsCustom: [[0, 3]],
+                    itemsCustom: [[0, 2]],
                     responsiveRefreshRate: 0,
                     navigation: true,
 //                    pagination: true,
