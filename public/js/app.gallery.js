@@ -143,12 +143,21 @@ $(function(){
             itemsCustom: [[0, 3]],
             responsiveRefreshRate: 0
         },
+
         pswpOptions = {
             bgOpacity: 0.9,
             history: false,
             shareEl: true
         };
 
-    initializeGallery($(".owl-carousel"), owlOptions, pswpOptions);
+    shareButtons: [
+        {id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+        {id:'twitter', label:'Tweet', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
+        {id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}'},
+        {id:'download', label:'Download image', url:'{{raw_image_url}}', download:true}
+    ],
+
+
+        initializeGallery($(".owl-carousel"), owlOptions, pswpOptions);
 
 });
