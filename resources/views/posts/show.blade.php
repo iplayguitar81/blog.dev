@@ -36,141 +36,57 @@
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
             <h4>Article Images</h4>
-            {{--{{$post->images}}--}}
-
-{{--images in another format.......--}}
-            {{--<div class="row">--}}
-
-                {{--<div class="col-md-12">--}}
-
-                    {{--<div id="gallery-images">--}}
-
-                        {{--<ul>--}}
-                            {{--@foreach($post->images as $image)--}}
-
-                                {{--<li>--}}
-                                    {{--<a href="{{url($image->file_path)}}" target="_blank">--}}
-                                        {{--<img src="{{url($image->file_path)}}">--}}
-
-                                    {{--</a>--}}
-
-                                {{--</li>--}}
-                            {{--@endforeach--}}
+            <div class="container">
 
 
-                        {{--</ul>--}}
+                <h2>First gallery</h2>
 
-                    {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
+                <ul class="owl-carousel">
+                    @foreach($post->images as $image)
+
+                        {{--*/ @ $pathy =$image->file_path  /*--}}
+
+                        {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
+
+                        {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
 
-                    <div id="portfolio">
+                        {{--*/ $thumb_path= substr($image->file_path, 7);/*--}}
+
+
+                        <li>
+                            <a href="{{url($image->file_path)}}" data-size="{{$dimensions}}" data-title="{{$thumb_path}}">
+                                <img class="img-responsive" src="{{url('images/thmb-'.$thumb_path)}}" alt="1"></a></li>
+                    @endforeach
+
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo02.jpg" alt="2"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo03_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo03.jpg" alt="3"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo04_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo04.jpg" alt="4"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo05_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo05.jpg" alt="5"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo06_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo06.jpg" alt="6"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo07_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo07.jpg" alt="7"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo08_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo08.jpg" alt="8"></a></li>--}}
+                    {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo09_lg.jpg" data-size="960x640"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo09.jpg" alt="9"></a></li>--}}
+                </ul>
+
+                {{--<h2>Second gallery</h2>--}}
+                {{--<ul class="owl-carousel">--}}
+                {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo10_lg.jpg" data-size="960x640" data-title="1"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo10.jpg" alt="10"></a></li>--}}
+                {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo11_lg.jpg" data-size="960x640" data-title="2"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo11.jpg" alt="11"></a></li>--}}
+                {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo12_lg.jpg" data-size="960x640" data-title="3"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo12.jpg" alt="12"></a></li>--}}
+                {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo13_lg.jpg" data-size="960x640" data-title="4"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo13.jpg" alt="13"></a></li>--}}
+                {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo14_lg.jpg" data-size="960x640" data-title="5"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo14.jpg" alt="14"></a></li>--}}
+                {{--<li><a href="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo15_lg.jpg" data-size="960x640" data-title="6"><img class="img-responsive" src="http://webdesign-dackel.com/demo/owlcarousel-photoswipe/images/photo15.jpg" alt="15"></a></li>--}}
+                {{--</ul>--}}
 
 
 
-                            <!-- heres where we can test photoswipe-->
-                            <div class="row">
-
-                                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+            </div>
 
 
 
-                                                <div class="col-md-12">
 
-                                                    @foreach($post->images as $image)
-
-                                                {{--*/ @ $pathy =$image->file_path  /*--}}
-
-                                                {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
-
-                                                {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
-
-
-                                            <figure class="col-md-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                                <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
-                                                    <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
-                                                </a>
-                                                <figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>
-                                            </figure>
-                                                    @endforeach
-                                            </div>
-
-                                        </div>
-
-
-
-                                    {{--<a href="#demo9" class="btn btn-info" data-toggle="collapse">More Info</a>--}}
-                                    {{--<div id="demo9" class="collapse">--}}
-                                        {{--<p>Since I am familiar with Rails and MVC I decided to learn ASP MVC when not busy studying.  Here is some idea of what I can do with that technology.  Unfortunately,  I do not currently have a neatly designed page as I have mostly been focusing on learning the backend of this technology.  There are also other things that I have figured out with this technology like pagination of records- - for example, but I do not have a photo at this time only code.  I also do not have a live version of this site but if requested I can provide examples of my code!  It has been a cool experience learning ASP MVC because I have found that I am able to learn MVC frameworks fairly easily and am excited to learn more!</p></div>--}}
-                                {{--</div>--}}
-                            </div>
-                            <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-                                <!-- Background of PhotoSwipe.
-                                     It's a separate element, as animating opacity is faster than rgba(). -->
-                                <div class="pswp__bg"></div>
-
-                                <!-- Slides wrapper with overflow:hidden. -->
-                                <div class="pswp__scroll-wrap">
-
-                                    <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-                                    <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                                    <div class="pswp__container">
-                                        <div class="pswp__item"></div>
-                                        <div class="pswp__item"></div>
-                                        <div class="pswp__item"></div>
-                                    </div>
-
-                                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                                    <div class="pswp__ui pswp__ui--hidden">
-
-                                        <div class="pswp__top-bar">
-
-                                            <!--  Controls are self-explanatory. Order can be changed. -->
-
-                                            <div class="pswp__counter"></div>
-
-                                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                                            <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                                            <!-- element will get class pswp__preloader--active when preloader is running -->
-                                            <div class="pswp__preloader">
-                                                <div class="pswp__preloader__icn">
-                                                    <div class="pswp__preloader__cut">
-                                                        <div class="pswp__preloader__donut"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                            <div class="pswp__share-tooltip"></div>
-                                        </div>
-
-                                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                                        </button>
-
-                                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                                        </button>
-
-                                        <div class="pswp__caption">
-                                            <div class="pswp__caption__center"></div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
 
 
                     </div>
