@@ -842,9 +842,9 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
 
     {{--getting this part right........ among files to remove after figuring out right gallery sitch:--}}
 
-     @import "{{url('/css/slick.css')}}";
-    @import "{{url('/css/slick-theme.css')}}";
-    @import "{{url('/css/slick-theme.css')}}";
+     {{--@import "{{url('/css/slick.css')}}";--}}
+    {{--@import "{{url('/css/slick-theme.css')}}";--}}
+    {{--@import "{{url('/css/slick-theme.css')}}";--}}
     @import "{{url('/css/owl.carousel.css')}}";
     @import "{{url('/css/owl.theme.css')}}";
 
@@ -903,25 +903,6 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
           /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
       /*}*/
 
-    /*.owl-wrapper {*/
-        /*margin: 0 auto;*/
-    /*}*/
-    /*.owl-carousel .owl-item {*/
-        /*position: relative;*/
-        /*min-height: 1px;*/
-        /*display:inline-block;*/
-        /*-webkit-backface-visibility: hidden;*/
-        /*-webkit-tap-highlight-color: transparent;*/
-        /*-webkit-touch-callout: none; }*/
-
-    /*.owl-carousel {*/
-        /*display: none;*/
-        /*width: 100%;*/
-        /*text-align:center;*/
-    /*}*/
-
-    .owl-carousel {
-    }
 
     .owl-carousel li {
         list-style:none;
