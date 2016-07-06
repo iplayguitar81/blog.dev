@@ -630,8 +630,10 @@ p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1
     border-right: 6px solid transparent;
     border-bottom: 6px solid #be2626; }
 
-.owl_trick img.img-responsive{
+.owl_trick img.img-responsive2{
     margin: 0 auto !important;
+    max-width: 100%;
+    height: auto;
 }
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
