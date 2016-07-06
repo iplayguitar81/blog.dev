@@ -35,10 +35,7 @@
         <br/>
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
-            <h4>Article Images</h4>
             <div class="container">
-
-
                 <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;text-align:center;">Article Gallery</h2>
                     <br/>
                 <ul class="owl-carousel">
