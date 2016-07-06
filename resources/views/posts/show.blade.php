@@ -36,7 +36,7 @@
         <div class="center-block">
        <p class="article-texterson text-center"> {!! ($post->body) !!} </p>
             <div class="container">
-                <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;text-align:center;">Article Gallery</h2>
+                <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Article Gallery</h2>
                     <br/>
                 <ul class="owl-carousel">
                     @foreach($post->images as $image)
