@@ -2,28 +2,6 @@
 
 @section('content')
 
-
-
-<div id="portfolio">
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-    <br/>
-    <br/>
-
-
-
     {{--*/ @ $pathy =$image->file_path  /*--}}
 
     {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
@@ -31,18 +9,20 @@
     {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
 
 
-    <figure id="s2" class="col-sm-1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        @foreach($post->images as $image)
-        <a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">
-            <img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />
-        </a>
+    {{--<figure id="s2" class="col-sm-1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">--}}
+        {{--@foreach($post->images as $image)--}}
+        {{--<a href="{{url($image->file_path)}}" itemprop="contentUrl" data-size="{{$dimensions}}">--}}
+            {{--<img src="{{url($image->file_path)}}"  alt="CRUD MVC ASP" />--}}
+        {{--</a>--}}
         {{--<figcaption itemprop="caption description">MVC ASP CRUD height: {{$height}} width: {{$width}}</figcaption>--}}
-        @endforeach
-    </figure>
-
+        {{--@endforeach--}}
+    {{--</figure>--}}
 
 @endsection
-</div>
+
+
+
+
 
 <script src="{{url('/js/jquery-1.11.3.min.js')}}"></script>
 <script src="{{url('/js/owl.carousel.js')}}"></script>
