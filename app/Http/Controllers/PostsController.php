@@ -317,7 +317,7 @@ class PostsController extends Controller
     public function destroy_image($id)
     {
 
-        ImageGallery::destroy($id);
+        App\ImageGallery::destroy($id);
         Session::flash('flash_message', 'Image deleted!');
         return Redirect::back();
     }
