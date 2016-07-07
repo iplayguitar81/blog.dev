@@ -313,6 +313,14 @@ class PostsController extends Controller
         return redirect('posts');
     }
 
+    public function destroy_image($id)
+    {
+
+        ImageGallery::destroy($id);
+        Session::flash('flash_message', 'Image deleted!');
+        return Redirect::back();
+    }
+
     public function user_posts() {
 
         $user_name = Auth::user()->name;
