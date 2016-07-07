@@ -227,7 +227,9 @@ Route::delete('upload/delete/', [
     'as' => 'upload-remove',
     'uses' => 'PostsController@deleteUpload'
 ]);
+//destroy_image
 
+Route::delete('delete/image/{id}',array('uses' => 'PostsController@destroy_image', 'as' => 'My.route'));
 
 //Route::post(
 //    'posts/search',
