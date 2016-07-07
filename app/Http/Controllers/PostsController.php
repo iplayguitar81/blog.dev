@@ -40,6 +40,7 @@ use Validator;
 use Response;
 
 use Image;
+use ImageGallery;
 
 class PostsController extends Controller
 {
