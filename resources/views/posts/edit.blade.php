@@ -129,16 +129,9 @@
 
 
                                         {{--@if($image->user_id == $user)--}}
-
-                                        {!! Form::open([
-                            'method'=>'DELETE',
-                            'url' => [url($image->file_path)],
-                            'style' => 'display:inline'
-                        ]) !!}
-
-
-                                        {!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}
-
+                                        {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
+                                        <button class="btn btn-danger" type="submit">Delete</button>
+                                        {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
                                         {{--@endif--}}
 
                                         {!! Form::close() !!}
