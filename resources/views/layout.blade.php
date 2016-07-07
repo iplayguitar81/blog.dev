@@ -963,7 +963,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
         handleSuccess: function(response){
            var imageList =$('#gallery-images ul');
             var imageSrc = baseUrl + '/' + response.file_path;
-$(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a>{{ Form::open(['route' => ['My.route', $image->id+1], 'method' => 'delete']) }} <button class="btn btn-danger" type="submit">Delete</button></li>{!! Form::close() !!}');
+$(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a>{{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }} <button class="btn btn-danger" type="submit">Delete</button></li>{!! Form::close() !!}');
         }
     };
 
