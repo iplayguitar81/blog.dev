@@ -132,7 +132,7 @@
 
                                         {!! Form::open([
                             'method'=>'DELETE',
-                            'url' => ['/', $image->file_path],
+                            'url' => ['/', {url($image->file_path)],
                             'style' => 'display:inline'
                         ]) !!}
 
