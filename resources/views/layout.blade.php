@@ -963,7 +963,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
         handleSuccess: function(response){
            var imageList =$('#gallery-images ul');
             var imageSrc = baseUrl + '/' + response.file_path;
-$(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a><br/><span>Upload Successful</span><br/>Refresh for Delete Button');
+$(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a><br/><span>Upload Successful</span><br/>Refresh Page for Delete Button');
         }
     };
 
