@@ -126,6 +126,10 @@
                                 <li>
                                     <a href="{{url($image->file_path)}}" target="_blank">
                                         <img src="{{url($image->file_path)}}">
+
+
+                                        @if($image->user_id == $user)
+
                                         {!! Form::open([
                             'method'=>'DELETE',
                             'url' => ['/images/', $image->file_path],
