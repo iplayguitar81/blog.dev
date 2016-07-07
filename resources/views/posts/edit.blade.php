@@ -58,11 +58,11 @@
                 {{--</div>--}}
             {{--</div>--}}
 <br/>
-    <label>Current Image:</label>
+    <label>Current Main Article Image:</label>
     <img class="img-responsive thumbnail" src="../../images/{{ $post->imgPath}}">
 
         <br/>
-    <label>Update Image</label>
+    <label>Update Lead Image</label>
         <div class="form-group">
             <div class="">
                 <input type="file" name="file" id="file" onchange="readURL(this);"/>
