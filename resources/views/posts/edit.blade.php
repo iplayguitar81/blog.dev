@@ -126,6 +126,18 @@
                                 <li>
                                     <a href="{{url($image->file_path)}}" target="_blank">
                                         <img src="{{url($image->file_path)}}">
+                                        {!! Form::open([
+                            'method'=>'DELETE',
+                            'url' => ['/images/', $image->file_path],
+                            'style' => 'display:inline'
+                        ]) !!}
+
+
+                                        {!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}
+
+                                        @endif
+
+                                        {!! Form::close() !!}
 
                                     </a>
 
