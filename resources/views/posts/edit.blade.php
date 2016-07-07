@@ -167,7 +167,6 @@
 
 
 <script src="{{url('/js/jquery.js')}}"></script>
-<script src="{{url('https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js')}}"></script>
 <script src="{{url('/js/image_upload.js')}}"></script>
 
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
@@ -176,51 +175,3 @@
     tinymce.init({ selector:'textarea',plugins: "media" });
 </script>
 
-<script>
-
-    $(document).ready(function(){
-
-
-    });
-    var baseUrl = "{{ url('') }}";
-    var handleDropzoneFileUpload ={
-
-        handleError: function(response) {
-            console.log(response);
-        },
-        handleSuccess: function(response){
-            var imageList =$('#gallery-images ul');
-            var imageSrc = baseUrl + '/' + response.file_path;
-            $(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a>{{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }} <button class="btn btn-danger" type="submit">Delete</button></li>{!! Form::close() !!}');
-        }
-    };
-
-    //
-    //<button class="btn btn-danger" type="submit">Delete</button>
-    {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
-    {{--@endif--}}
-
-    //
-
-    //
-    Dropzone.options.addImages ={
-
-        maxFilesize: 2,
-
-        acceptedFiles: 'image/*',
-        success: function(file, response) {
-            console.log(file);
-            console.log(response);
-
-            if(file.status =='success'){
-                handleDropzoneFileUpload.handleSuccess(response);
-
-            }
-            else{
-                handleDropzoneFileUpload.handleError(response);
-            }
-        },
-
-    };
-
-</script>
