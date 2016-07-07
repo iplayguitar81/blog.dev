@@ -128,7 +128,7 @@
                                         <img src="{{url($image->file_path)}}">
 
 
-                                        @if($image->user_id == $user)
+                                        {{--@if($image->user_id == $user)--}}
 
                                         {!! Form::open([
                             'method'=>'DELETE',
@@ -139,7 +139,7 @@
 
                                         {!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}
 
-                                        @endif
+                                        {{--@endif--}}
 
                                         {!! Form::close() !!}
 
