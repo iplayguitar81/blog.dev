@@ -948,7 +948,54 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
 
 {{--</script>--}}
 
+<script>
 
+    $(document).ready(function(){
+
+
+    });
+    var baseUrl = "{{ url('') }}";
+    var handleDropzoneFileUpload ={
+
+        handleError: function(response) {
+            console.log(response);
+        },
+        handleSuccess: function(response){
+           var imageList =$('#gallery-images ul');
+            var imageSrc = baseUrl + '/' + response.file_path;
+$(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a><br/><span>Upload Successful</span><br/>Refresh for Delete Button');
+        }
+    };
+
+    //
+    //<button class="btn btn-danger" type="submit">Delete</button>
+    {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
+    {{--@endif--}}
+
+   //
+
+    //
+    Dropzone.options.addImages ={
+
+        maxFilesize: 2,
+
+        acceptedFiles: 'image/*',
+        success: function(file, response) {
+          console.log(file);
+            console.log(response);
+
+            if(file.status =='success'){
+                handleDropzoneFileUpload.handleSuccess(response);
+
+            }
+            else{
+                handleDropzoneFileUpload.handleError(response);
+            }
+        },
+
+    };
+
+</script>
 </body>
 </html>
 
