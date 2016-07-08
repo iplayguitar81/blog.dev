@@ -179,8 +179,6 @@
 
         <br/>
 
-
-
     <a href="{{url('posts')}}">
 
         <button type="submit" class="btn btn-primary center-block btn-md">Back to All Posts</button>
