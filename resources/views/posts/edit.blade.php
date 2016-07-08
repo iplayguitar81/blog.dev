@@ -136,7 +136,7 @@
                                         {{--Please Enter Caption Below &amp; Submit!--}}
                                         {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
                                         <br/>
-                                        {!! Form::text('caption', null, ['class' => 'form-control']) !!}
+                                        {!! Form::textarea('caption', null, ['class' => 'form-control']) !!}
                                         {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
                                         {{--@endif--}}
                                         <br/>
