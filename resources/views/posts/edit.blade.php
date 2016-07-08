@@ -152,9 +152,6 @@
                                             @else
                                             <h6>Caption</h6>
                                             <p>{{$image->caption}}</p>
-
-                                            <p>TODO: Add Edit Caption Form Here....</p>
-
                                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Edit Caption</button>
                                         <div id="{{$image->id}}" class="collapse">
                                             {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
