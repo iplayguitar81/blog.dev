@@ -22,6 +22,7 @@ class CreateImageGalleriesTable extends Migration
             $table->string('file_mime');
             $table->string('file_path');
             $table->string('caption');
+            
             $table->integer('created_by');
 
         });
