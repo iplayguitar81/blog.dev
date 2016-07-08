@@ -300,7 +300,7 @@ class PostsController extends Controller
     {
         $img_id = ($request->input('img_id'));
         //maybe.....
-        $image = Post::findOrFail($id)->images;
+        $image = Post::find($id)->images;
         $caption = $request->input('caption');
         $image->caption =$caption;
         $image->save();
