@@ -76,7 +76,7 @@
         <br/>
     <div class="col-md-12 text-center">
         <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating_avg}}" diabled="true" >
-        <span style="text-align:center;font-family: Boogaloo, cursive; font-size:1em;"> Overall Average Article Rating: {{round($rating_avg,2)}}/5 Stars</span>
+        <span style="text-align:center;font-family: Boogaloo, cursive; font-size:2em;"> Overall Average Article Rating: {{round($rating_avg,2)}}/5 Stars</span>
         {{--*/ @ $hide_rating_form = false; /*--}}
         <p>Number of Ratings: {{$rating_count}}</p>
 
