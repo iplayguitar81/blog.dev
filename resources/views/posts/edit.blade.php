@@ -134,6 +134,7 @@
                                     <br/>
 
                                         {{--Please Enter Caption Below &amp; Submit!--}}
+                                    <div class="panel panel-default"><div class="panel-body">
 
                                         @if($image->caption== null)
 
@@ -151,10 +152,7 @@
                                     </div>
                                             @else
 
-                                        <h6 class="panel panel-default">
-
-
-                                            <div class="panel-body"><h6>Image Caption:</h6><p>{{$image->caption}}</p></div>
+                                        <h6>Image Caption:</h6><p>{{$image->caption}}</p></div>
 
 
 
@@ -173,6 +171,7 @@
 
 
                                         @endif
+                                        </div>
 
 
                                     <br/>
