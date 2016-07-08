@@ -131,6 +131,9 @@ Route::get('/posts/file_export', ['as' => 'posts.file_export', 'uses'=>'PostsCon
 
 
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
+Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
+
+
 
 
 
@@ -230,6 +233,10 @@ Route::delete('upload/delete/', [
 //destroy_image
 
 Route::delete('delete/{id}',array('uses' => 'PostsController@destroy_image', 'as' => 'My.route'));
+
+Route::post('update/{id}',array('uses' => 'PostsController@update_image_caption', 'as' => 'My.route2'));
+
+
 
 //Route::post(
 //    'posts/search',
