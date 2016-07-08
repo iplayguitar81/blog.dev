@@ -151,12 +151,12 @@
                                     </div>
                                             @else
 
-                                        <div class="panel panel-default">
+                                        <h6 class="panel panel-default">
 
-                                            <div class="panel-heading">Image Caption:</div>
-                                            <div class="panel-body"><p>{{$image->caption}}</p></div>
-                                        </div>
-                                            <h6>Caption</h6>
+
+                                            <div class="panel-body"><h6>Image Caption:</h6><p>{{$image->caption}}</p></div>
+
+
 
                                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Edit Caption</button>
                                         <div id="{{$image->id}}" class="collapse">
