@@ -133,6 +133,13 @@
                                     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
                                     <div id="{{$image->id}}" class="collapse">
                                         Update Caption Form Goes here....
+
+                                        {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
+                                        {!! Form::text('caption', null, ['class' => 'form-control']) !!}
+                                        {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
+                                        {{--@endif--}}
+
+                                        {!! Form::close() !!}
                                     </div>
                                     <br/>
                                     <br/>
