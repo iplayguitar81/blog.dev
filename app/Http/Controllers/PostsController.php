@@ -302,10 +302,12 @@ class PostsController extends Controller
 
         //maybe.....
         $image = App\ImageGallery::findOrFail($id);
-        //App\ImageGallery::destroy($id);
-        $caption = $request->input('caption');
 
-        $image = $image->update->caption( $caption);
+
+        //App\ImageGallery::destroy($id);
+//        $caption = $request->input('caption');
+        $image->caption = $request->input('caption');
+        //$image = $image->update->caption( $caption);
 
         $image->save();
 
