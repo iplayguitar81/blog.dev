@@ -149,6 +149,8 @@
                                             <h6>Caption</h6>
                                             <p>{{$image->caption}}</p>
 
+                                            <p>TODO: Add Edit Caption Form Here....</p>
+
                                         @endif
 
                                     </div>
