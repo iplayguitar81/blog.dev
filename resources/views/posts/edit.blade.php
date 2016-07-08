@@ -155,6 +155,20 @@
 
                                             <p>TODO: Add Edit Caption Form Here....</p>
 
+                                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Edit Caption</button>
+                                        <div id="{{$image->id}}" class="collapse">
+                                            {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
+                                            <br/>
+                                            {{ Form::hidden('post_id', $post->id ) }}
+                                            {!! Form::textarea('caption', null, ['class' => 'text-area', 'size' => '30x3']) !!}
+                                            {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
+                                            {{--@endif--}}
+                                            <br/>
+                                            {!! Form::submit('Edit Caption', ['class' => 'btn btn-success']) !!}
+                                            {!! Form::close() !!}
+                                        </div>
+
+
                                         @endif
 
 
