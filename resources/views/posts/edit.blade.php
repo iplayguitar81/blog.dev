@@ -126,20 +126,20 @@
                                 <li>
                                     <a href="{{url($image->file_path)}}" target="_blank">
                                         <img src="{{url($image->file_path)}}">
-                                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Add Caption</button>
-                                        <div id="demo" class="collapse">
-                                            Update Caption Form Goes here....
-                                        </div>
-
                                         {{--@if($image->user_id == $user)--}}
-                                        {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
-                                        <button class="btn btn-danger" type="submit">Delete</button>
-                                        {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
-                                        {{--@endif--}}
-
-                                        {!! Form::close() !!}
 
                                     </a>
+                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Add Caption</button>
+                                    <div id="demo" class="collapse">
+                                        Update Caption Form Goes here....
+                                    </div>
+
+                                    {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
+                                    <button class="btn btn-danger" type="submit">Delete</button>
+                                    {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
+                                    {{--@endif--}}
+
+                                    {!! Form::close() !!}
 
                                 </li>
                             @endforeach
