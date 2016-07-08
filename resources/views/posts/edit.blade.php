@@ -134,6 +134,8 @@
                                     <br/>
                                     <div id="{{$image->id}}" class="collapse">
                                         {{--Please Enter Caption Below &amp; Submit!--}}
+
+                                        @if($image->caption== null)
                                         {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
                                         <br/>
                                         {!! Form::textarea('caption', null, ['class' => 'text-area', 'size' => '30x3']) !!}
@@ -142,6 +144,13 @@
                                         <br/>
                                         {!! Form::submit('Save Caption', ['class' => 'btn btn-success']) !!}
                                         {!! Form::close() !!}
+
+                                            @else
+                                            <h6>Caption</h6>
+                                            <p>{{$image->caption}}</p>
+
+                                        @endif
+
                                     </div>
                                     <br/>
                                     <br/>
