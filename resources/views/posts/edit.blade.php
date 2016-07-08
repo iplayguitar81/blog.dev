@@ -171,7 +171,7 @@
 
 
                                         @endif
-                                        </div>
+
 
 
                                     <br/>
@@ -183,6 +183,7 @@
                                     {{--@endif--}}
 
                                     {!! Form::close() !!}
+                                    </div>
 
                                 </li>
                             @endforeach
