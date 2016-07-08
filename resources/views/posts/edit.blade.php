@@ -132,12 +132,13 @@
                                     <br/>
 
                                     <br/>
-                                    <div id="{{$image->id}}" class="collapse">
+
                                         {{--Please Enter Caption Below &amp; Submit!--}}
 
                                         @if($image->caption== null)
 
                                             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
+                                        <div id="{{$image->id}}" class="collapse">
                                         {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
                                         <br/>
                                             {{ Form::hidden('post_id', $post->id ) }}
