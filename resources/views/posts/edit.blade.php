@@ -131,6 +131,7 @@
                                     </a>
                                     <br/>
                                     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
+                                    <br/>
                                     <div id="{{$image->id}}" class="collapse">
                                         {{--Please Enter Caption Below &amp; Submit!--}}
                                         {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
