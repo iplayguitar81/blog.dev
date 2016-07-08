@@ -298,11 +298,15 @@ class PostsController extends Controller
 
     public function update_image_caption($id, Request $request)
     {
-        $img_id = ($request->input('img_id'));
+        $post_id = ($request->input('post_id'));
+
         //maybe.....
-        $image = Post::find($id)->images;
+        $image = App\ImageGallery::findOrFail($id);
+        //App\ImageGallery::destroy($id);
         $caption = $request->input('caption');
-        $image->caption =$caption;
+
+        $image = $image->update->caption( $caption);
+
         $image->save();
 
         Session::flash('flash_message', 'Image caption updated!');
