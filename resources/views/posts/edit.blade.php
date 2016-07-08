@@ -187,7 +187,7 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
 <script>
-    tinymce.init({ plugins: 'media', editor_selector : 'form-control' });
+    tinymce.init({ mode : 'specific_textareas', plugins: 'media', editor_selector : 'form-control' });
 
 </script>
 
