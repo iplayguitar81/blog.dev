@@ -296,6 +296,18 @@ class PostsController extends Controller
         return redirect('posts');
     }
 
+    public function update_image_caption($id, Request $request)
+    {
+        $img_id = ($request->input('img_id'));
+        //maybe.....
+        $image = Post::findOrFail($id)->images;
+        $caption = $request->input('caption');
+        $image->caption =$caption;
+        $image->save();
+
+
+    }
+
     /**
      * Remove the specified resource from storage.
      *
