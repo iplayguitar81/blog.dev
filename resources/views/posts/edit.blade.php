@@ -130,12 +130,14 @@
 
                                     </a>
                                     <br/>
-                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
+
                                     <br/>
                                     <div id="{{$image->id}}" class="collapse">
                                         {{--Please Enter Caption Below &amp; Submit!--}}
 
                                         @if($image->caption== null)
+
+                                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
                                         {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
                                         <br/>
                                             {{ Form::hidden('post_id', $post->id ) }}
@@ -145,7 +147,7 @@
                                         <br/>
                                         {!! Form::submit('Save Caption', ['class' => 'btn btn-success']) !!}
                                         {!! Form::close() !!}
-
+                                    </div>
                                             @else
                                             <h6>Caption</h6>
                                             <p>{{$image->caption}}</p>
@@ -154,7 +156,7 @@
 
                                         @endif
 
-                                    </div>
+
                                     <br/>
                                     <br/>
 
