@@ -286,8 +286,6 @@ class PostsController extends Controller
             $file = Input::file('file');
             $file->move('images', $file->getClientOriginalName());
 
-
-
         }
         
         $post = Post::findOrFail($id);
