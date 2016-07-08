@@ -134,7 +134,7 @@
                                     <div id="{{$image->id}}" class="collapse">
                                         Update Caption Form Goes here....
                                     </div>
-
+                                    <br/>
                                     {{ Form::open(['route' => ['My.route', $image->id], 'method' => 'delete']) }}
                                     <button class="btn btn-danger" type="submit">Delete</button>
                                     {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
