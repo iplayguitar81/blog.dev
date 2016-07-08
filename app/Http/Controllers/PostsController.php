@@ -305,6 +305,9 @@ class PostsController extends Controller
         $image->caption =$caption;
         $image->save();
 
+        Session::flash('flash_message', 'Image caption updated!');
+        return Redirect::back();
+
 
     }
 
