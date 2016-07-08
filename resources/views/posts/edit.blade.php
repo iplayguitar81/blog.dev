@@ -160,7 +160,7 @@
                                             {{ Form::open(['route' => ['My.route2', $image->id], 'method' => 'post']) }}
                                             <br/>
                                             {{ Form::hidden('post_id', $post->id ) }}
-                                            {!! Form::textarea('caption', null, ['class' => 'text-area', 'size' => '30x3', 'value' => $image->caption]) !!}
+                                            {!! Form::textarea('caption', $image->caption, ['class' => 'text-area', 'size' => '30x3']) !!}
                                             {{--{!! Form::submit(Auth::user()->name.' - -Delete Image', ['class' => 'btn btn-danger']) !!}--}}
                                             {{--@endif--}}
                                             <br/>
