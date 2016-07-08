@@ -234,7 +234,9 @@ Route::delete('upload/delete/', [
 
 Route::delete('delete/{id}',array('uses' => 'PostsController@destroy_image', 'as' => 'My.route'));
 
-Route::post('update/{id}',array('uses' => 'PostsController@update_image_caption', 'as' => 'My.route2'));
+
+Route::post('update/{id}', ['as' => 'My.route2', 'uses' =>'PostsController@update_image_caption']);
+//Route::post('update/{id}',array('uses' => 'PostsController@update_image_caption', 'as' => 'My.route2'));
 
 
 
