@@ -131,7 +131,7 @@
                                     </a>
                                     <br/>
                                     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{'#'.$image->id}}">Add Caption</button>
-                                    <div id="demo" class="collapse">
+                                    <div id="{{$image->id}}" class="collapse">
                                         Update Caption Form Goes here....
                                     </div>
 
