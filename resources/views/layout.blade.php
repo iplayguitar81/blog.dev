@@ -671,13 +671,13 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('images/bowtie-brand-transparent.png')}}"alt="">
+                <img src="{{url('images/logo-direction.png')}}"alt="">
                 <!-- put text here if want/need be-->
 
             </a>
-            <a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;color: #D71B32;text-shadow: #230D10 1px 1px 1px;">
-                Bowtie
-            </a>
+            {{--<a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;color: #D71B32;text-shadow: #230D10 1px 1px 1px;">--}}
+                {{--Bowtie--}}
+            {{--</a>--}}
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
