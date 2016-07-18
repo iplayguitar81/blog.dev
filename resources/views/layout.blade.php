@@ -671,7 +671,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('images/logo-direction.png')}}"alt="">
+                <img src="{{url('images/bowtie-mini-spin-logo.gif')}}"alt="">
                 <!-- put text here if want/need be-->
 
             </a>
