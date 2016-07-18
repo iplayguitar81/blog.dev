@@ -145,7 +145,7 @@
 
 <br/>
 
-<div class="col-md-3 pull-right">
+<div class="col-md-3">
     @include('sidebar')
 </div>
 
